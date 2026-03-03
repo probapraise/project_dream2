@@ -17,15 +17,13 @@
 ## Index pointers
 - world_bible_index: docs/world_bible_index_v2.md
 - world_bible_index_legacy: docs/world_bible_index.md
-- character_index: docs/character_index_v2.md
-- character_index_legacy: docs/character_index.md
-- simulation_playbook: docs/simulation_playbook.md
 - simulation_feedback: docs/simulation_feedback.md
 - simulation_state_index: docs/simulation_state_index.md
 - narrative_state: docs/narrative_state.md
 - style_bible: docs/style_bible.md
 - community_memory: docs/community_memory.md
 - cleanup_note: 고정 4x18/스키마 강제 문서 삭제(2026-03-04)
+- cleanup_note_2: 하드 검수/샘플 로그/고정 인덱스/시뮬레이션 플레이북 삭제(2026-03-04)
 
 ## Recent changes (last 5)
 - 2026-03-03 PR-BOOTSTRAP-0002: Appendix G Character Pack 162명 카드 -> characters/*.md (2-layer) 변환 + voice_packs 생성
@@ -33,3 +31,4 @@
 - 2026-03-03 PR-BOOTSTRAP-0004: character_index/legacy_id_map 생성
 - 2026-03-03 PR-BOOTSTRAP-0005: simulation_playbook 및 상태/피드백 템플릿 파일 생성
 - 2026-03-04 PR-CLEANUP-0001: 고정 4x18/스키마 강제 문서 삭제 + world_bible_index 재생성 + Zone.Identifier 정리
+- 2026-03-04 PR-CLEANUP-0002: 하드 검수/샘플 로그/고정 인덱스/시뮬레이션 플레이북 삭제 + world_bible_index 재생성
