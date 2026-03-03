@@ -22,6 +22,7 @@
 - character_index: docs/character_index_v2.md
 - character_index_legacy: docs/character_index.md
 - simulation_playbook: docs/simulation_playbook.md
+- dynamic_guide: docs/dynamic_guide.md
 - simulation_feedback: docs/simulation_feedback.md
 - simulation_state_index: docs/simulation_state_index.md
 - narrative_state: docs/narrative_state.md
@@ -30,9 +31,10 @@
 - legacy_id_map: docs/legacy_id_map.md
 - quarantine_index: quarantine/README.md
 
-## Recent changes (last 5)
+## Recent changes (last 6)
 - 2026-03-03 PR-BOOTSTRAP-0002: Appendix G Character Pack 162명 카드 -> characters/*.md (2-layer) 변환 + voice_packs 생성
 - 2026-03-03 PR-BOOTSTRAP-0003: 커뮤니티 구조(각인광장 B01~B18) -> community_map + layer_b 18개 초안 생성
 - 2026-03-03 PR-BOOTSTRAP-0004: character_index/legacy_id_map 생성
 - 2026-03-03 PR-BOOTSTRAP-0005: simulation_playbook 및 상태/피드백 템플릿 파일 생성
 - 2026-03-04 PR-CLEANUP-RESTART-0001: 충돌 문서는 삭제 대신 quarantine 이동, 활성 문서는 동적 스켈레톤으로 재작성
+- 2026-03-04 PR-CLEANUP-RESTART-0002: quarantine에서 재사용 가능한 동적 규칙만 활성 가이드로 재흡수
