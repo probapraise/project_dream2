@@ -15,6 +15,10 @@
 - 포함: 세계관 변경 관리 (4-Phase, minor/major 분기, 승인 루프, 인덱스 동기화)
 - 제외: 시뮬레이션 실행, 집필 파이프라인, 스타일 학습
 
+## 실행 격리 (시뮬/집필)
+- 오케스트레이터는 META 접근권한이 있으나, 시뮬레이션/집필 모델은 META 비노출이 기본 규칙이다.
+- 세부 규칙과 커맨드: `world_ops/SIM_WRITING_ISOLATION.md`
+
 ## 통삭제 금지 규칙 (중요)
 - 기본값은 **파일 단위 삭제 금지**다.
 - 충돌은 반드시 구간(line span) 단위로 식별하고, 부분 수정/격리를 우선한다.
@@ -65,6 +69,14 @@
 5. (삭제가 있으면) `bash scripts/world_ops_delete_guard.sh <change_id>`
 6. `bash scripts/world_ops_audit_bundle.sh`
 7. `world_change_log.md` 갱신
+
+## 시뮬/집필 실행 전 필수 게이트
+1. `bash scripts/world_ops_compile_execution_views.sh <run_id> <call_spec_env>`
+2. `bash scripts/world_ops_pre_injection_gate.sh <run_id> <call_spec_env> <payload_file>`
+3. (모델 호출)
+4. `bash scripts/world_ops_output_leak_scan.sh <run_id> <call_spec_env> <model_output_file>`
+
+> `call_spec_env` 템플릿: `world_ops/templates/execution_call_spec.env`
 
 ## 근본 해결 문서
 - `world_ops/ROOT_SOLUTION.md`

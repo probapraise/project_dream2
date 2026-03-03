@@ -31,3 +31,7 @@
 ## 운영
 - 시뮬레이션 관련 변경은 별도 변경 건(`CR-*`)으로 기록한다.
 - 과거 강제형 플레이북은 `quarantine/docs/simulation_playbook.md`에 보존한다.
+- 실제 모델 실행 전후에는 격리 게이트를 필수 적용한다.
+  - compile: `scripts/world_ops_compile_execution_views.sh`
+  - pre-injection gate: `scripts/world_ops_pre_injection_gate.sh`
+  - output leak scan: `scripts/world_ops_output_leak_scan.sh`
