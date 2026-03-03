@@ -125,7 +125,7 @@
   - file: world_bible/WB-0025_appendix_naming_constitution.md
   - summary: 벨쿠란 왕국 (주인공 조국, [TEMP] 제거)
   - entities: 작명, 헌법, 확정, 네이밍, 매핑
-  - visibility: CONFIDENTIAL
+  - visibility: META
 - [WB-0026] Appendix F. 문장비전(Crest Arcana) & 문장대장(24가문) 상세
   - file: world_bible/WB-0026_appendix_crest_arcana.md
   - summary: 이 세계는 마법을 통한 ‘기적 발현’ 난이도가 의도적으로 낮춰진 세계다. 따라서 마법은 특권이 아니라, 사회·문화·경제의 ‘기반 인프라’로 취급된다.

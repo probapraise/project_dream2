@@ -128,7 +128,7 @@
 - [WB-0025] Appendix E. 작명 헌법(PNC-1.0) + 확정 네이밍 매핑
   - file: world_bible/WB-0025_appendix_naming_constitution.md
   - summary: PNC-1.0 작명 헌법으로 지리-문화-언어층 기반 네이밍 규칙을 고정하고, [TEMP] 교체 시에도 ID를 유지하는 변경 원칙을 명문화한다. 벨쿠란 왕국·세르비온·라브리온 등 확정 명칭과 대륙/지형/인물 인덱스를 함께 제시해 향후 리네임 충돌을 통제한다.
-  - visibility: CONFIDENTIAL
+  - visibility: META
   - depends_on: WB-0010, WB-0021, WB-0022
 - [WB-0026] Appendix F. 문장비전(Crest Arcana) & 문장대장(24가문) 상세
   - file: world_bible/WB-0026_appendix_crest_arcana.md

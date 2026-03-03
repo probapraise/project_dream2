@@ -2,7 +2,7 @@
 id: WB-0025
 type: world_bible_section
 title: "Appendix E. 작명 헌법(PNC-1.0) + 확정 네이밍 매핑"
-visibility: CONFIDENTIAL
+visibility: META
 entities: ["작명", "헌법", "확정", "네이밍", "매핑"]
 last_updated: 2026-03-03
 source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx"
