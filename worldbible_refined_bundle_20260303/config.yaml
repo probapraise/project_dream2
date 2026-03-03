@@ -1,0 +1,12 @@
+project_name: pramisio_archive_plaza_v2
+language: ko
+created: 2026-03-03
+source_assets:
+  - Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx
+  - spec_sheet_v2_20260303.md
+id_schemes:
+  world_bible: "WB-####"
+  character: "CH-####"
+  board: "BOARD-####"
+notes:
+  - "본 config는 부트스트랩용 최소 메타데이터이며, 엔진 구현에 따라 확장 가능."

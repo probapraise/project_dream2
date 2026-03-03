@@ -1,0 +1,6 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+
+# Windows metadata streams
+*:Zone.Identifier
