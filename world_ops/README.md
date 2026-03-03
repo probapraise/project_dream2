@@ -15,6 +15,12 @@
 - 포함: 세계관 변경 관리 (4-Phase, minor/major 분기, 승인 루프, 인덱스 동기화)
 - 제외: 시뮬레이션 실행, 집필 파이프라인, 스타일 학습
 
+## 통삭제 금지 규칙 (중요)
+- 기본값은 **파일 단위 삭제 금지**다.
+- 충돌은 반드시 구간(line span) 단위로 식별하고, 부분 수정/격리를 우선한다.
+- 파일 삭제가 필요한 경우에만 `deletion_gate` 문서를 작성해 예외 처리한다.
+- 삭제가 staged 된 상태에서는 `scripts/world_ops_delete_guard.sh <change_id>` 통과 전 커밋하지 않는다.
+
 ## 4-Phase 프로세스 (SSOT 기준)
 ### Phase 1. 요청 정제
 - 입력: 작가의 자연어 변경 요청
@@ -55,6 +61,10 @@
 1. `bash scripts/world_ops_new_case.sh CR-YYYYMMDD-001`
 2. 생성된 세션 문서에 내용 작성
 3. 필요 시 파일 수정
-4. `bash scripts/world_ops_audit_bundle.sh`
-5. `world_change_log.md` 갱신
+4. (삭제가 있으면) `world_ops/sessions/<change_id>_deletion_gate.md` 작성
+5. (삭제가 있으면) `bash scripts/world_ops_delete_guard.sh <change_id>`
+6. `bash scripts/world_ops_audit_bundle.sh`
+7. `world_change_log.md` 갱신
 
+## 근본 해결 문서
+- `world_ops/ROOT_SOLUTION.md`
