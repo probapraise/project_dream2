@@ -1,12 +1,12 @@
 id: P-1070
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 1학년
 mana_color: 보라
-tower: 보라탑
-major: 전심학파
+major: Calision 신전과
 vocation: 사제
-noble_house: ORG-ARC-HOU-024
+noble_house: ORG-ARC-HOU-008
 b5:
   O: 0.81
   C: 0.58

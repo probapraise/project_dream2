@@ -1,12 +1,12 @@
 id: P-3088
 background_type: nonhuman
-dorm: 외국·인외동
+crest_vision_holder: false
+dorm: 청탑 기숙사
 grade: 2학년
 mana_color: 청
-tower: 청탑
 major: 결속조형학파
 vocation: 마법사
-race: 비스트킨
+race: 아쿠아틱
 b5:
   O: 0.59
   C: 0.71

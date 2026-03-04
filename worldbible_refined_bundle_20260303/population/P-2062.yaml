@@ -1,9 +1,9 @@
 id: P-2062
 background_type: common_noble
-dorm: 일반동(동관)
+crest_vision_holder: false
+dorm: 황탑 기숙사
 grade: 4학년
 mana_color: 황
-tower: 황탑
 major: 관성조율학파
 vocation: 마법사
 b5:

@@ -1,12 +1,12 @@
 id: P-0629
 background_type: nonhuman
-dorm: 장학생동
+crest_vision_holder: false
+dorm: 기사동
 grade: 1학년
 mana_color: 적
-tower: 적탑
-major: 화염포격학파
+major: 대마전투과
 vocation: 기사
-race: 하플링
+race: 고블린
 b5:
   O: 0.72
   C: 0.21

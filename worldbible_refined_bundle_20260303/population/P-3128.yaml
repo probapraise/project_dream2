@@ -1,10 +1,10 @@
 id: P-3128
 background_type: common_noble
-dorm: 일반동(동관)
+crest_vision_holder: false
+dorm: 신전동군
 grade: 1학년
 mana_color: 백
-tower: 백탑
-major: 순백응급학파
+major: Lusenia 신전과
 vocation: 사제
 b5:
   O: 0.41

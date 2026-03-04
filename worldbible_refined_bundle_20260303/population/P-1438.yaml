@@ -1,12 +1,12 @@
 id: P-1438
 background_type: nonhuman
-dorm: 연구·탑동
+crest_vision_holder: false
+dorm: 청탑 기숙사
 grade: 1학년
 mana_color: 청
-tower: 청탑
 major: 결속조형학파
 vocation: 마법사
-race: 드워프
+race: 고블린
 b5:
   O: 0.53
   C: 0.80

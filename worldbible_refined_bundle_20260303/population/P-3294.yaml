@@ -1,9 +1,9 @@
 id: P-3294
 background_type: common_noble
-dorm: 일반동(동관)
+crest_vision_holder: false
+dorm: 보라탑 기숙사
 grade: 4학년
 mana_color: 보라
-tower: 보라탑
 major: 전심학파
 vocation: 마법사
 b5:

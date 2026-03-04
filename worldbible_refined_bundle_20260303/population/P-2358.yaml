@@ -1,12 +1,12 @@
 id: P-2358
 background_type: nonhuman
-dorm: 일반동(서관)
+crest_vision_holder: false
+dorm: 신전동군
 grade: 2학년
 mana_color: 백
-tower: 백탑
-major: 순백응급학파
+major: Calision 신전과
 vocation: 사제
-race: 아쿠아틱
+race: 드워프
 b5:
   O: 0.69
   C: 0.60

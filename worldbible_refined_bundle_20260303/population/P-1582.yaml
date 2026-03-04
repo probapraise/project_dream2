@@ -1,10 +1,10 @@
 id: P-1582
 background_type: nonhuman
-dorm: 장학생동
+crest_vision_holder: false
+dorm: 기사동
 grade: 3학년
 mana_color: 녹
-tower: 녹탑
-major: 정령계약학파
+major: 검창전술과
 vocation: 기사
 race: 하플링
 b5:

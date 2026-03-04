@@ -1,12 +1,12 @@
 id: P-0235
 background_type: foreigner
-dorm: 외국·인외동
+crest_vision_holder: false
+dorm: 신전동군
 grade: 2학년
 mana_color: 청
-tower: 청탑
-major: 결속조형학파
+major: Calision 신전과
 vocation: 사제
-origin: SAH-울카자르권
+origin: UNASSIGNED
 b5:
   O: 0.74
   C: 0.46

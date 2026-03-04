@@ -1,12 +1,12 @@
 id: P-0992
 background_type: nonhuman
-dorm: 장학생동
+crest_vision_holder: false
+dorm: 백탑 기숙사
 grade: 1학년
 mana_color: 백
-tower: 백탑
 major: 순백응급학파
 vocation: 마법사
-race: 고블린
+race: 아쿠아틱
 b5:
   O: 0.51
   C: 0.55

@@ -1,10 +1,10 @@
 id: P-2008
 background_type: common_noble
-dorm: 장학생동
+crest_vision_holder: false
+dorm: 기사동
 grade: 4학년
 mana_color: 청
-tower: 청탑
-major: 방벽수호학파
+major: 지휘참모과
 vocation: 기사
 b5:
   O: 0.64

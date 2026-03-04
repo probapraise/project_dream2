@@ -1,12 +1,12 @@
 id: P-1063
 background_type: nonhuman
-dorm: 장학생동
+crest_vision_holder: false
+dorm: 녹탑 기숙사
 grade: 1학년
 mana_color: 녹
-tower: 녹탑
 major: 정령계약학파
 vocation: 마법사
-race: 오크
+race: 고블린
 b5:
   O: 0.99
   C: 0.78

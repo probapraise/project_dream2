@@ -1,12 +1,12 @@
 id: P-1025
 background_type: nonhuman
-dorm: 장학생동
+crest_vision_holder: false
+dorm: 백탑 기숙사
 grade: 3학년
 mana_color: 백
-tower: 백탑
 major: 순백응급학파
 vocation: 마법사
-race: 하플링
+race: 고블린
 b5:
   O: 0.52
   C: 0.69

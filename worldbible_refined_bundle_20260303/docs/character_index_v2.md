@@ -9,9 +9,9 @@
 ## 1) Status Registry
 | status | count |
 |---|---:|
-| uninstantiated | 3593 |
+| uninstantiated | 3599 |
 | instantiated | 0 |
-| named | 7 |
+| named | 1 |
 
 ## 2) Background Distribution
 | background_type | label | count | ratio |
@@ -26,28 +26,185 @@
 | dorm | count | ratio |
 |---|---:|---:|
 | 비전관 | 160 | 4.4% |
-| 일반동(동관) | 1200 | 33.3% |
-| 일반동(서관) | 1140 | 31.7% |
-| 장학생동 | 620 | 17.2% |
-| 연구·탑동 | 280 | 7.8% |
-| 외국·인외동 | 200 | 5.6% |
+| 청탑 기숙사 | 521 | 14.5% |
+| 황탑 기숙사 | 397 | 11.0% |
+| 적탑 기숙사 | 336 | 9.3% |
+| 녹탑 기숙사 | 294 | 8.2% |
+| 백탑 기숙사 | 278 | 7.7% |
+| 보라탑 기숙사 | 245 | 6.8% |
+| 흑탑 기숙사 | 43 | 1.2% |
+| 기사동 | 980 | 27.2% |
+| 신전동군 | 346 | 9.6% |
 
-## 3) Coordinate Occupancy Registry (v0 init)
-- 좌표 스키마: `tower x grade_track x background_type x motivation_archetype`
-- 현재 초기화 단계에서는 `tower/grade_track/motivation_archetype = UNASSIGNED`로 유지한다.
+## 3) Coordinate Occupancy Registry (v1)
+- 좌표 스키마: `mana_color x grade x background_type x motivation_archetype`
+- 현재 데이터에는 `motivation_archetype` 필드가 없어 `UNASSIGNED`로 고정한다.
 - 실제 점유는 `instantiated` 이상에서만 증가한다.
 
-| tower | grade_track | background_type | motivation_archetype | slots | occupied(instantiated+) | available(uninstantiated) |
+| mana_color | grade | background_type | motivation_archetype | slots | occupied(instantiated+) | available(uninstantiated) |
 |---|---|---|---|---:|---:|---:|
-| UNASSIGNED | UNASSIGNED | `common_noble` | UNASSIGNED | 2870 | 2 | 2868 |
-| UNASSIGNED | UNASSIGNED | `commoner` | UNASSIGNED | 200 | 1 | 199 |
-| UNASSIGNED | UNASSIGNED | `foreigner` | UNASSIGNED | 120 | 1 | 119 |
-| UNASSIGNED | UNASSIGNED | `nonhuman` | UNASSIGNED | 250 | 1 | 249 |
-| UNASSIGNED | UNASSIGNED | `signature_noble` | UNASSIGNED | 160 | 2 | 158 |
+| 청 | 1학년 | `common_noble` | UNASSIGNED | 187 | 0 | 187 |
+| 청 | 1학년 | `commoner` | UNASSIGNED | 8 | 0 | 8 |
+| 청 | 1학년 | `foreigner` | UNASSIGNED | 13 | 0 | 13 |
+| 청 | 1학년 | `nonhuman` | UNASSIGNED | 26 | 0 | 26 |
+| 청 | 1학년 | `signature_noble` | UNASSIGNED | 8 | 0 | 8 |
+| 청 | 2학년 | `common_noble` | UNASSIGNED | 174 | 0 | 174 |
+| 청 | 2학년 | `commoner` | UNASSIGNED | 9 | 0 | 9 |
+| 청 | 2학년 | `foreigner` | UNASSIGNED | 11 | 0 | 11 |
+| 청 | 2학년 | `nonhuman` | UNASSIGNED | 18 | 0 | 18 |
+| 청 | 2학년 | `signature_noble` | UNASSIGNED | 13 | 0 | 13 |
+| 청 | 3학년 | `common_noble` | UNASSIGNED | 160 | 0 | 160 |
+| 청 | 3학년 | `commoner` | UNASSIGNED | 19 | 0 | 19 |
+| 청 | 3학년 | `foreigner` | UNASSIGNED | 8 | 0 | 8 |
+| 청 | 3학년 | `nonhuman` | UNASSIGNED | 8 | 0 | 8 |
+| 청 | 3학년 | `signature_noble` | UNASSIGNED | 8 | 0 | 8 |
+| 청 | 4학년 | `common_noble` | UNASSIGNED | 165 | 0 | 165 |
+| 청 | 4학년 | `commoner` | UNASSIGNED | 3 | 0 | 3 |
+| 청 | 4학년 | `foreigner` | UNASSIGNED | 6 | 0 | 6 |
+| 청 | 4학년 | `nonhuman` | UNASSIGNED | 12 | 0 | 12 |
+| 청 | 4학년 | `signature_noble` | UNASSIGNED | 8 | 0 | 8 |
+| 청 | 연구과정 | `common_noble` | UNASSIGNED | 32 | 0 | 32 |
+| 청 | 연구과정 | `commoner` | UNASSIGNED | 1 | 0 | 1 |
+| 청 | 연구과정 | `nonhuman` | UNASSIGNED | 3 | 0 | 3 |
+| 황 | 1학년 | `common_noble` | UNASSIGNED | 139 | 0 | 139 |
+| 황 | 1학년 | `commoner` | UNASSIGNED | 10 | 0 | 10 |
+| 황 | 1학년 | `foreigner` | UNASSIGNED | 4 | 0 | 4 |
+| 황 | 1학년 | `nonhuman` | UNASSIGNED | 9 | 0 | 9 |
+| 황 | 1학년 | `signature_noble` | UNASSIGNED | 5 | 0 | 5 |
+| 황 | 2학년 | `common_noble` | UNASSIGNED | 118 | 0 | 118 |
+| 황 | 2학년 | `commoner` | UNASSIGNED | 13 | 0 | 13 |
+| 황 | 2학년 | `foreigner` | UNASSIGNED | 9 | 0 | 9 |
+| 황 | 2학년 | `nonhuman` | UNASSIGNED | 13 | 0 | 13 |
+| 황 | 2학년 | `signature_noble` | UNASSIGNED | 5 | 0 | 5 |
+| 황 | 3학년 | `common_noble` | UNASSIGNED | 111 | 0 | 111 |
+| 황 | 3학년 | `commoner` | UNASSIGNED | 12 | 0 | 12 |
+| 황 | 3학년 | `foreigner` | UNASSIGNED | 1 | 0 | 1 |
+| 황 | 3학년 | `nonhuman` | UNASSIGNED | 10 | 0 | 10 |
+| 황 | 3학년 | `signature_noble` | UNASSIGNED | 10 | 0 | 10 |
+| 황 | 4학년 | `common_noble` | UNASSIGNED | 122 | 0 | 122 |
+| 황 | 4학년 | `commoner` | UNASSIGNED | 11 | 0 | 11 |
+| 황 | 4학년 | `foreigner` | UNASSIGNED | 6 | 0 | 6 |
+| 황 | 4학년 | `nonhuman` | UNASSIGNED | 9 | 0 | 9 |
+| 황 | 4학년 | `signature_noble` | UNASSIGNED | 5 | 0 | 5 |
+| 황 | 연구과정 | `common_noble` | UNASSIGNED | 26 | 0 | 26 |
+| 황 | 연구과정 | `nonhuman` | UNASSIGNED | 1 | 0 | 1 |
+| 황 | 연구과정 | `signature_noble` | UNASSIGNED | 1 | 0 | 1 |
+| 적 | 1학년 | `common_noble` | UNASSIGNED | 119 | 0 | 119 |
+| 적 | 1학년 | `commoner` | UNASSIGNED | 6 | 0 | 6 |
+| 적 | 1학년 | `foreigner` | UNASSIGNED | 4 | 0 | 4 |
+| 적 | 1학년 | `nonhuman` | UNASSIGNED | 8 | 0 | 8 |
+| 적 | 1학년 | `signature_noble` | UNASSIGNED | 2 | 0 | 2 |
+| 적 | 2학년 | `common_noble` | UNASSIGNED | 133 | 0 | 133 |
+| 적 | 2학년 | `commoner` | UNASSIGNED | 13 | 0 | 13 |
+| 적 | 2학년 | `foreigner` | UNASSIGNED | 1 | 0 | 1 |
+| 적 | 2학년 | `nonhuman` | UNASSIGNED | 13 | 0 | 13 |
+| 적 | 2학년 | `signature_noble` | UNASSIGNED | 10 | 0 | 10 |
+| 적 | 3학년 | `common_noble` | UNASSIGNED | 106 | 0 | 106 |
+| 적 | 3학년 | `commoner` | UNASSIGNED | 6 | 0 | 6 |
+| 적 | 3학년 | `foreigner` | UNASSIGNED | 8 | 0 | 8 |
+| 적 | 3학년 | `nonhuman` | UNASSIGNED | 9 | 0 | 9 |
+| 적 | 3학년 | `signature_noble` | UNASSIGNED | 9 | 0 | 9 |
+| 적 | 4학년 | `common_noble` | UNASSIGNED | 98 | 0 | 98 |
+| 적 | 4학년 | `commoner` | UNASSIGNED | 8 | 0 | 8 |
+| 적 | 4학년 | `foreigner` | UNASSIGNED | 6 | 0 | 6 |
+| 적 | 4학년 | `nonhuman` | UNASSIGNED | 10 | 0 | 10 |
+| 적 | 4학년 | `signature_noble` | UNASSIGNED | 8 | 0 | 8 |
+| 적 | 연구과정 | `common_noble` | UNASSIGNED | 17 | 0 | 17 |
+| 적 | 연구과정 | `commoner` | UNASSIGNED | 3 | 0 | 3 |
+| 적 | 연구과정 | `nonhuman` | UNASSIGNED | 1 | 0 | 1 |
+| 적 | 연구과정 | `signature_noble` | UNASSIGNED | 2 | 0 | 2 |
+| 녹 | 1학년 | `common_noble` | UNASSIGNED | 95 | 0 | 95 |
+| 녹 | 1학년 | `commoner` | UNASSIGNED | 6 | 0 | 6 |
+| 녹 | 1학년 | `foreigner` | UNASSIGNED | 3 | 0 | 3 |
+| 녹 | 1학년 | `nonhuman` | UNASSIGNED | 10 | 0 | 10 |
+| 녹 | 1학년 | `signature_noble` | UNASSIGNED | 5 | 0 | 5 |
+| 녹 | 2학년 | `common_noble` | UNASSIGNED | 93 | 0 | 93 |
+| 녹 | 2학년 | `commoner` | UNASSIGNED | 11 | 0 | 11 |
+| 녹 | 2학년 | `foreigner` | UNASSIGNED | 2 | 0 | 2 |
+| 녹 | 2학년 | `nonhuman` | UNASSIGNED | 8 | 0 | 8 |
+| 녹 | 2학년 | `signature_noble` | UNASSIGNED | 3 | 0 | 3 |
+| 녹 | 3학년 | `common_noble` | UNASSIGNED | 111 | 0 | 111 |
+| 녹 | 3학년 | `commoner` | UNASSIGNED | 9 | 0 | 9 |
+| 녹 | 3학년 | `foreigner` | UNASSIGNED | 5 | 0 | 5 |
+| 녹 | 3학년 | `nonhuman` | UNASSIGNED | 11 | 0 | 11 |
+| 녹 | 3학년 | `signature_noble` | UNASSIGNED | 6 | 0 | 6 |
+| 녹 | 4학년 | `common_noble` | UNASSIGNED | 97 | 0 | 97 |
+| 녹 | 4학년 | `commoner` | UNASSIGNED | 6 | 0 | 6 |
+| 녹 | 4학년 | `foreigner` | UNASSIGNED | 5 | 0 | 5 |
+| 녹 | 4학년 | `nonhuman` | UNASSIGNED | 6 | 0 | 6 |
+| 녹 | 4학년 | `signature_noble` | UNASSIGNED | 4 | 0 | 4 |
+| 녹 | 연구과정 | `common_noble` | UNASSIGNED | 14 | 0 | 14 |
+| 녹 | 연구과정 | `commoner` | UNASSIGNED | 2 | 0 | 2 |
+| 녹 | 연구과정 | `nonhuman` | UNASSIGNED | 2 | 0 | 2 |
+| 녹 | 연구과정 | `signature_noble` | UNASSIGNED | 1 | 0 | 1 |
+| 백 | 1학년 | `common_noble` | UNASSIGNED | 93 | 0 | 93 |
+| 백 | 1학년 | `commoner` | UNASSIGNED | 6 | 0 | 6 |
+| 백 | 1학년 | `foreigner` | UNASSIGNED | 4 | 0 | 4 |
+| 백 | 1학년 | `nonhuman` | UNASSIGNED | 7 | 0 | 7 |
+| 백 | 1학년 | `signature_noble` | UNASSIGNED | 6 | 0 | 6 |
+| 백 | 2학년 | `common_noble` | UNASSIGNED | 93 | 0 | 93 |
+| 백 | 2학년 | `commoner` | UNASSIGNED | 1 | 0 | 1 |
+| 백 | 2학년 | `foreigner` | UNASSIGNED | 4 | 0 | 4 |
+| 백 | 2학년 | `nonhuman` | UNASSIGNED | 11 | 0 | 11 |
+| 백 | 2학년 | `signature_noble` | UNASSIGNED | 8 | 0 | 8 |
+| 백 | 3학년 | `common_noble` | UNASSIGNED | 77 | 0 | 77 |
+| 백 | 3학년 | `commoner` | UNASSIGNED | 6 | 0 | 6 |
+| 백 | 3학년 | `foreigner` | UNASSIGNED | 2 | 0 | 2 |
+| 백 | 3학년 | `nonhuman` | UNASSIGNED | 8 | 0 | 8 |
+| 백 | 3학년 | `signature_noble` | UNASSIGNED | 3 | 0 | 3 |
+| 백 | 4학년 | `common_noble` | UNASSIGNED | 81 | 0 | 81 |
+| 백 | 4학년 | `commoner` | UNASSIGNED | 6 | 0 | 6 |
+| 백 | 4학년 | `foreigner` | UNASSIGNED | 1 | 0 | 1 |
+| 백 | 4학년 | `nonhuman` | UNASSIGNED | 2 | 0 | 2 |
+| 백 | 4학년 | `signature_noble` | UNASSIGNED | 7 | 0 | 7 |
+| 백 | 연구과정 | `common_noble` | UNASSIGNED | 14 | 0 | 14 |
+| 백 | 연구과정 | `commoner` | UNASSIGNED | 2 | 0 | 2 |
+| 백 | 연구과정 | `foreigner` | UNASSIGNED | 1 | 0 | 1 |
+| 백 | 연구과정 | `nonhuman` | UNASSIGNED | 3 | 0 | 3 |
+| 백 | 연구과정 | `signature_noble` | UNASSIGNED | 4 | 0 | 4 |
+| 보라 | 1학년 | `common_noble` | UNASSIGNED | 87 | 1 | 86 |
+| 보라 | 1학년 | `commoner` | UNASSIGNED | 4 | 0 | 4 |
+| 보라 | 1학년 | `foreigner` | UNASSIGNED | 2 | 0 | 2 |
+| 보라 | 1학년 | `nonhuman` | UNASSIGNED | 4 | 0 | 4 |
+| 보라 | 1학년 | `signature_noble` | UNASSIGNED | 4 | 0 | 4 |
+| 보라 | 2학년 | `common_noble` | UNASSIGNED | 78 | 0 | 78 |
+| 보라 | 2학년 | `commoner` | UNASSIGNED | 7 | 0 | 7 |
+| 보라 | 2학년 | `foreigner` | UNASSIGNED | 2 | 0 | 2 |
+| 보라 | 2학년 | `nonhuman` | UNASSIGNED | 6 | 0 | 6 |
+| 보라 | 2학년 | `signature_noble` | UNASSIGNED | 3 | 0 | 3 |
+| 보라 | 3학년 | `common_noble` | UNASSIGNED | 100 | 0 | 100 |
+| 보라 | 3학년 | `commoner` | UNASSIGNED | 4 | 0 | 4 |
+| 보라 | 3학년 | `foreigner` | UNASSIGNED | 3 | 0 | 3 |
+| 보라 | 3학년 | `nonhuman` | UNASSIGNED | 7 | 0 | 7 |
+| 보라 | 3학년 | `signature_noble` | UNASSIGNED | 2 | 0 | 2 |
+| 보라 | 4학년 | `common_noble` | UNASSIGNED | 75 | 0 | 75 |
+| 보라 | 4학년 | `commoner` | UNASSIGNED | 4 | 0 | 4 |
+| 보라 | 4학년 | `foreigner` | UNASSIGNED | 6 | 0 | 6 |
+| 보라 | 4학년 | `nonhuman` | UNASSIGNED | 5 | 0 | 5 |
+| 보라 | 4학년 | `signature_noble` | UNASSIGNED | 7 | 0 | 7 |
+| 보라 | 연구과정 | `common_noble` | UNASSIGNED | 13 | 0 | 13 |
+| 보라 | 연구과정 | `commoner` | UNASSIGNED | 2 | 0 | 2 |
+| 보라 | 연구과정 | `nonhuman` | UNASSIGNED | 2 | 0 | 2 |
+| 보라 | 연구과정 | `signature_noble` | UNASSIGNED | 1 | 0 | 1 |
+| 흑 | 1학년 | `common_noble` | UNASSIGNED | 10 | 0 | 10 |
+| 흑 | 1학년 | `foreigner` | UNASSIGNED | 1 | 0 | 1 |
+| 흑 | 1학년 | `nonhuman` | UNASSIGNED | 3 | 0 | 3 |
+| 흑 | 1학년 | `signature_noble` | UNASSIGNED | 2 | 0 | 2 |
+| 흑 | 2학년 | `common_noble` | UNASSIGNED | 15 | 0 | 15 |
+| 흑 | 2학년 | `commoner` | UNASSIGNED | 1 | 0 | 1 |
+| 흑 | 2학년 | `nonhuman` | UNASSIGNED | 1 | 0 | 1 |
+| 흑 | 3학년 | `common_noble` | UNASSIGNED | 6 | 0 | 6 |
+| 흑 | 3학년 | `commoner` | UNASSIGNED | 1 | 0 | 1 |
+| 흑 | 3학년 | `foreigner` | UNASSIGNED | 1 | 0 | 1 |
+| 흑 | 3학년 | `nonhuman` | UNASSIGNED | 3 | 0 | 3 |
+| 흑 | 4학년 | `common_noble` | UNASSIGNED | 9 | 0 | 9 |
+| 흑 | 4학년 | `foreigner` | UNASSIGNED | 1 | 0 | 1 |
+| 흑 | 4학년 | `nonhuman` | UNASSIGNED | 1 | 0 | 1 |
+| 흑 | 연구과정 | `common_noble` | UNASSIGNED | 2 | 0 | 2 |
 
 ## 4) Reverse Indexes
 ### 4.1 Active Index (instantiated 이상만)
-- active_count: 7
+- active_count: 1
 - pool_file: `docs/character_index_pools/active_instantiated_ids.txt`
 
 ### 4.2 Candidate Pools (P-* 전체에서 사전 계산)
@@ -57,8 +214,8 @@
 - 외국인 풀: 120명 (`docs/character_index_pools/foreigner_ids.txt`)
 
 샘플 ID:
-- NFC top20 first 10: P-1160, P-1862, P-0930, P-0296, P-3487, P-2943, P-2277, P-2404, P-0555, P-1215
-- DT top10 first 10: P-2093, P-3458, P-2388, P-3382, P-2869, P-3115, P-3373, P-2118, P-3392, P-0357
+- NFC top20 first 10: P-0248, P-0306, P-0542, P-0623, P-0708, P-0930, P-2323, P-2350, P-2795, P-3539
+- DT top10 first 10: P-3142, P-0186, P-0140, P-0227, P-1054, P-2000, P-2054, P-2776, P-2167, P-0651
 
 ## 5) Step 5 DoD Check
 - [x] 빅5/파생지표 기반 초기 레지스트리 생성

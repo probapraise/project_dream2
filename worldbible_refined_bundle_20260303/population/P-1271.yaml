@@ -1,12 +1,12 @@
 id: P-1271
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 3학년
 mana_color: 청
-tower: 청탑
 major: 구속연쇄학파
 vocation: 마법사
-noble_house: ORG-ARC-HOU-001
+noble_house: ORG-ARC-HOU-012
 b5:
   O: 0.75
   C: 0.69

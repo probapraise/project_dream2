@@ -22,12 +22,19 @@ BACKGROUND_LABELS = {
 
 DORM_ORDER = (
     "비전관",
-    "일반동(동관)",
-    "일반동(서관)",
-    "장학생동",
-    "연구·탑동",
-    "외국·인외동",
+    "청탑 기숙사",
+    "황탑 기숙사",
+    "적탑 기숙사",
+    "녹탑 기숙사",
+    "백탑 기숙사",
+    "보라탑 기숙사",
+    "흑탑 기숙사",
+    "기사동",
+    "신전동군",
 )
+
+MANA_COLOR_ORDER = ("청", "황", "적", "녹", "백", "보라", "흑", "UNASSIGNED")
+GRADE_ORDER = ("1학년", "2학년", "3학년", "4학년", "연구과정", "UNASSIGNED")
 
 
 def parse_args() -> argparse.Namespace:
@@ -68,6 +75,23 @@ def write_id_file(path: Path, ids: list[str]) -> None:
     path.write_text("\n".join(ids) + ("\n" if ids else ""), encoding="utf-8")
 
 
+def order_index(value: str, ordered: tuple[str, ...]) -> int:
+    try:
+        return ordered.index(value)
+    except ValueError:
+        return len(ordered)
+
+
+def coord_sort_key(coord: tuple[str, str, str, str]) -> tuple[int, int, str, str]:
+    mana_color, grade, background_type, motivation = coord
+    return (
+        order_index(mana_color, MANA_COLOR_ORDER),
+        order_index(grade, GRADE_ORDER),
+        background_type,
+        motivation,
+    )
+
+
 def main() -> int:
     args = parse_args()
     args.index_md.parent.mkdir(parents=True, exist_ok=True)
@@ -82,12 +106,23 @@ def main() -> int:
     bg_counts = Counter(row["background_type"] for row in rows)
     dorm_counts = Counter(row.get("dorm", "") for row in rows if row.get("dorm"))
 
-    # Provisional coordinate registry (tower/grade/motive are assigned at instantiation time).
+    # Coordinate registry from current slot fields.
     coord_counts = Counter(
-        ("UNASSIGNED", "UNASSIGNED", row["background_type"], "UNASSIGNED") for row in rows
+        (
+            row.get("mana_color", "") or "UNASSIGNED",
+            row.get("grade", "") or "UNASSIGNED",
+            row["background_type"],
+            "UNASSIGNED",
+        )
+        for row in rows
     )
     coord_occupied = Counter(
-        ("UNASSIGNED", "UNASSIGNED", row["background_type"], "UNASSIGNED")
+        (
+            row.get("mana_color", "") or "UNASSIGNED",
+            row.get("grade", "") or "UNASSIGNED",
+            row["background_type"],
+            "UNASSIGNED",
+        )
         for row in rows
         if row["status"] in ACTIVE_STATUSES
     )
@@ -127,7 +162,7 @@ def main() -> int:
     lines.append("")
     lines.append(f"- generated_at: {generated_at}")
     lines.append(f"- source_csv: `{args.population_csv}`")
-    lines.append("- total_p_slots: 3600")
+    lines.append(f"- total_p_slots: {total}")
     lines.append("- ssot: `population/P-*.yaml` + `population/population_slots.csv`")
     lines.append("- note: 기존 CH-* 카드/보이스팩 체계는 2026-03-04부로 폐기 완료(영구 삭제). 활성 캐릭터 체계는 `population/P-*`만 사용.")
     lines.append("")
@@ -160,19 +195,20 @@ def main() -> int:
             ratio = (count / total) * 100 if total else 0.0
             lines.append(f"| {dorm} | {count} | {ratio:.1f}% |")
         lines.append("")
-    lines.append("## 3) Coordinate Occupancy Registry (v0 init)")
-    lines.append("- 좌표 스키마: `tower x grade_track x background_type x motivation_archetype`")
-    lines.append("- 현재 초기화 단계에서는 `tower/grade_track/motivation_archetype = UNASSIGNED`로 유지한다.")
+    lines.append("## 3) Coordinate Occupancy Registry (v1)")
+    lines.append("- 좌표 스키마: `mana_color x grade x background_type x motivation_archetype`")
+    lines.append("- 현재 데이터에는 `motivation_archetype` 필드가 없어 `UNASSIGNED`로 고정한다.")
     lines.append("- 실제 점유는 `instantiated` 이상에서만 증가한다.")
     lines.append("")
-    lines.append("| tower | grade_track | background_type | motivation_archetype | slots | occupied(instantiated+) | available(uninstantiated) |")
+    lines.append("| mana_color | grade | background_type | motivation_archetype | slots | occupied(instantiated+) | available(uninstantiated) |")
     lines.append("|---|---|---|---|---:|---:|---:|")
-    for _, _, bg_key, _ in sorted(coord_counts.keys(), key=lambda t: t[2]):
-        total_slots = coord_counts[("UNASSIGNED", "UNASSIGNED", bg_key, "UNASSIGNED")]
-        occupied = coord_occupied[("UNASSIGNED", "UNASSIGNED", bg_key, "UNASSIGNED")]
+    for coord in sorted(coord_counts.keys(), key=coord_sort_key):
+        mana_color, grade, bg_key, motivation = coord
+        total_slots = coord_counts[coord]
+        occupied = coord_occupied[coord]
         available = total_slots - occupied
         lines.append(
-            f"| UNASSIGNED | UNASSIGNED | `{bg_key}` | UNASSIGNED | {total_slots} | {occupied} | {available} |"
+            f"| {mana_color} | {grade} | `{bg_key}` | {motivation} | {total_slots} | {occupied} | {available} |"
         )
     lines.append("")
     lines.append("## 4) Reverse Indexes")

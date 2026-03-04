@@ -1,12 +1,12 @@
 id: P-1310
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 2학년
 mana_color: 녹
-tower: 녹탑
 major: 약리전술학파
 vocation: 마법사
-noble_house: ORG-ARC-HOU-007
+noble_house: ORG-ARC-HOU-006
 b5:
   O: 0.68
   C: 0.71

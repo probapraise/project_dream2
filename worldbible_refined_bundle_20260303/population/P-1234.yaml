@@ -1,12 +1,12 @@
 id: P-1234
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 4학년
 mana_color: 적
-tower: 적탑
-major: 화염포격학파
+major: 중장돌격과
 vocation: 기사
-noble_house: ORG-ARC-HOU-011
+noble_house: ORG-ARC-HOU-012
 b5:
   O: 0.67
   C: 0.43

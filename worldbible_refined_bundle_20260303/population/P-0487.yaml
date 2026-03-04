@@ -1,12 +1,12 @@
 id: P-0487
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 1학년
 mana_color: 백
-tower: 백탑
-major: 순백응급학파
+major: Calision 신전과
 vocation: 사제
-noble_house: ORG-ARC-HOU-004
+noble_house: ORG-ARC-HOU-023
 b5:
   O: 0.73
   C: 0.62

@@ -1,12 +1,12 @@
 id: P-0643
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 4학년
 mana_color: 녹
-tower: 녹탑
-major: 약리전술학파
+major: 중장돌격과
 vocation: 기사
-noble_house: ORG-ARC-HOU-010
+noble_house: ORG-ARC-HOU-005
 b5:
   O: 0.29
   C: 0.63

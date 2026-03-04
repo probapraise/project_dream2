@@ -1,12 +1,12 @@
 id: P-2226
 background_type: nonhuman
-dorm: 일반동(동관)
+crest_vision_holder: false
+dorm: 녹탑 기숙사
 grade: 연구과정
 mana_color: 녹
-tower: 녹탑
 major: 약리전술학파
 vocation: 마법사
-race: 엘프
+race: 비스트킨
 b5:
   O: 0.87
   C: 0.32

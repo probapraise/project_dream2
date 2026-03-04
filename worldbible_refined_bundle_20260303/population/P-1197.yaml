@@ -1,12 +1,12 @@
 id: P-1197
 background_type: nonhuman
-dorm: 일반동(서관)
+crest_vision_holder: false
+dorm: 흑탑 기숙사
 grade: 1학년
 mana_color: 흑
-tower: 흑탑
 major: 침식주술학파
 vocation: 마법사
-race: 아쿠아틱
+race: 고블린
 b5:
   O: 0.69
   C: 0.65

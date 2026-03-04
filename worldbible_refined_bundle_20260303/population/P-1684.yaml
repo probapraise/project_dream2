@@ -1,12 +1,12 @@
 id: P-1684
 background_type: foreigner
-dorm: 외국·인외동
+crest_vision_holder: false
+dorm: 신전동군
 grade: 3학년
 mana_color: 적
-tower: 적탑
-major: 화염포격학파
+major: Valerion 신전과
 vocation: 사제
-origin: ARC-원거리소국권
+origin: UNASSIGNED
 b5:
   O: 0.75
   C: 0.56

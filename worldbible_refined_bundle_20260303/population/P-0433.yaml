@@ -1,12 +1,12 @@
 id: P-0433
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 4학년
 mana_color: 적
-tower: 적탑
-major: 화염포격학파
+major: Valerion 신전과
 vocation: 사제
-noble_house: ORG-ARC-HOU-021
+noble_house: ORG-ARC-HOU-006
 b5:
   O: 0.92
   C: 0.57

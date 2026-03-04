@@ -1,12 +1,12 @@
 id: P-0620
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 1학년
 mana_color: 백
-tower: 백탑
 major: 광휘정화학파
 vocation: 마법사
-noble_house: ORG-ARC-HOU-016
+noble_house: ORG-ARC-HOU-015
 b5:
   O: 0.88
   C: 0.75

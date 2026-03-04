@@ -1,0 +1,3 @@
+world_bible/WB-0003_onepage_summary.md
+docs/core_cast_bootstrap_v1.md
+docs/community_map.md

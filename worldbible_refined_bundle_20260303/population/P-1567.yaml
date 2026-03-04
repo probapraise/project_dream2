@@ -1,12 +1,12 @@
 id: P-1567
 background_type: nonhuman
-dorm: 외국·인외동
+crest_vision_holder: false
+dorm: 기사동
 grade: 1학년
 mana_color: 백
-tower: 백탑
-major: 광휘정화학파
+major: 병참·군정과
 vocation: 기사
-race: 고블린
+race: 드워프
 b5:
   O: 0.53
   C: 0.59

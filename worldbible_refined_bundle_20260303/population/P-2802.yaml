@@ -1,12 +1,12 @@
 id: P-2802
 background_type: nonhuman
-dorm: 일반동(동관)
+crest_vision_holder: false
+dorm: 신전동군
 grade: 2학년
 mana_color: 백
-tower: 백탑
-major: 광휘정화학파
+major: Lusenia 신전과
 vocation: 사제
-race: 아쿠아틱
+race: 리자드포크
 b5:
   O: 0.64
   C: 0.60

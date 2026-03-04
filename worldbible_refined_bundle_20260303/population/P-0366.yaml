@@ -1,9 +1,9 @@
 id: P-0366
 background_type: common_noble
-dorm: 일반동(서관)
+crest_vision_holder: false
+dorm: 흑탑 기숙사
 grade: 1학년
 mana_color: 흑
-tower: 흑탑
 major: 침식주술학파
 vocation: 마법사
 b5:

@@ -1,9 +1,9 @@
 id: P-3438
 background_type: common_noble
-dorm: 일반동(서관)
+crest_vision_holder: false
+dorm: 녹탑 기숙사
 grade: 2학년
 mana_color: 녹
-tower: 녹탑
 major: 균사전장학파
 vocation: 마법사
 b5:

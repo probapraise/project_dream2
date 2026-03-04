@@ -1,12 +1,12 @@
 id: P-0760
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 2학년
 mana_color: 적
-tower: 적탑
 major: 화염포격학파
 vocation: 마법사
-noble_house: ORG-ARC-HOU-007
+noble_house: ORG-ARC-HOU-023
 b5:
   O: 0.61
   C: 0.54

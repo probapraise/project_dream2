@@ -1,12 +1,12 @@
 id: P-0739
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 1학년
 mana_color: 녹
-tower: 녹탑
 major: 정령계약학파
 vocation: 마법사
-noble_house: ORG-ARC-HOU-011
+noble_house: ORG-ARC-HOU-019
 b5:
   O: 0.52
   C: 0.85

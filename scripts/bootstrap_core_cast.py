@@ -29,6 +29,16 @@ WEIGHTS = {
     "O": 1.0,
 }
 
+TOWER_DORMS = {
+    "청탑 기숙사",
+    "황탑 기숙사",
+    "적탑 기숙사",
+    "녹탑 기숙사",
+    "백탑 기숙사",
+    "보라탑 기숙사",
+    "흑탑 기숙사",
+}
+
 
 @dataclass(frozen=True)
 class Profile:
@@ -101,10 +111,10 @@ PROFILES: tuple[Profile, ...] = (
         name="마엘 렌포드",
         role="각인학파 실험 파트너",
         background_type="common_noble",
-        dorm="연구·탑동",
+        dorm="ANY_TOWER",
         target={"O": 0.80, "C": 0.86, "E": 0.50, "A": 0.56, "N": 0.42, "DT": 0.03, "NFC": 0.82, "SM": 0.30},
         relation_to_mc="주인공의 프로토타입을 현장 실험 가능한 스펙으로 고도화하는 핵심 조력자",
-        world_anchor="연구·탑동 공방 라인, 룬공학/아카이브 교차 프로젝트",
+        world_anchor="7탑 기숙사군 공방 라인, 룬공학/아카이브 교차 프로젝트",
         desire="각인학파를 실전 툴체인으로 부활시켜 '쓸모없는 학파' 낙인을 벗기는 것",
         fear="실험 실패가 학파 말소 명분으로 사용되는 것",
         flaw="완성도를 올리려다 릴리즈 타이밍을 놓친다",
@@ -122,10 +132,10 @@ PROFILES: tuple[Profile, ...] = (
         name="리안 벨로크",
         role="학내 여론전 플레이어",
         background_type="common_noble",
-        dorm="일반동(서관)",
+        dorm="ANY_NON_VISION",
         target={"O": 0.62, "C": 0.46, "E": 0.84, "A": 0.38, "N": 0.66, "DT": 0.10, "NFC": 0.44, "SM": 0.52},
         relation_to_mc="주인공 이슈를 밈화해 판을 키우지만, 필요하면 즉시 등을 돌리는 가변 동맹",
-        world_anchor="학생회 공보 라인 주변 인맥, 일반동 여론 확산 네트워크",
+        world_anchor="학생회 공보 라인 주변 인맥, 기숙사권역 여론 확산 네트워크",
         desire="자신이 만든 프레임이 학내 공식 의제로 승격되는 것",
         fear="관심의 중심에서 밀려 존재감이 소멸되는 것",
         flaw="확산 속도를 우선해 사실 검증을 건너뛴다",
@@ -141,12 +151,12 @@ PROFILES: tuple[Profile, ...] = (
     Profile(
         core_id="NC-0005",
         name="소하 린데",
-        role="장학생동 대표성 이슈의 얼굴",
+        role="학생생활권 대표성 이슈의 얼굴",
         background_type="commoner",
-        dorm="장학생동",
+        dorm="ANY_NON_VISION",
         target={"O": 0.70, "C": 0.90, "E": 0.35, "A": 0.72, "N": 0.58, "DT": 0.01, "NFC": 0.78, "SM": 0.18},
         relation_to_mc="주인공 플랫폼의 '현장 증언 레이어'를 가장 신뢰하는 실무형 협력자",
-        world_anchor="장학생동 생활 규율, 생활비/실습비 격차 이슈",
+        world_anchor="학생생활권 생활 규율, 생활비/실습비 격차 이슈",
         desire="장학/통금/실습 접근 규칙을 데이터로 공개해 제도 개선을 이끄는 것",
         fear="익명 폭로가 개인 보복으로 돌아와 동료들이 침묵하게 되는 것",
         flaw="정답에 집착해 정치적 타협을 잘 못한다",
@@ -164,10 +174,10 @@ PROFILES: tuple[Profile, ...] = (
         name="타리크 사바르",
         role="조약권/번역권 연결자",
         background_type="foreigner",
-        dorm="외국·인외동",
+        dorm="ANY_NON_VISION",
         target={"O": 0.76, "C": 0.64, "E": 0.60, "A": 0.74, "N": 0.38, "DT": 0.01, "NFC": 0.66, "SM": 0.46},
         relation_to_mc="주인공 시스템을 타문화 문맥으로 번역해 확장하는 국제 연결점",
-        world_anchor="교환/조약 파견 라인, 외국·인외동 갈등 중재",
+        world_anchor="교환/조약 파견 라인, 통합 배정 갈등 중재",
         desire="학술원 내부 규칙과 외부 조약 규격을 양립 가능한 문장으로 정리하는 것",
         fear="번역 오류 하나가 외교 분쟁으로 비화하는 것",
         flaw="갈등을 봉합하려다 핵심 쟁점을 흐릴 때가 있다",
@@ -185,10 +195,10 @@ PROFILES: tuple[Profile, ...] = (
         name="브론 키트스톤",
         role="비인간 공방 네트워크 허브",
         background_type="nonhuman",
-        dorm="연구·탑동",
+        dorm="ANY_TOWER",
         target={"O": 0.84, "C": 0.54, "E": 0.78, "A": 0.48, "N": 0.46, "DT": 0.05, "NFC": 0.62, "SM": 0.40},
         relation_to_mc="주인공 프로토콜을 실제 장비/현장 인터페이스로 바꾸는 제작형 동료",
-        world_anchor="드워프 공방권 네트워크, 연구·탑동 야간 실습 라인",
+        world_anchor="드워프 공방권 네트워크, 7탑 기숙사군 야간 실습 라인",
         desire="인외 제작 기술이 학내 표준에서 주변화되지 않고 독립 규격으로 인정받는 것",
         fear="사고 발생 시 인외 라인이 일괄적으로 배제되는 것",
         flaw="성급한 실험 욕심 때문에 안전 프로토콜을 우회한다",
@@ -202,6 +212,14 @@ PROFILES: tuple[Profile, ...] = (
         narrative_use="사건의 물증(장비/부품/고장흔) 라인을 만들어 플롯의 증거 밀도를 높인다",
     ),
 )
+
+
+def dorm_matches(dorm_filter: str, dorm: str) -> bool:
+    if dorm_filter == "ANY_TOWER":
+        return dorm in TOWER_DORMS
+    if dorm_filter == "ANY_NON_VISION":
+        return dorm != "비전관"
+    return dorm == dorm_filter
 
 
 def parse_args() -> argparse.Namespace:
@@ -257,7 +275,7 @@ def pick_rows(rows: list[dict[str, str]]) -> dict[str, tuple[Profile, dict[str, 
             for row in rows
             if row["status"] == "uninstantiated"
             and row["background_type"] == profile.background_type
-            and row["dorm"] == profile.dorm
+            and dorm_matches(profile.dorm, row["dorm"])
             and row["id"] not in used_ids
         ]
         if not candidates:

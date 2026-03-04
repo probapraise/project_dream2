@@ -1,12 +1,12 @@
 id: P-0087
 background_type: nonhuman
-dorm: 일반동(서관)
+crest_vision_holder: false
+dorm: 황탑 기숙사
 grade: 2학년
 mana_color: 황
-tower: 황탑
 major: 전자유도학파
 vocation: 마법사
-race: 고블린
+race: 비스트킨
 b5:
   O: 0.75
   C: 0.60

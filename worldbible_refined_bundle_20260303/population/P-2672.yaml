@@ -1,10 +1,10 @@
 id: P-2672
 background_type: common_noble
-dorm: 일반동(동관)
+crest_vision_holder: false
+dorm: 기사동
 grade: 4학년
 mana_color: 녹
-tower: 녹탑
-major: 약리전술학파
+major: 기동타격과
 vocation: 기사
 b5:
   O: 0.79

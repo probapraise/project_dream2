@@ -1,12 +1,12 @@
 id: P-0043
 background_type: nonhuman
-dorm: 일반동(동관)
+crest_vision_holder: false
+dorm: 적탑 기숙사
 grade: 연구과정
 mana_color: 적
-tower: 적탑
 major: 화염포격학파
 vocation: 마법사
-race: 고블린
+race: 엘프
 b5:
   O: 0.64
   C: 0.65

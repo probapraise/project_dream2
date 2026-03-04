@@ -1,12 +1,12 @@
 id: P-0735
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 2학년
 mana_color: 황
-tower: 황탑
 major: 전자유도학파
 vocation: 마법사
-noble_house: ORG-ARC-HOU-011
+noble_house: ORG-ARC-HOU-017
 b5:
   O: 0.73
   C: 0.53

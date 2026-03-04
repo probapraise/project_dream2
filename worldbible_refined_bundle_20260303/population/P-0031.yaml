@@ -1,12 +1,12 @@
 id: P-0031
 background_type: nonhuman
-dorm: 일반동(서관)
+crest_vision_holder: false
+dorm: 신전동군
 grade: 3학년
 mana_color: 황
-tower: 황탑
-major: 관성조율학파
+major: 봉인신 신전과
 vocation: 사제
-race: 하플링
+race: 고블린
 b5:
   O: 0.27
   C: 0.55

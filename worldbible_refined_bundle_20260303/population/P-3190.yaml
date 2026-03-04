@@ -1,10 +1,10 @@
 id: P-3190
 background_type: nonhuman
-dorm: 외국·인외동
+crest_vision_holder: false
+dorm: 신전동군
 grade: 1학년
 mana_color: 녹
-tower: 녹탑
-major: 정령계약학파
+major: Valerion 신전과
 vocation: 사제
 race: 고블린
 b5:

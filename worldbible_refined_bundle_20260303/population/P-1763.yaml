@@ -1,9 +1,9 @@
 id: P-1763
 background_type: common_noble
-dorm: 일반동(서관)
+crest_vision_holder: false
+dorm: 황탑 기숙사
 grade: 1학년
 mana_color: 황
-tower: 황탑
 major: 관성조율학파
 vocation: 마법사
 b5:

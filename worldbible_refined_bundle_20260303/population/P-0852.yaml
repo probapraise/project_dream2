@@ -1,12 +1,12 @@
 id: P-0852
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 연구과정
 mana_color: 백
-tower: 백탑
 major: 순백응급학파
 vocation: 마법사
-noble_house: ORG-ARC-HOU-006
+noble_house: ORG-ARC-HOU-004
 b5:
   O: 0.60
   C: 0.65

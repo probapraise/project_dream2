@@ -1,12 +1,12 @@
 id: P-0204
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 2학년
 mana_color: 청
-tower: 청탑
-major: 구속연쇄학파
+major: 방패호위과
 vocation: 기사
-noble_house: ORG-ARC-HOU-021
+noble_house: ORG-ARC-HOU-020
 b5:
   O: 0.82
   C: 0.84

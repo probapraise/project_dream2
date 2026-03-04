@@ -1,12 +1,12 @@
 id: P-1383
 background_type: foreigner
-dorm: 외국·인외동
+crest_vision_holder: false
+dorm: 녹탑 기숙사
 grade: 3학년
 mana_color: 녹
-tower: 녹탑
 major: 약리전술학파
 vocation: 마법사
-origin: SAH-울카자르권
+origin: UNASSIGNED
 b5:
   O: 0.66
   C: 0.58

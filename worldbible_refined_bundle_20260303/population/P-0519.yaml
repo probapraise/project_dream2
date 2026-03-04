@@ -1,12 +1,12 @@
 id: P-0519
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 1학년
 mana_color: 보라
-tower: 보라탑
-major: 전심학파
+major: 지휘참모과
 vocation: 기사
-noble_house: ORG-ARC-HOU-022
+noble_house: ORG-ARC-HOU-005
 b5:
   O: 0.47
   C: 0.88

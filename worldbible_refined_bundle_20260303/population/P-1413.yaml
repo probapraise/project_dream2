@@ -1,12 +1,12 @@
 id: P-1413
 background_type: nonhuman
-dorm: 일반동(서관)
+crest_vision_holder: false
+dorm: 적탑 기숙사
 grade: 2학년
 mana_color: 적
-tower: 적탑
 major: 화염포격학파
 vocation: 마법사
-race: 아쿠아틱
+race: 드워프
 b5:
   O: 0.73
   C: 0.66

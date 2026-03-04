@@ -1,12 +1,12 @@
 id: P-0647
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 4학년
 mana_color: 보라
-tower: 보라탑
 major: 전심학파
 vocation: 마법사
-noble_house: ORG-ARC-HOU-002
+noble_house: ORG-ARC-HOU-023
 b5:
   O: 0.70
   C: 0.32

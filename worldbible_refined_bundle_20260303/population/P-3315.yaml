@@ -1,10 +1,10 @@
 id: P-3315
 background_type: common_noble
-dorm: 장학생동
+crest_vision_holder: false
+dorm: 신전동군
 grade: 2학년
 mana_color: 보라
-tower: 보라탑
-major: 전심학파
+major: Valerion 신전과
 vocation: 사제
 b5:
   O: 0.52

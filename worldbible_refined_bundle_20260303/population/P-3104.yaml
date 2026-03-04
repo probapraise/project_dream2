@@ -1,10 +1,10 @@
 id: P-3104
 background_type: common_noble
-dorm: 일반동(서관)
+crest_vision_holder: false
+dorm: 신전동군
 grade: 4학년
 mana_color: 황
-tower: 황탑
-major: 전자유도학파
+major: Calision 신전과
 vocation: 사제
 b5:
   O: 0.59

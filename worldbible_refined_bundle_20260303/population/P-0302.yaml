@@ -1,12 +1,12 @@
 id: P-0302
 background_type: nonhuman
-dorm: 일반동(서관)
+crest_vision_holder: false
+dorm: 기사동
 grade: 연구과정
 mana_color: 백
-tower: 백탑
-major: 순백응급학파
+major: 궁노사격과
 vocation: 기사
-race: 드워프
+race: 엘프
 b5:
   O: 0.61
   C: 0.22

@@ -1,12 +1,12 @@
 id: P-0330
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 2학년
 mana_color: 백
-tower: 백탑
 major: 순백응급학파
 vocation: 마법사
-noble_house: ORG-ARC-HOU-002
+noble_house: ORG-ARC-HOU-016
 b5:
   O: 0.69
   C: 0.36

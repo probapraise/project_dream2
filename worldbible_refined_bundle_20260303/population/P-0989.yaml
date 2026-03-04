@@ -1,12 +1,12 @@
 id: P-0989
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 3학년
 mana_color: 적
-tower: 적탑
-major: 폭연연성학파
+major: 지휘참모과
 vocation: 기사
-noble_house: ORG-ARC-HOU-024
+noble_house: ORG-ARC-HOU-008
 b5:
   O: 0.83
   C: 0.76

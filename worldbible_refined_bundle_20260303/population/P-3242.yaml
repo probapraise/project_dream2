@@ -1,9 +1,9 @@
 id: P-3242
 background_type: common_noble
-dorm: 일반동(동관)
+crest_vision_holder: false
+dorm: 청탑 기숙사
 grade: 1학년
 mana_color: 청
-tower: 청탑
 major: 구속연쇄학파
 vocation: 마법사
 b5:

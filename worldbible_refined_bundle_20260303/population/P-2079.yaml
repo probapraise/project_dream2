@@ -1,12 +1,12 @@
 id: P-2079
 background_type: nonhuman
-dorm: 일반동(서관)
+crest_vision_holder: false
+dorm: 신전동군
 grade: 2학년
 mana_color: 흑
-tower: 흑탑
-major: 침식주술학파
+major: Valerion 신전과
 vocation: 사제
-race: 고블린
+race: 하플링
 b5:
   O: 0.66
   C: 0.72

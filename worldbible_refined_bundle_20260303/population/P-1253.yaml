@@ -1,10 +1,10 @@
 id: P-1253
 background_type: nonhuman
-dorm: 장학생동
+crest_vision_holder: false
+dorm: 기사동
 grade: 4학년
 mana_color: 보라
-tower: 보라탑
-major: 전심학파
+major: 지휘참모과
 vocation: 기사
 race: 고블린
 b5:

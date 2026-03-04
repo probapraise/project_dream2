@@ -1,12 +1,12 @@
 id: P-0121
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 2학년
 mana_color: 청
-tower: 청탑
-major: 구속연쇄학파
+major: Silvaria 신전과
 vocation: 사제
-noble_house: ORG-ARC-HOU-014
+noble_house: ORG-ARC-HOU-018
 b5:
   O: 0.72
   C: 0.60

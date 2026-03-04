@@ -1,12 +1,12 @@
 id: P-3426
 background_type: nonhuman
-dorm: 장학생동
+crest_vision_holder: false
+dorm: 황탑 기숙사
 grade: 2학년
 mana_color: 황
-tower: 황탑
 major: 관성조율학파
 vocation: 마법사
-race: 엘프
+race: 하플링
 b5:
   O: 0.77
   C: 0.54

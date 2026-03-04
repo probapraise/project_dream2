@@ -1,12 +1,12 @@
 id: P-3401
 background_type: nonhuman
-dorm: 장학생동
+crest_vision_holder: false
+dorm: 신전동군
 grade: 1학년
 mana_color: 청
-tower: 청탑
-major: 방벽수호학파
+major: Lusenia 신전과
 vocation: 사제
-race: 드워프
+race: 엘프
 b5:
   O: 0.65
   C: 0.64

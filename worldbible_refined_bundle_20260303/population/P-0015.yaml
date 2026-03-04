@@ -1,12 +1,12 @@
 id: P-0015
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 3학년
 mana_color: 황
-tower: 황탑
-major: 공성진동학파
+major: 검창전술과
 vocation: 기사
-noble_house: ORG-ARC-HOU-020
+noble_house: ORG-ARC-HOU-017
 b5:
   O: 0.66
   C: 0.63

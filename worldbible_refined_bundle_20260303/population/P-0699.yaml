@@ -1,12 +1,12 @@
 id: P-0699
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 3학년
 mana_color: 청
-tower: 청탑
-major: 방벽수호학파
+major: Calision 신전과
 vocation: 사제
-noble_house: ORG-ARC-HOU-023
+noble_house: ORG-ARC-HOU-006
 b5:
   O: 0.73
   C: 0.39

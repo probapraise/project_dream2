@@ -1,0 +1,2 @@
+world_bible/WB-0003_onepage_summary.md
+docs/community_map.md

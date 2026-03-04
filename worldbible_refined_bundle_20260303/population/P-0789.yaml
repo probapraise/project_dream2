@@ -1,12 +1,12 @@
 id: P-0789
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 1학년
 mana_color: 백
-tower: 백탑
-major: 순백응급학파
+major: 기동타격과
 vocation: 기사
-noble_house: ORG-ARC-HOU-016
+noble_house: ORG-ARC-HOU-024
 b5:
   O: 0.82
   C: 0.49

@@ -1,12 +1,12 @@
 id: P-0816
 background_type: nonhuman
-dorm: 연구·탑동
+crest_vision_holder: false
+dorm: 신전동군
 grade: 3학년
 mana_color: 황
-tower: 황탑
-major: 전자유도학파
+major: Calision 신전과
 vocation: 사제
-race: 비스트킨
+race: 엘프
 b5:
   O: 0.76
   C: 0.80

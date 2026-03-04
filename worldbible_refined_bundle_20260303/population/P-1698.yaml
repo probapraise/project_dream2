@@ -1,12 +1,12 @@
 id: P-1698
 background_type: nonhuman
-dorm: 장학생동
+crest_vision_holder: false
+dorm: 기사동
 grade: 4학년
 mana_color: 녹
-tower: 녹탑
-major: 정령계약학파
+major: 기동타격과
 vocation: 기사
-race: 드워프
+race: 고블린
 b5:
   O: 0.87
   C: 0.51

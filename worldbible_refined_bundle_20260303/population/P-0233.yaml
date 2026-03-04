@@ -1,12 +1,12 @@
 id: P-0233
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 1학년
 mana_color: 보라
-tower: 보라탑
 major: 심상환영학파
 vocation: 마법사
-noble_house: ORG-ARC-HOU-004
+noble_house: ORG-ARC-HOU-009
 b5:
   O: 0.72
   C: 0.48

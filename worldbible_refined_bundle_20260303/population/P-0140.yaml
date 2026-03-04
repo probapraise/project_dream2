@@ -1,10 +1,10 @@
 id: P-0140
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 3학년
 mana_color: 황
-tower: 황탑
-major: 관성조율학파
+major: Valerion 신전과
 vocation: 사제
 noble_house: ORG-ARC-HOU-003
 b5:

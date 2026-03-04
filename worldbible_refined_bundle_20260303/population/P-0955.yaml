@@ -1,10 +1,10 @@
 id: P-0955
 background_type: common_noble
-dorm: 장학생동
+crest_vision_holder: false
+dorm: 기사동
 grade: 2학년
 mana_color: 적
-tower: 적탑
-major: 폭연연성학파
+major: 중장돌격과
 vocation: 기사
 b5:
   O: 0.70

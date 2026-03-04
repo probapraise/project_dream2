@@ -31,10 +31,11 @@
 - narrative_state: docs/narrative_state.md
 - style_bible: docs/style_bible.md
 - community_memory: docs/community_memory.md
+- community_grammar_layer_b: docs/community_grammar_layer_b.md
 - quarantine_index: quarantine/README.md
 
 ## Recent changes (last 6)
-- 2026-03-04 PR-BOOTSTRAP-0006: P-* 슬롯 기반 핵심 인물 7명 선제 조형(NC-0001~0007), core_cast 카드/요약 생성
+- 2026-03-04 PR-BOOTSTRAP-0006: [RESET] NC-* 코어 캐스트 전면 삭제 — 생성 규칙 재설계 진행 중
 - 2026-03-04 PR-BOOTSTRAP-0002-RETIRE: 기존 CH-* 캐릭터 카드/보이스팩/퍼소나 상태 체계 폐기(영구 삭제), P-* 동적 생성 체계로 전환
 - 2026-03-03 PR-BOOTSTRAP-0003: 커뮤니티 구조(각인광장 B01~B18) -> community_map + layer_b 18개 초안 생성
 - 2026-03-04 PR-BOOTSTRAP-0004: character_index_v2를 P-* SSOT 기준으로 재정렬

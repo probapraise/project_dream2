@@ -1,12 +1,12 @@
 id: P-0632
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 1학년
 mana_color: 황
-tower: 황탑
 major: 관성조율학파
 vocation: 마법사
-noble_house: ORG-ARC-HOU-014
+noble_house: ORG-ARC-HOU-003
 b5:
   O: 0.48
   C: 0.78

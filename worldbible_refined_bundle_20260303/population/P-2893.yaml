@@ -1,12 +1,12 @@
 id: P-2893
 background_type: foreigner
-dorm: 외국·인외동
+crest_vision_holder: false
+dorm: 신전동군
 grade: 3학년
 mana_color: 백
-tower: 백탑
-major: 순백응급학파
+major: Lusenia 신전과
 vocation: 사제
-origin: SAH-울카자르권
+origin: UNASSIGNED
 b5:
   O: 0.78
   C: 0.36

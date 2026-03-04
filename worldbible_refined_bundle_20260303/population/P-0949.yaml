@@ -1,12 +1,12 @@
 id: P-0949
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 4학년
 mana_color: 적
-tower: 적탑
-major: 폭연연성학파
+major: Calision 신전과
 vocation: 사제
-noble_house: ORG-ARC-HOU-009
+noble_house: ORG-ARC-HOU-021
 b5:
   O: 0.54
   C: 0.56

@@ -1,12 +1,12 @@
 id: P-0379
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 2학년
 mana_color: 청
-tower: 청탑
 major: 방벽수호학파
 vocation: 마법사
-noble_house: ORG-ARC-HOU-018
+noble_house: ORG-ARC-HOU-022
 b5:
   O: 0.61
   C: 0.53

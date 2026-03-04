@@ -1,12 +1,12 @@
 id: P-1487
 background_type: foreigner
-dorm: 외국·인외동
+crest_vision_holder: false
+dorm: 신전동군
 grade: 4학년
 mana_color: 청
-tower: 청탑
-major: 방벽수호학파
+major: Calision 신전과
 vocation: 사제
-origin: ARC-원거리소국권
+origin: UNASSIGNED
 b5:
   O: 0.62
   C: 0.31

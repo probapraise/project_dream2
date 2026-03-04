@@ -1,12 +1,12 @@
 id: P-1186
 background_type: foreigner
-dorm: 외국·인외동
+crest_vision_holder: false
+dorm: 백탑 기숙사
 grade: 2학년
 mana_color: 백
-tower: 백탑
 major: 광휘정화학파
 vocation: 마법사
-origin: 출신불명
+origin: UNASSIGNED
 b5:
   O: 0.92
   C: 0.65

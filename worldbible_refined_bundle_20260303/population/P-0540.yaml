@@ -1,12 +1,12 @@
 id: P-0540
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 2학년
 mana_color: 적
-tower: 적탑
 major: 폭연연성학파
 vocation: 마법사
-noble_house: ORG-ARC-HOU-013
+noble_house: ORG-ARC-HOU-024
 b5:
   O: 0.74
   C: 0.50

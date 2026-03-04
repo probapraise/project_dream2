@@ -67,7 +67,7 @@
 3. 필요 시 파일 수정
 4. (삭제가 있으면) `world_ops/sessions/<change_id>_deletion_gate.md` 작성
 5. (삭제가 있으면) `bash scripts/world_ops_delete_guard.sh <change_id>`
-6. `bash scripts/world_ops_audit_bundle.sh`
+6. `bash scripts/world_ops_audit_bundle.sh` (인덱스/프론트매터 + 정본 용어/CSV 스키마 충돌 검사)
 7. `world_change_log.md` 갱신
 
 ## 시뮬/집필 실행 전 필수 게이트

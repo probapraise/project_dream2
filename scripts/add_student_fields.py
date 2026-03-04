@@ -3,10 +3,10 @@
 P-* 학생 슬롯 추가 필드 배정 스크립트
 
 [추가 필드]
+  crest_vision_holder : 문장비전 보유 여부 (true/false)
   grade       : 학년 (1학년/2학년/3학년/4학년/연구과정)
   mana_color  : 마나 주색 (청/황/적/녹/백/보라/흑)
-  tower       : 탑 소속 (청탑/황탑/적탑/녹탑/백탑/보라탑/흑탑)  ← mana_color와 동일 생성
-  major       : 주전공 학파 (탑별 극단 배분, 각인학파=1명)
+  major       : 주전공 (마법사=탑별 학파 / 기사=기사 10과 / 사제=신전 7과)
   vocation    : 직능 (마법사/기사/사제)
   noble_house : signature_noble 160명만 ORG-ARC-HOU-001~024
   race        : nonhuman 250명만 종족명
@@ -14,8 +14,11 @@ P-* 학생 슬롯 추가 필드 배정 스크립트
 
 [배분]
   grade:   1학년 900 / 2학년 900 / 3학년 850 / 4학년 800 / 연구과정 150
-  tower:   청900 / 황650 / 적600 / 녹515 / 백450 / 보라428 / 흑57
-  major:   탑별 학파 극단 배분 (아래 TOWER_MAJORS 참조)
+  mana_color(내부 탑분포): 청900 / 황650 / 적600 / 녹515 / 백450 / 보라428 / 흑57
+  major:   vocation별 분기
+           - 마법사: 탑별 학파 극단 배분 (아래 TOWER_MAJORS 참조)
+           - 기사: 기사 10과 (탑 가중치 기반)
+           - 사제: 신전 7과 (탑 가중치 기반)
   vocation: 마법사2220 / 기사1020 / 사제360
 
 [재현성]
@@ -30,6 +33,21 @@ import numpy as np
 import yaml
 
 SEED = 42
+
+
+def default_crest_vision_holder(background_type: str) -> bool:
+    return background_type == "signature_noble"
+
+
+def normalize_crest_vision_holder(value: object, background_type: str) -> bool:
+    if isinstance(value, bool):
+        return value
+    text = str(value).strip().lower()
+    if text in {"true", "1", "yes", "y"}:
+        return True
+    if text in {"false", "0", "no", "n"}:
+        return False
+    return default_crest_vision_holder(background_type)
 
 # ---------------------------------------------------------------------------
 # 배분 정의
@@ -72,12 +90,56 @@ TOWER_MAJORS = {
     "보라탑": [("전심학파",   300), ("심상환영학파",  95), ("몽유침잠학파",   32), ("각인학파",  1)],
     "흑탑":  [("침식주술학파",  40), ("흑영잠행학파",  17)],
 }
+COLOR_TO_TOWER = {v: k for k, v in MANA_COLOR_MAP.items()}
 
 VOCATION_QUOTAS = [
     ("마법사", 2220),
     ("기사",   1020),
     ("사제",    360),
 ]
+
+KNIGHT_MAJORS = [
+    "검창전술과",
+    "방패호위과",
+    "중장돌격과",
+    "기동타격과",
+    "궁노사격과",
+    "기마·마수운용과",
+    "공성·공병과",
+    "대마전투과",
+    "지휘참모과",
+    "병참·군정과",
+]
+
+PRIEST_MAJORS = [
+    "Valerion 신전과",
+    "Silvaria 신전과",
+    "Lusenia 신전과",
+    "Calision 신전과",
+    "Enosian 신전과",
+    "Vesperian 신전과",
+    "봉인신 신전과",
+]
+
+KNIGHT_WEIGHTS_BY_TOWER = {
+    "적탑":  [0.24, 0.04, 0.18, 0.16, 0.09, 0.07, 0.12, 0.06, 0.02, 0.02],
+    "황탑":  [0.18, 0.05, 0.03, 0.16, 0.14, 0.02, 0.13, 0.07, 0.12, 0.10],
+    "청탑":  [0.10, 0.24, 0.04, 0.04, 0.05, 0.02, 0.08, 0.16, 0.15, 0.12],
+    "녹탑":  [0.10, 0.08, 0.02, 0.18, 0.12, 0.23, 0.07, 0.05, 0.04, 0.11],
+    "백탑":  [0.08, 0.22, 0.03, 0.04, 0.10, 0.03, 0.06, 0.20, 0.13, 0.11],
+    "보라탑": [0.06, 0.08, 0.03, 0.10, 0.14, 0.02, 0.05, 0.18, 0.24, 0.10],
+    "흑탑":  [0.10, 0.04, 0.03, 0.25, 0.11, 0.02, 0.16, 0.20, 0.06, 0.03],
+}
+
+PRIEST_WEIGHTS_BY_TOWER = {
+    "적탑":  [0.50, 0.05, 0.08, 0.10, 0.05, 0.20, 0.02],
+    "황탑":  [0.45, 0.05, 0.08, 0.25, 0.05, 0.10, 0.02],
+    "청탑":  [0.05, 0.25, 0.10, 0.45, 0.08, 0.05, 0.02],
+    "녹탑":  [0.05, 0.45, 0.30, 0.10, 0.05, 0.03, 0.02],
+    "백탑":  [0.03, 0.10, 0.45, 0.30, 0.07, 0.03, 0.02],
+    "보라탑": [0.05, 0.05, 0.08, 0.15, 0.50, 0.15, 0.02],
+    "흑탑":  [0.04, 0.03, 0.03, 0.05, 0.15, 0.60, 0.10],
+}
 
 # 16가문 × 7명 + 8가문 × 6명 = 160
 NOBLE_HOUSES = [f"ORG-ARC-HOU-{i:03d}" for i in range(1, 25)]
@@ -106,6 +168,10 @@ assert sum(q for _, q in RACES) == 250, "race 합계 != 250"
 for tower, majors in TOWER_MAJORS.items():
     tower_q = dict(TOWER_QUOTAS)[tower]
     assert sum(q for _, q in majors) == tower_q, f"{tower} major 합계 != {tower_q}"
+for w in KNIGHT_WEIGHTS_BY_TOWER.values():
+    assert abs(sum(w) - 1.0) < 1e-9
+for w in PRIEST_WEIGHTS_BY_TOWER.values():
+    assert abs(sum(w) - 1.0) < 1e-9
 
 
 # ---------------------------------------------------------------------------
@@ -141,10 +207,10 @@ def write_yaml(path: Path, s: dict) -> None:
     lines = [
         f"id: {s['id']}",
         f"background_type: {s['background_type']}",
+        f"crest_vision_holder: {'true' if bool(s['crest_vision_holder']) else 'false'}",
         f"dorm: {s['dorm']}",
         f"grade: {s['grade']}",
         f"mana_color: {s['mana_color']}",
-        f"tower: {s['tower']}",
         f"major: {s['major']}",
         f"vocation: {s['vocation']}",
     ]
@@ -187,24 +253,27 @@ def update_csv(slots: list[dict], csv_path: Path) -> None:
     # id → slot 매핑
     slot_map = {s["id"]: s for s in slots}
 
-    new_cols = ["grade", "mana_color", "tower", "major", "vocation",
+    new_cols = ["crest_vision_holder", "grade", "mana_color", "major", "vocation",
                 "noble_house", "race", "origin"]
     for col in new_cols:
         if col not in old_fields:
             old_fields.append(col)
+    if "tower" in old_fields:
+        old_fields.remove("tower")
 
     for row in rows:
         s = slot_map.get(row.get("id", ""))
         if not s:
             continue
+        row["crest_vision_holder"] = "true" if bool(s.get("crest_vision_holder", False)) else "false"
         row["grade"]      = s.get("grade", "")
         row["mana_color"] = s.get("mana_color", "")
-        row["tower"]      = s.get("tower", "")
         row["major"]      = s.get("major", "")
         row["vocation"]   = s.get("vocation", "")
         row["noble_house"] = s.get("noble_house", "")
         row["race"]       = s.get("race", "")
         row["origin"]     = s.get("origin", "")
+        row.pop("tower", None)
 
     with csv_path.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=old_fields)
@@ -230,17 +299,33 @@ def print_stats(slots: list[dict]) -> None:
 
     print("\n" + "=" * 50)
     show("학년 배정",   Counter(s["grade"]    for s in slots), GRADE_QUOTAS)
-    show("탑 배정",     Counter(s["tower"]    for s in slots), TOWER_QUOTAS)
+    tower_counter = Counter(COLOR_TO_TOWER.get(s["mana_color"], "UNASSIGNED") for s in slots)
+    show("탑 배정(내부)", tower_counter, TOWER_QUOTAS)
     show("직능 배정",   Counter(s["vocation"] for s in slots), VOCATION_QUOTAS)
 
-    print("\n[학파 배정]")
+    print("\n[마법사 학파 배정]")
     major_counter = Counter(s["major"] for s in slots)
     for tower, majors in TOWER_MAJORS.items():
         print(f"  {tower}:")
         for label, quota in majors:
-            actual = major_counter[label]
-            flag = "" if actual == quota else " !"
-            print(f"    {label:16s}: {actual:4d} / {quota}{flag}")
+            actual = sum(
+                1
+                for s in slots
+                if COLOR_TO_TOWER.get(s["mana_color"]) == tower
+                and s["vocation"] == "마법사"
+                and s["major"] == label
+            )
+            print(f"    {label:16s}: {actual:4d} / tower_quota={quota}")
+
+    print("\n[기사 과정 배정]")
+    knight_counter = Counter(s["major"] for s in slots if s["vocation"] == "기사")
+    for label in KNIGHT_MAJORS:
+        print(f"  {label:16s}: {knight_counter[label]:4d}")
+
+    print("\n[사제 신전과 배정]")
+    priest_counter = Counter(s["major"] for s in slots if s["vocation"] == "사제")
+    for label in PRIEST_MAJORS:
+        print(f"  {label:16s}: {priest_counter[label]:4d}")
 
     sig = [s for s in slots if s.get("background_type") == "signature_noble"]
     if sig:
@@ -289,6 +374,11 @@ def main() -> int:
     for yf in yaml_files:
         s = load_yaml(yf)
         if s is not None:
+            bg = str(s.get("background_type", ""))
+            s["crest_vision_holder"] = normalize_crest_vision_holder(
+                s.get("crest_vision_holder"),
+                bg,
+            )
             s["_path"] = yf
             slots.append(s)
     print(f"  로드 성공: {len(slots)}개")
@@ -307,31 +397,42 @@ def main() -> int:
     for rank, slot_i in enumerate(idx):
         slots[slot_i]["grade"] = grade_seq[rank]
 
-    # --- tower / mana_color 배정 (셔플 2 — grade와 독립) ---
+    # --- mana_color 배정 (셔플 2 — grade와 독립) ---
     rng.shuffle(idx)
     tower_seq = expand_quotas(TOWER_QUOTAS)
     tower_by_slot: dict[int, str] = {}
     for rank, slot_i in enumerate(idx):
         tower = tower_seq[rank]
-        slots[slot_i]["tower"]      = tower
         slots[slot_i]["mana_color"] = MANA_COLOR_MAP[tower]
         tower_by_slot[slot_i] = tower
 
-    # --- major 배정 (tower별, tower 셔플 순서 내 상대 위치 활용) ---
+    # --- major 임시 배정 (tower별 전체 슬롯 기준) ---
+    # 이후 vocation 배정 후 기사/사제는 직능 전용 major로 재배정한다.
     tower_indices: dict[str, list[int]] = {t: [] for t, _ in TOWER_QUOTAS}
     for rank, slot_i in enumerate(idx):
         tower_indices[tower_by_slot[slot_i]].append(slot_i)
-
     for tower, t_idx_list in tower_indices.items():
         major_seq = expand_quotas(TOWER_MAJORS[tower])
         for i, slot_i in enumerate(t_idx_list):
             slots[slot_i]["major"] = major_seq[i]
 
-    # --- vocation 배정 (셔플 3 — tower/grade와 독립) ---
+    # --- vocation 배정 (셔플 3 — mana_color/grade와 독립) ---
     rng.shuffle(idx)
     voc_seq = expand_quotas(VOCATION_QUOTAS)
     for rank, slot_i in enumerate(idx):
         slots[slot_i]["vocation"] = voc_seq[rank]
+
+    # --- 기사/사제 major 재배정 (직능 전용 과정) ---
+    for s in slots:
+        tower = COLOR_TO_TOWER.get(s["mana_color"], "")
+        if s["vocation"] == "기사":
+            weights = np.array(KNIGHT_WEIGHTS_BY_TOWER[tower], dtype=float)
+            choice_idx = int(rng.choice(len(KNIGHT_MAJORS), p=weights))
+            s["major"] = KNIGHT_MAJORS[choice_idx]
+        elif s["vocation"] == "사제":
+            weights = np.array(PRIEST_WEIGHTS_BY_TOWER[tower], dtype=float)
+            choice_idx = int(rng.choice(len(PRIEST_MAJORS), p=weights))
+            s["major"] = PRIEST_MAJORS[choice_idx]
 
     # --- noble_house 배정 (signature_noble만) ---
     sig_indices = [i for i, s in enumerate(slots)

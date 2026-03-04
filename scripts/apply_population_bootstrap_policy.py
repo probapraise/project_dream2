@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Apply bootstrap population policy to P-slot CSV/YAML.
 
-Policy (v2026-03-04):
+Policy (current):
 1) Background counts:
    - signature_noble: 160
    - common_noble: 2870
@@ -9,19 +9,16 @@ Policy (v2026-03-04):
    - foreigner: 120
    - nonhuman: 250
 2) Dorm assignment:
-   - 일반동(동관): 1200
-   - 일반동(서관): 1140
-   - 장학생동: 620
-   - 비전관: 160 (signature_noble only)
-   - 연구·탑동: 280
-   - 외국·인외동: 200
+   - crest_vision_holder=true -> 비전관
+   - crest_vision_holder=false + vocation=마법사 -> <mana_color>탑 기숙사
+   - crest_vision_holder=false + vocation=기사 -> 기사동
+   - crest_vision_holder=false + vocation=사제 -> 신전동군
 """
 
 from __future__ import annotations
 
 import argparse
 import csv
-import random
 import sys
 from collections import Counter
 from pathlib import Path
@@ -35,37 +32,53 @@ BACKGROUND_TARGETS = (
     ("nonhuman", 250),
 )
 
-DORM_TARGETS = (
-    ("일반동(동관)", 1200),
-    ("일반동(서관)", 1140),
-    ("장학생동", 620),
-    ("비전관", 160),
-    ("연구·탑동", 280),
-    ("외국·인외동", 200),
+COLOR_DORM = {
+    "청": "청탑 기숙사",
+    "황": "황탑 기숙사",
+    "적": "적탑 기숙사",
+    "녹": "녹탑 기숙사",
+    "백": "백탑 기숙사",
+    "보라": "보라탑 기숙사",
+    "흑": "흑탑 기숙사",
+}
+
+DORM_ORDER = (
+    "비전관",
+    "청탑 기숙사",
+    "황탑 기숙사",
+    "적탑 기숙사",
+    "녹탑 기숙사",
+    "백탑 기숙사",
+    "보라탑 기숙사",
+    "흑탑 기숙사",
+    "기사동",
+    "신전동군",
 )
 
-# Deterministic operational matrix aligned to WB-0015 13.6.
-BACKGROUND_DORM_TARGETS = {
-    "signature_noble": {"비전관": 160},
-    "common_noble": {"일반동(동관)": 1150, "일반동(서관)": 1100, "장학생동": 370, "연구·탑동": 250},
-    "commoner": {"장학생동": 200},
-    "foreigner": {"외국·인외동": 120},
-    "nonhuman": {"일반동(동관)": 50, "일반동(서관)": 40, "장학생동": 50, "연구·탑동": 30, "외국·인외동": 80},
+LEGACY_DORMS = {
+    "일반동(동관)",
+    "일반동(서관)",
+    "장학생동",
+    "연구·탑동",
+    "외국·인외동",
 }
 
-BACKGROUND_SEED_OFFSET = {
-    "signature_noble": 11,
-    "common_noble": 23,
-    "commoner": 37,
-    "foreigner": 41,
-    "nonhuman": 53,
-}
+
+def parse_bool(value: object) -> bool | None:
+    if isinstance(value, bool):
+        return value
+    text = str(value).strip().lower()
+    if text in {"true", "1", "yes", "y"}:
+        return True
+    if text in {"false", "0", "no", "n"}:
+        return False
+    return None
 
 
 def parse_args() -> argparse.Namespace:
     repo_root = Path(__file__).resolve().parents[1]
     bundle_root = repo_root / "worldbible_refined_bundle_20260303"
-    parser = argparse.ArgumentParser(description="Apply bootstrap background+dorm policy")
+    parser = argparse.ArgumentParser(description="Apply bootstrap background+dorm policy (current)")
     parser.add_argument(
         "--csv-path",
         type=Path,
@@ -78,7 +91,7 @@ def parse_args() -> argparse.Namespace:
         default=bundle_root / "population",
         help="Population YAML directory",
     )
-    parser.add_argument("--seed", type=int, default=20260304, help="Random seed for deterministic ID shuffling")
+    parser.add_argument("--seed", type=int, default=20260304, help="Reserved compatibility arg (unused)")
     return parser.parse_args()
 
 
@@ -124,41 +137,58 @@ def rebalance_backgrounds(rows: list[dict[str, str]]) -> None:
             )
 
 
-def assign_dorms(rows: list[dict[str, str]], seed: int) -> None:
-    counts = Counter(row["background_type"] for row in rows)
-    for bg, matrix in BACKGROUND_DORM_TARGETS.items():
-        required = sum(matrix.values())
-        have = counts.get(bg, 0)
-        if have != required:
-            raise RuntimeError(f"Background {bg} count mismatch: have={have}, required_by_matrix={required}")
-
-    row_by_id = {row["id"]: row for row in rows}
-    ids_by_bg: dict[str, list[str]] = {}
-    for bg, _ in BACKGROUND_TARGETS:
-        ids = [r["id"] for r in rows if r["background_type"] == bg]
-        rng = random.Random(seed + BACKGROUND_SEED_OFFSET[bg])
-        rng.shuffle(ids)
-        ids_by_bg[bg] = ids
-
+def ensure_crest_vision_holder(rows: list[dict[str, str]]) -> int:
+    backfilled = 0
     for row in rows:
-        row["dorm"] = ""
+        crest = parse_bool(row.get("crest_vision_holder", ""))
+        if crest is None:
+            crest = row.get("background_type", "") == "signature_noble"
+            backfilled += 1
+        row["crest_vision_holder"] = "true" if crest else "false"
+    return backfilled
 
-    for bg, matrix in BACKGROUND_DORM_TARGETS.items():
-        ids = ids_by_bg[bg]
-        cursor = 0
-        for dorm, n in matrix.items():
-            for pid in ids[cursor : cursor + n]:
-                row_by_id[pid]["dorm"] = dorm
-            cursor += n
+
+def assign_dorms(rows: list[dict[str, str]], seed: int) -> None:
+    _ = seed
+    for row in rows:
+        holder = parse_bool(row.get("crest_vision_holder", ""))
+        if holder is None:
+            raise RuntimeError(f"invalid crest_vision_holder: id={row.get('id')} value={row.get('crest_vision_holder')!r}")
+
+        if holder:
+            row["dorm"] = "비전관"
+            continue
+
+        vocation = row.get("vocation", "")
+        if vocation == "마법사":
+            mana_color = row.get("mana_color", "")
+            dorm = COLOR_DORM.get(mana_color)
+            if dorm is None:
+                raise RuntimeError(
+                    f"Cannot assign mage dorm without valid mana_color: id={row.get('id')} mana_color={mana_color!r}"
+                )
+            row["dorm"] = dorm
+            continue
+        if vocation == "기사":
+            row["dorm"] = "기사동"
+            continue
+        if vocation == "사제":
+            row["dorm"] = "신전동군"
+            continue
+
+        raise RuntimeError(f"Unsupported vocation for dorm assignment: id={row.get('id')} vocation={vocation!r}")
 
     dorm_counts = Counter(row["dorm"] for row in rows)
-    for dorm, target in DORM_TARGETS:
-        if dorm_counts.get(dorm, 0) != target:
-            raise RuntimeError(f"Dorm allocation failed for {dorm}: expected {target}, got {dorm_counts.get(dorm, 0)}")
+    for legacy in LEGACY_DORMS:
+        if dorm_counts.get(legacy, 0) > 0:
+            raise RuntimeError(f"Legacy dorm label detected after assignment: {legacy}")
 
     for row in rows:
-        if row["dorm"] == "비전관" and row["background_type"] != "signature_noble":
-            raise RuntimeError(f"Invalid non-signature assignment to 비전관: {row['id']}")
+        holder = parse_bool(row.get("crest_vision_holder", ""))
+        if holder is True and row["dorm"] != "비전관":
+            raise RuntimeError(f"Invalid crest-holder dorm: {row['id']} -> {row['dorm']}")
+        if holder is False and row["dorm"] == "비전관":
+            raise RuntimeError(f"Invalid non-holder assignment to 비전관: {row['id']}")
 
 
 def write_csv(csv_path: Path, rows: list[dict[str, str]]) -> None:
@@ -181,21 +211,29 @@ def write_csv(csv_path: Path, rows: list[dict[str, str]]) -> None:
         writer.writerows(rows_sorted)
 
 
-def update_yaml(path: Path, background_type: str, dorm: str) -> None:
+def update_yaml(path: Path, background_type: str, crest_vision_holder: str, dorm: str) -> None:
     if not path.is_file():
         raise FileNotFoundError(path)
     lines = path.read_text(encoding="utf-8").splitlines()
     has_dorm = any(line.startswith("dorm:") for line in lines)
+    has_crest = any(line.startswith("crest_vision_holder:") for line in lines)
 
     out: list[str] = []
     replaced_bg = False
+    replaced_crest = False
     replaced_dorm = False
     for line in lines:
         if line.startswith("background_type:"):
             out.append(f"background_type: {background_type}")
             replaced_bg = True
+            if not has_crest:
+                out.append(f"crest_vision_holder: {crest_vision_holder}")
             if not has_dorm:
                 out.append(f"dorm: {dorm}")
+            continue
+        if line.startswith("crest_vision_holder:"):
+            out.append(f"crest_vision_holder: {crest_vision_holder}")
+            replaced_crest = True
             continue
         if line.startswith("dorm:"):
             out.append(f"dorm: {dorm}")
@@ -205,6 +243,8 @@ def update_yaml(path: Path, background_type: str, dorm: str) -> None:
 
     if not replaced_bg:
         raise RuntimeError(f"background_type not found in {path}")
+    if has_crest and not replaced_crest:
+        raise RuntimeError(f"crest_vision_holder replacement failed in {path}")
     if has_dorm and not replaced_dorm:
         raise RuntimeError(f"dorm replacement failed in {path}")
 
@@ -219,8 +259,10 @@ def print_summary(rows: list[dict[str, str]]) -> None:
     for bg, _ in BACKGROUND_TARGETS:
         print(f"  {bg}: {bg_counts.get(bg, 0)}")
     print("Dorm counts:")
-    for dorm, _ in DORM_TARGETS:
+    for dorm in DORM_ORDER:
         print(f"  {dorm}: {dorm_counts.get(dorm, 0)}")
+    for dorm in sorted(k for k in dorm_counts.keys() if k not in DORM_ORDER):
+        print(f"  {dorm}: {dorm_counts[dorm]}")
 
 
 def main() -> int:
@@ -236,20 +278,27 @@ def main() -> int:
     if len(rows) != 3600:
         print(f"Unexpected row count: {len(rows)} (expected 3600)", file=sys.stderr)
         return 2
-    required = {"id", "background_type"}
+    required = {"id", "background_type", "vocation", "mana_color"}
     if not required.issubset(set(rows[0].keys())):
         print(f"CSV missing required columns: {required}", file=sys.stderr)
         return 2
 
     rebalance_backgrounds(rows)
+    crest_backfilled = ensure_crest_vision_holder(rows)
     assign_dorms(rows, seed=args.seed)
     write_csv(args.csv_path, rows)
 
     for row in rows:
         yaml_path = args.population_dir / f"{row['id']}.yaml"
-        update_yaml(yaml_path, row["background_type"], row["dorm"])
+        update_yaml(
+            yaml_path,
+            row["background_type"],
+            row["crest_vision_holder"],
+            row["dorm"],
+        )
 
     print_summary(rows)
+    print(f"crest_backfilled={crest_backfilled}")
     print(f"updated_csv={args.csv_path}")
     print(f"updated_yaml_dir={args.population_dir}")
     return 0

@@ -1,10 +1,10 @@
 id: P-1057
 background_type: common_noble
-dorm: 일반동(서관)
+crest_vision_holder: false
+dorm: 기사동
 grade: 4학년
 mana_color: 백
-tower: 백탑
-major: 광휘정화학파
+major: 지휘참모과
 vocation: 기사
 b5:
   O: 0.36

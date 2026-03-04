@@ -1,12 +1,12 @@
 id: P-0863
 background_type: signature_noble
+crest_vision_holder: true
 dorm: 비전관
 grade: 4학년
 mana_color: 청
-tower: 청탑
 major: 구속연쇄학파
 vocation: 마법사
-noble_house: ORG-ARC-HOU-008
+noble_house: ORG-ARC-HOU-002
 b5:
   O: 0.57
   C: 0.58

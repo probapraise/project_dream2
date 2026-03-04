@@ -1,12 +1,12 @@
 id: P-0269
 background_type: foreigner
-dorm: 외국·인외동
+crest_vision_holder: false
+dorm: 신전동군
 grade: 2학년
 mana_color: 황
-tower: 황탑
-major: 관성조율학파
+major: Vesperian 신전과
 vocation: 사제
-origin: ARC-인접왕국권
+origin: UNASSIGNED
 b5:
   O: 0.70
   C: 0.37

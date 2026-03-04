@@ -1,9 +1,9 @@
 id: P-0469
 background_type: common_noble
-dorm: 일반동(서관)
+crest_vision_holder: false
+dorm: 백탑 기숙사
 grade: 4학년
 mana_color: 백
-tower: 백탑
 major: 순백응급학파
 vocation: 마법사
 b5:
