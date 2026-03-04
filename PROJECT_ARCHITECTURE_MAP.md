@@ -1,7 +1,8 @@
 # Project Dream2 Architecture Map
 
-작성일: 2026-03-04  
-대상 루트: `/home/dlwhdgus/project_dream2`  
+작성일: 2026-03-04
+최종 업데이트: 2026-03-04 (세션 4 — Layer A 문서 완료 + 시뮬레이션 런너 구현)
+대상 루트: `/home/dlwhdgus/project_dream2`
 조사 방식: 멀티 에이전트 6명 병렬 전수 조사 + 로컬 재검증
 
 ## 1. 현재 구현 스냅샷
@@ -18,8 +19,12 @@
   - `적탑 기숙사 336`
 - 진행 상태(문서 기준):
   - Step 1~7-E 완료
-  - Step 8(커뮤니티 A/B) 진행 중
+  - Step 8(커뮤니티 A/B) **완료** — Layer A/B 문서 + 시뮬레이션 3회 실행
   - Step 9~11 대기
+- 시뮬레이션 실행 기록:
+  - `simrun-001`: Flash Lite, Cold Start, 12인 2라운드
+  - `simrun-002`: Pro (thinking ON, 토큰 부족 → 일부 잘림)
+  - `simrun-003`: Pro (thinking ON, maxOutputTokens=8000) — 완전 성공, 문화 후보 3개 창발
 
 ## 2. 저장소 상위 구조
 
@@ -32,7 +37,7 @@ project_dream2/
    ├─ world_bible/                   # 활성 WB 섹션 (PUBLIC/CONFIDENTIAL/META)
    ├─ population/                    # P-* 학생 SSOT + core_cast/
    ├─ nonstudent/                    # NS-* 비학생 슬롯
-   ├─ board_states/                  # 시뮬레이션 결과 상태(비어있음/초기)
+   ├─ board_states/                  # 시뮬레이션 결과 상태 (simrun-001/002/003 존재)
    ├─ layer_b/                       # 게시판별 문법 산출물(초기)
    ├─ characters/                    # deprecated 스텁
    ├─ voice_packs/                   # deprecated 스텁
@@ -71,8 +76,18 @@ project_dream2/
 
 ### 3.4 커뮤니티/시뮬레이션 레이어
 
-- Layer A: 창발형(정의만 존재, 미구현 문서)
-- Layer B: 작가 투사형(구현 시작), BOARD-001 "낙서장" 적용
+- Layer A: 창발형 **— 문서 완료, 시뮬레이션 3회 실행**
+  - `docs/community_grammar_layer_a.md` (CULTURE 레코드 포맷, 운영 파이프라인, 순응 스펙트럼, 파괴자 감지)
+  - 시뮬 결과: `board_states/simrun-001/002/003`
+  - 문화 후보 3개 창발 (simrun-003 기준): `fear_of_dark_history`, `teasing_red_tower`, `holy_tree_protection`
+  - **아직 CULTURE 레코드 등재 미완료** (작가 승인 대기)
+- Layer B: 작가 투사형 **— ATOM-001 등록 완료**, BOARD-001 "낙서장" 적용
+  - `docs/community_grammar_layer_b.md`
+- API 시뮬레이션 런너: `scripts/sim_runner.py`
+  - Google Vertex AI (Gemini 3.1) 직접 호출
+  - 기본 모델: `gemini-3.1-flash-lite-preview` (global endpoint)
+  - 고품질 모델: `gemini-3.1-pro-preview` (thinking ON, maxOutputTokens=8000 권장)
+  - Writer Report는 API 미사용 — Claude Code 오케스트레이터가 JSON 직접 분석
 - 시뮬레이션 문서 골격:
   - `docs/simulation_playbook.md`
   - `docs/simulation_feedback.md`
@@ -197,8 +212,9 @@ world_ops_compile_execution_views
 | character index v2 | 완료 | 상태/분포/좌표/pool 생성 |
 | core cast | 부분 완료 | `NC-0001`만 활성 named |
 | community Layer B | 부분 완료 | 방법론 + ATOM-001 + BOARD-001 확정 |
-| community Layer A | 미구현 | 문서/엔진 미생성 |
-| simulation run 기록 | 미구현 | feedback/state index 초기 상태 |
+| community Layer A | **문서 완료, 시뮬 실행 완료** | 문서 생성 + simrun-001/002/003 실행, CULTURE 등재 대기 |
+| API 시뮬레이션 런너 | **완료** | `sim_runner.py` — Vertex AI Gemini 3.1 직접 호출 |
+| simulation run 기록 | **부분 완료** | simrun-001/002/003 JSON 저장 완료, state index 미업데이트 |
 | world_ops 게이트 체인 | 완료 | compile/pre/output/delete_guard 동작 |
 
 ## 8. 리스크/기술부채 레지스트리
@@ -220,17 +236,21 @@ world_ops_compile_execution_views
 
 ## 9. 권장 정리 우선순위
 
-1. 정책 보정 스크립트 정리
+1. **CULTURE 레코드 등재** (즉시)
+   - simrun-003 창발 후보 3개 작가 검토 후 `community_grammar_layer_a.md`에 등재
+   - `fear_of_dark_history` / `teasing_red_tower` / `holy_tree_protection`
+2. **NC-0002~ 조연 코어 캐스트 설계** (다음)
+   - 시뮬레이션 결과 반영 + 주인공 관계망 기준 (적대/지지/멘토)
+3. **인덱스 재생성**
+   - `python3 scripts/rebuild_character_index_v2.py`
+4. 정책 보정 스크립트 정리
    - dorm canonical 1개로 통일
    - role-major 보정 경로를 단일 파이프라인에 편입
-2. 파생지표 경로 모드화
+5. 파생지표 경로 모드화
    - `offline(local)` / `batch(llm)` 모드 명확화
-3. 스키마 계약서 고정
+6. 스키마 계약서 고정
    - YAML/CSV 필드 계약 문서화 + writer 공통화
-4. Layer A 착수
-   - `community_grammar_layer_a.md` 생성
-   - 시뮬 반영 규칙(발화 조건, 보정 루프) 정의
-5. 코어캐스트 정합 복구
+7. 코어캐스트 정합 복구
    - `bootstrap_core_cast.py`와 현재 NC-0001 실데이터 불일치 해소
 
 ## 10. 부록: 핵심 스크립트 분류
@@ -241,6 +261,13 @@ world_ops_compile_execution_views
   - `add_student_fields.py`
   - `assign_foreigner_origin.py`
   - `bootstrap_core_cast.py`
+- **시뮬레이션 실행**:
+  - `sim_runner.py` — Layer A 콜드 스타트 / API 기반 커뮤니티 시뮬레이션
+    - 입력: `population_slots.csv` (P-* 슬롯)
+    - 출력: `board_states/simrun-NNN_*.json`
+    - 모델: `gemini-3.1-flash-lite-preview` (기본) / `gemini-3.1-pro-preview` (고품질)
+    - 인증: `vertex_key.json` (서비스 계정, git 제외)
+    - Writer Report: API 미사용, Claude Code 오케스트레이터가 직접 분석
 - 재계산/보정:
   - `recompute_dorms.py`
   - `recompute_role_majors.py`

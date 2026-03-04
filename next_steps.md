@@ -145,7 +145,7 @@ ATOM-NNN:
 
 #### 저장 위치 (현황)
 - `worldbible_refined_bundle_20260303/docs/community_grammar_layer_b.md` (생성 완료, ATOM-001 등록)
-- `worldbible_refined_bundle_20260303/docs/community_grammar_layer_a.md` (미생성)
+- `worldbible_refined_bundle_20260303/docs/community_grammar_layer_a.md` (생성 완료, 2026-03-04)
 
 ### Step 9. NC-0002~ 조연 코어 캐스트 설계
 - 주인공 관계망 기준: 적대 / 지지 / 멘토 포지션 각 1~2명

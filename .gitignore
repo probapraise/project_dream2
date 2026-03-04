@@ -4,3 +4,12 @@ Thumbs.db
 
 # Windows metadata streams
 *:Zone.Identifier
+
+# API keys / credentials
+vertex_key.json
+*.json.key
+service_account*.json
+
+# Python cache
+__pycache__/
+*.pyc
