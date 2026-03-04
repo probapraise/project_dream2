@@ -1,0 +1,13 @@
+id: P-3337
+background_type: common_noble
+dorm: 연구·탑동
+b5:
+  O: 0.38
+  C: 0.71
+  E: 0.34
+  A: 0.62
+  N: 0.53
+derived:
+  DT: 0.01
+  NFC: 0.35
+  SM: 0.03

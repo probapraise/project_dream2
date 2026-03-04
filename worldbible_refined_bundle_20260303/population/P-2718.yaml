@@ -1,0 +1,13 @@
+id: P-2718
+background_type: common_noble
+dorm: 장학생동
+b5:
+  O: 0.89
+  C: 0.43
+  E: 0.37
+  A: 0.37
+  N: 0.80
+derived:
+  DT: 0.01
+  NFC: 0.47
+  SM: 0.03

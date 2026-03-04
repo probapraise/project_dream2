@@ -1,0 +1,13 @@
+id: P-3247
+background_type: nonhuman
+dorm: 일반동(동관)
+b5:
+  O: 0.74
+  C: 0.52
+  E: 0.48
+  A: 0.42
+  N: 0.27
+derived:
+  DT: 0.01
+  NFC: 0.57
+  SM: 0.28

@@ -1,0 +1,13 @@
+id: P-2588
+background_type: foreigner
+dorm: 외국·인외동
+b5:
+  O: 0.63
+  C: 0.37
+  E: 0.60
+  A: 0.53
+  N: 0.64
+derived:
+  DT: 0.01
+  NFC: 0.35
+  SM: 0.23

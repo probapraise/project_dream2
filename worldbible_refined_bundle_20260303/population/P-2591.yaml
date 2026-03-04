@@ -1,0 +1,13 @@
+id: P-2591
+background_type: common_noble
+dorm: 일반동(서관)
+b5:
+  O: 0.54
+  C: 0.73
+  E: 0.72
+  A: 0.54
+  N: 0.30
+derived:
+  DT: 0.01
+  NFC: 0.55
+  SM: 0.37

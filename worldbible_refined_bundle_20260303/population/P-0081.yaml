@@ -1,0 +1,13 @@
+id: P-0081
+background_type: nonhuman
+dorm: 외국·인외동
+b5:
+  O: 0.67
+  C: 0.78
+  E: 0.60
+  A: 0.72
+  N: 0.57
+derived:
+  DT: 0.01
+  NFC: 0.59
+  SM: 0.24

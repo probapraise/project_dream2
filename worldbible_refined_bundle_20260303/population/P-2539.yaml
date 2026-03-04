@@ -1,0 +1,13 @@
+id: P-2539
+background_type: nonhuman
+dorm: 일반동(서관)
+b5:
+  O: 0.61
+  C: 0.64
+  E: 0.63
+  A: 0.53
+  N: 0.95
+derived:
+  DT: 0.01
+  NFC: 0.38
+  SM: 0.08

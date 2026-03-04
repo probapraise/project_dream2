@@ -1,0 +1,13 @@
+id: P-3401
+background_type: nonhuman
+dorm: 장학생동
+b5:
+  O: 0.65
+  C: 0.64
+  E: 0.38
+  A: 0.65
+  N: 0.68
+derived:
+  DT: 0.01
+  NFC: 0.46
+  SM: 0.06

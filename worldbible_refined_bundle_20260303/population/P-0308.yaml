@@ -1,0 +1,13 @@
+id: P-0308
+background_type: nonhuman
+dorm: 일반동(서관)
+b5:
+  O: 0.74
+  C: 0.84
+  E: 0.31
+  A: 0.48
+  N: 0.51
+derived:
+  DT: 0.01
+  NFC: 0.64
+  SM: 0.05

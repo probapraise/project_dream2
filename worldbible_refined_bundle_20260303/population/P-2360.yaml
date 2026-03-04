@@ -1,0 +1,13 @@
+id: P-2360
+background_type: nonhuman
+dorm: 외국·인외동
+b5:
+  O: 0.86
+  C: 0.93
+  E: 0.61
+  A: 0.60
+  N: 0.49
+derived:
+  DT: 0.01
+  NFC: 0.80
+  SM: 0.27

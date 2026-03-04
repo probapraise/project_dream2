@@ -1,0 +1,13 @@
+id: P-3409
+background_type: common_noble
+dorm: 장학생동
+b5:
+  O: 0.74
+  C: 0.83
+  E: 0.43
+  A: 0.54
+  N: 0.41
+derived:
+  DT: 0.01
+  NFC: 0.68
+  SM: 0.17

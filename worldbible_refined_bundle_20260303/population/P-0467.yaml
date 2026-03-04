@@ -1,0 +1,13 @@
+id: P-0467
+background_type: foreigner
+dorm: 외국·인외동
+b5:
+  O: 0.43
+  C: 0.65
+  E: 0.48
+  A: 0.44
+  N: 0.66
+derived:
+  DT: 0.01
+  NFC: 0.32
+  SM: 0.06

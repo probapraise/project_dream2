@@ -1,0 +1,13 @@
+id: P-1138
+background_type: signature_noble
+dorm: 비전관
+b5:
+  O: 0.72
+  C: 0.24
+  E: 0.42
+  A: 0.96
+  N: 0.43
+derived:
+  DT: 0.01
+  NFC: 0.42
+  SM: 0.30

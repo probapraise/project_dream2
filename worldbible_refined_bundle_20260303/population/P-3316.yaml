@@ -1,0 +1,13 @@
+id: P-3316
+background_type: common_noble
+dorm: 일반동(동관)
+b5:
+  O: 0.80
+  C: 0.35
+  E: 0.68
+  A: 0.53
+  N: 0.41
+derived:
+  DT: 0.01
+  NFC: 0.52
+  SM: 0.40

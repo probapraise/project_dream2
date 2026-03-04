@@ -1,0 +1,13 @@
+id: P-3248
+background_type: nonhuman
+dorm: 장학생동
+b5:
+  O: 0.32
+  C: 0.40
+  E: 0.33
+  A: 0.56
+  N: 0.70
+derived:
+  DT: 0.01
+  NFC: 0.12
+  SM: 0.01

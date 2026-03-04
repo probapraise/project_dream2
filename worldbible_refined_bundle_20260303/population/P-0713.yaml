@@ -1,0 +1,13 @@
+id: P-0713
+background_type: signature_noble
+dorm: 비전관
+b5:
+  O: 0.83
+  C: 0.52
+  E: 0.64
+  A: 0.32
+  N: 0.65
+derived:
+  DT: 0.01
+  NFC: 0.53
+  SM: 0.23

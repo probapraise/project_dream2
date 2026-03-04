@@ -1,0 +1,13 @@
+id: P-2629
+background_type: nonhuman
+dorm: 일반동(동관)
+b5:
+  O: 0.64
+  C: 0.22
+  E: 0.48
+  A: 0.59
+  N: 0.39
+derived:
+  DT: 0.01
+  NFC: 0.35
+  SM: 0.29

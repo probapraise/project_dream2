@@ -1,0 +1,13 @@
+id: P-0908
+background_type: commoner
+dorm: 장학생동
+b5:
+  O: 0.65
+  C: 0.89
+  E: 0.33
+  A: 0.75
+  N: 0.22
+derived:
+  DT: 0.01
+  NFC: 0.70
+  SM: 0.19

@@ -63,7 +63,7 @@
   - visibility: META
 - [WB-0016] 14. 사회 계층·종족·언어/예절 (Social Stratification)
   - file: world_bible/WB-0016_social_stratification.md
-  - summary: 1계층: 왕실·대귀족(서명귀족 상층)
+  - summary: 학술원 운영 기준: 서명귀족 소수(160), 일반귀족 다수(2,870), 평민(몰락귀족 포함) 200, 외국인 120, 인외 250.
   - visibility: PUBLIC
 - [WB-0017] 15. 경제·자원·시장 (Economy & Scarce Resources)
   - file: world_bible/WB-0017_economy_resources.md

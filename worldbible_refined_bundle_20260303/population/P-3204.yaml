@@ -1,0 +1,13 @@
+id: P-3204
+background_type: nonhuman
+dorm: 일반동(서관)
+b5:
+  O: 0.53
+  C: 0.79
+  E: 0.14
+  A: 0.81
+  N: 0.64
+derived:
+  DT: 0.01
+  NFC: 0.46
+  SM: 0.01

@@ -1,0 +1,13 @@
+id: P-0401
+background_type: nonhuman
+dorm: 연구·탑동
+b5:
+  O: 0.57
+  C: 0.55
+  E: 0.32
+  A: 0.38
+  N: 0.66
+derived:
+  DT: 0.01
+  NFC: 0.35
+  SM: 0.01

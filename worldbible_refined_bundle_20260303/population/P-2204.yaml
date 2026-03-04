@@ -1,0 +1,13 @@
+id: P-2204
+background_type: nonhuman
+dorm: 일반동(동관)
+b5:
+  O: 0.60
+  C: 0.53
+  E: 0.61
+  A: 0.47
+  N: 0.71
+derived:
+  DT: 0.01
+  NFC: 0.38
+  SM: 0.17

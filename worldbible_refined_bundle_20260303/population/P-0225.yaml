@@ -1,0 +1,13 @@
+id: P-0225
+background_type: common_noble
+dorm: 연구·탑동
+b5:
+  O: 0.68
+  C: 0.71
+  E: 0.57
+  A: 0.79
+  N: 0.45
+derived:
+  DT: 0.01
+  NFC: 0.60
+  SM: 0.29

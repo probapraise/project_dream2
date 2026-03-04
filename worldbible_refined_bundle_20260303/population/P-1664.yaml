@@ -1,0 +1,13 @@
+id: P-1664
+background_type: common_noble
+dorm: 장학생동
+b5:
+  O: 0.43
+  C: 0.53
+  E: 0.29
+  A: 0.52
+  N: 0.52
+derived:
+  DT: 0.01
+  NFC: 0.30
+  SM: 0.02

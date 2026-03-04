@@ -1,0 +1,13 @@
+id: P-0576
+background_type: signature_noble
+dorm: 비전관
+b5:
+  O: 0.52
+  C: 0.38
+  E: 0.33
+  A: 0.54
+  N: 0.16
+derived:
+  DT: 0.01
+  NFC: 0.39
+  SM: 0.23

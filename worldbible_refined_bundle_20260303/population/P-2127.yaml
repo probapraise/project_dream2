@@ -1,0 +1,13 @@
+id: P-2127
+background_type: nonhuman
+dorm: 장학생동
+b5:
+  O: 0.82
+  C: 0.52
+  E: 0.74
+  A: 0.79
+  N: 0.46
+derived:
+  DT: 0.01
+  NFC: 0.62
+  SM: 0.44
