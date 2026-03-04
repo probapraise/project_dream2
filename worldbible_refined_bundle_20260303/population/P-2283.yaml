@@ -1,6 +1,12 @@
 id: P-2283
 background_type: nonhuman
 dorm: 장학생동
+grade: 2학년
+mana_color: 백
+tower: 백탑
+major: 순백응급학파
+vocation: 마법사
+race: 고블린
 b5:
   O: 0.56
   C: 0.55
@@ -8,6 +14,6 @@ b5:
   A: 0.54
   N: 0.64
 derived:
-  DT: 0.01
-  NFC: 0.38
-  SM: 0.17
+  DT: 0.53
+  NFC: 0.45
+  SM: 0.38

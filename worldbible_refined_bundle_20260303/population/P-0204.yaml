@@ -1,6 +1,12 @@
 id: P-0204
 background_type: signature_noble
 dorm: 비전관
+grade: 2학년
+mana_color: 청
+tower: 청탑
+major: 구속연쇄학파
+vocation: 기사
+noble_house: ORG-ARC-HOU-021
 b5:
   O: 0.82
   C: 0.84
@@ -8,6 +14,6 @@ b5:
   A: 0.52
   N: 0.51
 derived:
-  DT: 0.01
-  NFC: 0.71
-  SM: 0.22
+  DT: 0.34
+  NFC: 0.73
+  SM: 0.29

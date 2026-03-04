@@ -1,6 +1,12 @@
 id: P-0325
 background_type: foreigner
 dorm: 외국·인외동
+grade: 3학년
+mana_color: 흑
+tower: 흑탑
+major: 침식주술학파
+vocation: 마법사
+origin: ARC-원거리소국권
 b5:
   O: 0.56
   C: 0.52
@@ -8,6 +14,6 @@ b5:
   A: 0.58
   N: 0.35
 derived:
-  DT: 0.01
-  NFC: 0.45
-  SM: 0.27
+  DT: 0.56
+  NFC: 0.49
+  SM: 0.36

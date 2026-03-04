@@ -1,6 +1,11 @@
 id: P-3054
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 3학년
+mana_color: 녹
+tower: 녹탑
+major: 균사전장학파
+vocation: 기사
 b5:
   O: 0.70
   C: 0.73
@@ -8,6 +13,6 @@ b5:
   A: 0.62
   N: 0.21
 derived:
-  DT: 0.01
-  NFC: 0.67
-  SM: 0.33
+  DT: 0.16
+  NFC: 0.51
+  SM: 0.62

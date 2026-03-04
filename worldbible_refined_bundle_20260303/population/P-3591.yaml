@@ -1,6 +1,11 @@
 id: P-3591
 background_type: common_noble
 dorm: 연구·탑동
+grade: 2학년
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 기사
 b5:
   O: 0.57
   C: 0.95
@@ -9,5 +14,5 @@ b5:
   N: 0.08
 derived:
   DT: 0.01
-  NFC: 0.70
-  SM: 0.11
+  NFC: 0.59
+  SM: 0.41

@@ -1,0 +1,16 @@
+id: NS-0135
+job_type: 교수
+role: UNASSIGNED
+org_id: null
+b5:
+  O: 0.69
+  C: 0.62
+  E: 0.39
+  A: 0.33
+  N: 0.62
+derived:
+  DT: 0.36
+  NFC: 0.60
+  SM: 0.32
+status: uninstantiated
+ch_id: null

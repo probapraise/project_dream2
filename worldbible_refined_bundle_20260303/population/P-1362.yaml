@@ -1,6 +1,11 @@
 id: P-1362
 background_type: common_noble
 dorm: 장학생동
+grade: 2학년
+mana_color: 백
+tower: 백탑
+major: 광휘정화학파
+vocation: 기사
 b5:
   O: 0.44
   C: 0.81
@@ -8,6 +13,6 @@ b5:
   A: 0.56
   N: 0.55
 derived:
-  DT: 0.01
-  NFC: 0.42
-  SM: 0.01
+  DT: 0.34
+  NFC: 0.56
+  SM: 0.37

@@ -1,6 +1,12 @@
 id: P-2204
 background_type: nonhuman
 dorm: 일반동(동관)
+grade: 2학년
+mana_color: 백
+tower: 백탑
+major: 순백응급학파
+vocation: 마법사
+race: 하플링
 b5:
   O: 0.60
   C: 0.53
@@ -8,6 +14,6 @@ b5:
   A: 0.47
   N: 0.71
 derived:
-  DT: 0.01
-  NFC: 0.38
-  SM: 0.17
+  DT: 0.51
+  NFC: 0.60
+  SM: 0.48

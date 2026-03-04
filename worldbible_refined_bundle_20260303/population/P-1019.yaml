@@ -1,6 +1,12 @@
 id: P-1019
 background_type: nonhuman
 dorm: 일반동(서관)
+grade: 1학년
+mana_color: 청
+tower: 청탑
+major: 방벽수호학파
+vocation: 기사
+race: 리자드포크
 b5:
   O: 0.65
   C: 0.55
@@ -8,6 +14,6 @@ b5:
   A: 0.63
   N: 0.71
 derived:
-  DT: 0.01
-  NFC: 0.42
-  SM: 0.14
+  DT: 0.28
+  NFC: 0.84
+  SM: 0.49

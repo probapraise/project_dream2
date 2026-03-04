@@ -1,6 +1,11 @@
 id: P-1983
 background_type: common_noble
 dorm: 장학생동
+grade: 2학년
+mana_color: 청
+tower: 청탑
+major: 구속연쇄학파
+vocation: 마법사
 b5:
   O: 0.74
   C: 0.65
@@ -8,6 +13,6 @@ b5:
   A: 0.82
   N: 0.23
 derived:
-  DT: 0.01
-  NFC: 0.68
-  SM: 0.48
+  DT: 0.14
+  NFC: 0.85
+  SM: 0.73

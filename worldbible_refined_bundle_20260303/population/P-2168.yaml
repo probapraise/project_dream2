@@ -1,6 +1,11 @@
 id: P-2168
 background_type: common_noble
 dorm: 연구·탑동
+grade: 2학년
+mana_color: 녹
+tower: 녹탑
+major: 균사전장학파
+vocation: 기사
 b5:
   O: 0.53
   C: 0.89
@@ -9,5 +14,5 @@ b5:
   N: 0.52
 derived:
   DT: 0.01
-  NFC: 0.58
-  SM: 0.35
+  NFC: 0.80
+  SM: 0.69

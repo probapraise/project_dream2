@@ -1,6 +1,12 @@
 id: P-2775
 background_type: nonhuman
 dorm: 외국·인외동
+grade: 2학년
+mana_color: 청
+tower: 청탑
+major: 방벽수호학파
+vocation: 마법사
+race: 고블린
 b5:
   O: 0.76
   C: 0.34
@@ -8,6 +14,6 @@ b5:
   A: 0.68
   N: 0.25
 derived:
-  DT: 0.01
-  NFC: 0.54
-  SM: 0.49
+  DT: 0.23
+  NFC: 0.47
+  SM: 0.57

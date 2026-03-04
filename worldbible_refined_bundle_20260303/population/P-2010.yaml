@@ -1,6 +1,11 @@
 id: P-2010
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 4학년
+mana_color: 적
+tower: 적탑
+major: 화염포격학파
+vocation: 기사
 b5:
   O: 0.99
   C: 0.65
@@ -8,6 +13,6 @@ b5:
   A: 0.23
   N: 0.55
 derived:
-  DT: 0.01
-  NFC: 0.73
-  SM: 0.35
+  DT: 0.56
+  NFC: 0.76
+  SM: 0.46

@@ -1,6 +1,11 @@
 id: P-1457
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 2학년
+mana_color: 청
+tower: 청탑
+major: 방벽수호학파
+vocation: 마법사
 b5:
   O: 0.68
   C: 0.46
@@ -8,6 +13,6 @@ b5:
   A: 0.58
   N: 0.58
 derived:
-  DT: 0.01
-  NFC: 0.43
-  SM: 0.14
+  DT: 0.67
+  NFC: 0.45
+  SM: 0.21

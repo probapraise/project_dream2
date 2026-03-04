@@ -1,6 +1,11 @@
 id: P-3157
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 2학년
+mana_color: 적
+tower: 적탑
+major: 연기전술학파
+vocation: 마법사
 b5:
   O: 0.73
   C: 0.74
@@ -8,6 +13,6 @@ b5:
   A: 0.71
   N: 0.44
 derived:
-  DT: 0.01
-  NFC: 0.64
-  SM: 0.23
+  DT: 0.57
+  NFC: 0.57
+  SM: 0.09

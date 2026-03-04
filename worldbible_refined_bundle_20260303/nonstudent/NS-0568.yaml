@@ -1,0 +1,16 @@
+id: NS-0568
+job_type: 행정직
+role: UNASSIGNED
+org_id: null
+b5:
+  O: 0.53
+  C: 0.66
+  E: 0.56
+  A: 0.75
+  N: 0.48
+derived:
+  DT: 0.23
+  NFC: 0.29
+  SM: 0.43
+status: uninstantiated
+ch_id: null

@@ -1,6 +1,12 @@
 id: P-1186
 background_type: foreigner
 dorm: 외국·인외동
+grade: 2학년
+mana_color: 백
+tower: 백탑
+major: 광휘정화학파
+vocation: 마법사
+origin: 출신불명
 b5:
   O: 0.92
   C: 0.65
@@ -9,5 +15,5 @@ b5:
   N: 0.55
 derived:
   DT: 0.01
-  NFC: 0.71
-  SM: 0.30
+  NFC: 0.49
+  SM: 0.53

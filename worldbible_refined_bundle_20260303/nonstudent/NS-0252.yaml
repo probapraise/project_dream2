@@ -1,0 +1,16 @@
+id: NS-0252
+job_type: 의료진
+role: UNASSIGNED
+org_id: null
+b5:
+  O: 0.44
+  C: 0.70
+  E: 0.51
+  A: 0.85
+  N: 0.38
+derived:
+  DT: 0.17
+  NFC: 0.57
+  SM: 0.13
+status: uninstantiated
+ch_id: null

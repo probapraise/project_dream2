@@ -1,6 +1,12 @@
 id: P-0619
 background_type: nonhuman
 dorm: 외국·인외동
+grade: 3학년
+mana_color: 적
+tower: 적탑
+major: 화염포격학파
+vocation: 마법사
+race: 하플링
 b5:
   O: 0.45
   C: 0.57
@@ -8,6 +14,6 @@ b5:
   A: 0.47
   N: 0.57
 derived:
-  DT: 0.01
-  NFC: 0.32
-  SM: 0.05
+  DT: 0.25
+  NFC: 0.63
+  SM: 0.36

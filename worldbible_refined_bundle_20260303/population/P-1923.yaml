@@ -1,6 +1,11 @@
 id: P-1923
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 2학년
+mana_color: 흑
+tower: 흑탑
+major: 흑영잠행학파
+vocation: 마법사
 b5:
   O: 0.87
   C: 0.72
@@ -9,5 +14,5 @@ b5:
   N: 0.38
 derived:
   DT: 0.01
-  NFC: 0.70
-  SM: 0.13
+  NFC: 0.57
+  SM: 0.26

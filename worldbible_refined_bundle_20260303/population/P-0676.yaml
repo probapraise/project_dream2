@@ -1,6 +1,12 @@
 id: P-0676
 background_type: nonhuman
 dorm: 외국·인외동
+grade: 연구과정
+mana_color: 백
+tower: 백탑
+major: 순백응급학파
+vocation: 마법사
+race: 고블린
 b5:
   O: 0.52
   C: 0.51
@@ -8,6 +14,6 @@ b5:
   A: 0.75
   N: 0.52
 derived:
-  DT: 0.01
-  NFC: 0.38
-  SM: 0.23
+  DT: 0.31
+  NFC: 0.40
+  SM: 0.52

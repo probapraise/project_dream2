@@ -1,6 +1,11 @@
 id: P-0767
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 2학년
+mana_color: 청
+tower: 청탑
+major: 공간쇄정학파
+vocation: 사제
 b5:
   O: 0.50
   C: 0.51
@@ -8,6 +13,6 @@ b5:
   A: 0.31
   N: 0.37
 derived:
-  DT: 0.01
-  NFC: 0.36
-  SM: 0.05
+  DT: 0.38
+  NFC: 0.49
+  SM: 0.26

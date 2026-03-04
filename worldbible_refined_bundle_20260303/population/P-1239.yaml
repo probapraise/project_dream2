@@ -1,6 +1,12 @@
 id: P-1239
 background_type: foreigner
 dorm: 외국·인외동
+grade: 4학년
+mana_color: 보라
+tower: 보라탑
+major: 전심학파
+vocation: 마법사
+origin: ARC-인접왕국권
 b5:
   O: 0.55
   C: 0.39
@@ -8,6 +14,6 @@ b5:
   A: 0.90
   N: 0.34
 derived:
-  DT: 0.01
-  NFC: 0.41
-  SM: 0.38
+  DT: 0.29
+  NFC: 0.62
+  SM: 0.65

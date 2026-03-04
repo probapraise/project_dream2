@@ -1,6 +1,12 @@
 id: P-2629
 background_type: nonhuman
 dorm: 일반동(동관)
+grade: 3학년
+mana_color: 보라
+tower: 보라탑
+major: 전심학파
+vocation: 기사
+race: 비스트킨
 b5:
   O: 0.64
   C: 0.22
@@ -8,6 +14,6 @@ b5:
   A: 0.59
   N: 0.39
 derived:
-  DT: 0.01
-  NFC: 0.35
-  SM: 0.29
+  DT: 0.25
+  NFC: 0.34
+  SM: 0.25

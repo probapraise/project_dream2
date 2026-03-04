@@ -1,6 +1,11 @@
 id: P-0368
 background_type: commoner
 dorm: 장학생동
+grade: 1학년
+mana_color: 백
+tower: 백탑
+major: 순백응급학파
+vocation: 사제
 b5:
   O: 0.49
   C: 0.75
@@ -9,5 +14,5 @@ b5:
   N: 0.28
 derived:
   DT: 0.01
-  NFC: 0.52
-  SM: 0.20
+  NFC: 0.41
+  SM: 0.42

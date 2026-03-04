@@ -1,6 +1,11 @@
 id: P-1725
 background_type: common_noble
 dorm: 장학생동
+grade: 3학년
+mana_color: 흑
+tower: 흑탑
+major: 흑영잠행학파
+vocation: 마법사
 b5:
   O: 0.73
   C: 0.47
@@ -8,6 +13,6 @@ b5:
   A: 0.56
   N: 0.50
 derived:
-  DT: 0.01
-  NFC: 0.51
-  SM: 0.35
+  DT: 0.53
+  NFC: 0.54
+  SM: 0.34

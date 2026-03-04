@@ -1,6 +1,11 @@
 id: P-2716
 background_type: common_noble
 dorm: 장학생동
+grade: 4학년
+mana_color: 적
+tower: 적탑
+major: 폭연연성학파
+vocation: 마법사
 b5:
   O: 0.76
   C: 0.62
@@ -8,6 +13,6 @@ b5:
   A: 0.65
   N: 0.65
 derived:
-  DT: 0.01
-  NFC: 0.52
-  SM: 0.01
+  DT: 0.23
+  NFC: 0.81
+  SM: 0.13

@@ -1,6 +1,12 @@
 id: P-1352
 background_type: foreigner
 dorm: 외국·인외동
+grade: 4학년
+mana_color: 보라
+tower: 보라탑
+major: 몽유침잠학파
+vocation: 마법사
+origin: SAH-울카자르권
 b5:
   O: 0.82
   C: 0.52
@@ -8,6 +14,6 @@ b5:
   A: 0.72
   N: 0.26
 derived:
-  DT: 0.01
-  NFC: 0.65
-  SM: 0.37
+  DT: 0.28
+  NFC: 0.53
+  SM: 0.55

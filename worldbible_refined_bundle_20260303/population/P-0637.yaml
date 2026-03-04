@@ -1,6 +1,11 @@
 id: P-0637
 background_type: commoner
 dorm: 장학생동
+grade: 3학년
+mana_color: 녹
+tower: 녹탑
+major: 균사전장학파
+vocation: 사제
 b5:
   O: 0.73
   C: 0.99
@@ -8,6 +13,6 @@ b5:
   A: 0.44
   N: 0.49
 derived:
-  DT: 0.01
-  NFC: 0.70
-  SM: 0.02
+  DT: 0.16
+  NFC: 0.71
+  SM: 0.09

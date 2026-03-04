@@ -1,6 +1,11 @@
 id: P-1851
 background_type: common_noble
 dorm: 장학생동
+grade: 1학년
+mana_color: 녹
+tower: 녹탑
+major: 정령계약학파
+vocation: 마법사
 b5:
   O: 0.66
   C: 0.81
@@ -8,6 +13,6 @@ b5:
   A: 0.82
   N: 0.68
 derived:
-  DT: 0.01
+  DT: 0.04
   NFC: 0.56
-  SM: 0.08
+  SM: 0.14

@@ -1,6 +1,12 @@
 id: P-0843
 background_type: nonhuman
 dorm: 연구·탑동
+grade: 4학년
+mana_color: 황
+tower: 황탑
+major: 관성조율학파
+vocation: 기사
+race: 하플링
 b5:
   O: 0.73
   C: 0.55
@@ -8,6 +14,6 @@ b5:
   A: 0.42
   N: 0.78
 derived:
-  DT: 0.01
-  NFC: 0.45
-  SM: 0.18
+  DT: 0.71
+  NFC: 0.51
+  SM: 0.51

@@ -1,6 +1,11 @@
 id: P-1321
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 3학년
+mana_color: 황
+tower: 황탑
+major: 공성진동학파
+vocation: 사제
 b5:
   O: 0.95
   C: 0.64
@@ -8,6 +13,6 @@ b5:
   A: 0.68
   N: 0.43
 derived:
-  DT: 0.01
-  NFC: 0.74
-  SM: 0.32
+  DT: 0.10
+  NFC: 0.67
+  SM: 0.41

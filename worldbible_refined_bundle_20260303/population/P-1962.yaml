@@ -1,6 +1,11 @@
 id: P-1962
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 2학년
+mana_color: 흑
+tower: 흑탑
+major: 침식주술학파
+vocation: 마법사
 b5:
   O: 0.48
   C: 0.80
@@ -8,6 +13,6 @@ b5:
   A: 0.40
   N: 0.77
 derived:
-  DT: 0.01
-  NFC: 0.38
-  SM: 0.01
+  DT: 0.25
+  NFC: 0.78
+  SM: 0.38

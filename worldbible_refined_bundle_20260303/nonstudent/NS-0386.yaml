@@ -1,0 +1,16 @@
+id: NS-0386
+job_type: 시설기숙사관리
+role: UNASSIGNED
+org_id: null
+b5:
+  O: 0.34
+  C: 0.47
+  E: 0.34
+  A: 0.70
+  N: 0.60
+derived:
+  DT: 0.26
+  NFC: 0.40
+  SM: 0.26
+status: uninstantiated
+ch_id: null

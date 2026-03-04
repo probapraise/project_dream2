@@ -1,6 +1,11 @@
 id: P-2144
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 2학년
+mana_color: 청
+tower: 청탑
+major: 공간쇄정학파
+vocation: 마법사
 b5:
   O: 0.99
   C: 0.41
@@ -8,6 +13,6 @@ b5:
   A: 0.59
   N: 0.66
 derived:
-  DT: 0.01
-  NFC: 0.60
-  SM: 0.28
+  DT: 0.43
+  NFC: 0.70
+  SM: 0.39

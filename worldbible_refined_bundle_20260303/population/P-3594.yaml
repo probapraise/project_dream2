@@ -1,6 +1,11 @@
 id: P-3594
 background_type: common_noble
 dorm: 연구·탑동
+grade: 연구과정
+mana_color: 보라
+tower: 보라탑
+major: 전심학파
+vocation: 마법사
 b5:
   O: 0.95
   C: 0.59
@@ -8,6 +13,6 @@ b5:
   A: 0.54
   N: 0.27
 derived:
-  DT: 0.01
-  NFC: 0.75
-  SM: 0.35
+  DT: 0.31
+  NFC: 0.59
+  SM: 0.51

@@ -1,6 +1,12 @@
 id: P-1447
 background_type: foreigner
 dorm: 외국·인외동
+grade: 3학년
+mana_color: 녹
+tower: 녹탑
+major: 균사전장학파
+vocation: 마법사
+origin: ARC-인접왕국권
 b5:
   O: 0.50
   C: 0.65
@@ -8,6 +14,6 @@ b5:
   A: 0.75
   N: 0.40
 derived:
-  DT: 0.01
-  NFC: 0.48
-  SM: 0.35
+  DT: 0.56
+  NFC: 0.63
+  SM: 0.47

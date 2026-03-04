@@ -1,6 +1,12 @@
 id: P-1778
 background_type: nonhuman
 dorm: 일반동(동관)
+grade: 1학년
+mana_color: 황
+tower: 황탑
+major: 관성조율학파
+vocation: 기사
+race: 고블린
 b5:
   O: 0.83
   C: 0.86
@@ -8,6 +14,6 @@ b5:
   A: 0.53
   N: 0.72
 derived:
-  DT: 0.01
-  NFC: 0.65
-  SM: 0.01
+  DT: 0.25
+  NFC: 0.61
+  SM: 0.27

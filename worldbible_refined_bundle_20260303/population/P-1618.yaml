@@ -1,6 +1,11 @@
 id: P-1618
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 2학년
+mana_color: 황
+tower: 황탑
+major: 공성진동학파
+vocation: 기사
 b5:
   O: 0.50
   C: 0.78
@@ -9,5 +14,5 @@ b5:
   N: 0.11
 derived:
   DT: 0.01
-  NFC: 0.54
-  SM: 0.05
+  NFC: 0.70
+  SM: 0.09

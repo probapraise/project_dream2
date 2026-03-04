@@ -1,6 +1,11 @@
 id: P-2846
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 1학년
+mana_color: 녹
+tower: 녹탑
+major: 정령계약학파
+vocation: 기사
 b5:
   O: 0.73
   C: 0.81
@@ -9,5 +14,5 @@ b5:
   N: 0.24
 derived:
   DT: 0.01
-  NFC: 0.75
-  SM: 0.41
+  NFC: 0.92
+  SM: 0.30

@@ -1,6 +1,11 @@
 id: P-2565
 background_type: common_noble
 dorm: 연구·탑동
+grade: 1학년
+mana_color: 황
+tower: 황탑
+major: 전장연산학파
+vocation: 기사
 b5:
   O: 0.55
   C: 0.95
@@ -8,6 +13,6 @@ b5:
   A: 0.31
   N: 0.57
 derived:
-  DT: 0.01
-  NFC: 0.55
-  SM: 0.06
+  DT: 0.48
+  NFC: 0.78
+  SM: 0.43

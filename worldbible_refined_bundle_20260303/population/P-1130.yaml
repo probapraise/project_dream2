@@ -1,6 +1,11 @@
 id: P-1130
 background_type: commoner
 dorm: 장학생동
+grade: 1학년
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 기사
 b5:
   O: 0.73
   C: 0.63
@@ -9,5 +14,5 @@ b5:
   N: 0.35
 derived:
   DT: 0.01
-  NFC: 0.58
-  SM: 0.14
+  NFC: 0.55
+  SM: 0.48

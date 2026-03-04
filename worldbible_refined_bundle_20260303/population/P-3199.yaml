@@ -1,6 +1,12 @@
 id: P-3199
 background_type: foreigner
 dorm: 외국·인외동
+grade: 1학년
+mana_color: 청
+tower: 청탑
+major: 구속연쇄학파
+vocation: 마법사
+origin: ARC-원거리소국권
 b5:
   O: 0.67
   C: 0.62
@@ -8,6 +14,6 @@ b5:
   A: 0.42
   N: 0.16
 derived:
-  DT: 0.01
-  NFC: 0.60
-  SM: 0.27
+  DT: 0.42
+  NFC: 0.39
+  SM: 0.44

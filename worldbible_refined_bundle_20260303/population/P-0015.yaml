@@ -1,6 +1,12 @@
 id: P-0015
 background_type: signature_noble
 dorm: 비전관
+grade: 3학년
+mana_color: 황
+tower: 황탑
+major: 공성진동학파
+vocation: 기사
+noble_house: ORG-ARC-HOU-020
 b5:
   O: 0.66
   C: 0.63
@@ -8,6 +14,6 @@ b5:
   A: 0.35
   N: 0.28
 derived:
-  DT: 0.01
-  NFC: 0.56
-  SM: 0.25
+  DT: 0.40
+  NFC: 0.33
+  SM: 0.29

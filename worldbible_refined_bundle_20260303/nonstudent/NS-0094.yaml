@@ -1,0 +1,16 @@
+id: NS-0094
+job_type: 식당서비스
+role: UNASSIGNED
+org_id: null
+b5:
+  O: 0.47
+  C: 0.52
+  E: 0.87
+  A: 0.74
+  N: 0.30
+derived:
+  DT: 0.29
+  NFC: 0.34
+  SM: 0.47
+status: uninstantiated
+ch_id: null

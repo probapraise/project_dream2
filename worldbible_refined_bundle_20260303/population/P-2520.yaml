@@ -1,6 +1,11 @@
 id: P-2520
 background_type: common_noble
 dorm: 연구·탑동
+grade: 2학년
+mana_color: 청
+tower: 청탑
+major: 구속연쇄학파
+vocation: 사제
 b5:
   O: 0.53
   C: 0.57
@@ -10,4 +15,4 @@ b5:
 derived:
   DT: 0.01
   NFC: 0.42
-  SM: 0.15
+  SM: 0.36

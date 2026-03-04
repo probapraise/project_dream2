@@ -1,6 +1,12 @@
 id: P-2057
 background_type: nonhuman
 dorm: 외국·인외동
+grade: 1학년
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 마법사
+race: 하플링
 b5:
   O: 0.43
   C: 0.28
@@ -8,6 +14,6 @@ b5:
   A: 0.96
   N: 0.71
 derived:
-  DT: 0.01
-  NFC: 0.18
-  SM: 0.19
+  DT: 0.20
+  NFC: 0.07
+  SM: 0.39

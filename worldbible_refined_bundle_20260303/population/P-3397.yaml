@@ -1,6 +1,11 @@
 id: P-3397
 background_type: common_noble
 dorm: 연구·탑동
+grade: 3학년
+mana_color: 청
+tower: 청탑
+major: 방벽수호학파
+vocation: 기사
 b5:
   O: 0.81
   C: 0.47
@@ -8,6 +13,6 @@ b5:
   A: 0.53
   N: 0.66
 derived:
-  DT: 0.01
+  DT: 0.27
   NFC: 0.51
-  SM: 0.30
+  SM: 0.53

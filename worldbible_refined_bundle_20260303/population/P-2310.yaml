@@ -1,6 +1,11 @@
 id: P-2310
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 1학년
+mana_color: 백
+tower: 백탑
+major: 순백응급학파
+vocation: 사제
 b5:
   O: 0.68
   C: 0.66
@@ -8,6 +13,6 @@ b5:
   A: 0.56
   N: 0.62
 derived:
-  DT: 0.01
-  NFC: 0.51
-  SM: 0.13
+  DT: 0.34
+  NFC: 0.72
+  SM: 0.52

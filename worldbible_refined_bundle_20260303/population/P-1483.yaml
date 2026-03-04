@@ -1,6 +1,11 @@
 id: P-1483
 background_type: common_noble
 dorm: 연구·탑동
+grade: 3학년
+mana_color: 황
+tower: 황탑
+major: 전자유도학파
+vocation: 마법사
 b5:
   O: 0.72
   C: 0.75
@@ -8,6 +13,6 @@ b5:
   A: 0.40
   N: 0.65
 derived:
-  DT: 0.01
-  NFC: 0.55
-  SM: 0.02
+  DT: 0.34
+  NFC: 0.59
+  SM: 0.48

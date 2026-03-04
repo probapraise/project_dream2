@@ -1,6 +1,12 @@
 id: P-2802
 background_type: nonhuman
 dorm: 일반동(동관)
+grade: 2학년
+mana_color: 백
+tower: 백탑
+major: 광휘정화학파
+vocation: 사제
+race: 아쿠아틱
 b5:
   O: 0.64
   C: 0.60
@@ -8,6 +14,6 @@ b5:
   A: 0.63
   N: 0.37
 derived:
-  DT: 0.01
-  NFC: 0.52
-  SM: 0.19
+  DT: 0.36
+  NFC: 0.42
+  SM: 0.51

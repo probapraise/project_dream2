@@ -1,0 +1,16 @@
+id: NS-0598
+job_type: 장내상인
+role: UNASSIGNED
+org_id: null
+b5:
+  O: 0.47
+  C: 0.61
+  E: 0.81
+  A: 0.59
+  N: 0.72
+derived:
+  DT: 0.29
+  NFC: 0.52
+  SM: 0.45
+status: uninstantiated
+ch_id: null

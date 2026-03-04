@@ -1,6 +1,12 @@
 id: P-0244
 background_type: nonhuman
 dorm: 일반동(서관)
+grade: 3학년
+mana_color: 적
+tower: 적탑
+major: 화염포격학파
+vocation: 마법사
+race: 고블린
 b5:
   O: 0.90
   C: 0.34
@@ -8,6 +14,6 @@ b5:
   A: 0.45
   N: 0.32
 derived:
-  DT: 0.01
-  NFC: 0.60
-  SM: 0.48
+  DT: 0.19
+  NFC: 0.84
+  SM: 0.44

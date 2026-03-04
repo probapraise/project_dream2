@@ -1,6 +1,11 @@
 id: P-1179
 background_type: commoner
 dorm: 장학생동
+grade: 3학년
+mana_color: 청
+tower: 청탑
+major: 방벽수호학파
+vocation: 기사
 b5:
   O: 0.66
   C: 0.56
@@ -8,6 +13,6 @@ b5:
   A: 0.78
   N: 0.42
 derived:
-  DT: 0.01
-  NFC: 0.55
-  SM: 0.52
+  DT: 0.32
+  NFC: 0.56
+  SM: 0.62

@@ -1,6 +1,12 @@
 id: P-3436
 background_type: nonhuman
 dorm: 일반동(동관)
+grade: 3학년
+mana_color: 백
+tower: 백탑
+major: 순백응급학파
+vocation: 사제
+race: 고블린
 b5:
   O: 0.46
   C: 0.58
@@ -8,6 +14,6 @@ b5:
   A: 0.56
   N: 0.31
 derived:
-  DT: 0.01
-  NFC: 0.42
-  SM: 0.28
+  DT: 0.36
+  NFC: 0.31
+  SM: 0.33

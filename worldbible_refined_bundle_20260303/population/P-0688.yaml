@@ -1,6 +1,12 @@
 id: P-0688
 background_type: signature_noble
 dorm: 비전관
+grade: 연구과정
+mana_color: 적
+tower: 적탑
+major: 화염포격학파
+vocation: 기사
+noble_house: ORG-ARC-HOU-013
 b5:
   O: 0.71
   C: 0.99
@@ -8,6 +14,6 @@ b5:
   A: 0.71
   N: 0.50
 derived:
-  DT: 0.01
-  NFC: 0.72
-  SM: 0.13
+  DT: 0.32
+  NFC: 0.60
+  SM: 0.16

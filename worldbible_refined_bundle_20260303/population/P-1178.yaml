@@ -1,6 +1,11 @@
 id: P-1178
 background_type: common_noble
 dorm: 연구·탑동
+grade: 2학년
+mana_color: 적
+tower: 적탑
+major: 폭연연성학파
+vocation: 사제
 b5:
   O: 0.43
   C: 0.99
@@ -8,6 +13,6 @@ b5:
   A: 0.68
   N: 0.37
 derived:
-  DT: 0.01
-  NFC: 0.59
-  SM: 0.28
+  DT: 0.16
+  NFC: 0.42
+  SM: 0.37

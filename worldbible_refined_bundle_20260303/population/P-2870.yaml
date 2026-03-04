@@ -1,6 +1,11 @@
 id: P-2870
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 연구과정
+mana_color: 황
+tower: 황탑
+major: 관성조율학파
+vocation: 기사
 b5:
   O: 0.54
   C: 0.53
@@ -8,6 +13,6 @@ b5:
   A: 0.42
   N: 0.86
 derived:
-  DT: 0.01
-  NFC: 0.29
-  SM: 0.04
+  DT: 0.55
+  NFC: 0.58
+  SM: 0.65

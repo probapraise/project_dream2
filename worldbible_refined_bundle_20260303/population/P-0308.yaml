@@ -1,6 +1,12 @@
 id: P-0308
 background_type: nonhuman
 dorm: 일반동(서관)
+grade: 3학년
+mana_color: 황
+tower: 황탑
+major: 공성진동학파
+vocation: 마법사
+race: 엘프
 b5:
   O: 0.74
   C: 0.84
@@ -8,6 +14,6 @@ b5:
   A: 0.48
   N: 0.51
 derived:
-  DT: 0.01
-  NFC: 0.64
-  SM: 0.05
+  DT: 0.42
+  NFC: 0.50
+  SM: 0.18

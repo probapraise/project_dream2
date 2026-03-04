@@ -1,0 +1,16 @@
+id: NS-0623
+job_type: 장내상인
+role: UNASSIGNED
+org_id: null
+b5:
+  O: 0.59
+  C: 0.78
+  E: 0.81
+  A: 0.68
+  N: 0.52
+derived:
+  DT: 0.50
+  NFC: 0.54
+  SM: 0.37
+status: uninstantiated
+ch_id: null

@@ -1,6 +1,11 @@
 id: P-2737
 background_type: common_noble
 dorm: 연구·탑동
+grade: 2학년
+mana_color: 적
+tower: 적탑
+major: 적열단조학파
+vocation: 사제
 b5:
   O: 0.40
   C: 0.55
@@ -8,6 +13,6 @@ b5:
   A: 0.59
   N: 0.32
 derived:
-  DT: 0.01
-  NFC: 0.38
-  SM: 0.35
+  DT: 0.16
+  NFC: 0.49
+  SM: 0.48

@@ -1,0 +1,16 @@
+id: NS-0179
+job_type: 교수
+role: UNASSIGNED
+org_id: null
+b5:
+  O: 0.40
+  C: 0.48
+  E: 0.45
+  A: 0.56
+  N: 0.41
+derived:
+  DT: 0.40
+  NFC: 0.64
+  SM: 0.60
+status: uninstantiated
+ch_id: null

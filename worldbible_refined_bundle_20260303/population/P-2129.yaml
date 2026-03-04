@@ -1,6 +1,11 @@
 id: P-2129
 background_type: common_noble
 dorm: 장학생동
+grade: 3학년
+mana_color: 녹
+tower: 녹탑
+major: 균사전장학파
+vocation: 사제
 b5:
   O: 0.70
   C: 0.47
@@ -8,6 +13,6 @@ b5:
   A: 0.41
   N: 0.40
 derived:
-  DT: 0.01
-  NFC: 0.47
-  SM: 0.10
+  DT: 0.40
+  NFC: 0.66
+  SM: 0.07

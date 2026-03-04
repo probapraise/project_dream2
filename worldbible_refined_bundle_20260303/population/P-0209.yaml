@@ -1,6 +1,12 @@
 id: P-0209
 background_type: foreigner
 dorm: 외국·인외동
+grade: 2학년
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 마법사
+origin: ARC-인접왕국권
 b5:
   O: 0.81
   C: 0.72
@@ -9,5 +15,5 @@ b5:
   N: 0.76
 derived:
   DT: 0.01
-  NFC: 0.60
-  SM: 0.08
+  NFC: 0.61
+  SM: 0.01

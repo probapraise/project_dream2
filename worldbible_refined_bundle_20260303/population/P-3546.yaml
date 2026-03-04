@@ -1,6 +1,11 @@
 id: P-3546
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 1학년
+mana_color: 녹
+tower: 녹탑
+major: 균사전장학파
+vocation: 기사
 b5:
   O: 0.58
   C: 0.83
@@ -8,6 +13,6 @@ b5:
   A: 0.52
   N: 0.31
 derived:
-  DT: 0.01
-  NFC: 0.63
-  SM: 0.40
+  DT: 0.15
+  NFC: 0.56
+  SM: 0.52

@@ -1,6 +1,12 @@
 id: P-0337
 background_type: signature_noble
 dorm: 비전관
+grade: 2학년
+mana_color: 적
+tower: 적탑
+major: 연기전술학파
+vocation: 마법사
+noble_house: ORG-ARC-HOU-017
 b5:
   O: 0.44
   C: 0.83
@@ -8,6 +14,6 @@ b5:
   A: 0.81
   N: 0.65
 derived:
-  DT: 0.01
-  NFC: 0.44
-  SM: 0.08
+  DT: 0.05
+  NFC: 0.65
+  SM: 0.76

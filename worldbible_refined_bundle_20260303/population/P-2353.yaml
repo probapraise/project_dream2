@@ -1,6 +1,12 @@
 id: P-2353
 background_type: nonhuman
 dorm: 외국·인외동
+grade: 2학년
+mana_color: 황
+tower: 황탑
+major: 공성진동학파
+vocation: 사제
+race: 고블린
 b5:
   O: 0.87
   C: 0.43
@@ -8,6 +14,6 @@ b5:
   A: 0.30
   N: 0.48
 derived:
-  DT: 0.01
-  NFC: 0.52
-  SM: 0.02
+  DT: 0.38
+  NFC: 0.32
+  SM: 0.67

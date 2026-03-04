@@ -1,6 +1,12 @@
 id: P-2317
 background_type: nonhuman
 dorm: 일반동(동관)
+grade: 1학년
+mana_color: 청
+tower: 청탑
+major: 결속조형학파
+vocation: 사제
+race: 드워프
 b5:
   O: 0.95
   C: 0.53
@@ -8,6 +14,6 @@ b5:
   A: 0.78
   N: 0.17
 derived:
-  DT: 0.01
-  NFC: 0.76
-  SM: 0.39
+  DT: 0.08
+  NFC: 0.72
+  SM: 0.61

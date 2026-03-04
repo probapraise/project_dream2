@@ -1,6 +1,12 @@
 id: P-2249
 background_type: nonhuman
 dorm: 장학생동
+grade: 4학년
+mana_color: 적
+tower: 적탑
+major: 폭연연성학파
+vocation: 마법사
+race: 고블린
 b5:
   O: 0.90
   C: 0.73
@@ -8,6 +14,6 @@ b5:
   A: 0.79
   N: 0.50
 derived:
-  DT: 0.01
-  NFC: 0.73
-  SM: 0.20
+  DT: 0.12
+  NFC: 0.77
+  SM: 0.29

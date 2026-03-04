@@ -1,6 +1,11 @@
 id: P-1510
 background_type: common_noble
 dorm: 장학생동
+grade: 2학년
+mana_color: 백
+tower: 백탑
+major: 순백응급학파
+vocation: 기사
 b5:
   O: 0.50
   C: 0.73
@@ -8,6 +13,6 @@ b5:
   A: 0.67
   N: 0.57
 derived:
-  DT: 0.01
-  NFC: 0.45
-  SM: 0.20
+  DT: 0.26
+  NFC: 0.58
+  SM: 0.32

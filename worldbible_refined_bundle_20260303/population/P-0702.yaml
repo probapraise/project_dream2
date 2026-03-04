@@ -1,6 +1,11 @@
 id: P-0702
 background_type: common_noble
 dorm: 장학생동
+grade: 2학년
+mana_color: 황
+tower: 황탑
+major: 공성진동학파
+vocation: 마법사
 b5:
   O: 0.59
   C: 0.65
@@ -8,6 +13,6 @@ b5:
   A: 0.37
   N: 0.27
 derived:
-  DT: 0.01
-  NFC: 0.53
-  SM: 0.27
+  DT: 0.28
+  NFC: 0.69
+  SM: 0.55

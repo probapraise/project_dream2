@@ -1,6 +1,11 @@
 id: P-2099
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 2학년
+mana_color: 녹
+tower: 녹탑
+major: 정령계약학파
+vocation: 마법사
 b5:
   O: 0.66
   C: 0.80
@@ -9,5 +14,5 @@ b5:
   N: 0.37
 derived:
   DT: 0.01
-  NFC: 0.65
+  NFC: 0.56
   SM: 0.40

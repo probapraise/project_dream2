@@ -1,6 +1,11 @@
 id: P-0292
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 4학년
+mana_color: 흑
+tower: 흑탑
+major: 침식주술학파
+vocation: 기사
 b5:
   O: 0.70
   C: 0.75
@@ -8,6 +13,6 @@ b5:
   A: 0.46
   N: 0.40
 derived:
-  DT: 0.01
-  NFC: 0.61
-  SM: 0.18
+  DT: 0.28
+  NFC: 0.43
+  SM: 0.36

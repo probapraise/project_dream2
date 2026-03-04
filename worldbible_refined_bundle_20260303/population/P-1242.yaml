@@ -1,6 +1,11 @@
 id: P-1242
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 2학년
+mana_color: 보라
+tower: 보라탑
+major: 심상환영학파
+vocation: 기사
 b5:
   O: 0.63
   C: 0.93
@@ -9,5 +14,5 @@ b5:
   N: 0.40
 derived:
   DT: 0.01
-  NFC: 0.62
-  SM: 0.01
+  NFC: 0.49
+  SM: 0.37

@@ -1,6 +1,11 @@
 id: P-1783
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 2학년
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 기사
 b5:
   O: 0.55
   C: 0.75
@@ -9,5 +14,5 @@ b5:
   N: 0.69
 derived:
   DT: 0.01
-  NFC: 0.48
-  SM: 0.26
+  NFC: 0.44
+  SM: 0.14

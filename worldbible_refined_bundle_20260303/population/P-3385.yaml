@@ -1,6 +1,11 @@
 id: P-3385
 background_type: common_noble
 dorm: 장학생동
+grade: 1학년
+mana_color: 청
+tower: 청탑
+major: 구속연쇄학파
+vocation: 마법사
 b5:
   O: 0.34
   C: 0.76
@@ -8,6 +13,6 @@ b5:
   A: 0.54
   N: 0.62
 derived:
-  DT: 0.01
-  NFC: 0.33
-  SM: 0.04
+  DT: 0.27
+  NFC: 0.27
+  SM: 0.48

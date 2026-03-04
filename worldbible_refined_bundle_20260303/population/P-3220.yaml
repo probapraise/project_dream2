@@ -1,6 +1,12 @@
 id: P-3220
 background_type: nonhuman
 dorm: 장학생동
+grade: 3학년
+mana_color: 녹
+tower: 녹탑
+major: 균사전장학파
+vocation: 마법사
+race: 고블린
 b5:
   O: 0.53
   C: 0.59
@@ -8,6 +14,6 @@ b5:
   A: 0.63
   N: 0.66
 derived:
-  DT: 0.01
+  DT: 0.44
   NFC: 0.37
-  SM: 0.08
+  SM: 0.58

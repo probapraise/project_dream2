@@ -1,6 +1,11 @@
 id: P-0388
 background_type: commoner
 dorm: 장학생동
+grade: 3학년
+mana_color: 청
+tower: 청탑
+major: 결속조형학파
+vocation: 기사
 b5:
   O: 0.48
   C: 0.62
@@ -8,6 +13,6 @@ b5:
   A: 0.58
   N: 0.51
 derived:
-  DT: 0.01
-  NFC: 0.40
-  SM: 0.23
+  DT: 0.38
+  NFC: 0.52
+  SM: 0.27

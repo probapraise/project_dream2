@@ -1,6 +1,12 @@
 id: P-3280
 background_type: foreigner
 dorm: 외국·인외동
+grade: 4학년
+mana_color: 황
+tower: 황탑
+major: 공성진동학파
+vocation: 마법사
+origin: ARC-원거리소국권
 b5:
   O: 0.69
   C: 0.65
@@ -8,6 +14,6 @@ b5:
   A: 0.34
   N: 0.55
 derived:
-  DT: 0.01
-  NFC: 0.51
-  SM: 0.11
+  DT: 0.31
+  NFC: 0.56
+  SM: 0.48

@@ -1,6 +1,12 @@
 id: P-0324
 background_type: foreigner
 dorm: 외국·인외동
+grade: 4학년
+mana_color: 적
+tower: 적탑
+major: 화염포격학파
+vocation: 기사
+origin: ARC-인접왕국권
 b5:
   O: 0.54
   C: 0.52
@@ -8,6 +14,6 @@ b5:
   A: 0.47
   N: 0.68
 derived:
-  DT: 0.01
-  NFC: 0.34
-  SM: 0.12
+  DT: 0.52
+  NFC: 0.51
+  SM: 0.42

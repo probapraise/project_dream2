@@ -1,6 +1,11 @@
 id: P-1494
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 2학년
+mana_color: 백
+tower: 백탑
+major: 광휘정화학파
+vocation: 마법사
 b5:
   O: 0.53
   C: 0.62
@@ -8,6 +13,6 @@ b5:
   A: 0.49
   N: 0.91
 derived:
-  DT: 0.01
-  NFC: 0.31
-  SM: 0.01
+  DT: 0.24
+  NFC: 0.41
+  SM: 0.19

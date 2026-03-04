@@ -1,6 +1,11 @@
 id: P-2156
 background_type: common_noble
 dorm: 연구·탑동
+grade: 1학년
+mana_color: 흑
+tower: 흑탑
+major: 침식주술학파
+vocation: 기사
 b5:
   O: 0.61
   C: 0.52
@@ -8,6 +13,6 @@ b5:
   A: 0.61
   N: 0.10
 derived:
-  DT: 0.01
-  NFC: 0.55
-  SM: 0.43
+  DT: 0.32
+  NFC: 0.59
+  SM: 0.47

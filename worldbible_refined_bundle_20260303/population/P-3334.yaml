@@ -1,6 +1,11 @@
 id: P-3334
 background_type: common_noble
 dorm: 연구·탑동
+grade: 1학년
+mana_color: 적
+tower: 적탑
+major: 폭연연성학파
+vocation: 기사
 b5:
   O: 0.44
   C: 0.47
@@ -8,6 +13,6 @@ b5:
   A: 0.60
   N: 0.27
 derived:
-  DT: 0.01
-  NFC: 0.39
-  SM: 0.42
+  DT: 0.25
+  NFC: 0.47
+  SM: 0.23

@@ -1,6 +1,12 @@
 id: P-0922
 background_type: nonhuman
 dorm: 외국·인외동
+grade: 3학년
+mana_color: 적
+tower: 적탑
+major: 폭연연성학파
+vocation: 기사
+race: 고블린
 b5:
   O: 0.75
   C: 0.66
@@ -8,6 +14,6 @@ b5:
   A: 0.55
   N: 0.48
 derived:
-  DT: 0.01
-  NFC: 0.58
-  SM: 0.08
+  DT: 0.10
+  NFC: 0.63
+  SM: 0.45

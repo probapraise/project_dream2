@@ -1,6 +1,11 @@
 id: P-2686
 background_type: common_noble
 dorm: 연구·탑동
+grade: 4학년
+mana_color: 백
+tower: 백탑
+major: 순백응급학파
+vocation: 마법사
 b5:
   O: 0.77
   C: 0.51
@@ -8,6 +13,6 @@ b5:
   A: 0.67
   N: 0.43
 derived:
-  DT: 0.01
-  NFC: 0.59
-  SM: 0.50
+  DT: 0.34
+  NFC: 0.43
+  SM: 0.39

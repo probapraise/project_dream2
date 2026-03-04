@@ -1,6 +1,11 @@
 id: P-1449
 background_type: common_noble
 dorm: 연구·탑동
+grade: 4학년
+mana_color: 보라
+tower: 보라탑
+major: 심상환영학파
+vocation: 마법사
 b5:
   O: 0.81
   C: 0.81
@@ -8,6 +13,6 @@ b5:
   A: 0.71
   N: 0.24
 derived:
-  DT: 0.01
-  NFC: 0.78
-  SM: 0.34
+  DT: 0.06
+  NFC: 0.73
+  SM: 0.42

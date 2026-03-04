@@ -1,6 +1,11 @@
 id: P-0272
 background_type: common_noble
 dorm: 장학생동
+grade: 4학년
+mana_color: 적
+tower: 적탑
+major: 폭연연성학파
+vocation: 사제
 b5:
   O: 0.76
   C: 0.69
@@ -8,6 +13,6 @@ b5:
   A: 0.48
   N: 0.43
 derived:
-  DT: 0.01
-  NFC: 0.61
-  SM: 0.14
+  DT: 0.31
+  NFC: 0.48
+  SM: 0.41

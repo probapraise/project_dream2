@@ -1,0 +1,16 @@
+id: NS-0404
+job_type: 교수
+role: UNASSIGNED
+org_id: null
+b5:
+  O: 0.58
+  C: 0.57
+  E: 0.40
+  A: 0.65
+  N: 0.56
+derived:
+  DT: 0.14
+  NFC: 0.67
+  SM: 0.27
+status: uninstantiated
+ch_id: null

@@ -1,6 +1,12 @@
 id: P-1979
 background_type: nonhuman
 dorm: 일반동(동관)
+grade: 1학년
+mana_color: 청
+tower: 청탑
+major: 구속연쇄학파
+vocation: 기사
+race: 오크
 b5:
   O: 0.35
   C: 0.52
@@ -8,6 +14,6 @@ b5:
   A: 0.71
   N: 0.45
 derived:
-  DT: 0.01
-  NFC: 0.28
-  SM: 0.12
+  DT: 0.47
+  NFC: 0.27
+  SM: 0.28

@@ -1,6 +1,11 @@
 id: P-3389
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 1학년
+mana_color: 청
+tower: 청탑
+major: 방벽수호학파
+vocation: 마법사
 b5:
   O: 0.66
   C: 0.55
@@ -9,5 +14,5 @@ b5:
   N: 0.30
 derived:
   DT: 0.01
-  NFC: 0.55
-  SM: 0.36
+  NFC: 0.48
+  SM: 0.45

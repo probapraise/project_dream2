@@ -1,0 +1,16 @@
+id: NS-0486
+job_type: 룬공학장인
+role: UNASSIGNED
+org_id: null
+b5:
+  O: 0.75
+  C: 0.93
+  E: 0.42
+  A: 0.55
+  N: 0.80
+derived:
+  DT: 0.16
+  NFC: 0.56
+  SM: 0.21
+status: uninstantiated
+ch_id: null

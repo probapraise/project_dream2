@@ -1,6 +1,12 @@
 id: P-1894
 background_type: nonhuman
 dorm: 일반동(서관)
+grade: 3학년
+mana_color: 적
+tower: 적탑
+major: 폭연연성학파
+vocation: 기사
+race: 드워프
 b5:
   O: 0.76
   C: 0.57
@@ -9,5 +15,5 @@ b5:
   N: 0.43
 derived:
   DT: 0.01
-  NFC: 0.59
-  SM: 0.38
+  NFC: 0.53
+  SM: 0.27

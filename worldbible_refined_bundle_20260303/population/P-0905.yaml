@@ -1,6 +1,12 @@
 id: P-0905
 background_type: signature_noble
 dorm: 비전관
+grade: 4학년
+mana_color: 청
+tower: 청탑
+major: 방벽수호학파
+vocation: 마법사
+noble_house: ORG-ARC-HOU-017
 b5:
   O: 0.46
   C: 0.76
@@ -8,6 +14,6 @@ b5:
   A: 0.60
   N: 0.93
 derived:
-  DT: 0.01
-  NFC: 0.33
-  SM: 0.01
+  DT: 0.23
+  NFC: 0.34
+  SM: 0.25

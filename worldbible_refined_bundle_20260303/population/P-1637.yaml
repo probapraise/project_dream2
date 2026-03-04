@@ -1,6 +1,11 @@
 id: P-1637
 background_type: common_noble
 dorm: 연구·탑동
+grade: 2학년
+mana_color: 보라
+tower: 보라탑
+major: 심상환영학파
+vocation: 마법사
 b5:
   O: 0.52
   C: 0.64
@@ -9,5 +14,5 @@ b5:
   N: 0.16
 derived:
   DT: 0.01
-  NFC: 0.49
-  SM: 0.02
+  NFC: 0.40
+  SM: 0.27

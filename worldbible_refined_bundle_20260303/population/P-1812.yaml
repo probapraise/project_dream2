@@ -1,6 +1,11 @@
 id: P-1812
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 2학년
+mana_color: 백
+tower: 백탑
+major: 역서명파쇄학파
+vocation: 마법사
 b5:
   O: 0.55
   C: 0.76
@@ -9,5 +14,5 @@ b5:
   N: 0.44
 derived:
   DT: 0.01
-  NFC: 0.53
-  SM: 0.20
+  NFC: 0.72
+  SM: 0.25

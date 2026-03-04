@@ -1,6 +1,11 @@
 id: P-3074
 background_type: common_noble
 dorm: 연구·탑동
+grade: 연구과정
+mana_color: 백
+tower: 백탑
+major: 순백응급학파
+vocation: 기사
 b5:
   O: 0.77
   C: 0.55
@@ -8,6 +13,6 @@ b5:
   A: 0.84
   N: 0.59
 derived:
-  DT: 0.01
-  NFC: 0.52
-  SM: 0.05
+  DT: 0.27
+  NFC: 0.35
+  SM: 0.47

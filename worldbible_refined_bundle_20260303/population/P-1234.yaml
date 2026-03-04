@@ -1,6 +1,12 @@
 id: P-1234
 background_type: signature_noble
 dorm: 비전관
+grade: 4학년
+mana_color: 적
+tower: 적탑
+major: 화염포격학파
+vocation: 기사
+noble_house: ORG-ARC-HOU-011
 b5:
   O: 0.67
   C: 0.43
@@ -8,6 +14,6 @@ b5:
   A: 0.69
   N: 0.48
 derived:
-  DT: 0.01
-  NFC: 0.45
-  SM: 0.28
+  DT: 0.30
+  NFC: 0.40
+  SM: 0.43

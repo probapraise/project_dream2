@@ -1,6 +1,12 @@
 id: P-0807
 background_type: signature_noble
 dorm: 비전관
+grade: 2학년
+mana_color: 황
+tower: 황탑
+major: 전자유도학파
+vocation: 기사
+noble_house: ORG-ARC-HOU-005
 b5:
   O: 0.44
   C: 0.57
@@ -8,6 +14,6 @@ b5:
   A: 0.61
   N: 0.43
 derived:
-  DT: 0.01
+  DT: 0.25
   NFC: 0.37
-  SM: 0.20
+  SM: 0.40

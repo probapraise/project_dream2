@@ -1,6 +1,12 @@
 id: P-1745
 background_type: nonhuman
 dorm: 외국·인외동
+grade: 1학년
+mana_color: 백
+tower: 백탑
+major: 순백응급학파
+vocation: 사제
+race: 고블린
 b5:
   O: 0.45
   C: 0.71
@@ -8,6 +14,6 @@ b5:
   A: 0.77
   N: 0.59
 derived:
-  DT: 0.01
-  NFC: 0.43
-  SM: 0.29
+  DT: 0.34
+  NFC: 0.47
+  SM: 0.34

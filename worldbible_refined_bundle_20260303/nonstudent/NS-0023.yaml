@@ -1,0 +1,16 @@
+id: NS-0023
+job_type: 에르미렌씨족
+role: UNASSIGNED
+org_id: ORG-CLN-ELF-001
+b5:
+  O: 0.74
+  C: 0.68
+  E: 0.37
+  A: 0.52
+  N: 0.36
+derived:
+  DT: 0.20
+  NFC: 0.65
+  SM: 0.56
+status: uninstantiated
+ch_id: null

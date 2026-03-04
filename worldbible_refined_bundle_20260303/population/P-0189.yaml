@@ -1,6 +1,11 @@
 id: P-0189
 background_type: common_noble
 dorm: 장학생동
+grade: 4학년
+mana_color: 보라
+tower: 보라탑
+major: 전심학파
+vocation: 기사
 b5:
   O: 0.64
   C: 0.72
@@ -9,5 +14,5 @@ b5:
   N: 0.45
 derived:
   DT: 0.01
-  NFC: 0.55
-  SM: 0.08
+  NFC: 0.80
+  SM: 0.12

@@ -1,6 +1,11 @@
 id: P-1898
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 4학년
+mana_color: 황
+tower: 황탑
+major: 공성진동학파
+vocation: 기사
 b5:
   O: 0.81
   C: 0.83
@@ -8,6 +13,6 @@ b5:
   A: 0.58
   N: 0.59
 derived:
-  DT: 0.01
-  NFC: 0.68
-  SM: 0.14
+  DT: 0.29
+  NFC: 0.74
+  SM: 0.52

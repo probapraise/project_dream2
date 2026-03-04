@@ -1,6 +1,12 @@
 id: P-3355
 background_type: nonhuman
 dorm: 장학생동
+grade: 2학년
+mana_color: 청
+tower: 청탑
+major: 결속조형학파
+vocation: 마법사
+race: 하플링
 b5:
   O: 0.76
   C: 0.92
@@ -8,6 +14,6 @@ b5:
   A: 0.40
   N: 0.80
 derived:
-  DT: 0.01
-  NFC: 0.62
-  SM: 0.06
+  DT: 0.28
+  NFC: 0.61
+  SM: 0.28

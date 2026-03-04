@@ -1,6 +1,11 @@
 id: P-3570
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 1학년
+mana_color: 흑
+tower: 흑탑
+major: 흑영잠행학파
+vocation: 기사
 b5:
   O: 0.46
   C: 0.73
@@ -8,6 +13,6 @@ b5:
   A: 0.44
   N: 0.46
 derived:
-  DT: 0.01
-  NFC: 0.43
-  SM: 0.09
+  DT: 0.42
+  NFC: 0.71
+  SM: 0.36

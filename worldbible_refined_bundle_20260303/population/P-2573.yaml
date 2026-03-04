@@ -1,6 +1,11 @@
 id: P-2573
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 4학년
+mana_color: 황
+tower: 황탑
+major: 관성조율학파
+vocation: 마법사
 b5:
   O: 0.05
   C: 0.74
@@ -8,6 +13,6 @@ b5:
   A: 0.50
   N: 0.38
 derived:
-  DT: 0.01
-  NFC: 0.21
-  SM: 0.23
+  DT: 0.53
+  NFC: 0.28
+  SM: 0.32

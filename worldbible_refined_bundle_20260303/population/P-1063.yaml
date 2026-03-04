@@ -1,6 +1,12 @@
 id: P-1063
 background_type: nonhuman
 dorm: 장학생동
+grade: 1학년
+mana_color: 녹
+tower: 녹탑
+major: 정령계약학파
+vocation: 마법사
+race: 오크
 b5:
   O: 0.99
   C: 0.78
@@ -8,6 +14,6 @@ b5:
   A: 0.61
   N: 0.52
 derived:
-  DT: 0.01
-  NFC: 0.79
-  SM: 0.21
+  DT: 0.13
+  NFC: 0.82
+  SM: 0.42

@@ -1,6 +1,12 @@
 id: P-0022
 background_type: nonhuman
 dorm: 장학생동
+grade: 3학년
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 기사
+race: 고블린
 b5:
   O: 0.23
   C: 0.64
@@ -8,6 +14,6 @@ b5:
   A: 0.31
   N: 0.29
 derived:
-  DT: 0.01
-  NFC: 0.27
-  SM: 0.09
+  DT: 0.24
+  NFC: 0.28
+  SM: 0.29

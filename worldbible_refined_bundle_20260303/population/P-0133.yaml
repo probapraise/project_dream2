@@ -1,6 +1,11 @@
 id: P-0133
 background_type: common_noble
 dorm: 장학생동
+grade: 1학년
+mana_color: 적
+tower: 적탑
+major: 연기전술학파
+vocation: 사제
 b5:
   O: 0.51
   C: 0.58
@@ -8,6 +13,6 @@ b5:
   A: 0.44
   N: 0.64
 derived:
-  DT: 0.01
-  NFC: 0.35
-  SM: 0.09
+  DT: 0.48
+  NFC: 0.79
+  SM: 0.28

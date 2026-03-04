@@ -1,6 +1,11 @@
 id: P-1001
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 4학년
+mana_color: 적
+tower: 적탑
+major: 연기전술학파
+vocation: 기사
 b5:
   O: 0.89
   C: 0.55
@@ -8,6 +13,6 @@ b5:
   A: 0.40
   N: 0.48
 derived:
-  DT: 0.01
-  NFC: 0.64
-  SM: 0.32
+  DT: 0.38
+  NFC: 0.73
+  SM: 0.55

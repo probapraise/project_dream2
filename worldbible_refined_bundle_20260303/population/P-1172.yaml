@@ -1,6 +1,12 @@
 id: P-1172
 background_type: nonhuman
 dorm: 외국·인외동
+grade: 1학년
+mana_color: 녹
+tower: 녹탑
+major: 정령계약학파
+vocation: 마법사
+race: 리자드포크
 b5:
   O: 0.40
   C: 0.62
@@ -9,5 +15,5 @@ b5:
   N: 0.29
 derived:
   DT: 0.01
-  NFC: 0.38
-  SM: 0.02
+  NFC: 0.10
+  SM: 0.19

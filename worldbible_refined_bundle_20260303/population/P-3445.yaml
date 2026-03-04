@@ -1,6 +1,11 @@
 id: P-3445
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 4학년
+mana_color: 청
+tower: 청탑
+major: 방벽수호학파
+vocation: 사제
 b5:
   O: 0.28
   C: 0.65
@@ -8,6 +13,6 @@ b5:
   A: 0.18
   N: 0.56
 derived:
-  DT: 0.01
-  NFC: 0.24
-  SM: 0.05
+  DT: 0.64
+  NFC: 0.29
+  SM: 0.33

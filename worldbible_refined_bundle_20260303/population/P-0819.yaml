@@ -1,6 +1,11 @@
 id: P-0819
 background_type: commoner
 dorm: 장학생동
+grade: 2학년
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 기사
 b5:
   O: 0.64
   C: 0.64
@@ -8,6 +13,6 @@ b5:
   A: 0.57
   N: 0.70
 derived:
-  DT: 0.01
-  NFC: 0.45
-  SM: 0.07
+  DT: 0.35
+  NFC: 0.55
+  SM: 0.54

@@ -1,6 +1,11 @@
 id: P-2743
 background_type: common_noble
 dorm: 연구·탑동
+grade: 1학년
+mana_color: 보라
+tower: 보라탑
+major: 전심학파
+vocation: 마법사
 b5:
   O: 0.85
   C: 0.69
@@ -8,6 +13,6 @@ b5:
   A: 0.58
   N: 0.73
 derived:
-  DT: 0.01
-  NFC: 0.59
-  SM: 0.04
+  DT: 0.15
+  NFC: 0.69
+  SM: 0.12

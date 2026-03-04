@@ -1,6 +1,11 @@
 id: P-2362
 background_type: common_noble
 dorm: 장학생동
+grade: 연구과정
+mana_color: 흑
+tower: 흑탑
+major: 흑영잠행학파
+vocation: 마법사
 b5:
   O: 0.66
   C: 0.45
@@ -8,6 +13,6 @@ b5:
   A: 0.27
   N: 0.23
 derived:
-  DT: 0.01
-  NFC: 0.50
-  SM: 0.38
+  DT: 0.28
+  NFC: 0.35
+  SM: 0.49

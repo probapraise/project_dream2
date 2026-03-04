@@ -1,6 +1,12 @@
 id: P-1175
 background_type: nonhuman
 dorm: 장학생동
+grade: 2학년
+mana_color: 녹
+tower: 녹탑
+major: 균사전장학파
+vocation: 마법사
+race: 아쿠아틱
 b5:
   O: 0.57
   C: 0.56
@@ -8,6 +14,6 @@ b5:
   A: 0.40
   N: 0.14
 derived:
-  DT: 0.01
-  NFC: 0.52
-  SM: 0.36
+  DT: 0.30
+  NFC: 0.50
+  SM: 0.46

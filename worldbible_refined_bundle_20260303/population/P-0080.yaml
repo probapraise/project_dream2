@@ -1,6 +1,11 @@
 id: P-0080
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 4학년
+mana_color: 흑
+tower: 흑탑
+major: 침식주술학파
+vocation: 마법사
 b5:
   O: 0.93
   C: 0.52
@@ -8,6 +13,6 @@ b5:
   A: 0.49
   N: 0.71
 derived:
-  DT: 0.01
-  NFC: 0.59
-  SM: 0.22
+  DT: 0.35
+  NFC: 0.62
+  SM: 0.60

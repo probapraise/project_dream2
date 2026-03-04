@@ -1,6 +1,11 @@
 id: P-2206
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 3학년
+mana_color: 보라
+tower: 보라탑
+major: 몽유침잠학파
+vocation: 기사
 b5:
   O: 0.44
   C: 0.74
@@ -8,6 +13,6 @@ b5:
   A: 0.49
   N: 0.93
 derived:
-  DT: 0.01
-  NFC: 0.33
-  SM: 0.17
+  DT: 0.40
+  NFC: 0.38
+  SM: 0.14

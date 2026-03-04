@@ -1,6 +1,12 @@
 id: P-2128
 background_type: nonhuman
 dorm: 외국·인외동
+grade: 3학년
+mana_color: 적
+tower: 적탑
+major: 폭연연성학파
+vocation: 마법사
+race: 고블린
 b5:
   O: 0.54
   C: 0.39
@@ -8,6 +14,6 @@ b5:
   A: 0.51
   N: 0.63
 derived:
-  DT: 0.01
-  NFC: 0.28
-  SM: 0.07
+  DT: 0.31
+  NFC: 0.31
+  SM: 0.37

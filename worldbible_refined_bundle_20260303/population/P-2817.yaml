@@ -1,6 +1,11 @@
 id: P-2817
 background_type: common_noble
 dorm: 연구·탑동
+grade: 3학년
+mana_color: 청
+tower: 청탑
+major: 방벽수호학파
+vocation: 마법사
 b5:
   O: 0.71
   C: 0.60
@@ -9,5 +14,5 @@ b5:
   N: 0.66
 derived:
   DT: 0.01
-  NFC: 0.48
-  SM: 0.02
+  NFC: 0.70
+  SM: 0.31

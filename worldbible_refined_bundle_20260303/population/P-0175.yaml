@@ -1,6 +1,11 @@
 id: P-0175
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 1학년
+mana_color: 백
+tower: 백탑
+major: 역서명파쇄학파
+vocation: 사제
 b5:
   O: 0.66
   C: 0.82
@@ -9,5 +14,5 @@ b5:
   N: 0.89
 derived:
   DT: 0.01
-  NFC: 0.51
-  SM: 0.02
+  NFC: 0.70
+  SM: 0.27

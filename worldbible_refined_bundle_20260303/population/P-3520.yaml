@@ -1,6 +1,12 @@
 id: P-3520
 background_type: nonhuman
 dorm: 외국·인외동
+grade: 2학년
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 마법사
+race: 비스트킨
 b5:
   O: 0.84
   C: 0.42
@@ -8,6 +14,6 @@ b5:
   A: 0.55
   N: 0.45
 derived:
-  DT: 0.01
-  NFC: 0.58
-  SM: 0.49
+  DT: 0.49
+  NFC: 0.41
+  SM: 0.66

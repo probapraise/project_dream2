@@ -1,6 +1,12 @@
 id: P-0989
 background_type: signature_noble
 dorm: 비전관
+grade: 3학년
+mana_color: 적
+tower: 적탑
+major: 폭연연성학파
+vocation: 기사
+noble_house: ORG-ARC-HOU-024
 b5:
   O: 0.83
   C: 0.76
@@ -8,6 +14,6 @@ b5:
   A: 0.46
   N: 0.68
 derived:
-  DT: 0.01
-  NFC: 0.61
-  SM: 0.01
+  DT: 0.24
+  NFC: 0.41
+  SM: 0.36

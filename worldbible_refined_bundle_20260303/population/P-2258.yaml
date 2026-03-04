@@ -1,6 +1,12 @@
 id: P-2258
 background_type: foreigner
 dorm: 외국·인외동
+grade: 2학년
+mana_color: 보라
+tower: 보라탑
+major: 전심학파
+vocation: 기사
+origin: SAH-울카자르권
 b5:
   O: 0.82
   C: 0.59
@@ -8,6 +14,6 @@ b5:
   A: 0.74
   N: 0.16
 derived:
-  DT: 0.01
-  NFC: 0.71
-  SM: 0.38
+  DT: 0.17
+  NFC: 0.67
+  SM: 0.59

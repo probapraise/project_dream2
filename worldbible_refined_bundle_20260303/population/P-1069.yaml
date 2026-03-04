@@ -1,6 +1,11 @@
 id: P-1069
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 4학년
+mana_color: 녹
+tower: 녹탑
+major: 정령계약학파
+vocation: 마법사
 b5:
   O: 0.62
   C: 0.70
@@ -8,6 +13,6 @@ b5:
   A: 0.36
   N: 0.54
 derived:
-  DT: 0.01
-  NFC: 0.52
-  SM: 0.32
+  DT: 0.63
+  NFC: 0.79
+  SM: 0.44

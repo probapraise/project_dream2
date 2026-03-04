@@ -1,6 +1,12 @@
 id: P-3169
 background_type: foreigner
 dorm: 외국·인외동
+grade: 4학년
+mana_color: 녹
+tower: 녹탑
+major: 정령계약학파
+vocation: 사제
+origin: ARC-원거리소국권
 b5:
   O: 0.71
   C: 0.61
@@ -8,6 +14,6 @@ b5:
   A: 0.57
   N: 0.81
 derived:
-  DT: 0.01
-  NFC: 0.47
-  SM: 0.21
+  DT: 0.25
+  NFC: 0.75
+  SM: 0.65

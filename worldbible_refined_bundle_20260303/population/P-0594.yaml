@@ -1,6 +1,11 @@
 id: P-0594
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 2학년
+mana_color: 적
+tower: 적탑
+major: 화염포격학파
+vocation: 마법사
 b5:
   O: 0.75
   C: 0.25
@@ -8,6 +13,6 @@ b5:
   A: 0.73
   N: 0.65
 derived:
-  DT: 0.01
-  NFC: 0.38
-  SM: 0.26
+  DT: 0.11
+  NFC: 0.33
+  SM: 0.40

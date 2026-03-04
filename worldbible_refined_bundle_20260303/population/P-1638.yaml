@@ -1,6 +1,12 @@
 id: P-1638
 background_type: foreigner
 dorm: 외국·인외동
+grade: 1학년
+mana_color: 적
+tower: 적탑
+major: 화염포격학파
+vocation: 사제
+origin: ARC-인접왕국권
 b5:
   O: 0.57
   C: 0.84
@@ -8,6 +14,6 @@ b5:
   A: 0.45
   N: 0.39
 derived:
-  DT: 0.01
-  NFC: 0.58
-  SM: 0.20
+  DT: 0.40
+  NFC: 0.63
+  SM: 0.33

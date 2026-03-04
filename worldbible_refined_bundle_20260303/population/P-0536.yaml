@@ -1,6 +1,12 @@
 id: P-0536
 background_type: signature_noble
 dorm: 비전관
+grade: 연구과정
+mana_color: 황
+tower: 황탑
+major: 관성조율학파
+vocation: 마법사
+noble_house: ORG-ARC-HOU-023
 b5:
   O: 0.70
   C: 0.22
@@ -8,6 +14,6 @@ b5:
   A: 0.30
   N: 0.55
 derived:
-  DT: 0.06
-  NFC: 0.33
-  SM: 0.24
+  DT: 0.64
+  NFC: 0.34
+  SM: 0.30

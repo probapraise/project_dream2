@@ -1,6 +1,12 @@
 id: P-0235
 background_type: foreigner
 dorm: 외국·인외동
+grade: 2학년
+mana_color: 청
+tower: 청탑
+major: 결속조형학파
+vocation: 사제
+origin: SAH-울카자르권
 b5:
   O: 0.74
   C: 0.46
@@ -8,6 +14,6 @@ b5:
   A: 0.66
   N: 0.54
 derived:
-  DT: 0.01
-  NFC: 0.50
-  SM: 0.29
+  DT: 0.20
+  NFC: 0.72
+  SM: 0.33

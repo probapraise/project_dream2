@@ -1,6 +1,11 @@
 id: P-2543
 background_type: common_noble
 dorm: 연구·탑동
+grade: 2학년
+mana_color: 적
+tower: 적탑
+major: 화염포격학파
+vocation: 기사
 b5:
   O: 0.32
   C: 0.53
@@ -8,6 +13,6 @@ b5:
   A: 0.79
   N: 0.35
 derived:
-  DT: 0.01
-  NFC: 0.31
-  SM: 0.29
+  DT: 0.16
+  NFC: 0.64
+  SM: 0.27

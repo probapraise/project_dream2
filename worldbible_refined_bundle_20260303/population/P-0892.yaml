@@ -1,6 +1,11 @@
 id: P-0892
 background_type: commoner
 dorm: 장학생동
+grade: 3학년
+mana_color: 보라
+tower: 보라탑
+major: 전심학파
+vocation: 마법사
 b5:
   O: 0.56
   C: 0.71
@@ -8,6 +13,6 @@ b5:
   A: 0.48
   N: 0.62
 derived:
-  DT: 0.01
-  NFC: 0.45
-  SM: 0.10
+  DT: 0.24
+  NFC: 0.39
+  SM: 0.91

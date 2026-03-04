@@ -1,6 +1,11 @@
 id: P-2719
 background_type: common_noble
 dorm: 장학생동
+grade: 4학년
+mana_color: 황
+tower: 황탑
+major: 공성진동학파
+vocation: 기사
 b5:
   O: 0.63
   C: 0.51
@@ -8,6 +13,6 @@ b5:
   A: 0.74
   N: 0.61
 derived:
-  DT: 0.01
-  NFC: 0.42
-  SM: 0.15
+  DT: 0.41
+  NFC: 0.37
+  SM: 0.30

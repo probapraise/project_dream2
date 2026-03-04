@@ -1,6 +1,11 @@
 id: P-0750
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 연구과정
+mana_color: 보라
+tower: 보라탑
+major: 전심학파
+vocation: 마법사
 b5:
   O: 0.70
   C: 0.69
@@ -9,5 +14,5 @@ b5:
   N: 0.07
 derived:
   DT: 0.01
-  NFC: 0.70
-  SM: 0.44
+  NFC: 0.73
+  SM: 0.72

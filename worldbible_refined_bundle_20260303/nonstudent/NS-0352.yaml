@@ -1,0 +1,16 @@
+id: NS-0352
+job_type: 장내상인
+role: UNASSIGNED
+org_id: null
+b5:
+  O: 0.66
+  C: 0.86
+  E: 0.93
+  A: 0.37
+  N: 0.48
+derived:
+  DT: 0.35
+  NFC: 0.35
+  SM: 0.58
+status: uninstantiated
+ch_id: null

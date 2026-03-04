@@ -1,6 +1,11 @@
 id: P-2833
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 3학년
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 기사
 b5:
   O: 0.50
   C: 0.57
@@ -8,6 +13,6 @@ b5:
   A: 0.38
   N: 0.42
 derived:
-  DT: 0.01
-  NFC: 0.39
-  SM: 0.17
+  DT: 0.51
+  NFC: 0.43
+  SM: 0.45

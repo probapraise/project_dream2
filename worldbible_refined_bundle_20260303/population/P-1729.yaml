@@ -1,6 +1,11 @@
 id: P-1729
 background_type: common_noble
 dorm: 연구·탑동
+grade: 4학년
+mana_color: 황
+tower: 황탑
+major: 관성조율학파
+vocation: 사제
 b5:
   O: 0.76
   C: 0.64
@@ -8,6 +13,6 @@ b5:
   A: 0.58
   N: 0.55
 derived:
-  DT: 0.01
-  NFC: 0.57
-  SM: 0.20
+  DT: 0.29
+  NFC: 0.66
+  SM: 0.37

@@ -1,6 +1,11 @@
 id: P-2779
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 연구과정
+mana_color: 백
+tower: 백탑
+major: 광휘정화학파
+vocation: 마법사
 b5:
   O: 0.79
   C: 0.52
@@ -8,6 +13,6 @@ b5:
   A: 0.61
   N: 0.36
 derived:
-  DT: 0.01
-  NFC: 0.60
-  SM: 0.38
+  DT: 0.35
+  NFC: 0.65
+  SM: 0.52

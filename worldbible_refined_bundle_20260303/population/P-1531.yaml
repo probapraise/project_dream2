@@ -1,6 +1,11 @@
 id: P-1531
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 4학년
+mana_color: 청
+tower: 청탑
+major: 구속연쇄학파
+vocation: 마법사
 b5:
   O: 0.62
   C: 0.76
@@ -8,6 +13,6 @@ b5:
   A: 0.48
   N: 0.63
 derived:
-  DT: 0.01
-  NFC: 0.51
-  SM: 0.10
+  DT: 0.39
+  NFC: 0.42
+  SM: 0.43

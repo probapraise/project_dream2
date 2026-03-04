@@ -1,6 +1,11 @@
 id: P-2410
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 3학년
+mana_color: 황
+tower: 황탑
+major: 관성조율학파
+vocation: 기사
 b5:
   O: 0.76
   C: 0.83
@@ -9,5 +14,5 @@ b5:
   N: 0.33
 derived:
   DT: 0.01
-  NFC: 0.74
-  SM: 0.33
+  NFC: 0.75
+  SM: 0.45

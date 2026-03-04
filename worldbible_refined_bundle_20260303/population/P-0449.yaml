@@ -1,6 +1,12 @@
 id: P-0449
 background_type: nonhuman
 dorm: 연구·탑동
+grade: 3학년
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 마법사
+race: 고블린
 b5:
   O: 0.71
   C: 0.71
@@ -8,6 +14,6 @@ b5:
   A: 0.63
   N: 0.67
 derived:
-  DT: 0.01
+  DT: 0.44
   NFC: 0.55
-  SM: 0.18
+  SM: 0.38

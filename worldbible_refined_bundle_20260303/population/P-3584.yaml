@@ -1,6 +1,12 @@
 id: P-3584
 background_type: foreigner
 dorm: 외국·인외동
+grade: 3학년
+mana_color: 보라
+tower: 보라탑
+major: 전심학파
+vocation: 기사
+origin: ARC-원거리소국권
 b5:
   O: 0.64
   C: 0.76
@@ -8,6 +14,6 @@ b5:
   A: 0.61
   N: 0.33
 derived:
-  DT: 0.01
-  NFC: 0.63
-  SM: 0.35
+  DT: 0.21
+  NFC: 0.65
+  SM: 0.26

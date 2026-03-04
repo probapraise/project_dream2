@@ -1,6 +1,11 @@
 id: P-2828
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 연구과정
+mana_color: 백
+tower: 백탑
+major: 순백응급학파
+vocation: 마법사
 b5:
   O: 0.80
   C: 0.33
@@ -8,6 +13,6 @@ b5:
   A: 0.63
   N: 0.55
 derived:
-  DT: 0.01
-  NFC: 0.45
+  DT: 0.61
+  NFC: 0.36
   SM: 0.15

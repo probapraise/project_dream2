@@ -1,6 +1,11 @@
 id: P-2290
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 1학년
+mana_color: 청
+tower: 청탑
+major: 방벽수호학파
+vocation: 사제
 b5:
   O: 0.95
   C: 0.77
@@ -9,5 +14,5 @@ b5:
   N: 0.27
 derived:
   DT: 0.01
-  NFC: 0.84
-  SM: 0.33
+  NFC: 0.75
+  SM: 0.32

@@ -1,6 +1,12 @@
 id: P-1658
 background_type: nonhuman
 dorm: 외국·인외동
+grade: 3학년
+mana_color: 흑
+tower: 흑탑
+major: 흑영잠행학파
+vocation: 마법사
+race: 비스트킨
 b5:
   O: 0.68
   C: 0.53
@@ -8,6 +14,6 @@ b5:
   A: 0.50
   N: 0.80
 derived:
-  DT: 0.01
-  NFC: 0.41
-  SM: 0.15
+  DT: 0.16
+  NFC: 0.32
+  SM: 0.52

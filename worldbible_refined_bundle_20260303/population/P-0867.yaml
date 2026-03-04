@@ -1,6 +1,12 @@
 id: P-0867
 background_type: signature_noble
 dorm: 비전관
+grade: 1학년
+mana_color: 녹
+tower: 녹탑
+major: 정령계약학파
+vocation: 기사
+noble_house: ORG-ARC-HOU-021
 b5:
   O: 0.56
   C: 0.74
@@ -8,8 +14,6 @@ b5:
   A: 0.39
   N: 0.66
 derived:
-  DT: 0.01
-  NFC: 0.46
-  SM: 0.17
-status: named
-ch_id: NC-0001
+  DT: 0.19
+  NFC: 0.51
+  SM: 0.45

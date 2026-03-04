@@ -1,6 +1,12 @@
 id: P-0293
 background_type: nonhuman
 dorm: 외국·인외동
+grade: 3학년
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 기사
+race: 고블린
 b5:
   O: 0.34
   C: 0.78
@@ -8,6 +14,6 @@ b5:
   A: 0.40
   N: 0.34
 derived:
-  DT: 0.01
-  NFC: 0.43
-  SM: 0.32
+  DT: 0.55
+  NFC: 0.17
+  SM: 0.28

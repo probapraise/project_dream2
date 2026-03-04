@@ -1,6 +1,11 @@
 id: P-2442
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 3학년
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 기사
 b5:
   O: 0.61
   C: 0.52
@@ -8,6 +13,6 @@ b5:
   A: 0.76
   N: 0.47
 derived:
-  DT: 0.01
-  NFC: 0.47
-  SM: 0.32
+  DT: 0.33
+  NFC: 0.50
+  SM: 0.43

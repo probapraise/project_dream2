@@ -1,6 +1,12 @@
 id: P-2605
 background_type: nonhuman
 dorm: 외국·인외동
+grade: 1학년
+mana_color: 청
+tower: 청탑
+major: 결속조형학파
+vocation: 기사
+race: 리자드포크
 b5:
   O: 0.64
   C: 0.65
@@ -8,6 +14,6 @@ b5:
   A: 0.74
   N: 0.55
 derived:
-  DT: 0.01
-  NFC: 0.52
-  SM: 0.23
+  DT: 0.40
+  NFC: 0.54
+  SM: 0.47

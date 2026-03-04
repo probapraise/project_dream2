@@ -1,6 +1,12 @@
 id: P-0816
 background_type: nonhuman
 dorm: 연구·탑동
+grade: 3학년
+mana_color: 황
+tower: 황탑
+major: 전자유도학파
+vocation: 사제
+race: 비스트킨
 b5:
   O: 0.76
   C: 0.80
@@ -8,6 +14,6 @@ b5:
   A: 0.59
   N: 0.47
 derived:
-  DT: 0.01
-  NFC: 0.68
-  SM: 0.27
+  DT: 0.27
+  NFC: 0.55
+  SM: 0.61

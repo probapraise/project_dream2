@@ -1,6 +1,11 @@
 id: P-2145
 background_type: common_noble
 dorm: 장학생동
+grade: 2학년
+mana_color: 적
+tower: 적탑
+major: 폭연연성학파
+vocation: 마법사
 b5:
   O: 0.73
   C: 0.67
@@ -8,6 +13,6 @@ b5:
   A: 0.74
   N: 0.78
 derived:
-  DT: 0.01
-  NFC: 0.54
-  SM: 0.27
+  DT: 0.19
+  NFC: 0.64
+  SM: 0.40

@@ -1,6 +1,11 @@
 id: P-2132
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 1학년
+mana_color: 적
+tower: 적탑
+major: 폭연연성학파
+vocation: 기사
 b5:
   O: 0.76
   C: 0.67
@@ -8,6 +13,6 @@ b5:
   A: 0.35
   N: 0.61
 derived:
-  DT: 0.01
-  NFC: 0.53
-  SM: 0.01
+  DT: 0.67
+  NFC: 0.57
+  SM: 0.10

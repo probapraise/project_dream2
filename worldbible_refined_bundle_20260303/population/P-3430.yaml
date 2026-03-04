@@ -1,6 +1,12 @@
 id: P-3430
 background_type: foreigner
 dorm: 외국·인외동
+grade: 2학년
+mana_color: 백
+tower: 백탑
+major: 광휘정화학파
+vocation: 마법사
+origin: NOR-스카르벨권
 b5:
   O: 0.48
   C: 0.52
@@ -8,6 +14,6 @@ b5:
   A: 0.69
   N: 0.35
 derived:
-  DT: 0.01
-  NFC: 0.38
-  SM: 0.09
+  DT: 0.31
+  NFC: 0.51
+  SM: 0.46

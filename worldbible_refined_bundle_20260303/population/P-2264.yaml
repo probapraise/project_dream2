@@ -1,6 +1,12 @@
 id: P-2264
 background_type: nonhuman
 dorm: 일반동(서관)
+grade: 4학년
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 사제
+race: 고블린
 b5:
   O: 0.65
   C: 0.51
@@ -8,6 +14,6 @@ b5:
   A: 0.58
   N: 0.56
 derived:
-  DT: 0.01
-  NFC: 0.44
-  SM: 0.17
+  DT: 0.29
+  NFC: 0.56
+  SM: 0.63

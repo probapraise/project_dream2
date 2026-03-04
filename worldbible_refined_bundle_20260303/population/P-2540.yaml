@@ -1,6 +1,12 @@
 id: P-2540
 background_type: nonhuman
 dorm: 외국·인외동
+grade: 1학년
+mana_color: 백
+tower: 백탑
+major: 순백응급학파
+vocation: 마법사
+race: 고블린
 b5:
   O: 0.99
   C: 0.39
@@ -8,6 +14,6 @@ b5:
   A: 0.65
   N: 0.35
 derived:
-  DT: 0.01
-  NFC: 0.67
-  SM: 0.40
+  DT: 0.38
+  NFC: 0.85
+  SM: 0.68

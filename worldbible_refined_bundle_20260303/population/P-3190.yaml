@@ -1,6 +1,12 @@
 id: P-3190
 background_type: nonhuman
 dorm: 외국·인외동
+grade: 1학년
+mana_color: 녹
+tower: 녹탑
+major: 정령계약학파
+vocation: 사제
+race: 고블린
 b5:
   O: 0.53
   C: 0.40
@@ -10,4 +16,4 @@ b5:
 derived:
   DT: 0.01
   NFC: 0.34
-  SM: 0.25
+  SM: 0.55

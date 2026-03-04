@@ -1,6 +1,11 @@
 id: P-1976
 background_type: common_noble
 dorm: 장학생동
+grade: 2학년
+mana_color: 보라
+tower: 보라탑
+major: 전심학파
+vocation: 마법사
 b5:
   O: 0.71
   C: 0.72
@@ -8,6 +13,6 @@ b5:
   A: 0.49
   N: 0.67
 derived:
-  DT: 0.01
-  NFC: 0.55
-  SM: 0.22
+  DT: 0.47
+  NFC: 0.57
+  SM: 0.46

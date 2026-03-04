@@ -1,6 +1,11 @@
 id: P-1710
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 4학년
+mana_color: 녹
+tower: 녹탑
+major: 정령계약학파
+vocation: 기사
 b5:
   O: 0.81
   C: 0.73
@@ -8,6 +13,6 @@ b5:
   A: 0.68
   N: 0.45
 derived:
-  DT: 0.01
-  NFC: 0.69
-  SM: 0.35
+  DT: 0.19
+  NFC: 0.77
+  SM: 0.24

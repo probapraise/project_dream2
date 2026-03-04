@@ -1,6 +1,11 @@
 id: P-0277
 background_type: common_noble
 dorm: 장학생동
+grade: 3학년
+mana_color: 청
+tower: 청탑
+major: 결속조형학파
+vocation: 마법사
 b5:
   O: 0.44
   C: 0.72
@@ -8,6 +13,6 @@ b5:
   A: 0.33
   N: 0.76
 derived:
-  DT: 0.01
-  NFC: 0.34
-  SM: 0.09
+  DT: 0.33
+  NFC: 0.28
+  SM: 0.19

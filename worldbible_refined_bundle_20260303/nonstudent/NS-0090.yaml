@@ -1,0 +1,16 @@
+id: NS-0090
+job_type: 행정직
+role: UNASSIGNED
+org_id: null
+b5:
+  O: 0.28
+  C: 0.75
+  E: 0.46
+  A: 0.74
+  N: 0.54
+derived:
+  DT: 0.24
+  NFC: 0.47
+  SM: 0.35
+status: uninstantiated
+ch_id: null

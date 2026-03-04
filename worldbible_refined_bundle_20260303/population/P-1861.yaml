@@ -1,6 +1,11 @@
 id: P-1861
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 1학년
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 마법사
 b5:
   O: 0.78
   C: 0.51
@@ -8,6 +13,6 @@ b5:
   A: 0.47
   N: 0.73
 derived:
-  DT: 0.01
-  NFC: 0.49
-  SM: 0.23
+  DT: 0.53
+  NFC: 0.61
+  SM: 0.57

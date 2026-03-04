@@ -1,0 +1,16 @@
+id: NS-0419
+job_type: 서약원파견관
+role: UNASSIGNED
+org_id: null
+b5:
+  O: 0.59
+  C: 0.68
+  E: 0.54
+  A: 0.69
+  N: 0.49
+derived:
+  DT: 0.01
+  NFC: 0.64
+  SM: 0.47
+status: uninstantiated
+ch_id: null

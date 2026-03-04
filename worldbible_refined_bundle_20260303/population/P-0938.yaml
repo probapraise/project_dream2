@@ -1,6 +1,12 @@
 id: P-0938
 background_type: signature_noble
 dorm: 비전관
+grade: 3학년
+mana_color: 적
+tower: 적탑
+major: 폭연연성학파
+vocation: 마법사
+noble_house: ORG-ARC-HOU-003
 b5:
   O: 0.99
   C: 0.74
@@ -8,6 +14,6 @@ b5:
   A: 0.34
   N: 0.50
 derived:
-  DT: 0.01
+  DT: 0.32
   NFC: 0.77
-  SM: 0.22
+  SM: 0.52

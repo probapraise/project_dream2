@@ -1,6 +1,12 @@
 id: P-2088
 background_type: foreigner
 dorm: 외국·인외동
+grade: 연구과정
+mana_color: 백
+tower: 백탑
+major: 순백응급학파
+vocation: 마법사
+origin: 출신불명
 b5:
   O: 0.61
   C: 0.66
@@ -8,6 +14,6 @@ b5:
   A: 0.51
   N: 0.51
 derived:
-  DT: 0.01
-  NFC: 0.51
-  SM: 0.30
+  DT: 0.27
+  NFC: 0.72
+  SM: 0.32

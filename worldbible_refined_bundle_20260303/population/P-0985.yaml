@@ -1,6 +1,12 @@
 id: P-0985
 background_type: foreigner
 dorm: 외국·인외동
+grade: 4학년
+mana_color: 보라
+tower: 보라탑
+major: 전심학파
+vocation: 마법사
+origin: NOR-스카르벨권
 b5:
   O: 0.74
   C: 0.60
@@ -8,6 +14,6 @@ b5:
   A: 0.73
   N: 0.52
 derived:
-  DT: 0.01
-  NFC: 0.57
-  SM: 0.33
+  DT: 0.30
+  NFC: 0.55
+  SM: 0.47

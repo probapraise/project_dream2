@@ -1,0 +1,16 @@
+id: NS-0490
+job_type: 연구원
+role: UNASSIGNED
+org_id: null
+b5:
+  O: 0.99
+  C: 0.51
+  E: 0.44
+  A: 0.68
+  N: 0.62
+derived:
+  DT: 0.24
+  NFC: 0.86
+  SM: 0.60
+status: uninstantiated
+ch_id: null

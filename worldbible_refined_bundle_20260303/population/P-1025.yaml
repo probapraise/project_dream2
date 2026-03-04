@@ -1,6 +1,12 @@
 id: P-1025
 background_type: nonhuman
 dorm: 장학생동
+grade: 3학년
+mana_color: 백
+tower: 백탑
+major: 순백응급학파
+vocation: 마법사
+race: 하플링
 b5:
   O: 0.52
   C: 0.69
@@ -9,5 +15,5 @@ b5:
   N: 0.32
 derived:
   DT: 0.01
-  NFC: 0.51
-  SM: 0.30
+  NFC: 0.77
+  SM: 0.58

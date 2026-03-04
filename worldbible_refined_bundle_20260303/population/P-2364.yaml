@@ -1,6 +1,12 @@
 id: P-2364
 background_type: foreigner
 dorm: 외국·인외동
+grade: 1학년
+mana_color: 녹
+tower: 녹탑
+major: 정령계약학파
+vocation: 마법사
+origin: SAH-울카자르권
 b5:
   O: 0.46
   C: 0.60
@@ -8,6 +14,6 @@ b5:
   A: 0.54
   N: 0.58
 derived:
-  DT: 0.01
-  NFC: 0.33
-  SM: 0.01
+  DT: 0.36
+  NFC: 0.41
+  SM: 0.24

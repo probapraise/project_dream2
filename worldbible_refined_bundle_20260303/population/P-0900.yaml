@@ -1,6 +1,11 @@
 id: P-0900
 background_type: commoner
 dorm: 장학생동
+grade: 3학년
+mana_color: 백
+tower: 백탑
+major: 역서명파쇄학파
+vocation: 마법사
 b5:
   O: 0.63
   C: 0.30
@@ -8,6 +13,6 @@ b5:
   A: 0.65
   N: 0.43
 derived:
-  DT: 0.01
+  DT: 0.13
   NFC: 0.39
-  SM: 0.40
+  SM: 0.79

@@ -1,6 +1,11 @@
 id: P-2008
 background_type: common_noble
 dorm: 장학생동
+grade: 4학년
+mana_color: 청
+tower: 청탑
+major: 방벽수호학파
+vocation: 기사
 b5:
   O: 0.64
   C: 0.32
@@ -8,6 +13,6 @@ b5:
   A: 0.71
   N: 0.67
 derived:
-  DT: 0.01
-  NFC: 0.31
-  SM: 0.02
+  DT: 0.14
+  NFC: 0.42
+  SM: 0.46

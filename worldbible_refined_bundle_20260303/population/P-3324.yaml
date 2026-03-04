@@ -1,6 +1,11 @@
 id: P-3324
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 2학년
+mana_color: 녹
+tower: 녹탑
+major: 정령계약학파
+vocation: 사제
 b5:
   O: 0.56
   C: 0.34
@@ -8,6 +13,6 @@ b5:
   A: 0.91
   N: 0.36
 derived:
-  DT: 0.01
-  NFC: 0.40
-  SM: 0.42
+  DT: 0.34
+  NFC: 0.59
+  SM: 0.39

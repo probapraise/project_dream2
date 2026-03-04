@@ -1,6 +1,11 @@
 id: P-0395
 background_type: commoner
 dorm: 장학생동
+grade: 3학년
+mana_color: 황
+tower: 황탑
+major: 공성진동학파
+vocation: 기사
 b5:
   O: 0.86
   C: 0.53
@@ -8,6 +13,6 @@ b5:
   A: 0.79
   N: 0.10
 derived:
-  DT: 0.01
-  NFC: 0.73
-  SM: 0.46
+  DT: 0.23
+  NFC: 0.77
+  SM: 0.56

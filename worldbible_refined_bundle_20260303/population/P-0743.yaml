@@ -1,6 +1,11 @@
 id: P-0743
 background_type: common_noble
 dorm: 장학생동
+grade: 2학년
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 마법사
 b5:
   O: 0.88
   C: 0.68
@@ -8,6 +13,6 @@ b5:
   A: 0.66
   N: 0.45
 derived:
-  DT: 0.01
-  NFC: 0.69
-  SM: 0.20
+  DT: 0.03
+  NFC: 0.67
+  SM: 0.51

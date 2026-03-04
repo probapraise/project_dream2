@@ -1,6 +1,11 @@
 id: P-2261
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 연구과정
+mana_color: 녹
+tower: 녹탑
+major: 정령계약학파
+vocation: 마법사
 b5:
   O: 0.71
   C: 0.65
@@ -9,5 +14,5 @@ b5:
   N: 0.35
 derived:
   DT: 0.01
-  NFC: 0.60
-  SM: 0.32
+  NFC: 0.75
+  SM: 0.53

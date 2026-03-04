@@ -1,6 +1,11 @@
 id: P-0660
 background_type: commoner
 dorm: 장학생동
+grade: 2학년
+mana_color: 보라
+tower: 보라탑
+major: 몽유침잠학파
+vocation: 사제
 b5:
   O: 0.70
   C: 0.55
@@ -8,6 +13,6 @@ b5:
   A: 0.66
   N: 0.52
 derived:
-  DT: 0.01
-  NFC: 0.51
-  SM: 0.22
+  DT: 0.22
+  NFC: 0.50
+  SM: 0.56

@@ -1,6 +1,11 @@
 id: P-2594
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 1학년
+mana_color: 황
+tower: 황탑
+major: 전자유도학파
+vocation: 마법사
 b5:
   O: 0.57
   C: 0.63
@@ -8,6 +13,6 @@ b5:
   A: 0.63
   N: 0.80
 derived:
-  DT: 0.01
-  NFC: 0.38
+  DT: 0.43
+  NFC: 0.43
   SM: 0.09

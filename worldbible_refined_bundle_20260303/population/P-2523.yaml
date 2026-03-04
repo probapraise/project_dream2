@@ -1,6 +1,11 @@
 id: P-2523
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 1학년
+mana_color: 청
+tower: 청탑
+major: 방벽수호학파
+vocation: 기사
 b5:
   O: 0.51
   C: 0.47
@@ -8,6 +13,6 @@ b5:
   A: 0.78
   N: 0.50
 derived:
-  DT: 0.01
-  NFC: 0.38
-  SM: 0.33
+  DT: 0.24
+  NFC: 0.57
+  SM: 0.20

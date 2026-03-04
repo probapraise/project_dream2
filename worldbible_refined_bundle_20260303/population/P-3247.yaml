@@ -1,6 +1,12 @@
 id: P-3247
 background_type: nonhuman
 dorm: 일반동(동관)
+grade: 1학년
+mana_color: 보라
+tower: 보라탑
+major: 전심학파
+vocation: 마법사
+race: 고블린
 b5:
   O: 0.74
   C: 0.52
@@ -8,6 +14,6 @@ b5:
   A: 0.42
   N: 0.27
 derived:
-  DT: 0.01
-  NFC: 0.57
-  SM: 0.28
+  DT: 0.19
+  NFC: 0.54
+  SM: 0.42

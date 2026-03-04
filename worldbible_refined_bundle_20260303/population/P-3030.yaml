@@ -1,6 +1,12 @@
 id: P-3030
 background_type: nonhuman
 dorm: 일반동(동관)
+grade: 2학년
+mana_color: 적
+tower: 적탑
+major: 화염포격학파
+vocation: 기사
+race: 고블린
 b5:
   O: 0.86
   C: 0.43
@@ -8,6 +14,6 @@ b5:
   A: 0.76
   N: 0.59
 derived:
-  DT: 0.01
-  NFC: 0.55
-  SM: 0.26
+  DT: 0.31
+  NFC: 0.49
+  SM: 0.49

@@ -1,0 +1,16 @@
+id: NS-0354
+job_type: 감찰단
+role: UNASSIGNED
+org_id: null
+b5:
+  O: 0.52
+  C: 0.36
+  E: 0.67
+  A: 0.39
+  N: 0.98
+derived:
+  DT: 0.72
+  NFC: 0.34
+  SM: 0.45
+status: uninstantiated
+ch_id: null

@@ -1,0 +1,16 @@
+id: NS-0594
+job_type: 의료진
+role: UNASSIGNED
+org_id: null
+b5:
+  O: 0.26
+  C: 0.81
+  E: 0.40
+  A: 0.90
+  N: 0.46
+derived:
+  DT: 0.11
+  NFC: 0.51
+  SM: 0.07
+status: uninstantiated
+ch_id: null

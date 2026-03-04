@@ -1,6 +1,11 @@
 id: P-3028
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 연구과정
+mana_color: 황
+tower: 황탑
+major: 전자유도학파
+vocation: 마법사
 b5:
   O: 0.74
   C: 0.53
@@ -8,6 +13,6 @@ b5:
   A: 0.80
   N: 0.66
 derived:
-  DT: 0.01
-  NFC: 0.49
-  SM: 0.12
+  DT: 0.02
+  NFC: 0.50
+  SM: 0.18

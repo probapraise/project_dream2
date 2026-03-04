@@ -1,6 +1,12 @@
 id: P-1592
 background_type: foreigner
 dorm: 외국·인외동
+grade: 3학년
+mana_color: 적
+tower: 적탑
+major: 화염포격학파
+vocation: 마법사
+origin: 출신불명
 b5:
   O: 0.86
   C: 0.74
@@ -9,5 +15,5 @@ b5:
   N: 0.34
 derived:
   DT: 0.01
-  NFC: 0.72
-  SM: 0.03
+  NFC: 0.76
+  SM: 0.50

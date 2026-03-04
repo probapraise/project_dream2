@@ -1,6 +1,11 @@
 id: P-1314
 background_type: common_noble
 dorm: 장학생동
+grade: 1학년
+mana_color: 백
+tower: 백탑
+major: 순백응급학파
+vocation: 마법사
 b5:
   O: 0.61
   C: 0.55
@@ -8,6 +13,6 @@ b5:
   A: 0.68
   N: 0.33
 derived:
-  DT: 0.01
-  NFC: 0.51
-  SM: 0.32
+  DT: 0.29
+  NFC: 0.40
+  SM: 0.38

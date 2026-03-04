@@ -1,6 +1,12 @@
 id: P-0713
 background_type: signature_noble
 dorm: 비전관
+grade: 1학년
+mana_color: 황
+tower: 황탑
+major: 관성조율학파
+vocation: 기사
+noble_house: ORG-ARC-HOU-004
 b5:
   O: 0.83
   C: 0.52
@@ -8,6 +14,6 @@ b5:
   A: 0.32
   N: 0.65
 derived:
-  DT: 0.01
-  NFC: 0.53
-  SM: 0.23
+  DT: 0.31
+  NFC: 0.57
+  SM: 0.42

@@ -1,6 +1,11 @@
 id: P-3421
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 3학년
+mana_color: 적
+tower: 적탑
+major: 화염포격학파
+vocation: 기사
 b5:
   O: 0.35
   C: 0.70
@@ -8,6 +13,6 @@ b5:
   A: 0.50
   N: 0.89
 derived:
-  DT: 0.01
-  NFC: 0.26
-  SM: 0.13
+  DT: 0.43
+  NFC: 0.39
+  SM: 0.28

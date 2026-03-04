@@ -1,6 +1,12 @@
 id: P-0302
 background_type: nonhuman
 dorm: 일반동(서관)
+grade: 연구과정
+mana_color: 백
+tower: 백탑
+major: 순백응급학파
+vocation: 기사
+race: 드워프
 b5:
   O: 0.61
   C: 0.22
@@ -8,6 +14,6 @@ b5:
   A: 0.98
   N: 0.66
 derived:
-  DT: 0.01
-  NFC: 0.30
-  SM: 0.33
+  DT: 0.05
+  NFC: 0.48
+  SM: 0.19

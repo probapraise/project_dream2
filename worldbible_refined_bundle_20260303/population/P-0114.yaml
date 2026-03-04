@@ -1,6 +1,11 @@
 id: P-0114
 background_type: commoner
 dorm: 장학생동
+grade: 1학년
+mana_color: 적
+tower: 적탑
+major: 폭연연성학파
+vocation: 마법사
 b5:
   O: 0.55
   C: 0.54
@@ -8,6 +13,6 @@ b5:
   A: 0.60
   N: 0.19
 derived:
-  DT: 0.01
-  NFC: 0.50
-  SM: 0.40
+  DT: 0.04
+  NFC: 0.54
+  SM: 0.54

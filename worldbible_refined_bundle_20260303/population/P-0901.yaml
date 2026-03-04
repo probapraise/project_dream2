@@ -1,6 +1,12 @@
 id: P-0901
 background_type: signature_noble
 dorm: 비전관
+grade: 2학년
+mana_color: 녹
+tower: 녹탑
+major: 정령계약학파
+vocation: 마법사
+noble_house: ORG-ARC-HOU-005
 b5:
   O: 0.41
   C: 0.66
@@ -8,6 +14,6 @@ b5:
   A: 0.34
   N: 0.45
 derived:
-  DT: 0.01
-  NFC: 0.39
-  SM: 0.35
+  DT: 0.49
+  NFC: 0.26
+  SM: 0.67

@@ -1,6 +1,11 @@
 id: P-2688
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 3학년
+mana_color: 녹
+tower: 녹탑
+major: 정령계약학파
+vocation: 마법사
 b5:
   O: 0.43
   C: 0.67
@@ -8,6 +13,6 @@ b5:
   A: 0.23
   N: 0.64
 derived:
-  DT: 0.01
-  NFC: 0.32
-  SM: 0.04
+  DT: 0.42
+  NFC: 0.29
+  SM: 0.50

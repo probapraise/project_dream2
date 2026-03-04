@@ -1,6 +1,11 @@
 id: P-0840
 background_type: common_noble
 dorm: 장학생동
+grade: 3학년
+mana_color: 청
+tower: 청탑
+major: 구속연쇄학파
+vocation: 기사
 b5:
   O: 0.86
   C: 0.71
@@ -8,6 +13,6 @@ b5:
   A: 0.59
   N: 0.76
 derived:
-  DT: 0.01
-  NFC: 0.62
-  SM: 0.17
+  DT: 0.26
+  NFC: 0.51
+  SM: 0.64

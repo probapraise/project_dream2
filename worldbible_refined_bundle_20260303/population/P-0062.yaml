@@ -1,6 +1,12 @@
 id: P-0062
 background_type: nonhuman
 dorm: 외국·인외동
+grade: 3학년
+mana_color: 녹
+tower: 녹탑
+major: 정령계약학파
+vocation: 마법사
+race: 오크
 b5:
   O: 0.78
   C: 0.62
@@ -8,6 +14,6 @@ b5:
   A: 0.76
   N: 0.65
 derived:
-  DT: 0.01
-  NFC: 0.56
-  SM: 0.14
+  DT: 0.16
+  NFC: 0.64
+  SM: 0.54

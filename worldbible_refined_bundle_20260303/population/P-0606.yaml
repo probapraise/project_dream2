@@ -1,6 +1,12 @@
 id: P-0606
 background_type: signature_noble
 dorm: 비전관
+grade: 4학년
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 기사
+noble_house: ORG-ARC-HOU-001
 b5:
   O: 0.74
   C: 0.58
@@ -8,6 +14,6 @@ b5:
   A: 0.85
   N: 0.58
 derived:
-  DT: 0.01
-  NFC: 0.54
-  SM: 0.16
+  DT: 0.25
+  NFC: 0.53
+  SM: 0.50

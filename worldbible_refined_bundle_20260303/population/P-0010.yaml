@@ -1,6 +1,12 @@
 id: P-0010
 background_type: foreigner
 dorm: 외국·인외동
+grade: 4학년
+mana_color: 황
+tower: 황탑
+major: 공성진동학파
+vocation: 사제
+origin: ARC-인접왕국권
 b5:
   O: 0.95
   C: 0.71
@@ -8,6 +14,6 @@ b5:
   A: 0.47
   N: 0.73
 derived:
-  DT: 0.01
+  DT: 0.14
   NFC: 0.64
-  SM: 0.01
+  SM: 0.21

@@ -1,0 +1,16 @@
+id: NS-0123
+job_type: 행정직
+role: UNASSIGNED
+org_id: null
+b5:
+  O: 0.36
+  C: 0.61
+  E: 0.26
+  A: 0.63
+  N: 0.32
+derived:
+  DT: 0.14
+  NFC: 0.53
+  SM: 0.24
+status: uninstantiated
+ch_id: null

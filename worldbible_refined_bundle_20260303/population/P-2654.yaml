@@ -1,6 +1,11 @@
 id: P-2654
 background_type: common_noble
 dorm: 연구·탑동
+grade: 1학년
+mana_color: 백
+tower: 백탑
+major: 광휘정화학파
+vocation: 사제
 b5:
   O: 0.72
   C: 0.64
@@ -8,6 +13,6 @@ b5:
   A: 0.64
   N: 0.52
 derived:
-  DT: 0.01
-  NFC: 0.55
-  SM: 0.16
+  DT: 0.11
+  NFC: 0.50
+  SM: 0.46

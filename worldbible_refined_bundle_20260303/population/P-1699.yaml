@@ -1,6 +1,11 @@
 id: P-1699
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 1학년
+mana_color: 적
+tower: 적탑
+major: 화염포격학파
+vocation: 마법사
 b5:
   O: 0.75
   C: 0.60
@@ -9,5 +14,5 @@ b5:
   N: 0.33
 derived:
   DT: 0.01
-  NFC: 0.59
-  SM: 0.14
+  NFC: 0.68
+  SM: 0.33

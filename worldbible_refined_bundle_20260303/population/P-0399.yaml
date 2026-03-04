@@ -1,6 +1,12 @@
 id: P-0399
 background_type: signature_noble
 dorm: 비전관
+grade: 4학년
+mana_color: 청
+tower: 청탑
+major: 구속연쇄학파
+vocation: 기사
+noble_house: ORG-ARC-HOU-014
 b5:
   O: 0.46
   C: 0.81
@@ -8,6 +14,6 @@ b5:
   A: 0.88
   N: 0.73
 derived:
-  DT: 0.01
-  NFC: 0.41
-  SM: 0.01
+  DT: 0.19
+  NFC: 0.39
+  SM: 0.18

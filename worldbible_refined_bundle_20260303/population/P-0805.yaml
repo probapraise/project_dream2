@@ -1,6 +1,12 @@
 id: P-0805
 background_type: foreigner
 dorm: 외국·인외동
+grade: 2학년
+mana_color: 황
+tower: 황탑
+major: 관성조율학파
+vocation: 마법사
+origin: ARC-인접왕국권
 b5:
   O: 0.84
   C: 0.74
@@ -8,6 +14,6 @@ b5:
   A: 0.78
   N: 0.05
 derived:
-  DT: 0.01
-  NFC: 0.80
-  SM: 0.31
+  DT: 0.21
+  NFC: 0.73
+  SM: 0.48

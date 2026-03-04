@@ -1,6 +1,12 @@
 id: P-2220
 background_type: nonhuman
 dorm: 연구·탑동
+grade: 2학년
+mana_color: 황
+tower: 황탑
+major: 관성조율학파
+vocation: 마법사
+race: 엘프
 b5:
   O: 0.70
   C: 0.33
@@ -8,6 +14,6 @@ b5:
   A: 0.56
   N: 0.37
 derived:
-  DT: 0.01
-  NFC: 0.43
-  SM: 0.23
+  DT: 0.10
+  NFC: 0.53
+  SM: 0.48

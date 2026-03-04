@@ -1,6 +1,11 @@
 id: P-1549
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 4학년
+mana_color: 황
+tower: 황탑
+major: 전장연산학파
+vocation: 마법사
 b5:
   O: 0.55
   C: 0.79
@@ -8,6 +13,6 @@ b5:
   A: 0.51
   N: 0.67
 derived:
-  DT: 0.01
-  NFC: 0.46
-  SM: 0.01
+  DT: 0.36
+  NFC: 0.51
+  SM: 0.27

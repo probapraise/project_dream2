@@ -1,6 +1,11 @@
 id: P-3085
 background_type: common_noble
 dorm: 장학생동
+grade: 1학년
+mana_color: 청
+tower: 청탑
+major: 결속조형학파
+vocation: 기사
 b5:
   O: 0.37
   C: 0.61
@@ -8,6 +13,6 @@ b5:
   A: 0.77
   N: 0.82
 derived:
-  DT: 0.01
-  NFC: 0.26
-  SM: 0.13
+  DT: 0.23
+  NFC: 0.34
+  SM: 0.54

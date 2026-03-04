@@ -1,6 +1,11 @@
 id: P-2016
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 연구과정
+mana_color: 황
+tower: 황탑
+major: 관성조율학파
+vocation: 마법사
 b5:
   O: 0.70
   C: 0.47
@@ -8,6 +13,6 @@ b5:
   A: 0.80
   N: 0.62
 derived:
-  DT: 0.01
+  DT: 0.30
   NFC: 0.47
-  SM: 0.31
+  SM: 0.79

@@ -1,6 +1,11 @@
 id: P-2177
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 2학년
+mana_color: 백
+tower: 백탑
+major: 순백응급학파
+vocation: 마법사
 b5:
   O: 0.45
   C: 0.54
@@ -8,6 +13,6 @@ b5:
   A: 0.67
   N: 0.36
 derived:
-  DT: 0.01
-  NFC: 0.38
-  SM: 0.19
+  DT: 0.30
+  NFC: 0.46
+  SM: 0.28

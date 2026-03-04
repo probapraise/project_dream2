@@ -1,6 +1,11 @@
 id: P-0537
 background_type: common_noble
 dorm: 장학생동
+grade: 1학년
+mana_color: 청
+tower: 청탑
+major: 공간쇄정학파
+vocation: 마법사
 b5:
   O: 0.32
   C: 0.75
@@ -8,6 +13,6 @@ b5:
   A: 0.58
   N: 0.42
 derived:
-  DT: 0.01
-  NFC: 0.36
-  SM: 0.03
+  DT: 0.12
+  NFC: 0.60
+  SM: 0.42

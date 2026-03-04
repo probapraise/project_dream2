@@ -1,6 +1,11 @@
 id: P-2453
 background_type: common_noble
 dorm: 장학생동
+grade: 4학년
+mana_color: 적
+tower: 적탑
+major: 화염포격학파
+vocation: 기사
 b5:
   O: 0.79
   C: 0.90
@@ -8,6 +13,6 @@ b5:
   A: 0.96
   N: 0.24
 derived:
-  DT: 0.01
-  NFC: 0.81
-  SM: 0.28
+  DT: 0.03
+  NFC: 0.60
+  SM: 0.55

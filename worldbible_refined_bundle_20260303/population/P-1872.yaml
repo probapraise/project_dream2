@@ -1,6 +1,11 @@
 id: P-1872
 background_type: common_noble
 dorm: 장학생동
+grade: 3학년
+mana_color: 녹
+tower: 녹탑
+major: 정령계약학파
+vocation: 사제
 b5:
   O: 0.39
   C: 0.81
@@ -8,6 +13,6 @@ b5:
   A: 0.54
   N: 0.28
 derived:
-  DT: 0.01
-  NFC: 0.47
-  SM: 0.16
+  DT: 0.11
+  NFC: 0.44
+  SM: 0.01

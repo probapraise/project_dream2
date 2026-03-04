@@ -1,6 +1,11 @@
 id: P-1673
 background_type: common_noble
 dorm: 장학생동
+grade: 연구과정
+mana_color: 백
+tower: 백탑
+major: 역서명파쇄학파
+vocation: 마법사
 b5:
   O: 0.79
   C: 0.77
@@ -8,6 +13,6 @@ b5:
   A: 0.58
   N: 0.37
 derived:
-  DT: 0.01
-  NFC: 0.71
-  SM: 0.32
+  DT: 0.24
+  NFC: 0.60
+  SM: 0.21

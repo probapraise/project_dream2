@@ -1,6 +1,12 @@
 id: P-0068
 background_type: nonhuman
 dorm: 일반동(동관)
+grade: 1학년
+mana_color: 청
+tower: 청탑
+major: 결속조형학파
+vocation: 마법사
+race: 고블린
 b5:
   O: 0.60
   C: 0.68
@@ -8,6 +14,6 @@ b5:
   A: 0.31
   N: 0.41
 derived:
-  DT: 0.01
-  NFC: 0.50
-  SM: 0.14
+  DT: 0.28
+  NFC: 0.39
+  SM: 0.44

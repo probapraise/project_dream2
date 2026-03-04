@@ -1,6 +1,11 @@
 id: P-1215
 background_type: common_noble
 dorm: 연구·탑동
+grade: 4학년
+mana_color: 적
+tower: 적탑
+major: 화염포격학파
+vocation: 마법사
 b5:
   O: 0.93
   C: 0.91
@@ -9,5 +14,5 @@ b5:
   N: 0.45
 derived:
   DT: 0.01
-  NFC: 0.85
-  SM: 0.38
+  NFC: 0.81
+  SM: 0.62

@@ -1,6 +1,11 @@
 id: P-2993
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 3학년
+mana_color: 보라
+tower: 보라탑
+major: 심상환영학파
+vocation: 기사
 b5:
   O: 0.60
   C: 0.61
@@ -8,6 +13,6 @@ b5:
   A: 0.48
   N: 0.59
 derived:
-  DT: 0.01
-  NFC: 0.46
-  SM: 0.27
+  DT: 0.37
+  NFC: 0.61
+  SM: 0.39

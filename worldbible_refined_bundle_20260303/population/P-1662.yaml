@@ -1,6 +1,11 @@
 id: P-1662
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 연구과정
+mana_color: 적
+tower: 적탑
+major: 연기전술학파
+vocation: 마법사
 b5:
   O: 0.62
   C: 0.67
@@ -8,6 +13,6 @@ b5:
   A: 0.53
   N: 0.46
 derived:
-  DT: 0.01
-  NFC: 0.50
-  SM: 0.09
+  DT: 0.08
+  NFC: 0.65
+  SM: 0.39

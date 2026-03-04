@@ -1,6 +1,12 @@
 id: P-1507
 background_type: nonhuman
 dorm: 외국·인외동
+grade: 3학년
+mana_color: 황
+tower: 황탑
+major: 공성진동학파
+vocation: 마법사
+race: 아쿠아틱
 b5:
   O: 0.51
   C: 0.52
@@ -9,5 +15,5 @@ b5:
   N: 0.41
 derived:
   DT: 0.01
-  NFC: 0.38
-  SM: 0.09
+  NFC: 0.56
+  SM: 0.28

@@ -1,6 +1,11 @@
 id: P-0529
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 연구과정
+mana_color: 적
+tower: 적탑
+major: 화염포격학파
+vocation: 기사
 b5:
   O: 0.74
   C: 0.52
@@ -8,6 +13,6 @@ b5:
   A: 0.40
   N: 0.45
 derived:
-  DT: 0.01
+  DT: 0.40
   NFC: 0.52
-  SM: 0.17
+  SM: 0.47

@@ -1,6 +1,11 @@
 id: P-1914
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 1학년
+mana_color: 청
+tower: 청탑
+major: 구속연쇄학파
+vocation: 마법사
 b5:
   O: 0.80
   C: 0.68
@@ -9,5 +14,5 @@ b5:
   N: 0.69
 derived:
   DT: 0.01
-  NFC: 0.59
-  SM: 0.08
+  NFC: 0.53
+  SM: 0.29

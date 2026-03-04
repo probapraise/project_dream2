@@ -1,6 +1,11 @@
 id: P-2133
 background_type: common_noble
 dorm: 장학생동
+grade: 4학년
+mana_color: 황
+tower: 황탑
+major: 관성조율학파
+vocation: 기사
 b5:
   O: 0.62
   C: 0.78
@@ -8,6 +13,6 @@ b5:
   A: 0.52
   N: 0.09
 derived:
-  DT: 0.01
-  NFC: 0.69
-  SM: 0.49
+  DT: 0.16
+  NFC: 0.83
+  SM: 0.59

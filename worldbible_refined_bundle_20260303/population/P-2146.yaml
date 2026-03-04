@@ -1,6 +1,11 @@
 id: P-2146
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 3학년
+mana_color: 적
+tower: 적탑
+major: 화염포격학파
+vocation: 사제
 b5:
   O: 0.58
   C: 0.66
@@ -8,6 +13,6 @@ b5:
   A: 0.43
   N: 0.57
 derived:
-  DT: 0.01
-  NFC: 0.45
-  SM: 0.10
+  DT: 0.24
+  NFC: 0.61
+  SM: 0.31

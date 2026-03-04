@@ -1,6 +1,12 @@
 id: P-1212
 background_type: nonhuman
 dorm: 외국·인외동
+grade: 연구과정
+mana_color: 녹
+tower: 녹탑
+major: 정령계약학파
+vocation: 마법사
+race: 고블린
 b5:
   O: 0.59
   C: 0.55
@@ -8,6 +14,6 @@ b5:
   A: 0.32
   N: 0.54
 derived:
-  DT: 0.01
-  NFC: 0.43
-  SM: 0.32
+  DT: 0.40
+  NFC: 0.44
+  SM: 0.58

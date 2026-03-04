@@ -1,6 +1,11 @@
 id: P-1893
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 2학년
+mana_color: 청
+tower: 청탑
+major: 방벽수호학파
+vocation: 기사
 b5:
   O: 0.69
   C: 0.61
@@ -8,6 +13,6 @@ b5:
   A: 0.73
   N: 0.75
 derived:
-  DT: 0.01
-  NFC: 0.46
-  SM: 0.02
+  DT: 0.07
+  NFC: 0.49
+  SM: 0.45

@@ -1,6 +1,11 @@
 id: P-1547
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 2학년
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 사제
 b5:
   O: 0.45
   C: 0.84
@@ -9,5 +14,5 @@ b5:
   N: 0.52
 derived:
   DT: 0.01
-  NFC: 0.47
-  SM: 0.16
+  NFC: 0.72
+  SM: 0.57

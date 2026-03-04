@@ -1,6 +1,11 @@
 id: P-0710
 background_type: common_noble
 dorm: 장학생동
+grade: 1학년
+mana_color: 보라
+tower: 보라탑
+major: 몽유침잠학파
+vocation: 사제
 b5:
   O: 0.64
   C: 0.72
@@ -8,6 +13,6 @@ b5:
   A: 0.92
   N: 0.39
 derived:
-  DT: 0.01
-  NFC: 0.59
-  SM: 0.21
+  DT: 0.16
+  NFC: 0.29
+  SM: 0.04

@@ -1,6 +1,11 @@
 id: P-2536
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 4학년
+mana_color: 보라
+tower: 보라탑
+major: 몽유침잠학파
+vocation: 기사
 b5:
   O: 0.65
   C: 0.75
@@ -8,6 +13,6 @@ b5:
   A: 0.52
   N: 0.33
 derived:
-  DT: 0.01
-  NFC: 0.61
-  SM: 0.26
+  DT: 0.39
+  NFC: 0.60
+  SM: 0.22

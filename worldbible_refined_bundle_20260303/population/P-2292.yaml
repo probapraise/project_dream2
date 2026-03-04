@@ -1,6 +1,12 @@
 id: P-2292
 background_type: nonhuman
 dorm: 외국·인외동
+grade: 2학년
+mana_color: 황
+tower: 황탑
+major: 공성진동학파
+vocation: 사제
+race: 리자드포크
 b5:
   O: 0.67
   C: 0.61
@@ -8,6 +14,6 @@ b5:
   A: 0.62
   N: 0.25
 derived:
-  DT: 0.01
-  NFC: 0.57
-  SM: 0.20
+  DT: 0.35
+  NFC: 0.80
+  SM: 0.38

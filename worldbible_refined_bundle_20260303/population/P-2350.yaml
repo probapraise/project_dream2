@@ -1,6 +1,11 @@
 id: P-2350
 background_type: common_noble
 dorm: 연구·탑동
+grade: 3학년
+mana_color: 녹
+tower: 녹탑
+major: 정령계약학파
+vocation: 기사
 b5:
   O: 0.75
   C: 0.57
@@ -8,6 +13,6 @@ b5:
   A: 0.82
   N: 0.33
 derived:
-  DT: 0.01
-  NFC: 0.65
+  DT: 0.33
+  NFC: 0.99
   SM: 0.59

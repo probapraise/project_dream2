@@ -1,6 +1,12 @@
 id: P-0497
 background_type: foreigner
 dorm: 외국·인외동
+grade: 4학년
+mana_color: 적
+tower: 적탑
+major: 폭연연성학파
+vocation: 사제
+origin: NOR-스카르벨권
 b5:
   O: 0.34
   C: 0.81
@@ -9,5 +15,5 @@ b5:
   N: 0.52
 derived:
   DT: 0.01
-  NFC: 0.40
-  SM: 0.25
+  NFC: 0.53
+  SM: 0.33

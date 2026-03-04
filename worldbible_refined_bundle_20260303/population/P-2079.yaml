@@ -1,6 +1,12 @@
 id: P-2079
 background_type: nonhuman
 dorm: 일반동(서관)
+grade: 2학년
+mana_color: 흑
+tower: 흑탑
+major: 침식주술학파
+vocation: 사제
+race: 고블린
 b5:
   O: 0.66
   C: 0.72
@@ -9,5 +15,5 @@ b5:
   N: 0.28
 derived:
   DT: 0.01
-  NFC: 0.62
-  SM: 0.26
+  NFC: 0.64
+  SM: 0.18

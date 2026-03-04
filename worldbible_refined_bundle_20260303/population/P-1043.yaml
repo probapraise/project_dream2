@@ -1,6 +1,11 @@
 id: P-1043
 background_type: common_noble
 dorm: 연구·탑동
+grade: 4학년
+mana_color: 백
+tower: 백탑
+major: 역서명파쇄학파
+vocation: 마법사
 b5:
   O: 0.72
   C: 0.53
@@ -8,6 +13,6 @@ b5:
   A: 0.40
   N: 0.62
 derived:
-  DT: 0.01
-  NFC: 0.46
-  SM: 0.10
+  DT: 0.50
+  NFC: 0.63
+  SM: 0.40

@@ -1,6 +1,11 @@
 id: P-3326
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 3학년
+mana_color: 청
+tower: 청탑
+major: 구속연쇄학파
+vocation: 기사
 b5:
   O: 0.70
   C: 0.45
@@ -8,6 +13,6 @@ b5:
   A: 0.86
   N: 0.64
 derived:
-  DT: 0.01
-  NFC: 0.43
-  SM: 0.12
+  DT: 0.25
+  NFC: 0.37
+  SM: 0.45

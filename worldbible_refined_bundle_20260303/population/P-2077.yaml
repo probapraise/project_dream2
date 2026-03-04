@@ -1,6 +1,11 @@
 id: P-2077
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 1학년
+mana_color: 적
+tower: 적탑
+major: 폭연연성학파
+vocation: 마법사
 b5:
   O: 0.60
   C: 0.31
@@ -8,6 +13,6 @@ b5:
   A: 0.41
   N: 0.85
 derived:
-  DT: 0.07
-  NFC: 0.23
-  SM: 0.08
+  DT: 0.52
+  NFC: 0.14
+  SM: 0.32

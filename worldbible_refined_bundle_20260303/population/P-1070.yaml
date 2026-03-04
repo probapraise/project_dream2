@@ -1,6 +1,12 @@
 id: P-1070
 background_type: signature_noble
 dorm: 비전관
+grade: 1학년
+mana_color: 보라
+tower: 보라탑
+major: 전심학파
+vocation: 사제
+noble_house: ORG-ARC-HOU-024
 b5:
   O: 0.81
   C: 0.58
@@ -8,6 +14,6 @@ b5:
   A: 0.27
   N: 0.75
 derived:
-  DT: 0.01
-  NFC: 0.51
-  SM: 0.11
+  DT: 0.47
+  NFC: 0.45
+  SM: 0.46

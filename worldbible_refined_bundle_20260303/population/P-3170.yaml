@@ -1,6 +1,12 @@
 id: P-3170
 background_type: nonhuman
 dorm: 연구·탑동
+grade: 1학년
+mana_color: 황
+tower: 황탑
+major: 관성조율학파
+vocation: 사제
+race: 하플링
 b5:
   O: 0.49
   C: 0.61
@@ -8,6 +14,6 @@ b5:
   A: 0.57
   N: 0.29
 derived:
-  DT: 0.01
-  NFC: 0.44
-  SM: 0.11
+  DT: 0.03
+  NFC: 0.30
+  SM: 0.32

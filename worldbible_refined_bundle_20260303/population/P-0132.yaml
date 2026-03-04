@@ -1,6 +1,12 @@
 id: P-0132
 background_type: signature_noble
 dorm: 비전관
+grade: 1학년
+mana_color: 청
+tower: 청탑
+major: 공간쇄정학파
+vocation: 마법사
+noble_house: ORG-ARC-HOU-010
 b5:
   O: 0.65
   C: 0.30
@@ -8,6 +14,6 @@ b5:
   A: 0.76
   N: 0.33
 derived:
-  DT: 0.01
-  NFC: 0.45
-  SM: 0.57
+  DT: 0.12
+  NFC: 0.58
+  SM: 0.99

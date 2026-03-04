@@ -1,6 +1,11 @@
 id: P-3598
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 3학년
+mana_color: 적
+tower: 적탑
+major: 폭연연성학파
+vocation: 기사
 b5:
   O: 0.74
   C: 0.63
@@ -8,6 +13,6 @@ b5:
   A: 0.74
   N: 0.51
 derived:
-  DT: 0.01
-  NFC: 0.60
-  SM: 0.38
+  DT: 0.16
+  NFC: 0.58
+  SM: 0.39

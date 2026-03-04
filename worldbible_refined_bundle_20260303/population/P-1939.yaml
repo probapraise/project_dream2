@@ -1,6 +1,11 @@
 id: P-1939
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 2학년
+mana_color: 황
+tower: 황탑
+major: 관성조율학파
+vocation: 마법사
 b5:
   O: 0.42
   C: 0.55
@@ -8,6 +13,6 @@ b5:
   A: 0.93
   N: 0.46
 derived:
-  DT: 0.01
-  NFC: 0.36
-  SM: 0.22
+  DT: 0.04
+  NFC: 0.50
+  SM: 0.26

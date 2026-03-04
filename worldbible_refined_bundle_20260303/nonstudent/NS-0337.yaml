@@ -1,0 +1,16 @@
+id: NS-0337
+job_type: 행정직
+role: UNASSIGNED
+org_id: null
+b5:
+  O: 0.28
+  C: 0.40
+  E: 0.42
+  A: 0.76
+  N: 0.35
+derived:
+  DT: 0.10
+  NFC: 0.30
+  SM: 0.50
+status: uninstantiated
+ch_id: null

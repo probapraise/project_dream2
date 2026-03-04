@@ -1,6 +1,12 @@
 id: P-3426
 background_type: nonhuman
 dorm: 장학생동
+grade: 2학년
+mana_color: 황
+tower: 황탑
+major: 관성조율학파
+vocation: 마법사
+race: 엘프
 b5:
   O: 0.77
   C: 0.54
@@ -8,6 +14,6 @@ b5:
   A: 0.60
   N: 0.23
 derived:
-  DT: 0.01
-  NFC: 0.61
-  SM: 0.22
+  DT: 0.25
+  NFC: 0.80
+  SM: 0.63

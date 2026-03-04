@@ -1,6 +1,11 @@
 id: P-2106
 background_type: common_noble
 dorm: 장학생동
+grade: 1학년
+mana_color: 백
+tower: 백탑
+major: 역서명파쇄학파
+vocation: 마법사
 b5:
   O: 0.72
   C: 0.99
@@ -8,6 +13,6 @@ b5:
   A: 0.57
   N: 0.67
 derived:
-  DT: 0.01
-  NFC: 0.69
-  SM: 0.20
+  DT: 0.16
+  NFC: 0.70
+  SM: 0.42

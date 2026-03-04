@@ -1,6 +1,12 @@
 id: P-1138
 background_type: signature_noble
 dorm: 비전관
+grade: 연구과정
+mana_color: 백
+tower: 백탑
+major: 순백응급학파
+vocation: 마법사
+noble_house: ORG-ARC-HOU-021
 b5:
   O: 0.72
   C: 0.24
@@ -8,6 +14,6 @@ b5:
   A: 0.96
   N: 0.43
 derived:
-  DT: 0.01
-  NFC: 0.42
-  SM: 0.30
+  DT: 0.20
+  NFC: 0.60
+  SM: 0.46

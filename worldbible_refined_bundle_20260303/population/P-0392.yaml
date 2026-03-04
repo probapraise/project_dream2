@@ -1,6 +1,11 @@
 id: P-0392
 background_type: commoner
 dorm: 장학생동
+grade: 4학년
+mana_color: 황
+tower: 황탑
+major: 관성조율학파
+vocation: 마법사
 b5:
   O: 0.54
   C: 0.75
@@ -8,6 +13,6 @@ b5:
   A: 0.53
   N: 0.64
 derived:
-  DT: 0.01
-  NFC: 0.45
-  SM: 0.08
+  DT: 0.30
+  NFC: 0.37
+  SM: 0.48

@@ -1,6 +1,11 @@
 id: P-1056
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 1학년
+mana_color: 보라
+tower: 보라탑
+major: 몽유침잠학파
+vocation: 마법사
 b5:
   O: 0.59
   C: 0.50
@@ -8,6 +13,6 @@ b5:
   A: 0.42
   N: 0.90
 derived:
-  DT: 0.01
-  NFC: 0.26
-  SM: 0.01
+  DT: 0.61
+  NFC: 0.37
+  SM: 0.11

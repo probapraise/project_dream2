@@ -1,6 +1,12 @@
 id: P-1396
 background_type: foreigner
 dorm: 외국·인외동
+grade: 1학년
+mana_color: 청
+tower: 청탑
+major: 결속조형학파
+vocation: 기사
+origin: NOR-스카르벨권
 b5:
   O: 0.64
   C: 0.72
@@ -8,6 +14,6 @@ b5:
   A: 0.48
   N: 0.43
 derived:
-  DT: 0.01
-  NFC: 0.55
-  SM: 0.17
+  DT: 0.55
+  NFC: 0.71
+  SM: 0.35

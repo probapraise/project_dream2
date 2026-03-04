@@ -1,6 +1,12 @@
 id: P-2226
 background_type: nonhuman
 dorm: 일반동(동관)
+grade: 연구과정
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 마법사
+race: 엘프
 b5:
   O: 0.87
   C: 0.32
@@ -8,6 +14,6 @@ b5:
   A: 0.56
   N: 0.73
 derived:
-  DT: 0.01
-  NFC: 0.45
-  SM: 0.15
+  DT: 0.44
+  NFC: 0.57
+  SM: 0.68

@@ -1,6 +1,12 @@
 id: P-2702
 background_type: nonhuman
 dorm: 외국·인외동
+grade: 3학년
+mana_color: 보라
+tower: 보라탑
+major: 전심학파
+vocation: 마법사
+race: 고블린
 b5:
   O: 0.48
   C: 0.62
@@ -8,6 +14,6 @@ b5:
   A: 0.67
   N: 0.60
 derived:
-  DT: 0.01
-  NFC: 0.39
-  SM: 0.25
+  DT: 0.13
+  NFC: 0.37
+  SM: 0.47

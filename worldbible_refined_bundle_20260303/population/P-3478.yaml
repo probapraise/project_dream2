@@ -1,6 +1,11 @@
 id: P-3478
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 1학년
+mana_color: 청
+tower: 청탑
+major: 공간쇄정학파
+vocation: 기사
 b5:
   O: 0.59
   C: 0.60
@@ -8,6 +13,6 @@ b5:
   A: 0.58
   N: 0.50
 derived:
-  DT: 0.01
-  NFC: 0.45
-  SM: 0.12
+  DT: 0.23
+  NFC: 0.46
+  SM: 0.40

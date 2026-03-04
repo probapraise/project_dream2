@@ -1,6 +1,12 @@
 id: P-2559
 background_type: nonhuman
 dorm: 장학생동
+grade: 1학년
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 기사
+race: 드워프
 b5:
   O: 0.83
   C: 0.69
@@ -8,6 +14,6 @@ b5:
   A: 0.78
   N: 0.35
 derived:
-  DT: 0.01
-  NFC: 0.72
-  SM: 0.36
+  DT: 0.36
+  NFC: 0.55
+  SM: 0.79

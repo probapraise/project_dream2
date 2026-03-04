@@ -1,6 +1,11 @@
 id: P-3106
 background_type: common_noble
 dorm: 연구·탑동
+grade: 3학년
+mana_color: 보라
+tower: 보라탑
+major: 심상환영학파
+vocation: 마법사
 b5:
   O: 0.59
   C: 0.68
@@ -8,6 +13,6 @@ b5:
   A: 0.51
   N: 0.42
 derived:
-  DT: 0.01
-  NFC: 0.55
-  SM: 0.48
+  DT: 0.36
+  NFC: 0.56
+  SM: 0.70

@@ -1,6 +1,11 @@
 id: P-0593
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 1학년
+mana_color: 흑
+tower: 흑탑
+major: 흑영잠행학파
+vocation: 마법사
 b5:
   O: 0.75
   C: 0.70
@@ -8,6 +13,6 @@ b5:
   A: 0.73
   N: 0.45
 derived:
-  DT: 0.01
-  NFC: 0.62
-  SM: 0.17
+  DT: 0.43
+  NFC: 0.70
+  SM: 0.36

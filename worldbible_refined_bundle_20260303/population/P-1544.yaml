@@ -1,6 +1,11 @@
 id: P-1544
 background_type: common_noble
 dorm: 연구·탑동
+grade: 3학년
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 마법사
 b5:
   O: 0.61
   C: 0.53
@@ -8,6 +13,6 @@ b5:
   A: 0.68
   N: 0.74
 derived:
-  DT: 0.01
-  NFC: 0.38
-  SM: 0.13
+  DT: 0.30
+  NFC: 0.60
+  SM: 0.18

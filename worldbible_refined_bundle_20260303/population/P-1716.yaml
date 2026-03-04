@@ -1,6 +1,11 @@
 id: P-1716
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 1학년
+mana_color: 황
+tower: 황탑
+major: 관성조율학파
+vocation: 기사
 b5:
   O: 0.61
   C: 0.47
@@ -8,6 +13,6 @@ b5:
   A: 0.79
   N: 0.67
 derived:
-  DT: 0.01
-  NFC: 0.36
-  SM: 0.01
+  DT: 0.24
+  NFC: 0.58
+  SM: 0.24

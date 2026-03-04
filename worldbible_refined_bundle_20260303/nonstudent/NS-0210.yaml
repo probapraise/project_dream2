@@ -1,0 +1,16 @@
+id: NS-0210
+job_type: 왕실파견감독관
+role: UNASSIGNED
+org_id: null
+b5:
+  O: 0.40
+  C: 0.48
+  E: 0.62
+  A: 0.39
+  N: 0.55
+derived:
+  DT: 0.55
+  NFC: 0.47
+  SM: 0.55
+status: uninstantiated
+ch_id: null

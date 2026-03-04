@@ -1,6 +1,11 @@
 id: P-1966
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 1학년
+mana_color: 녹
+tower: 녹탑
+major: 균사전장학파
+vocation: 마법사
 b5:
   O: 0.80
   C: 0.43
@@ -8,6 +13,6 @@ b5:
   A: 0.43
   N: 0.83
 derived:
-  DT: 0.01
-  NFC: 0.43
-  SM: 0.15
+  DT: 0.55
+  NFC: 0.56
+  SM: 0.46

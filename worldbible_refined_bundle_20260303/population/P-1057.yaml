@@ -1,6 +1,11 @@
 id: P-1057
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 4학년
+mana_color: 백
+tower: 백탑
+major: 광휘정화학파
+vocation: 기사
 b5:
   O: 0.36
   C: 0.56
@@ -8,6 +13,6 @@ b5:
   A: 0.46
   N: 0.45
 derived:
-  DT: 0.01
-  NFC: 0.29
-  SM: 0.13
+  DT: 0.37
+  NFC: 0.27
+  SM: 0.42

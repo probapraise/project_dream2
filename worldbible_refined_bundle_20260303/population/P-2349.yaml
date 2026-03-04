@@ -1,6 +1,11 @@
 id: P-2349
 background_type: common_noble
 dorm: 장학생동
+grade: 연구과정
+mana_color: 적
+tower: 적탑
+major: 화염포격학파
+vocation: 마법사
 b5:
   O: 0.56
   C: 0.55
@@ -8,6 +13,6 @@ b5:
   A: 0.73
   N: 0.67
 derived:
-  DT: 0.01
-  NFC: 0.39
-  SM: 0.18
+  DT: 0.51
+  NFC: 0.59
+  SM: 0.28

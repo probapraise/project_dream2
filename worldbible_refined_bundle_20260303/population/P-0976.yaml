@@ -1,6 +1,11 @@
 id: P-0976
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 3학년
+mana_color: 백
+tower: 백탑
+major: 순백응급학파
+vocation: 마법사
 b5:
   O: 0.69
   C: 0.36
@@ -8,6 +13,6 @@ b5:
   A: 0.43
   N: 0.01
 derived:
-  DT: 0.01
-  NFC: 0.54
-  SM: 0.40
+  DT: 0.15
+  NFC: 0.59
+  SM: 0.34

@@ -1,6 +1,12 @@
 id: P-0741
 background_type: nonhuman
 dorm: 일반동(서관)
+grade: 4학년
+mana_color: 보라
+tower: 보라탑
+major: 몽유침잠학파
+vocation: 기사
+race: 드워프
 b5:
   O: 0.79
   C: 0.52
@@ -8,6 +14,6 @@ b5:
   A: 0.34
   N: 0.27
 derived:
-  DT: 0.01
-  NFC: 0.60
-  SM: 0.30
+  DT: 0.51
+  NFC: 0.34
+  SM: 0.45

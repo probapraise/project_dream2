@@ -1,6 +1,11 @@
 id: P-0482
 background_type: commoner
 dorm: 장학생동
+grade: 1학년
+mana_color: 녹
+tower: 녹탑
+major: 정령계약학파
+vocation: 사제
 b5:
   O: 0.69
   C: 0.42
@@ -8,6 +13,6 @@ b5:
   A: 0.54
   N: 0.52
 derived:
-  DT: 0.01
-  NFC: 0.46
-  SM: 0.40
+  DT: 0.63
+  NFC: 0.62
+  SM: 0.62

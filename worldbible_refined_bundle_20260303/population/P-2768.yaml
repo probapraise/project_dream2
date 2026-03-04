@@ -1,6 +1,12 @@
 id: P-2768
 background_type: nonhuman
 dorm: 일반동(서관)
+grade: 3학년
+mana_color: 흑
+tower: 흑탑
+major: 침식주술학파
+vocation: 마법사
+race: 하플링
 b5:
   O: 0.74
   C: 0.63
@@ -8,6 +14,6 @@ b5:
   A: 0.69
   N: 0.52
 derived:
-  DT: 0.01
-  NFC: 0.61
-  SM: 0.48
+  DT: 0.56
+  NFC: 0.48
+  SM: 0.56

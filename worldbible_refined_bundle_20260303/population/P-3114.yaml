@@ -1,6 +1,11 @@
 id: P-3114
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 1학년
+mana_color: 녹
+tower: 녹탑
+major: 정령계약학파
+vocation: 마법사
 b5:
   O: 0.55
   C: 0.54
@@ -8,6 +13,6 @@ b5:
   A: 0.80
   N: 0.56
 derived:
-  DT: 0.01
-  NFC: 0.39
-  SM: 0.06
+  DT: 0.30
+  NFC: 0.36
+  SM: 0.46

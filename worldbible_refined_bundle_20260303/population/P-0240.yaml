@@ -1,6 +1,11 @@
 id: P-0240
 background_type: common_noble
 dorm: 장학생동
+grade: 3학년
+mana_color: 백
+tower: 백탑
+major: 광휘정화학파
+vocation: 기사
 b5:
   O: 0.51
   C: 0.58
@@ -8,6 +13,6 @@ b5:
   A: 0.43
   N: 0.39
 derived:
-  DT: 0.01
-  NFC: 0.42
-  SM: 0.22
+  DT: 0.26
+  NFC: 0.45
+  SM: 0.57

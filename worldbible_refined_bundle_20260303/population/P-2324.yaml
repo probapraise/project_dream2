@@ -1,6 +1,11 @@
 id: P-2324
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 3학년
+mana_color: 청
+tower: 청탑
+major: 결속조형학파
+vocation: 마법사
 b5:
   O: 0.85
   C: 0.68
@@ -8,6 +13,6 @@ b5:
   A: 0.81
   N: 0.46
 derived:
-  DT: 0.01
-  NFC: 0.70
-  SM: 0.33
+  DT: 0.16
+  NFC: 0.52
+  SM: 0.59

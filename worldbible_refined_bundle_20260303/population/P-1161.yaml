@@ -1,6 +1,12 @@
 id: P-1161
 background_type: signature_noble
 dorm: 비전관
+grade: 1학년
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 마법사
+noble_house: ORG-ARC-HOU-001
 b5:
   O: 0.72
   C: 0.28
@@ -8,6 +14,6 @@ b5:
   A: 0.77
   N: 0.44
 derived:
-  DT: 0.01
-  NFC: 0.41
-  SM: 0.18
+  DT: 0.07
+  NFC: 0.50
+  SM: 0.27

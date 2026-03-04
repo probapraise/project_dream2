@@ -1,6 +1,11 @@
 id: P-0226
 background_type: commoner
 dorm: 장학생동
+grade: 3학년
+mana_color: 적
+tower: 적탑
+major: 화염포격학파
+vocation: 기사
 b5:
   O: 0.58
   C: 0.58
@@ -8,6 +13,6 @@ b5:
   A: 0.72
   N: 0.49
 derived:
-  DT: 0.01
-  NFC: 0.45
-  SM: 0.14
+  DT: 0.25
+  NFC: 0.46
+  SM: 0.15

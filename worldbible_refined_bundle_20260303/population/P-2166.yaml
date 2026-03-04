@@ -1,6 +1,11 @@
 id: P-2166
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 연구과정
+mana_color: 황
+tower: 황탑
+major: 전자유도학파
+vocation: 기사
 b5:
   O: 0.07
   C: 0.85
@@ -8,6 +13,6 @@ b5:
   A: 0.54
   N: 0.66
 derived:
-  DT: 0.01
-  NFC: 0.17
+  DT: 0.43
+  NFC: 0.31
   SM: 0.01

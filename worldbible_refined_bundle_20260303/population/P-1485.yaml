@@ -1,6 +1,11 @@
 id: P-1485
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 4학년
+mana_color: 백
+tower: 백탑
+major: 광휘정화학파
+vocation: 마법사
 b5:
   O: 0.77
   C: 0.68
@@ -8,6 +13,6 @@ b5:
   A: 0.81
   N: 0.14
 derived:
-  DT: 0.01
-  NFC: 0.73
-  SM: 0.41
+  DT: 0.20
+  NFC: 0.78
+  SM: 0.85

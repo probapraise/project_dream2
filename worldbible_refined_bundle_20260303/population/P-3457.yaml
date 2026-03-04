@@ -1,6 +1,11 @@
 id: P-3457
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 4학년
+mana_color: 적
+tower: 적탑
+major: 적열단조학파
+vocation: 마법사
 b5:
   O: 0.74
   C: 0.61
@@ -8,6 +13,6 @@ b5:
   A: 0.72
   N: 0.45
 derived:
-  DT: 0.01
-  NFC: 0.60
-  SM: 0.36
+  DT: 0.27
+  NFC: 0.94
+  SM: 0.59

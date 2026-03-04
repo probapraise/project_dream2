@@ -1,6 +1,11 @@
 id: P-0541
 background_type: commoner
 dorm: 장학생동
+grade: 4학년
+mana_color: 황
+tower: 황탑
+major: 전자유도학파
+vocation: 사제
 b5:
   O: 0.60
   C: 0.42
@@ -8,6 +13,6 @@ b5:
   A: 0.43
   N: 0.32
 derived:
-  DT: 0.01
-  NFC: 0.44
-  SM: 0.40
+  DT: 0.15
+  NFC: 0.47
+  SM: 0.44

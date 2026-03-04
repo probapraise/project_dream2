@@ -1,6 +1,11 @@
 id: P-2730
 background_type: common_noble
 dorm: 장학생동
+grade: 2학년
+mana_color: 녹
+tower: 녹탑
+major: 정령계약학파
+vocation: 마법사
 b5:
   O: 0.80
   C: 0.65
@@ -8,6 +13,6 @@ b5:
   A: 0.79
   N: 0.85
 derived:
-  DT: 0.01
-  NFC: 0.54
-  SM: 0.16
+  DT: 0.07
+  NFC: 0.61
+  SM: 0.42

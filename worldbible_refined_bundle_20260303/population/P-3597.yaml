@@ -1,6 +1,12 @@
 id: P-3597
 background_type: foreigner
 dorm: 외국·인외동
+grade: 3학년
+mana_color: 청
+tower: 청탑
+major: 방벽수호학파
+vocation: 사제
+origin: ARC-인접왕국권
 b5:
   O: 0.29
   C: 0.89
@@ -8,6 +14,6 @@ b5:
   A: 0.07
   N: 0.46
 derived:
-  DT: 0.01
-  NFC: 0.37
-  SM: 0.07
+  DT: 0.37
+  NFC: 0.36
+  SM: 0.24

@@ -1,6 +1,12 @@
 id: P-2567
 background_type: nonhuman
 dorm: 외국·인외동
+grade: 2학년
+mana_color: 보라
+tower: 보라탑
+major: 심상환영학파
+vocation: 마법사
+race: 엘프
 b5:
   O: 0.48
   C: 0.61
@@ -8,6 +14,6 @@ b5:
   A: 0.54
   N: 0.40
 derived:
-  DT: 0.01
-  NFC: 0.41
-  SM: 0.17
+  DT: 0.31
+  NFC: 0.55
+  SM: 0.33

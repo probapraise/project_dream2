@@ -1,6 +1,11 @@
 id: P-2118
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 3학년
+mana_color: 흑
+tower: 흑탑
+major: 침식주술학파
+vocation: 마법사
 b5:
   O: 0.45
   C: 0.48
@@ -8,6 +13,6 @@ b5:
   A: 0.16
   N: 0.51
 derived:
-  DT: 0.12
-  NFC: 0.31
-  SM: 0.32
+  DT: 0.58
+  NFC: 0.34
+  SM: 0.39

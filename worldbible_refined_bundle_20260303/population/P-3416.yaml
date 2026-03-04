@@ -1,6 +1,12 @@
 id: P-3416
 background_type: foreigner
 dorm: 외국·인외동
+grade: 2학년
+mana_color: 황
+tower: 황탑
+major: 관성조율학파
+vocation: 마법사
+origin: SAH-울카자르권
 b5:
   O: 0.87
   C: 0.56
@@ -8,6 +14,6 @@ b5:
   A: 0.65
   N: 0.72
 derived:
-  DT: 0.01
-  NFC: 0.59
-  SM: 0.36
+  DT: 0.37
+  NFC: 0.53
+  SM: 0.62

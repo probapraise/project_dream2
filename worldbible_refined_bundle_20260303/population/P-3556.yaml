@@ -1,6 +1,11 @@
 id: P-3556
 background_type: common_noble
 dorm: 일반동(서관)
+grade: 4학년
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 마법사
 b5:
   O: 0.79
   C: 0.57
@@ -8,6 +13,6 @@ b5:
   A: 0.62
   N: 0.63
 derived:
-  DT: 0.01
-  NFC: 0.53
-  SM: 0.10
+  DT: 0.24
+  NFC: 0.67
+  SM: 0.27

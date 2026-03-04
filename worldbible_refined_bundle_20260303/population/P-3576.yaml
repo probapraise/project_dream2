@@ -1,6 +1,12 @@
 id: P-3576
 background_type: nonhuman
 dorm: 외국·인외동
+grade: 4학년
+mana_color: 적
+tower: 적탑
+major: 폭연연성학파
+vocation: 기사
+race: 아쿠아틱
 b5:
   O: 0.72
   C: 0.69
@@ -8,6 +14,6 @@ b5:
   A: 0.47
   N: 0.44
 derived:
-  DT: 0.01
-  NFC: 0.60
-  SM: 0.27
+  DT: 0.02
+  NFC: 0.78
+  SM: 0.58

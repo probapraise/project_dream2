@@ -1,6 +1,12 @@
 id: P-1827
 background_type: nonhuman
 dorm: 장학생동
+grade: 2학년
+mana_color: 적
+tower: 적탑
+major: 화염포격학파
+vocation: 마법사
+race: 비스트킨
 b5:
   O: 0.43
   C: 0.74
@@ -8,6 +14,6 @@ b5:
   A: 0.45
   N: 0.51
 derived:
-  DT: 0.01
-  NFC: 0.44
-  SM: 0.34
+  DT: 0.50
+  NFC: 0.40
+  SM: 0.56

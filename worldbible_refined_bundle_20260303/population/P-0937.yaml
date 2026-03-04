@@ -1,6 +1,12 @@
 id: P-0937
 background_type: nonhuman
 dorm: 연구·탑동
+grade: 3학년
+mana_color: 백
+tower: 백탑
+major: 순백응급학파
+vocation: 기사
+race: 비스트킨
 b5:
   O: 0.73
   C: 0.52
@@ -8,6 +14,6 @@ b5:
   A: 0.67
   N: 0.95
 derived:
-  DT: 0.01
-  NFC: 0.41
-  SM: 0.13
+  DT: 0.21
+  NFC: 0.37
+  SM: 0.23

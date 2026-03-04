@@ -1,6 +1,11 @@
 id: P-2047
 background_type: common_noble
 dorm: 일반동(동관)
+grade: 4학년
+mana_color: 녹
+tower: 녹탑
+major: 약리전술학파
+vocation: 기사
 b5:
   O: 0.57
   C: 0.41
@@ -8,6 +13,6 @@ b5:
   A: 0.41
   N: 0.43
 derived:
-  DT: 0.01
-  NFC: 0.39
-  SM: 0.42
+  DT: 0.56
+  NFC: 0.26
+  SM: 0.52

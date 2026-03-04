@@ -1,6 +1,11 @@
 id: P-0860
 background_type: common_noble
 dorm: 장학생동
+grade: 1학년
+mana_color: 백
+tower: 백탑
+major: 광휘정화학파
+vocation: 마법사
 b5:
   O: 0.75
   C: 0.59
@@ -8,6 +13,6 @@ b5:
   A: 0.41
   N: 0.62
 derived:
-  DT: 0.01
-  NFC: 0.51
-  SM: 0.14
+  DT: 0.48
+  NFC: 0.58
+  SM: 0.57

@@ -1,6 +1,12 @@
 id: P-0383
 background_type: nonhuman
 dorm: 일반동(동관)
+grade: 3학년
+mana_color: 백
+tower: 백탑
+major: 광휘정화학파
+vocation: 마법사
+race: 드워프
 b5:
   O: 0.72
   C: 0.85
@@ -9,5 +15,5 @@ b5:
   N: 0.76
 derived:
   DT: 0.01
-  NFC: 0.61
-  SM: 0.20
+  NFC: 0.58
+  SM: 0.51
