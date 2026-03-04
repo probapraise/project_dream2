@@ -7,7 +7,7 @@ role: "1학년 / 전공: 전심, 정신마법 / 흑탑 낙인"
 affiliation: 아르케이온 왕립학술원(학생)
 major: 전심, 정신마법
 tower: "청탑(구속/구조(방벽·제압·구조물)) + 문장비전: 석공자문장(Mason’s Rule)"
-dorm: 귀족동
+dorm: 비전관
 year: 1
 species: 인간
 origin: 실바르트 자작가(브레칼 방벽권(북방)) 영애

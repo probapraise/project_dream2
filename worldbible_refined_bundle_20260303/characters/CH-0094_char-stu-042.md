@@ -7,7 +7,7 @@ role: "1학년 / 전공: 연금, 약리 / 해독 담당"
 affiliation: 아르케이온 왕립학술원(학생)
 major: 연금, 약리
 tower: "청탑(구속/구조(방벽·제압·구조물)) + 문장비전: 수차륜문장(Waterwheel)"
-dorm: 귀족동
+dorm: 비전관
 year: 1
 species: 인간
 origin: 세이바른 자작가(라베른 하류·삼각주권) 도련님

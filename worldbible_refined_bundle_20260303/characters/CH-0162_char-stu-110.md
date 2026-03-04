@@ -7,7 +7,7 @@ role: 2학년 / 표준식학부 / 후원살롱 상석 후보
 affiliation: 아르케이온 왕립학술원(학생)
 major: "녹탑(생명/해독(치유보조·독/해독·생태전)) + 문장비전: 황금이삭문장(Golden Sheaf)"
 tower: "녹탑(생명/해독(치유보조·독/해독·생태전)) + 문장비전: 황금이삭문장(Golden Sheaf)"
-dorm: 귀족동
+dorm: 비전관
 year: 2
 species: 인간
 origin: 루메나 후작가(루메나 곡창권) 도련님

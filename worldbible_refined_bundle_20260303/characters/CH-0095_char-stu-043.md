@@ -7,7 +7,7 @@ role: "4학년 / 전공: 룬공학 / 서열표 감시단"
 affiliation: 아르케이온 왕립학술원(학생)
 major: 룬공학
 tower: "청탑(구속/구조(방벽·제압·구조물)) + 문장비전: 어은감응문장(Fish-Silver Eye)"
-dorm: 귀족동
+dorm: 비전관
 year: 4
 species: 인간
 origin: 로넬렌 남작가(라베른 하류·삼각주권) 도련님

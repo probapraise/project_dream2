@@ -7,7 +7,7 @@ role: 학생회 규율국장(생활규정/통금) / 3학년
 affiliation: 아르케이온 학생회
 major: 청탑(구속·구조)
 tower: 청탑(구속·구조)
-dorm: 귀족동
+dorm: 비전관
 year: 3
 species: 인간
 origin: 하르마론 백작가(군사/치안 라인) 장남

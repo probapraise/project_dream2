@@ -7,7 +7,7 @@ role: "3학년 / 전공: 방벽, 수호 / 교어관 협조자"
 affiliation: 아르케이온 왕립학술원(학생)
 major: 방벽, 수호
 tower: "청탑(구속/구조(방벽·제압·구조물)) + 문장비전: 연결성곽문장(Linked Rampart)"
-dorm: 귀족동
+dorm: 비전관
 year: 3
 species: 드워프
 origin: 라브리온 백작가(세르비온 왕령권(학술원 인접)) 영애

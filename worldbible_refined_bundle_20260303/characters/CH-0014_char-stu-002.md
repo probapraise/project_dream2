@@ -7,7 +7,7 @@ role: 학생회 부회장 / 3학년
 affiliation: 아르케이온 학생회
 major: 백탑(치유·정화) — “체면은 백, 성격은 적”
 tower: 백탑(치유·정화) — “체면은 백, 성격은 적”
-dorm: 귀족동
+dorm: 비전관
 year: 3
 species: 인간
 origin: 루메나 후작가(농업/식량권) 영애

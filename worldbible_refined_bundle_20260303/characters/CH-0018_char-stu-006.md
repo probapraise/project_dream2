@@ -3,11 +3,11 @@ id: CH-0018
 type: character_card
 display_name: 리아 브레칼리온
 legacy_id: CHAR-STU-006
-role: 1학년 / 전투마법학부 / ‘귀족동 에이스’
+role: 1학년 / 전투마법학부 / ‘비전관 에이스’
 affiliation: 아르케이온 왕립학술원(학생)
 major: 적탑(열·폭발)
 tower: 적탑(열·폭발)
-dorm: 귀족동
+dorm: 비전관
 year: 1
 species: 인간
 origin: 브레칼리온 공작가(북방 방벽권) 영애

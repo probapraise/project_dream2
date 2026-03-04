@@ -7,7 +7,7 @@ role: "2학년 / 전공: 서명관리, 아카이브 / 오해 중재러"
 affiliation: 아르케이온 왕립학술원(학생)
 major: 서명관리, 아카이브
 tower: "보라탑(정신/환영(정보전·교란·서명싸움)) + 문장비전: 안개피막문장(Mist Sheath)"
-dorm: 귀족동
+dorm: 비전관
 year: 2
 species: 인간
 origin: 플레린 남작가(벨라스 동연안권) 도련님

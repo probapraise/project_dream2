@@ -7,7 +7,7 @@ role: "1학년 / 전공: 연금, 약리 / 약리 레이드"
 affiliation: 아르케이온 왕립학술원(학생)
 major: 연금, 약리
 tower: "보라탑(정신/환영(정보전·교란·서명싸움)) + 문장비전: 안개닻문장(Fog Anchor)"
-dorm: 귀족동
+dorm: 비전관
 year: 1
 species: 인간
 origin: 벨라시온 후작가(벨라스 동연안권) 영애

@@ -7,7 +7,7 @@ role: "3학년 / 전공: 전투마법 / 정찰반"
 affiliation: 서약원
 major: 전투마법
 tower: "백탑(치유/정화/서약(회복·정화·의례)) + 문장비전: 서약사슬문장(Oath Chain)"
-dorm: 귀족동
+dorm: 비전관
 year: 3
 species: 인간
 origin: 아르벨리온 자작가(세르비온 왕령권(서약원 인접)) 영애

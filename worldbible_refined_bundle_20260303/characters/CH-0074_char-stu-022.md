@@ -7,7 +7,7 @@ role: "2학년 / 전공: 룬공학 / 후원 거부자"
 affiliation: 아르케이온 왕립학술원(학생)
 major: 룬공학
 tower: "황탑(운동/가속(기동·탄도·충격·리듬)) + 문장비전: 말굽창문장(Horseshoe & Spear)"
-dorm: 귀족동
+dorm: 비전관
 year: 2
 species: 인간
 origin: 미르단 변경백가(미르단 동부 변경권) 영애

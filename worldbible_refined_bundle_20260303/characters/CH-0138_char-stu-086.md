@@ -7,7 +7,7 @@ role: "4학년 / 전공: 룬공학 / 룬대장간 Q&A 상주"
 affiliation: 아르케이온 왕립학술원(학생)
 major: 룬공학
 tower: "보라탑(정신/환영(정보전·교란·서명싸움)) + 문장비전: 감시선문장(Watch Line)"
-dorm: 귀족동
+dorm: 비전관
 year: 4
 species: 엘프
 origin: 루사르트 자작가(미르단 동부 변경권) 도련님

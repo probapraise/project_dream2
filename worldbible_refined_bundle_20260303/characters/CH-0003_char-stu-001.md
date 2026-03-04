@@ -7,7 +7,7 @@ role: 학생회장 / 3학년
 affiliation: 아르케이온 학생회
 major: 청탑(구속·구조)
 tower: 청탑(구속·구조)
-dorm: 귀족동(정치의 심장)
+dorm: 비전관(정치의 심장)
 year: 3
 species: 인간
 origin: 벨쿠란 왕국(준귀족/기사 가문)

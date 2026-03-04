@@ -7,7 +7,7 @@ role: "3학년 / 전공: 연금, 약리 / 해독 담당"
 affiliation: 아르케이온 왕립학술원(학생)
 major: 연금, 약리
 tower: "흑탑(침식/저주/오염(디버프·은폐·금기)) + 문장비전: 그림자은화문장(Shadow Coin)"
-dorm: 귀족동
+dorm: 비전관
 year: 3
 species: 인간
 origin: 노크티온 남작가(미르단 동부 변경권) 영애

@@ -7,7 +7,7 @@ role: "4학년 / 전공: 방벽, 수호 / 팀전 수호 포지션"
 affiliation: 아르케이온 왕립학술원(학생)
 major: 방벽, 수호
 tower: "청탑(구속/구조(방벽·제압·구조물)) + 문장비전: 왕관기둥문장( Crowned Pillar )"
-dorm: 귀족동
+dorm: 비전관
 year: 4
 species: 인간
 origin: 세르비온 왕가(세르비온 왕령권) 도련님

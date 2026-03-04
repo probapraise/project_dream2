@@ -7,7 +7,7 @@ role: 2학년 / 보라탑 / 차담방의 ‘여왕’
 affiliation: 아르케이온 왕립학술원(학생)
 major: 보라탑(정신·환영)
 tower: 보라탑(정신·환영)
-dorm: 귀족동
+dorm: 비전관
 year: 2
 species: 인간
 origin: 코르셀 자작가(사교/살롱 라인) — “말이 무기”

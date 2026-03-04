@@ -7,7 +7,7 @@ role: "1학년 / 전공: 방벽, 수호 / 학술원제 총무"
 affiliation: 아르케이온 왕립학술원(학생)
 major: 방벽, 수호
 tower: "청탑(구속/구조(방벽·제압·구조물)) + 문장비전: 고개칼날문장(Pass Blade)"
-dorm: 귀족동
+dorm: 비전관
 year: 1
 species: 인간
 origin: 오르셀리온 백작가(세르비온 왕령권(라브리온 고갯길)) 영애

@@ -7,7 +7,7 @@ role: "2학년 / 전공: 전심, 정신마법 / 연애/관계 정리글러"
 affiliation: 아르케이온 왕립학술원(학생)
 major: 전심, 정신마법
 tower: "황탑(운동/가속(기동·탄도·충격·리듬)) + 문장비전: 낫모래문장(Scythe & Sand)"
-dorm: 귀족동
+dorm: 비전관
 year: 2
 species: 인간
 origin: 브라시에르 자작가(루메나 곡창권) 영애

@@ -7,7 +7,7 @@ role: "2학년 / 전공: 신성, 정화 / 홍보국장"
 affiliation: 아르케이온 왕립학술원(학생)
 major: 신성, 정화
 tower: "녹탑(생명/해독(치유보조·독/해독·생태전)) + 문장비전: 종자흙손문장(Seed & Soil Hand)"
-dorm: 귀족동
+dorm: 비전관
 year: 2
 species: 인간
 origin: 카르메논 백작가(루메나 곡창권) 영애

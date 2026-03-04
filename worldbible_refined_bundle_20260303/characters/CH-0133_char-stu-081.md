@@ -7,7 +7,7 @@ role: "1학년 / 전공: 전술행정 / 장터기둥 가격표 제작자"
 affiliation: 아르케이온 왕립학술원(학생)
 major: 전술행정
 tower: "청탑(구속/구조(방벽·제압·구조물)) + 문장비전: 광맥지문문장(Vein Fingerprint)"
-dorm: 귀족동
+dorm: 비전관
 year: 1
 species: 인간
 origin: 카드렐리온 백작가(브레칼 방벽권(북방)) 영애

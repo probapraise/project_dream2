@@ -7,7 +7,7 @@ role: "2학년 / 전공: 전술행정 / 정렬탑 분석러"
 affiliation: 아르케이온 왕립학술원(학생)
 major: 전술행정
 tower: "백탑(치유/정화/서약(회복·정화·의례)) + 문장비전: 등대파문장(Beacon Pulse)"
-dorm: 귀족동
+dorm: 비전관
 year: 2
 species: 드워프
 origin: 나이르논 백작가(벨라스 동연안권) 도련님

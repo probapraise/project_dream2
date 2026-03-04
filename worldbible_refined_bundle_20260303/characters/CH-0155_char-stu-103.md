@@ -7,7 +7,7 @@ role: "1학년 / 전공: 전투마법 / 탐사 동아리"
 affiliation: 아르케이온 왕립학술원(학생)
 major: 전투마법
 tower: "청탑(구속/구조(방벽·제압·구조물)) + 문장비전: 방벽봉문장(Wall & Sealed Writ)"
-dorm: 귀족동
+dorm: 비전관
 year: 1
 species: 엘프
 origin: 브레칼리온 공작가(브레칼 방벽권(북방)) 영애

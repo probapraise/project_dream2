@@ -7,7 +7,7 @@ role: 1학년 / 표준식학부 / 완장 저격수
 affiliation: 아르케이온 왕립학술원(학생)
 major: "청탑(구속/구조(방벽·제압·구조물)) + 문장비전: 선체골격문장(Keel & Frame)"
 tower: "청탑(구속/구조(방벽·제압·구조물)) + 문장비전: 선체골격문장(Keel & Frame)"
-dorm: 귀족동
+dorm: 비전관
 year: 1
 species: 인간
 origin: 코르셀 자작가(벨라스 동연안권) 영애

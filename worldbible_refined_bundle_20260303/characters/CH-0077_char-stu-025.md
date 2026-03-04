@@ -7,7 +7,7 @@ role: "3학년 / 전공: 전투마법 / 기동 캐리"
 affiliation: 아르케이온 왕립학술원(학생)
 major: 전투마법
 tower: "청탑(구속/구조(방벽·제압·구조물)) + 문장비전: 삼수문장(Triple Watergate)"
-dorm: 귀족동
+dorm: 비전관
 year: 3
 species: 인간
 origin: 라베르니온 공작가(라베른 하류·삼각주권) 영애

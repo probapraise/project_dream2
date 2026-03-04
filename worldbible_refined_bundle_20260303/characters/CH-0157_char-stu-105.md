@@ -7,7 +7,7 @@ role: "2학년 / 전공: 전술행정 / 조문관 템플릿러"
 affiliation: 아르케이온 왕립학술원(학생)
 major: 전술행정
 tower: "황탑(운동/가속(기동·탄도·충격·리듬)) + 문장비전: 마구동조문장(Harness Sync)"
-dorm: 귀족동
+dorm: 비전관
 year: 2
 species: 인간
 origin: 하르마론 백작가(미르단 동부 변경권) 영애

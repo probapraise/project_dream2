@@ -7,7 +7,7 @@ role: "4학년 / 전공: 전술행정 / 대리거래 중개인(학생)"
 affiliation: 아르케이온 왕립학술원(학생)
 major: 전술행정
 tower: "백탑(치유/정화/서약(회복·정화·의례)) + 문장비전: 약초정화문장(Herb Purity)"
-dorm: 귀족동
+dorm: 비전관
 year: 4
 species: 인간
 origin: 에린벨 남작가(루메나 곡창권) 도련님
