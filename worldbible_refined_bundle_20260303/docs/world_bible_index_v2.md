@@ -1,8 +1,8 @@
 # world_bible_index
 
-- regenerated_at: 2026-03-04
+- regenerated_at: 2026-03-05
 - source: world_bible/WB-*.md
-- note: 정리 작업으로 충돌 파일 삭제 후 최소 인덱스로 재생성
+- note: 2026-03-05 세션 — WB-0009/0011/0026에 렌바렌 백작가 + 열구 외계 유입 3층 정보 구조 + 식흔(蝕痕) 반영
 
 ## Sections
 - [WB-0001] 서문: 통합/정제 방법론(이번 통합본 제작 원칙)
@@ -39,15 +39,15 @@
   - visibility: PUBLIC
 - [WB-0009] 7. 권력 구조 & 집단(정보·면허·보존권·징계)
   - file: world_bible/WB-0009_power_structure_factions.md
-  - summary: 정본(원본 서류)과 열람권이 사회의 기본 권력 자원이다.
+  - summary: 정본(원본 서류)과 열람권이 사회의 기본 권력 자원이다. 7.2-A: 렌바렌 백작가 — 비밀 서명귀족 / 왕국 최상위 정보기관 수장 (상세 WB-0026 F.4).
   - visibility: PUBLIC
 - [WB-0010] 8. 프라미시오 행성: 4대륙/국가/금기(네이밍 PNC-1.0)
   - file: world_bible/WB-0010_planet_continents_naming.md
   - summary: ARC 벨라리온: 온대-초원 중심. 인류권 왕국·공국 다수. 주인공 조국 벨쿠란 왕국이 위치.
   - visibility: PUBLIC
-- [WB-0011] 9. 잔향역(殘響域)과 열구(裂口): 봉쇄선/오염/기록 공백
+- [WB-0011] 9. 잔향역(殘響域)과 열구(裂口): 봉쇄선/오염/기록 공백/외계 문명 유입
   - file: world_bible/WB-0011_echo_zone_rifts.md
-  - summary: [PUBLIC] 열구(裂口)는 마사토라 거대륙에 존재하며, 이를 봉쇄하는 관문수(關門守)는 관문제국 소속이다.
+  - summary: [PUBLIC] 열구(裂口)는 마사토라 거대륙에 존재하며, 관문수(關門守)가 봉쇄. 외계 문명 유입에 대한 3층 정보 구조: 공공 상식(고대 마도 문명 지식 파편) / 국가 기밀(열구 통한 외계 유입) / 마사토라 전략(적극 흡수·연구).
   - visibility: CONFIDENTIAL
 - [WB-0012] 10. 핵심 갈등 아크(초-중반): 성목 각성/엘프 클랜/플랫폼 전쟁
   - file: world_bible/WB-0012_core_conflict_arcs.md
@@ -91,5 +91,5 @@
   - visibility: META
 - [WB-0026] Appendix F. 문장비전(Crest Arcana) & 문장대장(24가문) 상세
   - file: world_bible/WB-0026_appendix_crest_arcana.md
-  - summary: 이 세계는 마법을 통한 ‘기적 발현’ 난이도가 의도적으로 낮춰진 세계다. 따라서 마법은 특권이 아니라, 사회·문화·경제의 ‘기반 인프라’로 취급된다.
+  - summary: 이 세계는 마법을 통한 ‘기적 발현’ 난이도가 의도적으로 낮춰진 세계다. 따라서 마법은 특권이 아니라, 사회·문화·경제의 ‘기반 인프라’로 취급된다. F.4: 비밀 서명귀족 렌바렌 백작가 — 식흔(蝕痕, 흑 주색, 타인 마법 잔흔 실시간 소거).
   - visibility: PUBLIC

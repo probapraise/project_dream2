@@ -181,7 +181,55 @@
 3. 6장 긴장축을 우선 적용해 반응 강도(무반응/소극/댓글/핵심)를 나눈다.
 4. 과포화 방지: 동일 축(`탑 x 학년 x 배경`) 집중도가 25%를 넘으면 다른 축으로 분산한다.
 
-## 9) 참조
+## 9) EX-* 외곽 인물 분류
+
+### 9.1 정의
+- `EX-*`는 학술원 권역 바깥의 서사 인물(가족, 귀족, 상인, 타국 인물 등)을 관리하는 슬롯이다.
+- 저장 경로: `external/EX-*.yaml`
+
+### 9.2 P-*/NS-*와의 관계
+
+| 분류 | 범위 | 시뮬 필드(빅5/파생) | 커뮤니티 시뮬 풀 |
+|---|---|---|---|
+| P-* | 학술원 학생 | O | O (각인광장) |
+| NS-* | 학술원 내 비학생 | O | O (교수/직원 등) |
+| EX-* | 학술원 외곽 | O (미래 대비) | X (대기) |
+
+### 9.3 YAML 스키마
+
+```yaml
+id: EX-NNNN
+name: (확정 시 기입, 미확정 시 null)
+role: (서사 역할 — 예: 렌바렌 백작가 가주, 상단 대표 등)
+affiliation: (소속 조직/가문/국가)
+b5:
+  O: (0.01-0.99)
+  C: (0.01-0.99)
+  E: (0.01-0.99)
+  A: (0.01-0.99)
+  N: (0.01-0.99)
+derived:
+  DT: (0.01-0.99)
+  NFC: (0.01-0.99)
+  SM: (0.01-0.99)
+status: uninstantiated | instantiated | named
+ch_id: null | (확정 시 부여)
+# --- EX-* 전용 필드 ---
+narrative_fields:
+  goals: (캐릭터의 목표/욕망)
+  secrets: (비밀 — 정보 레벨 표시)
+  core_relationships: (핵심 관계 목록)
+  arc_notes: (캐릭터 아크 메모)
+community_eligible: false  # true 전환 시 NS-* 승격 또는 별도 분류 신설
+```
+
+### 9.4 운영 원칙
+- EX-*는 빅5/파생지표를 처음부터 보유하되, 커뮤니티 시뮬레이션 풀에는 투입하지 않는다.
+- `narrative_fields`는 EX-* 전용이며, P-*/NS-*에는 존재하지 않는 서사 카드 필드이다.
+- 작품 진행에 따라 커뮤니티 참여 가능성이 생기면 `community_eligible: true`로 전환 후 NS-*로 승격하거나 새 분류를 신설한다.
+- EX-* 슬롯 번호는 0001부터 순차 부여한다.
+
+## 10) 참조
 - `character_population_methodology.md`
 - `world_bible/WB-0015_academy_bible.md`
 - `world_bible/WB-0016_social_stratification.md`
