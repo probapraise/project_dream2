@@ -74,6 +74,14 @@ project_dream2/
 - 코어캐스트 운영 요약: `docs/core_cast_bootstrap_v1.md`
 - named 전환은 CSV/YAML 동시 반영이 원칙
 
+### 3.3.1 Voice Fingerprint 레이어 (신규)
+
+- 방법론: `docs/voice_fingerprint_spec.md`
+- 개별 인물 VFP: core_cast 카드 내 `voice_fingerprint` 섹션
+- 운영 파이프라인: 추출(Post-Sim/Writing) → 주입(Pre-Sim/Writing) → 검증(Post-Output)
+- 우선순위: style_constitution > VFP > Layer A/B culture > Big5+population_grammar
+- 현재 상태: NC-0001 VFP v1 추출 완료
+
 ### 3.4 커뮤니티/시뮬레이션 레이어
 
 - Layer A: 창발형 **— 문서 완료, 시뮬레이션 3회 실행**
@@ -212,6 +220,7 @@ world_ops_compile_execution_views
 | character index v2 | 완료 | 상태/분포/좌표/pool 생성 |
 | core cast | 부분 완료 | `NC-0001`만 활성 named |
 | community Layer B | 부분 완료 | 방법론 + ATOM-001 + BOARD-001 확정 |
+| Voice Fingerprint | **v1 완료** | 방법론 문서 + NC-0001 VFP 추출 완료 |
 | community Layer A | **문서 완료, 시뮬 실행 완료** | 문서 생성 + simrun-001/002/003 실행, CULTURE 등재 대기 |
 | API 시뮬레이션 런너 | **완료** | `sim_runner.py` — Vertex AI Gemini 3.1 직접 호출 |
 | simulation run 기록 | **부분 완료** | simrun-001/002/003 JSON 저장 완료, state index 미업데이트 |

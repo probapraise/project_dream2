@@ -36,9 +36,11 @@
 - community_grammar_layer_b: docs/community_grammar_layer_b.md
 - writing_index: writing/README.md
 - style_constitution: writing/style/style_constitution.md
+- voice_fingerprint_spec: docs/voice_fingerprint_spec.md
 - quarantine_index: quarantine/README.md
 
 ## Recent changes (last 6)
+- 2026-03-05 VFP-001: Voice Fingerprint 시스템 신설 — voice_fingerprint_spec.md 작성, NC-0001 VFP v1 추출 완료
 - 2026-03-05 WRITING-002: ep001 "선물" 집필 프롬프트 v1 작성. 프롤로그 보라→흑색 수정 반영(revision_v1.txt, draft_v1.txt, style_constitution.md)
 - 2026-03-05 WRITING-001: writing/ 폴더 계층 신설 — 집필 파이프라인(프롬프트/초안/수정본/diff/문체 헌법) 구조화. 프롤로그 프롬프트 v1 작성 완료
 - 2026-03-05 WORLDBUILD-001: WB-0011에 열구 외계 문명 유입 3층 정보 구조 추가 (공공 상식/국가 기밀/마사토라 전략)
