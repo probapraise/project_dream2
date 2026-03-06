@@ -44,6 +44,8 @@
 - quarantine_index: quarantine/README.md
 
 ## Recent changes (selected)
+- 2026-03-06 COMMUNITY-RULE-001: community_map/simulation_playbook/board_states README에 동적 게시판 생성/승격/상태 추적 규칙 명시
+- 2026-03-06 COMMUNITY-RETIRE-001: live 18보드 bootstrap stub 제거, 커뮤니티 운영 기준을 동적/온디맨드 모델로 재고정
 - 2026-03-06 WRITING-003: ep001 "선물" 2차 개정본을 캐논(revision_v2.txt)으로 확정, diff_v2 작성, style_constitution.md 갱신
 - 2026-03-06 LAYERB-004: community_grammar_layer_b에 ATOM-006 추가 — 명명법 질문이 종족 RP/상호 비하 배틀로 번지는 문법 반영
 - 2026-03-06 LAYERB-003: community_grammar_layer_b에 ATOM-005 추가 — "지지 철회" 형식의 동일시/방어 서약 문법 반영
@@ -55,4 +57,3 @@
 - 2026-03-05 LAYERB-002: community_grammar_layer_b에 ATOM-002(자기비하적 기여 선언), ATOM-003(상호 비열의 서사시화) 추가
 - 2026-03-04 PR-BOOTSTRAP-0006: [RESET] NC-* 코어 캐스트 전면 삭제 — 생성 규칙 재설계 진행 중
 - 2026-03-04 PR-BOOTSTRAP-0002-RETIRE: 기존 CH-* 캐릭터 카드/보이스팩/퍼소나 상태 체계 폐기(영구 삭제), P-* 동적 생성 체계로 전환
-- 2026-03-03 PR-BOOTSTRAP-0003: 커뮤니티 구조(각인광장 B01~B18) -> community_map + layer_b 18개 초안 생성

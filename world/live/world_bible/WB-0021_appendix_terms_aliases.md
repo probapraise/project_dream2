@@ -4,7 +4,7 @@ type: world_bible_section
 title: "Appendix A. 용어/별칭 매핑(구용어→현행)"
 visibility: PUBLIC
 entities: ["용어", "별칭", "매핑"]
-last_updated: 2026-03-03
+last_updated: 2026-03-06
 source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx"
 ---
 
@@ -25,14 +25,10 @@ source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx"
 | 체내 코어 / 마나코어(개인) | 마나핵 | 인프라 코어(성목 수심)와 혼동 방지. 원고 표기는 '마나핵'으로 고정. |
 | 가문 고유 학파 | 문장비전(혈통 잠금 학파) | 혈통키가 없는 자는 소속/사용 불가. 가문 비기는 3~7개 규모 권장. |
 
-### A.2 보드/별칭 매핑
+### A.2 플랫폼/운영어 매핑
 
 | 구용어/별칭 | 현행/권장 | 비고 |
 | --- | --- | --- |
-| 마루 | 첫마루 | B01 별칭/구어 |
-| 연무판 | 연무벽(演武壁) | B04 별칭/구어 |
-| 청동살롱 | 후원살롱 | B10 별칭/구어 |
-| (별칭) 장터기둥 | 장터기둥 | B07 (공식명 유지) |
 | 봉인 | 봉문 | 공식 UI 용어는 ‘봉문’. 사용자 속어 ‘봉인’과 혼용 가능 |
 | 삭문 | 삭제 | 운영 조치 |
 | 블라인드 | 가리기 | 운영 조치 |
