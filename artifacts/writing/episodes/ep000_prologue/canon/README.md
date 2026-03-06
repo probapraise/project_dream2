@@ -1,8 +1,8 @@
 # canon
 
 - episode_id: ep000_prologue
-- current_text_canon: revision_v1.txt
-- current_word_canon: revision_v1.docx
+- current_text_canon: 프롤로그_리비전_수정본.md
+- current_word_canon: none
 
 ## Policy
 
