@@ -35,6 +35,9 @@
 - simulation_feedback: docs/simulation_feedback.md
 - simulation_state_index: docs/simulation_state_index.md
 - narrative_state: docs/narrative_state.md
+- story_arcs: docs/story_arcs.md
+- foreshadow_registry: docs/foreshadow_registry.md
+- episode_deltas: docs/episode_deltas.md
 - style_bible: docs/style_bible.md
 - community_memory: docs/community_memory.md
 - community_grammar_layer_b: docs/community_grammar_layer_b.md
@@ -44,6 +47,7 @@
 - quarantine_index: quarantine/README.md
 
 ## Recent changes (selected)
+- 2026-03-06 WRITING-004: `narrative_state`를 활성 허브로 재작성하고 `story_arcs`/`foreshadow_registry`/`episode_deltas`를 추가해 장기 연재용 컨텍스트 압축 체계를 도입
 - 2026-03-06 COMMUNITY-RULE-001: community_map/simulation_playbook/board_states README에 동적 게시판 생성/승격/상태 추적 규칙 명시
 - 2026-03-06 COMMUNITY-RETIRE-001: live 18보드 bootstrap stub 제거, 커뮤니티 운영 기준을 동적/온디맨드 모델로 재고정
 - 2026-03-06 WRITING-003: ep001 "선물" 2차 개정본을 캐논(revision_v2.txt)으로 확정, diff_v2 작성, style_constitution.md 갱신

@@ -1,7 +1,7 @@
 # 다음 작업 목록
 
-최종 업데이트: 2026-03-06 (동적 게시판 lifecycle 규칙 문서화 반영)
-진행 상태 기준 커밋: `adde5cadc8640439c52029ae424fd34e7f60b809`
+최종 업데이트: 2026-03-06 (장기 연재용 narrative context 압축 체계 반영)
+진행 상태 기준 커밋: `3be36cfe76a8e312deeea4dc2a840df3a0a1069e`
 
 ---
 
@@ -70,8 +70,12 @@
   - `artifacts/writing/episodes/ep000_prologue/revision_v1.txt`
   - `artifacts/writing/episodes/ep001/revision_v2.txt` (`current canon`)
 - `artifacts/writing/style/style_constitution.md`는 `S-14`까지 반영됨
+- live 서사 상태 문서:
+  - `world/live/docs/narrative_state.md` -> 현재 활성 서사 허브
+  - `world/live/docs/story_arcs.md` -> 아크 단위 압축 메모리
+  - `world/live/docs/foreshadow_registry.md` -> 활성 복선 레지스트리
+  - `world/live/docs/episode_deltas.md` -> 회차별 상태 변화 로그
 - 아직 비어 있는 live 상태 문서:
-  - `world/live/docs/narrative_state.md`
   - `world/live/docs/style_bible.md`
 
 ### 7. VFP
@@ -91,23 +95,23 @@
 
 ## 우선순위 A: 지금 바로 할 일
 
-### A-1. 집필 Phase 5 상태 갱신
+### A-1. style_bible 완성과 `ep002` 집필 입력 정리
 
 이유:
-- `ep001` 캐논과 문체 헌법 갱신은 끝났는데, live 상태 문서가 아직 비어 있다.
+- 장기 연재용 narrative context 허브는 마련됐지만, 문체 운용 요약과 `ep002` 입력 패키지는 아직 미완이다.
 
 해야 할 일:
-- `world/live/docs/narrative_state.md` 채우기
-  - 활성 복선
-  - 캐릭터 아크
-  - 다음 3~5화 방향
 - `world/live/docs/style_bible.md` 채우기
   - 현재 필체 요약
   - 금기/선호 패턴
   - reference excerpt
+- `world/live/docs/narrative_state.md`, `story_arcs.md`, `foreshadow_registry.md`, `episode_deltas.md`를 참조해 `ep002` 기획 입력을 정리
+  - 책 읽기 = 관찰 장치 구도
+  - 렌바렌 저택 정보 병목의 후속 관찰 범위
+  - 아직 설계/실행으로 점프하지 않는 박자 유지
 
 완료 조건:
-- 다음 집필 프롬프트가 live 상태 문서를 실제로 참조할 수 있다.
+- 다음 집필 프롬프트가 live narrative hub와 style 문서를 함께 참조할 수 있다.
 
 ### A-2. 실행 레지스트리/경로 드리프트 정리
 
@@ -169,6 +173,8 @@
 - `artifacts/writing/style/style_constitution.md` 갱신
 - `world/live/docs/style_bible.md` 갱신
 - `world/live/docs/narrative_state.md` 갱신
+- `world/live/docs/episode_deltas.md`에 상태 변화 추가
+- 필요 시 `world/live/docs/story_arcs.md`, `world/live/docs/foreshadow_registry.md` 압축 갱신
 
 ### 정식 시뮬레이션 실행 직후
 - `world/live/docs/simulation_state_index.md` 갱신
@@ -194,7 +200,7 @@
 
 ## 다음 세션 권장 시작 순서
 
-1. `world/live/docs/narrative_state.md`와 `world/live/docs/style_bible.md`를 채워 `ep002` 기획 입력을 만든다.
+1. `world/live/docs/style_bible.md`를 채우고, 새 narrative hub(`narrative_state`/`story_arcs`/`foreshadow_registry`/`episode_deltas`) 기준으로 `ep002` 기획 입력을 만든다.
 2. `world/live/docs/simulation_state_index.md`, `world/live/docs/character_index_v2.md`, `docs/architecture/PROJECT_ARCHITECTURE_MAP.md`의 경로 드리프트를 정리한다.
 3. `community_grammar_layer_b.md`의 ATOM을 계속 누적한다.
 4. 그 다음에야 입학 이후 정식 시뮬레이션과 NC 코어 캐스트 확장으로 넘어간다.
@@ -209,6 +215,9 @@
 - `world/live/board_states/README.md`
 - `world/live/docs/community_grammar_layer_b.md`
 - `world/live/docs/narrative_state.md`
+- `world/live/docs/story_arcs.md`
+- `world/live/docs/foreshadow_registry.md`
+- `world/live/docs/episode_deltas.md`
 - `world/live/docs/style_bible.md`
 - `world/live/docs/voice_fingerprint_spec.md`
 - `world/live/docs/simulation_state_index.md`
