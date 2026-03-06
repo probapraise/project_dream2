@@ -1,0 +1,19 @@
+id: P-1598
+background_type: foreigner
+crest_vision_holder: false
+dorm: 신전동군
+grade: 2학년
+mana_color: 황
+major: Enosian 신전과
+vocation: 사제
+origin: ARC-원거리소국권
+b5:
+  O: 0.73
+  C: 0.88
+  E: 0.29
+  A: 0.79
+  N: 0.40
+derived:
+  DT: 0.09
+  NFC: 0.53
+  SM: 0.50

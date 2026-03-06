@@ -1,0 +1,19 @@
+id: P-1343
+background_type: foreigner
+crest_vision_holder: false
+dorm: 적탑 기숙사
+grade: 4학년
+mana_color: 적
+major: 화염포격학파
+vocation: 마법사
+origin: ARC-인접왕국권
+b5:
+  O: 0.64
+  C: 0.58
+  E: 0.43
+  A: 0.85
+  N: 0.60
+derived:
+  DT: 0.25
+  NFC: 0.48
+  SM: 0.34

@@ -1,0 +1,19 @@
+id: P-3050
+background_type: foreigner
+crest_vision_holder: false
+dorm: 청탑 기숙사
+grade: 2학년
+mana_color: 청
+major: 방벽수호학파
+vocation: 마법사
+origin: ARC-인접왕국권
+b5:
+  O: 0.69
+  C: 0.40
+  E: 0.81
+  A: 0.75
+  N: 0.73
+derived:
+  DT: 0.59
+  NFC: 0.27
+  SM: 0.62

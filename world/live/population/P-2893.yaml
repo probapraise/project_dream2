@@ -1,0 +1,19 @@
+id: P-2893
+background_type: foreigner
+crest_vision_holder: false
+dorm: 신전동군
+grade: 3학년
+mana_color: 백
+major: Lusenia 신전과
+vocation: 사제
+origin: SAH-울카자르권
+b5:
+  O: 0.78
+  C: 0.36
+  E: 0.58
+  A: 0.47
+  N: 0.52
+derived:
+  DT: 0.40
+  NFC: 0.38
+  SM: 0.49

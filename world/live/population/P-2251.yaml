@@ -1,0 +1,19 @@
+id: P-2251
+background_type: foreigner
+crest_vision_holder: false
+dorm: 보라탑 기숙사
+grade: 4학년
+mana_color: 보라
+major: 전심학파
+vocation: 마법사
+origin: ARC-인접왕국권
+b5:
+  O: 0.63
+  C: 0.61
+  E: 0.25
+  A: 0.48
+  N: 0.46
+derived:
+  DT: 0.12
+  NFC: 0.64
+  SM: 0.35

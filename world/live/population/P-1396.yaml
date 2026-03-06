@@ -1,0 +1,19 @@
+id: P-1396
+background_type: foreigner
+crest_vision_holder: false
+dorm: 기사동
+grade: 1학년
+mana_color: 청
+major: 기동타격과
+vocation: 기사
+origin: NOR-스카르벨권
+b5:
+  O: 0.64
+  C: 0.72
+  E: 0.46
+  A: 0.48
+  N: 0.43
+derived:
+  DT: 0.55
+  NFC: 0.71
+  SM: 0.35

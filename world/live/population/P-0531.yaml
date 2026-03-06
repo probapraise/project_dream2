@@ -1,0 +1,19 @@
+id: P-0531
+background_type: foreigner
+crest_vision_holder: false
+dorm: 기사동
+grade: 1학년
+mana_color: 청
+major: 검창전술과
+vocation: 기사
+origin: ARC-인접왕국권
+b5:
+  O: 0.35
+  C: 0.85
+  E: 0.43
+  A: 0.59
+  N: 0.62
+derived:
+  DT: 0.18
+  NFC: 0.58
+  SM: 0.23

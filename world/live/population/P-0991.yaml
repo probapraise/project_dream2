@@ -1,0 +1,19 @@
+id: P-0991
+background_type: foreigner
+crest_vision_holder: false
+dorm: 청탑 기숙사
+grade: 4학년
+mana_color: 청
+major: 방벽수호학파
+vocation: 마법사
+origin: NOR-스카르벨권
+b5:
+  O: 0.60
+  C: 0.76
+  E: 0.52
+  A: 0.40
+  N: 0.62
+derived:
+  DT: 0.48
+  NFC: 0.64
+  SM: 0.43

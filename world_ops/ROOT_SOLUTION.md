@@ -31,7 +31,7 @@
   - 작가 승인 기록
 
 ### Step 4) 반영 후 감사
-- `scripts/world_ops_audit_bundle.sh` 실행
+- `scripts/ops/world_ops_audit_bundle.sh` 실행
 - 세션/로그 갱신
 
 ## 삭제 예외 허용 조건

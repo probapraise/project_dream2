@@ -1,0 +1,19 @@
+id: P-0072
+background_type: foreigner
+crest_vision_holder: false
+dorm: 보라탑 기숙사
+grade: 3학년
+mana_color: 보라
+major: 심상환영학파
+vocation: 마법사
+origin: SAH-울카자르권
+b5:
+  O: 0.57
+  C: 0.51
+  E: 0.42
+  A: 0.87
+  N: 0.32
+derived:
+  DT: 0.01
+  NFC: 0.57
+  SM: 0.53

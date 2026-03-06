@@ -1,0 +1,19 @@
+id: P-2534
+background_type: foreigner
+crest_vision_holder: false
+dorm: 청탑 기숙사
+grade: 2학년
+mana_color: 청
+major: 결속조형학파
+vocation: 마법사
+origin: ARC-인접왕국권
+b5:
+  O: 0.38
+  C: 0.45
+  E: 0.06
+  A: 0.73
+  N: 0.56
+derived:
+  DT: 0.24
+  NFC: 0.15
+  SM: 0.20

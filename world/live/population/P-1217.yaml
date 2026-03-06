@@ -1,0 +1,19 @@
+id: P-1217
+background_type: foreigner
+crest_vision_holder: false
+dorm: 청탑 기숙사
+grade: 3학년
+mana_color: 청
+major: 구속연쇄학파
+vocation: 마법사
+origin: 출신불명
+b5:
+  O: 0.66
+  C: 0.41
+  E: 0.60
+  A: 0.44
+  N: 0.24
+derived:
+  DT: 0.09
+  NFC: 0.76
+  SM: 0.64

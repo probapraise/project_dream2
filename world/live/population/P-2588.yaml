@@ -1,0 +1,19 @@
+id: P-2588
+background_type: foreigner
+crest_vision_holder: false
+dorm: 청탑 기숙사
+grade: 3학년
+mana_color: 청
+major: 구속연쇄학파
+vocation: 마법사
+origin: SAH-울카자르권
+b5:
+  O: 0.63
+  C: 0.37
+  E: 0.60
+  A: 0.53
+  N: 0.64
+derived:
+  DT: 0.64
+  NFC: 0.44
+  SM: 0.46

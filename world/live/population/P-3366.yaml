@@ -1,0 +1,19 @@
+id: P-3366
+background_type: foreigner
+crest_vision_holder: false
+dorm: 신전동군
+grade: 1학년
+mana_color: 황
+major: Valerion 신전과
+vocation: 사제
+origin: SAH-울카자르권
+b5:
+  O: 0.54
+  C: 0.51
+  E: 0.60
+  A: 0.57
+  N: 0.21
+derived:
+  DT: 0.08
+  NFC: 0.54
+  SM: 0.42

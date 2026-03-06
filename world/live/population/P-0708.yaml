@@ -1,0 +1,19 @@
+id: P-0708
+background_type: foreigner
+crest_vision_holder: false
+dorm: 녹탑 기숙사
+grade: 4학년
+mana_color: 녹
+major: 정령계약학파
+vocation: 마법사
+origin: NOR-스카르벨권
+b5:
+  O: 0.83
+  C: 0.80
+  E: 0.62
+  A: 0.57
+  N: 0.23
+derived:
+  DT: 0.27
+  NFC: 0.99
+  SM: 0.32

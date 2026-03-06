@@ -1,0 +1,19 @@
+id: P-3597
+background_type: foreigner
+crest_vision_holder: false
+dorm: 신전동군
+grade: 3학년
+mana_color: 청
+major: Silvaria 신전과
+vocation: 사제
+origin: ARC-인접왕국권
+b5:
+  O: 0.29
+  C: 0.89
+  E: 0.56
+  A: 0.07
+  N: 0.46
+derived:
+  DT: 0.37
+  NFC: 0.36
+  SM: 0.24

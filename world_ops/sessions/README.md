@@ -1,9 +1,7 @@
-# Sessions
+# Sessions (Legacy Path)
 
-변경 건당 아래 파일을 생성한다.
-- `<change_id>_request.md`
-- `<change_id>_phase2_report.md`
-- `<change_id>_phase3_apply.md`
-- `<change_id>_major_prompt_log.md` (major only)
-- `<change_id>_tri_diff_verify.md` (major only)
-- `<change_id>_phase4_sync.md`
+이 디렉터리는 이전 flat session 구조의 레거시 경로다.
+
+- 현재 정식 경로: `world_ops/cases/<change_id>/`
+- 새 케이스 생성: `bash scripts/ops/world_ops_new_case.sh <change_id> [--major] [--deletion-gate]`
+- 기존 historical 기록은 `world_ops/cases/`에서 change_id별 디렉터리로 관리한다.

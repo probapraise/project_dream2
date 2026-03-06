@@ -1,0 +1,19 @@
+id: P-2369
+background_type: foreigner
+crest_vision_holder: false
+dorm: 기사동
+grade: 1학년
+mana_color: 청
+major: 방패호위과
+vocation: 기사
+origin: ARC-인접왕국권
+b5:
+  O: 0.58
+  C: 0.58
+  E: 0.12
+  A: 0.31
+  N: 0.52
+derived:
+  DT: 0.22
+  NFC: 0.47
+  SM: 0.29

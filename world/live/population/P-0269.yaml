@@ -1,0 +1,19 @@
+id: P-0269
+background_type: foreigner
+crest_vision_holder: false
+dorm: 신전동군
+grade: 2학년
+mana_color: 황
+major: Vesperian 신전과
+vocation: 사제
+origin: ARC-인접왕국권
+b5:
+  O: 0.70
+  C: 0.37
+  E: 0.52
+  A: 0.54
+  N: 0.70
+derived:
+  DT: 0.42
+  NFC: 0.49
+  SM: 0.42

@@ -1,0 +1,19 @@
+id: P-2357
+background_type: foreigner
+crest_vision_holder: false
+dorm: 적탑 기숙사
+grade: 4학년
+mana_color: 적
+major: 폭연연성학파
+vocation: 마법사
+origin: ARC-인접왕국권
+b5:
+  O: 0.59
+  C: 0.78
+  E: 0.54
+  A: 0.70
+  N: 0.79
+derived:
+  DT: 0.27
+  NFC: 0.41
+  SM: 0.24
