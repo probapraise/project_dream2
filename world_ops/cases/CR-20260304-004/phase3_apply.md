@@ -1,0 +1,50 @@
+> Historical case note (2026-03-06)
+> This case predates the current repo-root path convention and may contain legacy path notation such as `docs/...`, `world_bible/...`, or `worldbible_refined_bundle_20260303/...`.
+> Do not copy path notation from this file. For new work, create a fresh case with `bash scripts/ops/world_ops_new_case.sh <change_id>` and use repo-root paths like `world/live/...`.
+
+# Phase 3 Apply
+
+- change_id: CR-20260304-004
+- branch: minor
+
+## 1. 실제 수정 파일
+- moved to quarantine:
+  - world_bible/WB-0014_lore_checklist.md
+  - world_bible/WB-0020_community_boards_18.md
+  - world_bible/WB-0022_appendix_change_log_sample.md
+  - world_bible/WB-0023_appendix_schema_cheatsheet.md
+  - world_bible/WB-0027_appendix_character_pack_schema.md
+  - docs/community_map.md
+  - docs/legacy_id_map.md
+  - docs/character_index.md
+  - docs/character_index_v2.md
+  - docs/simulation_playbook.md
+  - layer_b/*.md (18개)
+- recreated active docs:
+  - docs/community_map.md
+  - docs/legacy_id_map.md
+  - docs/character_index.md
+  - docs/character_index_v2.md
+  - docs/simulation_playbook.md
+  - layer_b/README.md
+  - quarantine/README.md
+- updated:
+  - docs/master_map.md
+  - docs/world_bible_index_v2.md
+  - docs/world_bible_index.md
+
+## 2. 변경 요약 (diff 요약 수준)
+- 충돌군을 활성 경로에서 격리하고, 동일 경로에 동적 스켈레톤 문서를 배치.
+- world_bible_index는 활성 world_bible(22개) 기준으로 재생성.
+
+## 3. 예상 외 영향
+- [x] 없음
+
+## 4. 미해결 항목
+- [ ] 없음
+- details:
+  - quarantine 재흡수 전략은 후속 정리 라운드에서 결정.
+
+## 5. 작가 승인
+- approved: yes
+- note: 적용 승인

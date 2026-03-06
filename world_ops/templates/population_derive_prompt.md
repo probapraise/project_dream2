@@ -87,14 +87,14 @@ SM  = clip(SM_base  + eps_SM ,  0.01, 0.99)
 
 ```bash
 # 1) 요청 JSONL 생성 (3,600건)
-python3 scripts/build_population_derive_batch_jsonl.py --force
+python3 scripts/population/build_population_derive_batch_jsonl.py --force
 
 # 2) (외부) Batch API 제출/완료 후 결과 JSONL 확보
-#    예: world_ops/batch/population_derive_output.jsonl
+#    예: artifacts/batch/population_derive_output_from_agents.jsonl
 
 # 3) 결과 반영 (YAML + CSV 동시 갱신)
-python3 scripts/apply_population_derived_results.py \
-  --batch-output-jsonl world_ops/batch/population_derive_output.jsonl
+python3 scripts/population/apply_population_derived_results.py \
+  --batch-output-jsonl artifacts/batch/population_derive_output_from_agents.jsonl
 ```
 
 ## 5) 검증 규칙
@@ -112,5 +112,5 @@ python3 scripts/apply_population_derived_results.py \
 - 범위 위반: 클리핑 후 `adjusted=true` 플래그를 감사 로그에 남김
 
 ## 7) 참조
-- `character_population_methodology.md` (4.2, 4.3)
-- `scripts/generate_population_slots.py`
+- `docs/design/character_population_methodology.md` (4.2, 4.3)
+- `scripts/population/generate_population_slots.py`

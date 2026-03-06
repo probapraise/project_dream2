@@ -1,0 +1,50 @@
+> Historical case note (2026-03-06)
+> This case predates the current repo-root path convention and may contain legacy path notation such as `docs/...`, `world_bible/...`, or `worldbible_refined_bundle_20260303/...`.
+> Do not copy path notation from this file. For new work, create a fresh case with `bash scripts/ops/world_ops_new_case.sh <change_id>` and use repo-root paths like `world/live/...`.
+
+# Change Request
+
+- change_id: CR-20260304-006
+- date: 2026-03-04
+- requester: writer
+- status: approved
+- source_of_truth: conversation_log.md + spec_sheet_v1.md
+
+## 1. 원 요청
+"좋아 구현해"
+
+## 2. 정제된 목표 (1문장)
+오케스트레이터는 META 접근을 유지하되, 시뮬레이션/집필 모델에는 META가 주입되지 않도록 실행 컨텍스트 격리 게이트를 구현한다.
+
+## 3. 변경 유형
+- add
+- modify
+
+## 4. 성공 기준 (DoD)
+- [x] execution view 컴파일 스크립트 추가
+- [x] pre-injection gate 스크립트 추가
+- [x] output leak scan 스크립트 추가
+- [x] 격리 운영 문서/템플릿 추가
+- [x] world_ops/README + simulation_playbook 연동 반영
+
+## 5. 예상 영향 범위 (초기)
+- impacted_files:
+  - scripts/ops/world_ops_compile_execution_views.sh
+  - scripts/ops/world_ops_pre_injection_gate.sh
+  - scripts/ops/world_ops_output_leak_scan.sh
+  - world_ops/SIM_WRITING_ISOLATION.md
+  - world_ops/templates/execution_call_spec.env
+  - world_ops/README.md
+  - worldbible_refined_bundle_20260303/docs/simulation_playbook.md
+- impacted_entities:
+  - simulation/writing 실행 컨텍스트 격리 규칙
+  - META 비노출 게이트 운영 기준
+
+## 6. 작가 확인 필요 항목
+- Q1: writing 실행에서 `allow_confidential_ids` 기본 운영 정책(에피소드별 화이트리스트)을 어떤 단위로 고정할지?
+
+## 7. 승인 기록
+- approved: yes
+- approved_by: writer
+- approved_at: 2026-03-04
+- note: 구현 진행 승인

@@ -1,0 +1,44 @@
+> Historical case note (2026-03-06)
+> This case predates the current repo-root path convention and may contain legacy path notation such as `docs/...`, `world_bible/...`, or `worldbible_refined_bundle_20260303/...`.
+> Do not copy path notation from this file. For new work, create a fresh case with `bash scripts/ops/world_ops_new_case.sh <change_id>` and use repo-root paths like `world/live/...`.
+
+# Change Request
+
+- change_id: CR-20260304-004
+- date: 2026-03-04
+- requester: writer
+- status: approved
+- source_of_truth: conversation_log.md + spec_sheet_v1.md
+
+## 1. 원 요청
+"좋아 이제 다시 데이터 정리를 시작해보자"
+
+## 2. 정제된 목표 (1문장)
+충돌 문서를 통삭제하지 않고 quarantine으로 분리해 보존하면서, 활성 문서를 동적 스켈레톤으로 정리한다.
+
+## 3. 변경 유형
+- modify
+
+## 4. 성공 기준 (DoD)
+- [x] 고충돌 파일군 quarantine 이동 완료
+- [x] 활성 docs 스켈레톤 재작성 완료
+- [x] world_bible_index 재생성 완료
+- [x] 감사 스크립트 통과(errors=0)
+
+## 5. 예상 영향 범위 (초기)
+- impacted_files:
+  - world_bible/WB-0014, 0020, 0022, 0023, 0027
+  - docs/community_map, character_index*, legacy_id_map, simulation_playbook
+  - layer_b/*.md
+  - docs/master_map, docs/world_bible_index*
+- impacted_entities:
+  - 고정 4x18/스키마 강제/RAG 전제 규약
+
+## 6. 작가 확인 필요 항목
+- Q1: 다음 라운드에서 quarantine 문서의 유효 문단을 어떤 우선순위로 재흡수할지?
+
+## 7. 승인 기록
+- approved: yes
+- approved_by: writer
+- approved_at: 2026-03-04
+- note: 통삭제 대신 보존형 정리 방식 승인

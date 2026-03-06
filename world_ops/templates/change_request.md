@@ -4,7 +4,10 @@
 - date: YYYY-MM-DD
 - requester: writer
 - status: draft
-- source_of_truth: conversation_log.md + spec_sheet_v1.md
+- source_of_truth:
+  - primary: world/live/docs/master_map.md + 관련 live bundle 문서
+  - secondary: docs/design/spec_sheet_v1.md
+  - history_only: docs/history/대화 로그.txt
 
 ## 1. 원 요청
 
@@ -20,8 +23,8 @@
 
 ## 5. 예상 영향 범위 (초기)
 - impacted_files:
-  - docs/world_bible_index_v2.md
-  - world_bible/WB-0000_xxx.md
+  - world/live/docs/world_bible_index_v2.md
+  - world/live/world_bible/WB-0000_xxx.md
 - impacted_entities:
   -
 
