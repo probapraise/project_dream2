@@ -22,7 +22,10 @@ writing/
 │   ├── ep001/
 │   │   ├── prompt_v1.md
 │   │   ├── prompt_v2.md
-│   │   └── draft_v2.txt
+│   │   ├── draft_v2.txt
+│   │   ├── revision_v1.txt           ← 1차 수정본
+│   │   ├── revision_v2.txt           ← 2차 개정본 / current canon
+│   │   └── diff_v2.md                ← draft_v2↔revision_v2 비교 분석
 │   └── ...
 ```
 
