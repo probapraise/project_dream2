@@ -2,7 +2,7 @@
 
 - source draft: `draft_v2.txt`
 - intermediate revision: `revision_v1.txt`
-- canonical revision: `revision_v2.txt`
+- canonical revision: `canon/revision_v2.txt`
 
 ## 분량 변화
 
@@ -10,7 +10,7 @@
 |---|---:|---:|---|
 | `draft_v2.txt` | 390 | 23,123 | 모델 초안 |
 | `revision_v1.txt` | 305 | 16,375 | 1차 수정본 |
-| `revision_v2.txt` | 311 | 18,362 | 2차 개정본 / 캐논 |
+| `canon/revision_v2.txt` | 311 | 18,362 | 2차 개정본 / current canon |
 
 - `draft_v2 -> revision_v1`: 줄 수 `-21.79%`, 글자 수 `-29.18%`
 - `draft_v2 -> revision_v2`: 줄 수 `-20.26%`, 글자 수 `-20.59%`
@@ -20,7 +20,7 @@
 
 ## 0. 캐논 판정
 
-`revision_v2.txt`를 ep001의 현재 캐논 텍스트로 확정한다.
+`canon/revision_v2.txt`를 ep001의 현재 캐논 텍스트로 확정한다.
 
 이유는 세 가지다.
 
@@ -152,7 +152,7 @@
 
 ## 5. 최종 판정
 
-`revision_v2.txt`는 ep001의 현재 캐논으로 적절하다.
+`canon/revision_v2.txt`는 ep001의 현재 캐논으로 적절하다.
 
 이 버전은 초안의 좋은 가능성을 유지하면서도, 작가 수정의 핵심이 어디에 있는지를 더 분명하게 보여준다. 앞으로 다음 화 프롬프트를 설계할 때는 이번 회차에서 드러난 네 가지를 강하게 계승하면 된다.
 

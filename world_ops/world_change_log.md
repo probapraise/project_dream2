@@ -16,3 +16,4 @@
 | CR-20260306-003 | 2026-03-06 | minor | live 18보드 bootstrap stub 제거 + 관련 live 문서를 동적 커뮤니티 모델 기준으로 정리 | done |
 | CR-20260306-004 | 2026-03-06 | minor | 동적 게시판 lifecycle, ID 발급, simrun promote 규칙을 live 문서에 명시 | done |
 | CR-20260306-005 | 2026-03-06 | minor | `narrative_state` 허브 재작성 + story_arcs/foreshadow_registry/episode_deltas 추가로 장기 연재용 컨텍스트 압축 체계 도입 | done |
+| CR-20260306-006 | 2026-03-06 | minor | episode별 `canon/` 폴더와 current canon 명시 규칙 도입, ep000/ep001 캐논 파일 재배치, 신규 episode 스캐폴드 추가 | done |

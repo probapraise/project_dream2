@@ -9,8 +9,8 @@
   - world/live/docs/master_map.md
   - docs/handoff/next_steps.md
   - docs/design/spec_sheet_v1.md
-  - artifacts/writing/episodes/ep000_prologue/revision_v1.txt
-  - artifacts/writing/episodes/ep001/revision_v2.txt
+  - artifacts/writing/episodes/ep000_prologue/canon/revision_v1.txt
+  - artifacts/writing/episodes/ep001/canon/revision_v2.txt
   - artifacts/writing/episodes/ep001/diff_v2.md
 
 ## 2. 충돌 후보
@@ -23,7 +23,7 @@
 |---|---|---|---|---|
 | `narrative_state`가 비어 있어 장기 연재 시 매번 원고 재탐색 필요 | 집필 입력 컨텍스트 비효율 | 허브 문서 + 압축 레지스트리 문서 분리 | `narrative_state`, `story_arcs`, `episode_deltas` | resolved |
 | 복선/아크/회차 요약이 한 문서에 섞이면 재로딩 단위가 커짐 | 100화 이상 진행 시 컨텍스트 과부하 | arc / foreshadow / delta를 별도 문서로 분리 | `foreshadow_registry`, `ARC`, `FS` | resolved |
-| 캐논 사실과 문서 요약이 엇갈릴 위험 | 잘못된 서사 상태 고정 | `ep000 revision_v1`, `ep001 revision_v2`, `diff_v2`만 근거로 최소 사실 추출 | `current canon`, `revision_v2` | resolved |
+| 캐논 사실과 문서 요약이 엇갈릴 위험 | 잘못된 서사 상태 고정 | `ep000 canon/revision_v1`, `ep001 canon/revision_v2`, `diff_v2`만 근거로 최소 사실 추출 | `current canon`, `canon/revision_v2` | resolved |
 
 ## 3. 누락 후보
 - [x] 없음

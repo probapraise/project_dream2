@@ -8,7 +8,7 @@
 - 각 엔트리는 `state_changes`, `activated_refs`, `closed_refs`, `carry_forward`만 남기고 줄거리 재현은 최소화한다.
 
 ## DELTA-EP000 `ep000_prologue`
-- canon_source: `artifacts/writing/episodes/ep000_prologue/revision_v1.txt`
+- canon_source: `artifacts/writing/episodes/ep000_prologue/canon/revision_v1.txt`
 - state_changes:
   - 주인공은 8세 `키리온 렌바렌`의 몸에서 깨어났고, 현재 상황을 생존 문제로 인식했다.
   - 칼리온 렌바렌은 질문 구조와 미세한 반응 관찰로 주인공의 정합성을 테스트하는 위협 축으로 설정됐다.
@@ -27,7 +27,7 @@
   - 다음 회차에서도 "아버지의 관찰망"과 "어머니의 위험한 이완"을 동시에 유지해야 한다.
 
 ## DELTA-EP001 `ep001`
-- canon_source: `artifacts/writing/episodes/ep001/revision_v2.txt`
+- canon_source: `artifacts/writing/episodes/ep001/canon/revision_v2.txt`
 - state_changes:
   - 주인공은 치유사 검사 전에 반응 속도/어휘/행동을 통제하는 생존 규칙을 자의식적으로 세웠다.
   - 치유사 검사는 통과했지만, 이 결과는 정체 안전 보장이 아니라 즉시 발각만 피한 상태로 남았다.

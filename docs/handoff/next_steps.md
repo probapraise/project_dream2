@@ -1,7 +1,7 @@
 # 다음 작업 목록
 
-최종 업데이트: 2026-03-06 (장기 연재용 narrative context 압축 체계 반영)
-진행 상태 기준 커밋: `3be36cfe76a8e312deeea4dc2a840df3a0a1069e`
+최종 업데이트: 2026-03-06 (episode `canon/` 폴더 규칙 반영)
+진행 상태 기준 커밋: `9767b54c8d7e9152458338fb0fe0109f617d51dc`
 
 ---
 
@@ -67,9 +67,15 @@
 
 ### 6. 집필
 - 확정 원고:
-  - `artifacts/writing/episodes/ep000_prologue/revision_v1.txt`
-  - `artifacts/writing/episodes/ep001/revision_v2.txt` (`current canon`)
+  - `artifacts/writing/episodes/ep000_prologue/canon/revision_v1.txt`
+  - `artifacts/writing/episodes/ep001/canon/revision_v2.txt` (`current canon`)
 - `artifacts/writing/style/style_constitution.md`는 `S-14`까지 반영됨
+- 에피소드 폴더 규칙:
+  - 각 에피소드 폴더는 생성 시점부터 `canon/` 하위 폴더 포함
+  - 정식 반영된 최종본은 `canon/` 안에만 둠
+  - `canon/README.md`가 current canon을 명시
+  - canon은 수정 가능하며, 새 리비전 채택 시 `canon/` 내부에서 current를 갱신
+  - 새 episode 폴더 생성은 `bash scripts/writing/new_episode_scaffold.sh <episode_id>`를 사용
 - live 서사 상태 문서:
   - `world/live/docs/narrative_state.md` -> 현재 활성 서사 허브
   - `world/live/docs/story_arcs.md` -> 아크 단위 압축 메모리
@@ -170,6 +176,8 @@
 - 필요 시 `bash scripts/ops/world_ops_audit_bundle.sh`
 
 ### 다음 회차 원고 캐논 확정 직후
+- `artifacts/writing/episodes/<episode_id>/canon/`에 정식 반영본 배치
+- `artifacts/writing/episodes/<episode_id>/canon/README.md` current 항목 갱신
 - `artifacts/writing/style/style_constitution.md` 갱신
 - `world/live/docs/style_bible.md` 갱신
 - `world/live/docs/narrative_state.md` 갱신
@@ -222,4 +230,7 @@
 - `world/live/docs/voice_fingerprint_spec.md`
 - `world/live/docs/simulation_state_index.md`
 - `world/live/docs/core_cast_bootstrap_v1.md`
+- `artifacts/writing/README.md`
+- `artifacts/writing/episodes/README.md`
+- `scripts/writing/new_episode_scaffold.sh`
 - `docs/architecture/PROJECT_ARCHITECTURE_MAP.md`

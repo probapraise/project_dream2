@@ -3,7 +3,7 @@
 역할: 작가가 다음 회차 집필 전에 기본 로딩하는 서사 상태 허브. 과거 회차 전체를 다시 읽는 대신, 현재 활성 상태와 다음 진행 방향만 유지한다.
 
 ## Current canon frontier
-- latest_canon_episode: `ep001` (`artifacts/writing/episodes/ep001/revision_v2.txt`)
+- latest_canon_episode: `ep001` (`artifacts/writing/episodes/ep001/canon/revision_v2.txt`)
 - macro_position: Part 1 오프닝 / 렌바렌 저택 생존 부트스트랩 / 학술원 입학 전
 - default_load_order:
   - 1. `docs/narrative_state.md`

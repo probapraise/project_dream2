@@ -47,14 +47,15 @@
 - quarantine_index: quarantine/README.md
 
 ## Recent changes (selected)
+- 2026-03-06 WRITING-005: episode 폴더에 `canon/` 하위 규칙을 도입하고, current canon은 `canon/README.md`로 명시하도록 집필 산출물 구조를 정리
 - 2026-03-06 WRITING-004: `narrative_state`를 활성 허브로 재작성하고 `story_arcs`/`foreshadow_registry`/`episode_deltas`를 추가해 장기 연재용 컨텍스트 압축 체계를 도입
 - 2026-03-06 COMMUNITY-RULE-001: community_map/simulation_playbook/board_states README에 동적 게시판 생성/승격/상태 추적 규칙 명시
 - 2026-03-06 COMMUNITY-RETIRE-001: live 18보드 bootstrap stub 제거, 커뮤니티 운영 기준을 동적/온디맨드 모델로 재고정
-- 2026-03-06 WRITING-003: ep001 "선물" 2차 개정본을 캐논(revision_v2.txt)으로 확정, diff_v2 작성, style_constitution.md 갱신
+- 2026-03-06 WRITING-003: ep001 "선물" 2차 개정본을 캐논(`canon/revision_v2.txt`)으로 확정, diff_v2 작성, style_constitution.md 갱신
 - 2026-03-06 LAYERB-004: community_grammar_layer_b에 ATOM-006 추가 — 명명법 질문이 종족 RP/상호 비하 배틀로 번지는 문법 반영
 - 2026-03-06 LAYERB-003: community_grammar_layer_b에 ATOM-005 추가 — "지지 철회" 형식의 동일시/방어 서약 문법 반영
 - 2026-03-05 VFP-001: Voice Fingerprint 시스템 신설 — voice_fingerprint_spec.md 작성, NC-0001 VFP v1 추출 완료
-- 2026-03-05 WRITING-002: ep001 "선물" 집필 프롬프트 v1 작성. 프롤로그 보라→흑색 수정 반영(revision_v1.txt, draft_v1.txt, style_constitution.md)
+- 2026-03-05 WRITING-002: ep001 "선물" 집필 프롬프트 v1 작성. 프롤로그 보라→흑색 수정 반영(canon/revision_v1.txt, draft_v1.txt, style_constitution.md)
 - 2026-03-05 WRITING-001: writing/ 폴더 계층 신설 — 집필 파이프라인(프롬프트/초안/수정본/diff/문체 헌법) 구조화. 프롤로그 프롬프트 v1 작성 완료
 - 2026-03-05 WORLDBUILD-001: WB-0011에 열구 외계 문명 유입 3층 정보 구조 추가 (공공 상식/국가 기밀/마사토라 전략)
 - 2026-03-05 WORLDBUILD-002: WB-0009/0026에 렌바렌 백작가 설정 추가 — 비밀 서명귀족, 식흔(蝕痕, 흑 주색, 타인 마법 잔흔 실시간 소거), 왕국 최상위 정보기관 수장

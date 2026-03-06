@@ -12,39 +12,65 @@ writing/
 ├── style/
 │   └── style_constitution.md          ← 문체 헌법 (에피소드 횡단, 누적)
 ├── episodes/
+│   ├── README.md                      ← 에피소드 폴더 규칙 / canon 운영 규칙
 │   ├── ep000_prologue/
+│   │   ├── canon/
+│   │   │   ├── README.md              ← current canon 지시 파일
+│   │   │   ├── revision_v1.txt        ← current text canon
+│   │   │   └── revision_v1.docx       ← current Word canon
 │   │   ├── prompt_v1.md               ← 집필 프롬프트 (markdown)
 │   │   ├── draft_v1.txt               ← 텍스트 초안
-│   │   ├── revision_v1.txt            ← 텍스트 리비전
 │   │   ├── diff_v1.md                 ← 초안↔수정본 비교 분석
-│   │   ├── 프롤로그 초안.docx          ← Word 초안
-│   │   └── 프롤로그 리비전.docx        ← Word 리비전
+│   │   └── 프롤로그 초안.docx          ← Word 초안
 │   ├── ep001/
+│   │   ├── canon/
+│   │   │   ├── README.md              ← current canon 지시 파일
+│   │   │   └── revision_v2.txt        ← current text canon
 │   │   ├── prompt_v1.md
 │   │   ├── prompt_v2.md
 │   │   ├── draft_v2.txt
-│   │   ├── revision_v1.txt           ← 1차 수정본
-│   │   ├── revision_v2.txt           ← 2차 개정본 / current canon
-│   │   └── diff_v2.md                ← draft_v2↔revision_v2 비교 분석
+│   │   ├── revision_v1.txt            ← 1차 수정본 (비캐논 중간본)
+│   │   └── diff_v2.md                 ← draft_v2↔canon/revision_v2 비교 분석
 │   └── ...
 ```
+
+## canon 폴더 규칙
+
+- 각 에피소드 폴더는 생성 시점부터 반드시 `canon/` 하위 폴더를 포함한다.
+- 정식 반영된 최종본은 항상 `canon/` 안에 둔다.
+- canon은 고정 불변이 아니다. 새 리비전이 정식 채택되면 `canon/` 안에 새 `revision_vN.*` 파일을 추가하고 `canon/README.md`의 current 항목을 갱신한다.
+- superseded canon도 비교와 회고를 위해 `canon/` 안에 남길 수 있다.
+- 초안, 중간 수정본, 비교 분석은 에피소드 루트에 남겨 workflow 흔적과 구분한다.
+
+## 새 에피소드 폴더 생성
+
+```bash
+bash scripts/writing/new_episode_scaffold.sh ep002
+```
+
+- 위 스크립트는 에피소드 폴더와 `canon/README.md`를 함께 생성한다.
+- 현재 canon 파일이 아직 없으면 `current_text_canon: none`, `current_word_canon: none` 상태로 시작한다.
 
 ## 워크플로우
 
 ```text
+0. `bash scripts/writing/new_episode_scaffold.sh <episode_id>`
+   ↓
 1. 기획 대화 (오케스트레이터)
    ↓
 2. prompt_vN.md 작성 (markdown)
    ↓
 3. 집필 모델에 프롬프트 전달 → 초안 저장 (`draft_vN.txt` 또는 `.docx`)
    ↓
-4. 작가 직접 수정 → 수정본 저장 (`revision_vN.txt` 또는 리비전 `.docx`)
+4. 작가 직접 수정 → 작업본 저장 (`revision_vN.txt` 또는 리비전 `.docx`)
    ↓
-5. 초안↔수정본 비교 분석 → diff_vN.md 저장
+5. 정식 반영본 확정 → `canon/revision_vN.*`로 이동/저장 + `canon/README.md` current 갱신
    ↓
-6. diff 누적 → style/style_constitution.md 갱신
+6. 초안↔정식 반영본 비교 분석 → diff_vN.md 저장
    ↓
-7. 다음 에피소드 prompt에 문체 헌법 반영
+7. diff 누적 → style/style_constitution.md 갱신
+   ↓
+8. 다음 에피소드 prompt에 문체 헌법 반영
 ```
 
 ## 파일 종류별 형식
@@ -53,12 +79,15 @@ writing/
 |---|---|---|
 | 프롬프트 | markdown (.md) | `prompt_v1.md`, `prompt_v2.md` |
 | 초안 | text / Word | `draft_v1.txt`, `프롤로그 초안.docx` |
-| 수정본 | text / Word | `revision_v1.txt`, `프롤로그 리비전.docx` |
+| 작업 수정본 | text / Word | `revision_v1.txt`, `work_revision_v1.docx` |
+| 정식 canon | text / Word | `canon/revision_v1.txt`, `canon/revision_v1.docx` |
 | 비교 분석 | markdown (.md) | `diff_v1.md` |
 
 ## 네이밍 규칙
 
 - **폴더**: `ep000` (프롤로그), `ep001` (1화), `ep002` (2화), ...
 - **프롬프트/diff**: `_v1`, `_v2`, ... (재집필 반복 시 버전 관리)
-- **텍스트 초안/리비전**: `draft_vN.txt`, `revision_vN.txt`
-- **Word 초안/수정본**: 한국어 제목 자유 명명 (예: `프롤로그 초안.docx`, `프롤로그 리비전.docx`)
+- **텍스트 초안/작업 리비전**: `draft_vN.txt`, `revision_vN.txt`
+- **정식 canon**: `canon/revision_vN.txt`, `canon/revision_vN.docx`
+- **Word 초안/작업 수정본**: 한국어 제목 자유 명명 가능
+- **current canon 지시 파일**: `canon/README.md`
