@@ -1,6 +1,6 @@
 # 다음 작업 목록
 
-최종 업데이트: 2026-03-06 (episode `canon/` 폴더 규칙 반영)
+최종 업데이트: 2026-03-07 (프롤로그/1화 리라이트 캐논 반영 및 live sync)
 진행 상태 기준 커밋: `9767b54c8d7e9152458338fb0fe0109f617d51dc`
 
 ---
@@ -67,9 +67,9 @@
 
 ### 6. 집필
 - 확정 원고:
-  - `artifacts/writing/episodes/ep000_prologue/canon/revision_v1.txt`
-  - `artifacts/writing/episodes/ep001/canon/revision_v2.txt` (`current canon`)
-- `artifacts/writing/style/style_constitution.md`는 `S-14`까지 반영됨
+  - `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v2.md`
+  - `artifacts/writing/episodes/ep001/canon/1화_리라이트_v2.md` (`current canon`)
+- `artifacts/writing/style/style_constitution.md`는 리라이트 캐논의 결말 박자에 맞춰 S-07/S-08을 보정했고, live `style_bible.md`도 새 캐논 기준으로 재동기화됨
 - 에피소드 폴더 규칙:
   - 각 에피소드 폴더는 생성 시점부터 `canon/` 하위 폴더 포함
   - 정식 반영된 최종본은 `canon/` 안에만 둠
@@ -81,8 +81,8 @@
   - `world/live/docs/story_arcs.md` -> 아크 단위 압축 메모리
   - `world/live/docs/foreshadow_registry.md` -> 활성 복선 레지스트리
   - `world/live/docs/episode_deltas.md` -> 회차별 상태 변화 로그
-- 아직 비어 있는 live 상태 문서:
-  - `world/live/docs/style_bible.md`
+- 문체 상태 문서:
+  - `world/live/docs/style_bible.md` -> 리라이트 캐논 기준 현재 필체 요약 반영 완료
 
 ### 7. VFP
 - `world/live/docs/voice_fingerprint_spec.md` 존재
@@ -101,20 +101,17 @@
 
 ## 우선순위 A: 지금 바로 할 일
 
-### A-1. style_bible 완성과 `ep002` 집필 입력 정리
+### A-1. `ep002` 집필 입력 정리
 
 이유:
-- 장기 연재용 narrative context 허브는 마련됐지만, 문체 운용 요약과 `ep002` 입력 패키지는 아직 미완이다.
+- 장기 연재용 narrative context 허브와 live `style_bible`은 정리됐지만, 리라이트된 캐논을 바탕으로 한 `ep002` 입력 패키지는 아직 미완이다.
 
 해야 할 일:
-- `world/live/docs/style_bible.md` 채우기
-  - 현재 필체 요약
-  - 금기/선호 패턴
-  - reference excerpt
 - `world/live/docs/narrative_state.md`, `story_arcs.md`, `foreshadow_registry.md`, `episode_deltas.md`를 참조해 `ep002` 기획 입력을 정리
   - 책 읽기 = 관찰 장치 구도
-  - 렌바렌 저택 정보 병목의 후속 관찰 범위
+  - 렌바렌 저택 정보 병목과 집사실 문답 온도의 후속 관찰 범위
   - 아직 설계/실행으로 점프하지 않는 박자 유지
+  - 학술원까지 4년이라는 시간축을 당장 외부 확장 트리거로 쓰지 않는 박자 유지
 
 완료 조건:
 - 다음 집필 프롬프트가 live narrative hub와 style 문서를 함께 참조할 수 있다.

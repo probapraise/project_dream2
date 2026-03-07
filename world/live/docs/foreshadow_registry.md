@@ -38,7 +38,7 @@
 - status: open
 - narrative function: 주인공의 정보 인프라 야망을 추상 포부가 아니라 관찰 가능한 구조 문제와 연결한다.
 - latest carry:
-  - 집사실에서 질문이 단일 인터페이스를 반복 통과하는 구조 확인
+  - 집사실에서 질문이 단일 인터페이스를 반복 통과하고, 답 주변에 군집/농담이 자생하는 구조까지 확인
 - payoff window: pre-academy -> academy
 - linked_arcs:
   - `ARC-002`
@@ -66,13 +66,13 @@
 - linked_arcs:
   - `ARC-001`
 
-### FS-006 "이 세계의 김유식" 장기 약속
+### FS-006 정보 인프라/공동체 집착의 장기 약속
 - type: promise
 - planted_in: `ep000`
 - status: open
-- narrative function: 작품의 장기 방향을 정보 인프라/커뮤니티 구축 서사로 고정한다.
+- narrative function: 작품의 장기 방향을 정보 인프라/커뮤니티 구축 서사로 고정하되, 당장의 생존 서사와 충돌하지 않게 점진적으로 키운다.
 - latest carry:
-  - `ep001`에서 집사실 병목을 보고 첫 현실적 발판을 확보
+  - `ep001`에서 집사실 병목과 하인들의 자생적 문답 온도를 보고, 종이 게시판 수준의 첫 골격까지 상상
 - payoff window: long horizon
 - linked_arcs:
   - `ARC-002`

@@ -47,6 +47,7 @@
 - quarantine_index: quarantine/README.md
 
 ## Recent changes (selected)
+- 2026-03-07 WRITING-006: 프롤로그/1화 리라이트 캐논(`프롤로그_리라이트_v2.md`, `1화_리라이트_v2.md`)을 current canon으로 반영하고 live 서사 허브/NC-0001/집필 인덱스를 새 내용 기준으로 동기화
 - 2026-03-06 WRITING-005: episode 폴더에 `canon/` 하위 규칙을 도입하고, current canon은 `canon/README.md`로 명시하도록 집필 산출물 구조를 정리
 - 2026-03-06 WRITING-004: `narrative_state`를 활성 허브로 재작성하고 `story_arcs`/`foreshadow_registry`/`episode_deltas`를 추가해 장기 연재용 컨텍스트 압축 체계를 도입
 - 2026-03-06 COMMUNITY-RULE-001: community_map/simulation_playbook/board_states README에 동적 게시판 생성/승격/상태 추적 규칙 명시
