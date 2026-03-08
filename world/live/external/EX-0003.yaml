@@ -38,7 +38,7 @@ narrative_fields:
     - target: 칼리온 렌바렌 (부친, EX-0001)
       relation: 부자
       dynamic: "두려움과 동경이 뒤섞인 대상. 인정받고 싶지만, 물려받은 짐 자체를 증오한다"
-    - target: 셀리아 렌바렌 née 그라비온 (모친, EX-0002)
+    - target: 셀리아 그라비온 (모친, EX-0002)
       relation: 모자
       dynamic: "어머니를 안심시키고 싶어 더 모범적으로 군다. 오히려 그래서 더 숨긴다"
     - target: 키리온 렌바렌 (차남, 주인공)

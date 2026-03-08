@@ -1,13 +1,12 @@
-# EX-0002 — 셀리아 렌바렌 née 그라비온 (Selia Renbaren)
+# EX-0002 — 셀리아 그라비온 (Selia Gravion)
 # created: 2026-03-05
 # source: 기획 대화 (프롤로그 설계)
 
 id: EX-0002
-name: 셀리아 렌바렌
-name_roman: Selia Renbaren
-maiden_name: 그라비온 (Gravion)
+name: 셀리아 그라비온
+name_roman: Selia Gravion
 role: 렌바렌 백작부인
-affiliation: 렌바렌 백작가 (출신: 그라비온 가문 — 문장비전 '진위감정')
+affiliation: 그라비온 가문 출신 / 혼인 후 렌바렌 백작부인
 
 b5:
   O: 0.48   # 현실적·실용적, 추상보다 구체적 판단 선호

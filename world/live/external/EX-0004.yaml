@@ -36,7 +36,7 @@ narrative_fields:
     - target: 칼리온 렌바렌 (부친, EX-0001)
       relation: 부녀
       dynamic: "아버지를 어렵게 여기지만 겁먹지는 않는다. 칼리온도 이 아이 앞에선 비교적 강압을 줄인다"
-    - target: 셀리아 렌바렌 née 그라비온 (모친, EX-0002)
+    - target: 셀리아 그라비온 (모친, EX-0002)
       relation: 모녀
       dynamic: "가장 편안한 기준점. 밝고 살가운 성향과 사람 읽는 감각을 셀리아 쪽에서 많이 물려받았다"
     - target: 데리온 렌바렌 (장남, EX-0003)
