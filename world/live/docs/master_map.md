@@ -47,6 +47,7 @@
 - quarantine_index: quarantine/README.md
 
 ## Recent changes (selected)
+- 2026-03-08 WORLDBUILD-015: 아르케이온 단계 명칭을 `하급 과정 / 상급 과정`으로 통일하고, `상급 과정 진입성취평가`를 포함한 서사 허브/hand off/academy bible 표현을 재정렬
 - 2026-03-08 WORLDBUILD-014: WB-0015와 서사 허브를 추가 조정해 본과는 `입학 즉시 전공 확정` 구조로 고정하고, 기초 표준식/체술/안전/기록 교육을 하급 아카데미 3년으로 이관
 - 2026-03-08 WORLDBUILD-013: WB-0015/narrative_state/story_arcs/NC-0001/handoff에 `12~14세 하급 아카데미 + 15세 본과 진입성취평가` 구조를 반영하고, 3년 스킵 뒤 각인술 선택 클리프행어를 본과 도입선으로 고정
 - 2026-03-08 WRITING-008: pre-academy 정체성 축 재조정 — 입학 전에는 `칼리온 시험 통과` 수준의 안도만 주고, `그럼에도 내 아들이다` 확언은 학술원 진입 후로 이연
