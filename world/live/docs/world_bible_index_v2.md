@@ -59,7 +59,7 @@
   - visibility: PUBLIC
 - [WB-0015] 13. 아르케이온 왕립학술원 운영 규정서(Academy Bible)
   - file: world_bible/WB-0015_academy_bible.md
-  - summary: [PUBLIC] 왕국이 인정하는 최고 등급 마도 인재 양성 기관이자 ‘등록식/면허’ 생산을 사실상 독점하는 준국가기관. 입학 전 조기 수련 특권 격차가 초기 성적 서열에 직접 반영된다.
+  - summary: [PUBLIC] 아르케이온은 `12~14세 부속 하급 아카데미 3년`과 `15세 이후 본과 4년`으로 나뉜다. 하급 아카데미가 기초과정을 담당하고, 15세 `본과 진입성취평가` 점수대가 입학 즉시 전공 확정 우선권과 초기 서열을 가른다.
   - visibility: META
 - [WB-0016] 14. 사회 계층·종족·언어/예절 (Social Stratification)
   - file: world_bible/WB-0016_social_stratification.md
