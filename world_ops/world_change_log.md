@@ -2,6 +2,11 @@
 
 | change_id | date | branch | summary | status |
 |---|---|---|---|---|
+| CR-20260308-005 | 2026-03-08 | minor | 마법 사용 경험자와 미사용자의 감정 차이를 추가해 조기 수련 금지 규정의 실효 근거를 live world bible에 반영 | done |
+| CR-20260308-004 | 2026-03-08 | minor | `계승조회식` 이전 아동 마법 수련 금지, 귀족 견제 조사, 선행학습 특권 격차를 live world bible/character 카드에 반영 | done |
+| CR-20260308-003 | 2026-03-08 | minor | 서명귀족 혈통 아동 10세 검증 행사 공식 명칭을 `계승조회식`으로 통일 | done |
+| CR-20260308-002 | 2026-03-08 | minor | 서명귀족 혈통 아동 10세 왕도 문장검증 행사와 조기 사설 검증 금지 규칙을 live world bible/character 카드에 반영 | done |
+| CR-20260308-001 | 2026-03-08 | minor | 렌바렌 가문 방계 청소 규약과 라베르니온 종속 정보권력 구도를 live world bible/character 카드에 반영 | done |
 | CR-20260303-000 | 2026-03-03 | bootstrap | SSOT 기반 world_ops 프로세스/템플릿 초기 구축 | done |
 | CR-20260303-001 | 2026-03-03 | minor (dry-run) | 중복 요청(no-op) 처리로 4-Phase 운영 흐름 검증 | done |
 | CR-20260303-002 | 2026-03-03 | minor | 작중 절대 비노출 설정(WB-0025) visibility를 CONFIDENTIAL에서 META로 교정 | done |

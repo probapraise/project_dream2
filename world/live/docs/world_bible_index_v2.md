@@ -1,8 +1,8 @@
 # world_bible_index
 
-- regenerated_at: 2026-03-05
+- regenerated_at: 2026-03-08
 - source: world_bible/WB-*.md
-- note: 2026-03-05 세션 — WB-0009/0011/0026에 렌바렌 백작가 + 열구 외계 유입 3층 정보 구조 + 식흔(蝕痕) 반영
+- note: 2026-03-08 세션 — WB-0005/0009/0015/0018/0026에 `계승조회식` 이전 아동 마법 수련 금지, 사용 경험자와 미사용자의 감정 차이, 귀족 견제 조사, 특권 선행학습 격차를 반영
 
 ## Sections
 - [WB-0001] 서문: 통합/정제 방법론(이번 통합본 제작 원칙)
@@ -23,7 +23,7 @@
   - visibility: PUBLIC
 - [WB-0005] 3. 마법 시스템: 표준식/등록식/서명(Signature)/마나사인
   - file: world_bible/WB-0005_magic_system.md
-  - summary: [PUBLIC] 마나는 ‘내계(內界: 신체/소우주)’와 ‘외계(外界: 바깥 현상)’를 매개하는 에너지/규칙 자원이다.
+  - summary: [PUBLIC] 마나는 ‘내계(內界: 신체/소우주)’와 ‘외계(外界: 바깥 현상)’를 매개하는 에너지/규칙 자원이다. 벨쿠란은 `계승조회식` 이전 아동의 마나핵/회로 활성화 보조를 금지하며, 사용 경험자는 미사용자와 감정 결과가 다르게 남는다.
   - visibility: PUBLIC
 - [WB-0006] 4. 성목(Irminsul): 인프라 코어/정령/엘프 클랜
   - file: world_bible/WB-0006_irminsul_infra.md
@@ -39,7 +39,7 @@
   - visibility: PUBLIC
 - [WB-0009] 7. 권력 구조 & 집단(정보·면허·보존권·징계)
   - file: world_bible/WB-0009_power_structure_factions.md
-  - summary: 정본(원본 서류)과 열람권이 사회의 기본 권력 자원이다. 7.2-A: 렌바렌 백작가 — 비밀 서명귀족 / 왕국 최상위 정보기관 수장 (상세 WB-0026 F.4).
+  - summary: 정본(원본 서류)과 열람권이 사회의 기본 권력 자원이다. 왕실은 서명귀족 혈통 추적, 10세 `계승조회식`, 아동 마법 수련 금지 조사로 귀족을 통제하며, 7.2-A의 렌바렌 백작가는 라베르니온 공작가 아래에서 방계 청소로 혈통 비밀을 유지한다.
   - visibility: PUBLIC
 - [WB-0010] 8. 프라미시오 행성: 4대륙/국가/금기(네이밍 PNC-1.0)
   - file: world_bible/WB-0010_planet_continents_naming.md
@@ -59,7 +59,7 @@
   - visibility: PUBLIC
 - [WB-0015] 13. 아르케이온 왕립학술원 운영 규정서(Academy Bible)
   - file: world_bible/WB-0015_academy_bible.md
-  - summary: [PUBLIC] 왕국이 인정하는 최고 등급 마도 인재 양성 기관이자 ‘등록식/면허’ 생산을 사실상 독점하는 준국가기관.
+  - summary: [PUBLIC] 왕국이 인정하는 최고 등급 마도 인재 양성 기관이자 ‘등록식/면허’ 생산을 사실상 독점하는 준국가기관. 입학 전 조기 수련 특권 격차가 초기 성적 서열에 직접 반영된다.
   - visibility: META
 - [WB-0016] 14. 사회 계층·종족·언어/예절 (Social Stratification)
   - file: world_bible/WB-0016_social_stratification.md
@@ -71,7 +71,7 @@
   - visibility: PUBLIC
 - [WB-0018] 16. 기록·증거 매체 사전 (Evidence & Records)
   - file: world_bible/WB-0018_evidence_records_glossary.md
-  - summary: 정본 서류: 등록청/공보회/학술원 공보 라인이 정본 번호를 부여한 문서.
+  - summary: 정본 서류: 등록청/공보회/학술원 공보 라인이 정본 번호를 부여한 문서. 마나핵/회로 감정은 벨쿠란의 조기 수련 금지 조사에서 핵심 신체 포렌식이다.
   - visibility: PUBLIC
 - [WB-0019] 17. 각인광장 운영 규칙 상세(플랫폼 스펙)
   - file: world_bible/WB-0019_platform_spec.md
@@ -91,5 +91,5 @@
   - visibility: META
 - [WB-0026] Appendix F. 문장비전(Crest Arcana) & 문장대장(24가문) 상세
   - file: world_bible/WB-0026_appendix_crest_arcana.md
-  - summary: 이 세계는 마법을 통한 ‘기적 발현’ 난이도가 의도적으로 낮춰진 세계다. 따라서 마법은 특권이 아니라, 사회·문화·경제의 ‘기반 인프라’로 취급된다. F.4: 비밀 서명귀족 렌바렌 백작가 — 식흔(蝕痕, 흑 주색, 타인 마법 잔흔 실시간 소거).
+  - summary: 이 세계는 마법을 통한 ‘기적 발현’ 난이도가 의도적으로 낮춰진 세계다. 따라서 마법은 특권이 아니라, 사회·문화·경제의 ‘기반 인프라’로 취급된다. 왕실은 10세 `계승조회식`과 아동 조기 수련 금지로 서명귀족 혈통을 통제하며, F.4의 렌바렌은 식흔(蝕痕)과 방계 청소 규약을 가진 비밀 가문이다.
   - visibility: PUBLIC

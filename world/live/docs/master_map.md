@@ -47,6 +47,11 @@
 - quarantine_index: quarantine/README.md
 
 ## Recent changes (selected)
+- 2026-03-08 WORLDBUILD-007: WB-0005/0009/0018/0026, NC-0001에 "마법 사용 경험자와 미사용자의 감정 차이"를 추가해 조기 수련 금지 규정의 실효 근거를 보강
+- 2026-03-08 WORLDBUILD-006: WB-0005/0009/0015/0026, EX-0001, NC-0001에 `계승조회식` 이전 아동 마법 수련 금지와 귀족 견제용 특별조사, 선행학습 특권 격차를 반영
+- 2026-03-08 WORLDBUILD-005: 서명귀족 혈통 아동 10세 검증 행사 공식 명칭을 `계승조회식`으로 확정하고 live 문서 전반 표현을 통일
+- 2026-03-08 WORLDBUILD-004: WB-0009/0026, EX-0001, NC-0001에 서명귀족 혈통 아동 10세 `계승조회식`과 조기 사설 검증 금지 규칙을 반영
+- 2026-03-08 WORLDBUILD-003: WB-0009/0026, EX-0001, NC-0001에 렌바렌 가문 방계 청소 규약과 라베르니온 종속 정보권력 구도를 반영
 - 2026-03-07 WRITING-006: 프롤로그/1화 리라이트 캐논(`프롤로그_리라이트_v2.md`, `1화_리라이트_v2.md`)을 current canon으로 반영하고 live 서사 허브/NC-0001/집필 인덱스를 새 내용 기준으로 동기화
 - 2026-03-06 WRITING-005: episode 폴더에 `canon/` 하위 규칙을 도입하고, current canon은 `canon/README.md`로 명시하도록 집필 산출물 구조를 정리
 - 2026-03-06 WRITING-004: `narrative_state`를 활성 허브로 재작성하고 `story_arcs`/`foreshadow_registry`/`episode_deltas`를 추가해 장기 연재용 컨텍스트 압축 체계를 도입
