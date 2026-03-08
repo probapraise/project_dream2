@@ -31,7 +31,7 @@
 | 적탑 기숙사 | 336 | 9.3% |
 | 녹탑 기숙사 | 294 | 8.2% |
 | 백탑 기숙사 | 278 | 7.7% |
-| 보라탑 기숙사 | 245 | 6.8% |
+| 자탑 기숙사 | 245 | 6.8% |
 | 흑탑 기숙사 | 43 | 1.2% |
 | 기사동 | 980 | 27.2% |
 | 신전동군 | 346 | 9.6% |
@@ -162,30 +162,30 @@
 | 백 | 연구과정 | `foreigner` | UNASSIGNED | 1 | 0 | 1 |
 | 백 | 연구과정 | `nonhuman` | UNASSIGNED | 3 | 0 | 3 |
 | 백 | 연구과정 | `signature_noble` | UNASSIGNED | 4 | 0 | 4 |
-| 보라 | 1학년 | `common_noble` | UNASSIGNED | 87 | 1 | 86 |
-| 보라 | 1학년 | `commoner` | UNASSIGNED | 4 | 0 | 4 |
-| 보라 | 1학년 | `foreigner` | UNASSIGNED | 2 | 0 | 2 |
-| 보라 | 1학년 | `nonhuman` | UNASSIGNED | 4 | 0 | 4 |
-| 보라 | 1학년 | `signature_noble` | UNASSIGNED | 4 | 0 | 4 |
-| 보라 | 2학년 | `common_noble` | UNASSIGNED | 78 | 0 | 78 |
-| 보라 | 2학년 | `commoner` | UNASSIGNED | 7 | 0 | 7 |
-| 보라 | 2학년 | `foreigner` | UNASSIGNED | 2 | 0 | 2 |
-| 보라 | 2학년 | `nonhuman` | UNASSIGNED | 6 | 0 | 6 |
-| 보라 | 2학년 | `signature_noble` | UNASSIGNED | 3 | 0 | 3 |
-| 보라 | 3학년 | `common_noble` | UNASSIGNED | 100 | 0 | 100 |
-| 보라 | 3학년 | `commoner` | UNASSIGNED | 4 | 0 | 4 |
-| 보라 | 3학년 | `foreigner` | UNASSIGNED | 3 | 0 | 3 |
-| 보라 | 3학년 | `nonhuman` | UNASSIGNED | 7 | 0 | 7 |
-| 보라 | 3학년 | `signature_noble` | UNASSIGNED | 2 | 0 | 2 |
-| 보라 | 4학년 | `common_noble` | UNASSIGNED | 75 | 0 | 75 |
-| 보라 | 4학년 | `commoner` | UNASSIGNED | 4 | 0 | 4 |
-| 보라 | 4학년 | `foreigner` | UNASSIGNED | 6 | 0 | 6 |
-| 보라 | 4학년 | `nonhuman` | UNASSIGNED | 5 | 0 | 5 |
-| 보라 | 4학년 | `signature_noble` | UNASSIGNED | 7 | 0 | 7 |
-| 보라 | 연구과정 | `common_noble` | UNASSIGNED | 13 | 0 | 13 |
-| 보라 | 연구과정 | `commoner` | UNASSIGNED | 2 | 0 | 2 |
-| 보라 | 연구과정 | `nonhuman` | UNASSIGNED | 2 | 0 | 2 |
-| 보라 | 연구과정 | `signature_noble` | UNASSIGNED | 1 | 0 | 1 |
+| 자 | 1학년 | `common_noble` | UNASSIGNED | 87 | 1 | 86 |
+| 자 | 1학년 | `commoner` | UNASSIGNED | 4 | 0 | 4 |
+| 자 | 1학년 | `foreigner` | UNASSIGNED | 2 | 0 | 2 |
+| 자 | 1학년 | `nonhuman` | UNASSIGNED | 4 | 0 | 4 |
+| 자 | 1학년 | `signature_noble` | UNASSIGNED | 4 | 0 | 4 |
+| 자 | 2학년 | `common_noble` | UNASSIGNED | 78 | 0 | 78 |
+| 자 | 2학년 | `commoner` | UNASSIGNED | 7 | 0 | 7 |
+| 자 | 2학년 | `foreigner` | UNASSIGNED | 2 | 0 | 2 |
+| 자 | 2학년 | `nonhuman` | UNASSIGNED | 6 | 0 | 6 |
+| 자 | 2학년 | `signature_noble` | UNASSIGNED | 3 | 0 | 3 |
+| 자 | 3학년 | `common_noble` | UNASSIGNED | 100 | 0 | 100 |
+| 자 | 3학년 | `commoner` | UNASSIGNED | 4 | 0 | 4 |
+| 자 | 3학년 | `foreigner` | UNASSIGNED | 3 | 0 | 3 |
+| 자 | 3학년 | `nonhuman` | UNASSIGNED | 7 | 0 | 7 |
+| 자 | 3학년 | `signature_noble` | UNASSIGNED | 2 | 0 | 2 |
+| 자 | 4학년 | `common_noble` | UNASSIGNED | 75 | 0 | 75 |
+| 자 | 4학년 | `commoner` | UNASSIGNED | 4 | 0 | 4 |
+| 자 | 4학년 | `foreigner` | UNASSIGNED | 6 | 0 | 6 |
+| 자 | 4학년 | `nonhuman` | UNASSIGNED | 5 | 0 | 5 |
+| 자 | 4학년 | `signature_noble` | UNASSIGNED | 7 | 0 | 7 |
+| 자 | 연구과정 | `common_noble` | UNASSIGNED | 13 | 0 | 13 |
+| 자 | 연구과정 | `commoner` | UNASSIGNED | 2 | 0 | 2 |
+| 자 | 연구과정 | `nonhuman` | UNASSIGNED | 2 | 0 | 2 |
+| 자 | 연구과정 | `signature_noble` | UNASSIGNED | 1 | 0 | 1 |
 | 흑 | 1학년 | `common_noble` | UNASSIGNED | 10 | 0 | 10 |
 | 흑 | 1학년 | `foreigner` | UNASSIGNED | 1 | 0 | 1 |
 | 흑 | 1학년 | `nonhuman` | UNASSIGNED | 3 | 0 | 3 |

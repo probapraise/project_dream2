@@ -47,6 +47,7 @@
 - quarantine_index: quarantine/README.md
 
 ## Recent changes (selected)
+- 2026-03-08 WORLDBUILD-016: 마나 주색 체계의 공식 명칭을 `자(紫)` 기준으로 정리하고, 자탑/자계열 표기를 live 문서·생성 스크립트·집필 입력 전반에 반영
 - 2026-03-08 WORLDBUILD-015: 아르케이온 단계 명칭을 `하급 과정 / 상급 과정`으로 통일하고, `상급 과정 진입성취평가`를 포함한 서사 허브/hand off/academy bible 표현을 재정렬
 - 2026-03-08 WORLDBUILD-014: WB-0015와 서사 허브를 추가 조정해 본과는 `입학 즉시 전공 확정` 구조로 고정하고, 기초 표준식/체술/안전/기록 교육을 하급 아카데미 3년으로 이관
 - 2026-03-08 WORLDBUILD-013: WB-0015/narrative_state/story_arcs/NC-0001/handoff에 `12~14세 하급 아카데미 + 15세 본과 진입성취평가` 구조를 반영하고, 3년 스킵 뒤 각인술 선택 클리프행어를 본과 도입선으로 고정
@@ -71,7 +72,7 @@
 - 2026-03-06 LAYERB-004: community_grammar_layer_b에 ATOM-006 추가 — 명명법 질문이 종족 RP/상호 비하 배틀로 번지는 문법 반영
 - 2026-03-06 LAYERB-003: community_grammar_layer_b에 ATOM-005 추가 — "지지 철회" 형식의 동일시/방어 서약 문법 반영
 - 2026-03-05 VFP-001: Voice Fingerprint 시스템 신설 — voice_fingerprint_spec.md 작성, NC-0001 VFP v1 추출 완료
-- 2026-03-05 WRITING-002: ep001 "선물" 집필 프롬프트 v1 작성. 프롤로그 보라→흑색 수정 반영(canon/revision_v1.txt, draft_v1.txt, style_constitution.md)
+- 2026-03-05 WRITING-002: ep001 "선물" 집필 프롬프트 v1 작성. 프롤로그 자→흑색 수정 반영(canon/revision_v1.txt, draft_v1.txt, style_constitution.md)
 - 2026-03-05 WRITING-001: writing/ 폴더 계층 신설 — 집필 파이프라인(프롬프트/초안/수정본/diff/문체 헌법) 구조화. 프롤로그 프롬프트 v1 작성 완료
 - 2026-03-05 WORLDBUILD-001: WB-0011에 열구 외계 문명 유입 3층 정보 구조 추가 (공공 상식/국가 기밀/마사토라 전략)
 - 2026-03-05 WORLDBUILD-002: WB-0009/0026에 렌바렌 백작가 설정 추가 — 비밀 서명귀족, 식흔(蝕痕, 흑 주색, 타인 마법 잔흔 실시간 소거), 왕국 최상위 정보기관 수장
