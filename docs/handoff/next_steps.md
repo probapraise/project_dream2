@@ -1,7 +1,7 @@
 # 다음 작업 목록
 
-최종 업데이트: 2026-03-09 (Layer B ATOM-011 반영 포함, `GRAMMAR-001~003` 초안 유지)
-진행 상태 기준: `world/live/docs/master_map.md` recent changes에 `WORLDBUILD-016`, `LAYERB-010`까지 반영된 상태
+최종 업데이트: 2026-03-09 (`git log` 기준 `753fb27`/`5e93929`/`ea6ffbc` 반영)
+진행 상태 기준: `ep002` canon 확정, episode summary 추가, Layer B `ATOM-011` 및 `GRAMMAR-001~003` 초안 반영 상태
 
 ---
 
@@ -10,6 +10,10 @@
 - 이 문서는 과거 Step 회고가 아니라, **현재 저장소에 실제로 남아 있는 상태와 작가 결정**을 기준으로 다음 작업을 정리한다.
 - live SSOT는 `world/live/`다.
 - 변경관리 이슈는 `world_ops` 케이스로 처리한다.
+- 최근 확인한 git 이력:
+  - `753fb27` `worldbuild: normalize color terms and canonize ep002`
+  - `5e93929` `writing: add episode summary files`
+  - `ea6ffbc` `layerb: add atom batch and grammar drafts`
 - 로컬 감사 결과:
   - `bash scripts/ops/world_ops_audit_bundle.sh`
   - 결과: `errors=0`, `warnings=0`
@@ -109,7 +113,12 @@
 ### 6. 집필
 - 확정 원고:
   - `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v2.md`
-  - `artifacts/writing/episodes/ep001/canon/1화_리라이트_v2.md` (`current canon`)
+  - `artifacts/writing/episodes/ep001/canon/1화_리라이트_v2.md`
+  - `artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md`
+- 회차 요약:
+  - `artifacts/writing/episodes/ep000_prologue/summary_v1.md`
+  - `artifacts/writing/episodes/ep001/summary_v1.md`
+  - `artifacts/writing/episodes/ep002/summary_v1.md`
 - `artifacts/writing/style/style_constitution.md`는 리라이트 캐논의 결말 박자에 맞춰 S-07/S-08을 보정했고, live `style_bible.md`도 새 캐논 기준으로 재동기화됨
 - 에피소드 폴더 규칙:
   - 각 에피소드 폴더는 생성 시점부터 `canon/` 하위 폴더 포함
@@ -132,11 +141,11 @@
 
 ### 8. 문서/레지스트리 드리프트
 - `world/live/docs/simulation_state_index.md`
-  - 실제 `artifacts/runs/`와 일부 불일치
-- `world/live/docs/character_index_v2.md`
-  - 헤더 `source_csv`가 예전 절대 경로를 가리킴
-- `docs/architecture/PROJECT_ARCHITECTURE_MAP.md`
-  - 대상 루트가 예전 절대 경로로 남아 있음
+  - 실제 `artifacts/runs/`의 `RUN-AUDIT-TMP`, `RUN-GATE-DRY`가 아직 등록되지 않음
+- `artifacts/writing/episodes/*/summary_v1.md`
+  - `canon 기준` 링크가 현재 저장소 경로(`/home/dlwhdgus/project_dream2`)가 아니라 예전 절대 경로(`/home/ljhljh/project_dream2`)를 가리킴
+- `artifacts/writing/README.md`
+  - 스냅샷 기준일이 2026-03-07에 머물러 있고 `ep002` current canon 및 `summary_v1.md` 계열을 아직 반영하지 않음
 
 ---
 
@@ -172,27 +181,27 @@
 완료 조건:
 - 다음 세션에서 제도 설명을 다시 처음부터 복원하지 않고, 바로 장면/사건/인물 갈등 설계로 들어갈 수 있다.
 
-### A-3. `ep002` 집필 입력 정리
+### A-3. `ep003` 집필 입력 패키지 정리
 
 이유:
-- 장기 연재용 narrative context 허브와 live `style_bible`은 정리됐지만, 리라이트된 캐논을 바탕으로 한 `ep002` 입력 패키지는 아직 미완이다.
+- `ep002`는 canon과 summary까지 확보됐다. 이제 다음 회차 입력을 `ep000~ep002` 누적 결과 기준으로 묶어야 한다.
 
 해야 할 일:
-- `world/live/docs/narrative_state.md`, `story_arcs.md`, `foreshadow_registry.md`, `episode_deltas.md`를 참조해 `ep002` 기획 입력을 정리
-  - 책 읽기 = 관찰 장치 구도
-  - 렌바렌 저택 정보 병목과 집사실 문답 온도의 후속 관찰 범위
-  - 아직 설계/실행으로 점프하지 않는 박자 유지
-  - 학술원까지 4년이라는 시간축을 당장 외부 확장 트리거로 쓰지 않는 박자 유지
+- `artifacts/writing/episodes/ep000_prologue/summary_v1.md`, `ep001/summary_v1.md`, `ep002/summary_v1.md`와 `ep002` current canon을 묶어 다음 회차 입력 패키지 작성
+- `world/live/docs/narrative_state.md`, `story_arcs.md`, `foreshadow_registry.md`, `episode_deltas.md`를 참조해 `ep003` 기획 입력 정리
+  - `서고 접근권` 획득 이후 `자색 표준식 입문서`와 서고 열람이 동시에 보상과 감시 장치로 작동하는 구도 유지
+  - 칼리온이 `행동`에서 `독서 패턴`으로 감시 해상도를 올린다는 축 명시
+  - 아직 학술원/외부 확장으로 점프하지 않고 저택 내부 관찰전의 압력을 유지
 
 완료 조건:
-- 다음 집필 프롬프트가 live narrative hub와 style 문서를 함께 참조할 수 있다.
+- 다음 집필 프롬프트가 `ep002` canon/summary와 live narrative hub를 함께 참조해 `ep003`로 바로 이어질 수 있다.
 
 ### A-4. 실행 레지스트리/경로 드리프트 정리
 
 해야 할 일:
 - `world/live/docs/simulation_state_index.md`를 실제 `artifacts/runs/` 구조에 맞게 갱신
-- `world/live/docs/character_index_v2.md` 재생성 또는 헤더 정리
-- `docs/architecture/PROJECT_ARCHITECTURE_MAP.md` 루트 경로 정정
+- `artifacts/writing/episodes/ep000_prologue/summary_v1.md`, `ep001/summary_v1.md`, `ep002/summary_v1.md`의 절대경로 링크를 현 저장소 기준으로 정정
+- `artifacts/writing/README.md` 스냅샷 설명을 현재 파일 구조 기준으로 갱신
 
 완료 조건:
 - 사람이 읽는 인덱스 문서와 실제 파일 시스템이 다시 일치한다.
@@ -247,6 +256,7 @@
 ### 다음 회차 원고 캐논 확정 직후
 - `artifacts/writing/episodes/<episode_id>/canon/`에 정식 반영본 배치
 - `artifacts/writing/episodes/<episode_id>/canon/README.md` current 항목 갱신
+- `artifacts/writing/episodes/<episode_id>/summary_v1.md` 작성 또는 최신 상태로 갱신
 - `artifacts/writing/style/style_constitution.md` 갱신
 - `world/live/docs/style_bible.md` 갱신
 - `world/live/docs/narrative_state.md` 갱신
@@ -278,8 +288,8 @@
 ## 다음 세션 권장 시작 순서
 
 1. `계승조회식` 운영기관/법령/감정법/당일 절차를 설계해 2026-03-08 세계관 확정분을 사건화 가능한 수준으로 닫는다.
-2. 그 다음 `world/live/docs/style_bible.md`를 채우고, 새 narrative hub(`narrative_state`/`story_arcs`/`foreshadow_registry`/`episode_deltas`) 기준으로 `ep002` 기획 입력을 만든다.
-3. `world/live/docs/simulation_state_index.md`, `world/live/docs/character_index_v2.md`, `docs/architecture/PROJECT_ARCHITECTURE_MAP.md`의 경로 드리프트를 정리한다.
+2. 그 다음 `ep000~ep002` canon/summary와 live narrative hub(`narrative_state`/`story_arcs`/`foreshadow_registry`/`episode_deltas`)를 묶어 `ep003` 입력 패키지를 만든다.
+3. `world/live/docs/simulation_state_index.md`, `artifacts/writing/episodes/*/summary_v1.md`, `artifacts/writing/README.md`의 드리프트를 정리한다.
 4. `community_grammar_layer_b.md`의 ATOM을 계속 누적한다.
 5. 그 다음에야 입학 이후 정식 시뮬레이션과 NC 코어 캐스트 확장으로 넘어간다.
 
@@ -309,5 +319,8 @@
 - `world/live/population/core_cast/NC-0001_P-1027.md`
 - `artifacts/writing/README.md`
 - `artifacts/writing/episodes/README.md`
+- `artifacts/writing/episodes/ep000_prologue/summary_v1.md`
+- `artifacts/writing/episodes/ep001/summary_v1.md`
+- `artifacts/writing/episodes/ep002/summary_v1.md`
 - `scripts/writing/new_episode_scaffold.sh`
 - `docs/architecture/PROJECT_ARCHITECTURE_MAP.md`
