@@ -1,7 +1,7 @@
 # 다음 작업 목록
 
-최종 업데이트: 2026-03-08 (렌바렌 가족 조형 + 벨쿠란 규정 + 아르케이온 구조 재편, WORLDBUILD-003~013 반영)
-진행 상태 기준: `world/live/docs/master_map.md` recent changes에 `WORLDBUILD-013`까지 반영된 상태
+최종 업데이트: 2026-03-09 (Layer B ATOM-011 반영 포함, `GRAMMAR-001~003` 초안 유지)
+진행 상태 기준: `world/live/docs/master_map.md` recent changes에 `WORLDBUILD-016`, `LAYERB-010`까지 반영된 상태
 
 ---
 
@@ -101,10 +101,10 @@
   - `community_memory.md`나 `community_grammar_layer_a.md`에 승격하지 않음
 
 ### 5. Layer B
-- `world/live/docs/community_grammar_layer_b.md`에 `ATOM-001~ATOM-006` 누적 완료
+- `world/live/docs/community_grammar_layer_b.md`에 `ATOM-001~ATOM-011` 누적 완료
 - 현재 단계:
-  - ATOM 축적 진행 중
-  - 상위 `GRAMMAR-*` 합성은 아직 시작 전
+  - ATOM 축적 11개 도달
+  - `GRAMMAR-001~003` 초안 작성 완료
 
 ### 6. 집필
 - 확정 원고:
@@ -200,12 +200,13 @@
 ### A-5. Layer B ATOM 계속 누적
 
 현재 상태:
-- ATOM 6개 누적
-- 아직 상위 문법 합성 전
+- ATOM 11개 누적
+- 상위 `GRAMMAR-001~003` 초안 작성 완료
 
 해야 할 일:
-- 실제 커뮤니티 사례를 더 수집해 `ATOM-007+` 이어서 추가
-- 10~15개 축적 후 상위 `GRAMMAR-*`로 묶을지 판단
+- 실제 커뮤니티 사례를 더 수집해 `ATOM-011+` 이어서 추가
+- 12~15개 구간에서 `GRAMMAR-*` 경계와 `synthesis_of` 구성을 재조정
+- 필요 시 각 `GRAMMAR-*`를 시뮬레이션 발동 규칙/캐릭터 타입 조건과 직접 연결
 
 ---
 

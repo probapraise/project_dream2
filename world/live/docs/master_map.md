@@ -47,6 +47,12 @@
 - quarantine_index: quarantine/README.md
 
 ## Recent changes (selected)
+- 2026-03-09 LAYERB-010: community_grammar_layer_b에 ATOM-011 추가 — 이름 음절 하나로 범주와 장비 체계를 과잉 확장하는 명칭 literal reading 문법 반영
+- 2026-03-09 LAYERB-009: community_grammar_layer_b에 `GRAMMAR-001~003` 초안 추가 — 결함 승격형 조롱 / 역설적 지지 합창 / 권위의 바닥화 재해석 축으로 Layer B 상위 규칙 1차 합성
+- 2026-03-09 LAYERB-008: community_grammar_layer_b에 ATOM-010 추가 — 악평처럼 시작해 후원/고평점으로 끝나는 애증형 헌정 문법 반영
+- 2026-03-09 LAYERB-007: community_grammar_layer_b에 ATOM-009 추가 — 미담/정사를 약탈·수금·조폭 프레임으로 재해석하는 문법 반영
+- 2026-03-09 LAYERB-006: community_grammar_layer_b에 ATOM-008 추가 — 황당한 난동 사유를 집단이 정당화 밈으로 승인하는 문법 반영
+- 2026-03-09 LAYERB-005: community_grammar_layer_b에 ATOM-007 추가 — 지시문 오독이 음담성 말장난과 인간 우월 밈으로 번지는 문법 반영
 - 2026-03-08 WORLDBUILD-016: 마나 주색 체계의 공식 명칭을 `자(紫)` 기준으로 정리하고, 자탑/자계열 표기를 live 문서·생성 스크립트·집필 입력 전반에 반영
 - 2026-03-08 WORLDBUILD-015: 아르케이온 단계 명칭을 `하급 과정 / 상급 과정`으로 통일하고, `상급 과정 진입성취평가`를 포함한 서사 허브/hand off/academy bible 표현을 재정렬
 - 2026-03-08 WORLDBUILD-014: WB-0015와 서사 허브를 추가 조정해 본과는 `입학 즉시 전공 확정` 구조로 고정하고, 기초 표준식/체술/안전/기록 교육을 하급 아카데미 3년으로 이관
