@@ -1,7 +1,7 @@
 # 다음 작업 목록
 
-최종 업데이트: 2026-03-09 (`git log` 기준 `753fb27`/`5e93929`/`ea6ffbc` 반영)
-진행 상태 기준: `ep002` canon 확정, episode summary 추가, Layer B `ATOM-011` 및 `GRAMMAR-001~003` 초안 반영 상태
+최종 업데이트: 2026-03-10 (worktree 기준 Layer B `ATOM-012` 반영 상태)
+진행 상태 기준: `ep002` canon 확정, episode summary 추가, Layer B `ATOM-012` 및 `GRAMMAR-001~003` 초안 반영 상태
 
 ---
 
@@ -105,9 +105,9 @@
   - `community_memory.md`나 `community_grammar_layer_a.md`에 승격하지 않음
 
 ### 5. Layer B
-- `world/live/docs/community_grammar_layer_b.md`에 `ATOM-001~ATOM-011` 누적 완료
+- `world/live/docs/community_grammar_layer_b.md`에 `ATOM-001~ATOM-012` 누적 완료
 - 현재 단계:
-  - ATOM 축적 11개 도달
+  - ATOM 축적 12개 도달
   - `GRAMMAR-001~003` 초안 작성 완료
 
 ### 6. 집필
@@ -209,11 +209,11 @@
 ### A-5. Layer B ATOM 계속 누적
 
 현재 상태:
-- ATOM 11개 누적
+- ATOM 12개 누적
 - 상위 `GRAMMAR-001~003` 초안 작성 완료
 
 해야 할 일:
-- 실제 커뮤니티 사례를 더 수집해 `ATOM-011+` 이어서 추가
+- 실제 커뮤니티 사례를 더 수집해 `ATOM-012+` 이어서 추가
 - 12~15개 구간에서 `GRAMMAR-*` 경계와 `synthesis_of` 구성을 재조정
 - 필요 시 각 `GRAMMAR-*`를 시뮬레이션 발동 규칙/캐릭터 타입 조건과 직접 연결
 

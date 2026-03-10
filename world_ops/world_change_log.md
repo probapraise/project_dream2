@@ -2,6 +2,7 @@
 
 | change_id | date | branch | summary | status |
 |---|---|---|---|---|
+| CR-20260310-001 | 2026-03-10 | minor | Layer B용 인간 백엔드 위장 SOTA/역자동화 노동 놀이 밈을 ATOM-012로 반영하고 master_map/log/hand off를 동기화 | done |
 | CR-20260309-006 | 2026-03-09 | minor | Layer B용 명칭 literal reading/음절 납치 밈을 ATOM-011로 반영하고 케이스/로그/hand off를 동기화 | done |
 | CR-20260309-005 | 2026-03-09 | minor | Layer B ATOM-001~010을 `GRAMMAR-001~003` 초안으로 1차 합성하고 케이스/로그/hand off를 동기화 | done |
 | CR-20260309-004 | 2026-03-09 | minor | Layer B용 악평-헌정 역전 밈을 ATOM-010으로 반영하고 케이스/로그/hand off를 동기화 | done |
