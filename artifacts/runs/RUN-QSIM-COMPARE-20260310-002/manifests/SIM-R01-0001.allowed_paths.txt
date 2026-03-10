@@ -1,0 +1,3 @@
+docs/community_map.md
+docs/community_grammar_layer_b.md
+docs/population_grammar.md

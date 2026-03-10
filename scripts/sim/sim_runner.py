@@ -78,6 +78,12 @@ class RunConfig:
     world_context: str
     seed_event: str
     allowed_view_context: str
+    interaction_mode: str
+    board_name: str
+    board_tone: str
+    thread_seed_post: str
+    first_movers_count: int
+    round2_include_first_movers: bool
 
 
 def parse_args() -> argparse.Namespace:
@@ -192,6 +198,15 @@ def parse_positive_int(raw_value: str, key: str) -> int:
     return value
 
 
+def parse_yes_no(raw_value: str, key: str) -> bool:
+    value = raw_value.strip().lower()
+    if value in {"yes", "true", "1"}:
+        return True
+    if value in {"no", "false", "0", ""}:
+        return False
+    fail(f"{key} must be yes/no")
+
+
 def load_run_config(args: argparse.Namespace) -> RunConfig:
     gated_payload = args.gated_payload.resolve()
     if not gated_payload.is_file():
@@ -232,6 +247,20 @@ def load_run_config(args: argparse.Namespace) -> RunConfig:
     world_context = payload.get("world_context", DEFAULT_WORLD_CONTEXT).strip()
     seed_event = payload.get("seed_event", DEFAULT_SEED_EVENT).strip()
     allowed_view_context = build_allowed_view_context(input_view)
+    interaction_mode = payload.get("interaction_mode", "cold_start").strip().lower() or "cold_start"
+    board_name = payload.get("board_name", "각인광장").strip()
+    board_tone = payload.get("board_tone", "").strip()
+    thread_seed_post = payload.get("thread_seed_post", "").strip()
+    first_movers_count = parse_positive_int(payload.get("first_movers_count", "3"), "first_movers_count")
+    round2_include_first_movers = parse_yes_no(
+        payload.get("round2_include_first_movers", "no"),
+        "round2_include_first_movers",
+    )
+
+    if interaction_mode not in {"cold_start", "thread_reaction"}:
+        fail("interaction_mode must be one of: cold_start, thread_reaction")
+    if interaction_mode == "thread_reaction" and not thread_seed_post:
+        fail("thread_reaction mode requires thread_seed_post")
 
     return RunConfig(
         call_id=call_id,
@@ -250,6 +279,12 @@ def load_run_config(args: argparse.Namespace) -> RunConfig:
         world_context=world_context,
         seed_event=seed_event,
         allowed_view_context=allowed_view_context,
+        interaction_mode=interaction_mode,
+        board_name=board_name,
+        board_tone=board_tone,
+        thread_seed_post=thread_seed_post,
+        first_movers_count=first_movers_count,
+        round2_include_first_movers=round2_include_first_movers,
     )
 
 
@@ -301,7 +336,7 @@ def b5_to_traits(row: dict[str, str]) -> str:
     return "\n".join(f"- {trait}" for trait in traits)
 
 
-def build_system_prompt(char: dict[str, str]) -> str:
+def build_system_prompt(config: RunConfig, char: dict[str, str]) -> str:
     bg_map = {
         "common_noble": "일반 귀족",
         "signature_noble": "서명귀족",
@@ -315,8 +350,17 @@ def build_system_prompt(char: dict[str, str]) -> str:
     dorm = char.get("dorm", "불명")
     mana = char.get("mana_color", "")
     mana_line = f"- 마나 계열: {mana}탑\n" if mana and voc == "마법사" else ""
+    board_line = ""
+    if config.interaction_mode == "thread_reaction":
+        tone = config.board_tone or "혼돈, 냉소, 내부자 유머"
+        board_line = (
+            "[게시판]\n"
+            f"- 이름: {config.board_name}\n"
+            f"- 분위기: {tone}\n"
+            "- 익명성: 완전 익명\n\n"
+        )
 
-    return f"""당신은 아르케이온 왕립학술원의 학생입니다.
+    base_prompt = f"""당신은 아르케이온 왕립학술원의 학생입니다.
 
 [신분]
 - 직능: {voc}
@@ -324,6 +368,7 @@ def build_system_prompt(char: dict[str, str]) -> str:
 - 기숙사: {dorm}
 - 배경: {bg}
 {mana_line}
+[board_line]
 [성격 성향]
 {b5_to_traits(char)}
 
@@ -334,6 +379,21 @@ def build_system_prompt(char: dict[str, str]) -> str:
 - 실제 커뮤니티 게시글처럼 짧고 생생하게 (30~150자 권장).
 - 글을 쓰지 않을 수도 있습니다. 관망·눈팅도 자연스러운 선택입니다.
 """
+    base_prompt = base_prompt.replace("[board_line]\n", board_line)
+    if config.interaction_mode != "thread_reaction":
+        return base_prompt
+
+    return (
+        base_prompt
+        + """
+- 지금 하는 일은 익명 게시판 반응 작성이다. 분석 보고서를 쓰는 것이 아니다.
+- 제목, 설명, 서문, 각주, 괄호 해설, '작성자:' 같은 라벨을 붙이지 마세요.
+- 실제 댓글 또는 짧은 게시글 원문만 출력하세요.
+- 반말 위주로, 짧고 날것처럼 작성하세요.
+- 너무 친절하게 정리하지 말고, 실제 학생이 툭 던진 말처럼 쓰세요.
+- 아무 말도 안 할 거면 정확히 '눈팅함'만 출력하세요.
+"""
+    )
 
 
 def load_credentials(key_path: Path):
@@ -409,9 +469,22 @@ def build_base_user_context(config: RunConfig) -> str:
     )
 
 
-def run_round1(creds, request_cls, personas: list[dict[str, str]], base_context: str) -> tuple[list[dict[str, object]], list[dict[str, str]]]:
+def build_thread_state(posts: list[dict[str, object]]) -> str:
+    chunks = []
+    for index, post in enumerate(posts, start=1):
+        chunks.append(f"댓글 {index}: {post['content']}")
+    return "\n".join(chunks)
+
+
+def run_round1(
+    config: RunConfig,
+    creds,
+    request_cls,
+    personas: list[dict[str, str]],
+    base_context: str,
+) -> tuple[list[dict[str, object]], list[dict[str, str]]]:
     print("\n" + "─" * 60)
-    print("ROUND 1 — 퍼스트 무버 (E+O 상위 3명)")
+    print(f"ROUND 1 — 퍼스트 무버 (E+O 상위 {config.first_movers_count}명)")
     print("─" * 60)
 
     scored = sorted(
@@ -419,7 +492,7 @@ def run_round1(creds, request_cls, personas: list[dict[str, str]], base_context:
         key=lambda row: float(row.get("E") or 0.5) + float(row.get("O") or 0.5),
         reverse=True,
     )
-    first_movers = scored[:3]
+    first_movers = scored[: min(len(scored), config.first_movers_count)]
 
     posts: list[dict[str, object]] = []
     for char in first_movers:
@@ -427,17 +500,35 @@ def run_round1(creds, request_cls, personas: list[dict[str, str]], base_context:
         label = f"{char.get('vocation')} {char.get('grade')} / {char.get('dorm')} [{char.get('background_type')}]"
         print(f"\n▶ {uid} ({label})")
 
-        user_msg = (
-            base_context
-            + "\n\n[현재 상황]\n"
-            + "각인광장이 방금 열렸습니다. 게시판은 완전히 비어 있습니다.\n"
-            + "당신이 원한다면 지금 이 순간 첫 글을 쓸 수 있습니다.\n"
-            + "당신의 성향에 따라 글을 쓰거나, 아직 관망하거나 선택하세요.\n"
-            + "글을 쓴다면 실제 게시글 텍스트를 작성하세요.\n"
-            + "관망한다면 '관망한다' 한 줄로 서술하세요."
-        )
+        if config.interaction_mode == "thread_reaction":
+            user_msg = (
+                base_context
+                + "\n\n[시드 글]\n"
+                + config.thread_seed_post
+                + "\n\n[행동 지침]\n"
+                + f"위 시드 글을 방금 본 {config.board_name} 이용자라고 생각하고 짧은 댓글 하나만 작성하세요.\n"
+                + "설명, 라벨, 제목, 메타 해설 없이 실제 댓글 원문만 출력하세요.\n"
+                + "시드 글의 허접함, 구조, 답변 말투, 분위기 중 하나를 물고 늘어져도 됩니다.\n"
+                + "안 쓰고 넘어가려면 정확히 '눈팅함'만 출력하세요."
+            )
+        else:
+            user_msg = (
+                base_context
+                + "\n\n[현재 상황]\n"
+                + "각인광장이 방금 열렸습니다. 게시판은 완전히 비어 있습니다.\n"
+                + "당신이 원한다면 지금 이 순간 첫 글을 쓸 수 있습니다.\n"
+                + "당신의 성향에 따라 글을 쓰거나, 아직 관망하거나 선택하세요.\n"
+                + "글을 쓴다면 실제 게시글 텍스트를 작성하세요.\n"
+                + "관망한다면 '관망한다' 한 줄로 서술하세요."
+            )
         try:
-            resp = call_llm(creds, request_cls, build_system_prompt(char), user_msg, temperature=1.0)
+            resp = call_llm(
+                creds,
+                request_cls,
+                build_system_prompt(config, char),
+                user_msg,
+                temperature=1.0,
+            )
             posts.append({"char": char, "content": resp, "round": 1})
             preview = resp[:100] + "..." if len(resp) > 100 else resp
             print(f"  → {preview}")
@@ -448,6 +539,7 @@ def run_round1(creds, request_cls, personas: list[dict[str, str]], base_context:
 
 
 def run_round2(
+    config: RunConfig,
     creds,
     request_cls,
     personas: list[dict[str, str]],
@@ -459,16 +551,22 @@ def run_round2(
     print("ROUND 2 — 반응자 (나머지)")
     print("─" * 60)
 
-    reactors = [persona for persona in personas if persona not in first_movers]
+    if config.round2_include_first_movers:
+        reactors = list(personas)
+    else:
+        reactors = [persona for persona in personas if persona not in first_movers]
 
-    board_state = ""
-    for index, post in enumerate(round1_posts, start=1):
-        char = post["char"]
-        board_state += (
-            f"\n--- 게시글 {index} ---\n"
-            f"작성자: {char.get('vocation')} {char.get('grade')} ({char.get('dorm')})\n"
-            f"{post['content']}\n"
-        )
+    if config.interaction_mode == "thread_reaction":
+        board_state = build_thread_state(round1_posts)
+    else:
+        board_state = ""
+        for index, post in enumerate(round1_posts, start=1):
+            char = post["char"]
+            board_state += (
+                f"\n--- 게시글 {index} ---\n"
+                f"작성자: {char.get('vocation')} {char.get('grade')} ({char.get('dorm')})\n"
+                f"{post['content']}\n"
+            )
 
     posts: list[dict[str, object]] = []
     for char in reactors:
@@ -476,18 +574,38 @@ def run_round2(
         label = f"{char.get('vocation')} {char.get('grade')} / {char.get('dorm')} [{char.get('background_type')}]"
         print(f"\n▶ {uid} ({label})")
 
-        user_msg = (
-            base_context
-            + "\n\n[현재 각인광장 상태 — 방금 올라온 첫 게시물들]\n"
-            + board_state
-            + "\n[행동 지침]\n"
-            + "위 글들을 보고 당신 성향대로 반응하세요.\n"
-            + "댓글을 달거나, 새 글을 쓰거나, 눈팅만 할 수도 있습니다.\n"
-            + "반응한다면 어느 글에 대한 반응인지 명시하고 실제 텍스트를 쓰세요.\n"
-            + "눈팅한다면 '눈팅한다' 한 줄로 서술하세요."
-        )
+        if config.interaction_mode == "thread_reaction":
+            user_msg = (
+                base_context
+                + "\n\n[시드 글]\n"
+                + config.thread_seed_post
+                + "\n\n[현재 댓글 흐름]\n"
+                + board_state
+                + "\n\n[행동 지침]\n"
+                + f"위 흐름을 본 {config.board_name} 이용자라고 생각하고 후속 댓글 하나만 작성하세요.\n"
+                + "누군가를 받거나, 다른 댓글을 비틀거나, 새 웃음 포인트를 추가해도 됩니다.\n"
+                + "설명, 라벨, 제목 없이 실제 댓글 원문만 출력하세요.\n"
+                + "안 쓰고 넘어가려면 정확히 '눈팅함'만 출력하세요."
+            )
+        else:
+            user_msg = (
+                base_context
+                + "\n\n[현재 각인광장 상태 — 방금 올라온 첫 게시물들]\n"
+                + board_state
+                + "\n[행동 지침]\n"
+                + "위 글들을 보고 당신 성향대로 반응하세요.\n"
+                + "댓글을 달거나, 새 글을 쓰거나, 눈팅만 할 수도 있습니다.\n"
+                + "반응한다면 어느 글에 대한 반응인지 명시하고 실제 텍스트를 쓰세요.\n"
+                + "눈팅한다면 '눈팅한다' 한 줄로 서술하세요."
+            )
         try:
-            resp = call_llm(creds, request_cls, build_system_prompt(char), user_msg, temperature=0.9)
+            resp = call_llm(
+                creds,
+                request_cls,
+                build_system_prompt(config, char),
+                user_msg,
+                temperature=0.9,
+            )
             posts.append({"char": char, "content": resp, "round": 2})
             preview = resp[:100] + "..." if len(resp) > 100 else resp
             print(f"  → {preview}")
@@ -563,6 +681,7 @@ def main() -> int:
     print(f"Call ID: {config.call_id}")
     print(f"Sim ID : {config.sim_id}")
     print(f"Mode   : {config.mode}")
+    print(f"Interact: {config.interaction_mode}")
     print(f"Seed   : {config.seed_label}")
     print("=" * 60)
 
@@ -583,8 +702,8 @@ def main() -> int:
         )
 
     base_context = build_base_user_context(config)
-    round1_posts, first_movers = run_round1(creds, request_cls, personas, base_context)
-    round2_posts = run_round2(creds, request_cls, personas, first_movers, round1_posts, base_context)
+    round1_posts, first_movers = run_round1(config, creds, request_cls, personas, base_context)
+    round2_posts = run_round2(config, creds, request_cls, personas, first_movers, round1_posts, base_context)
     all_posts = round1_posts + round2_posts
 
     result = build_result(config, personas, all_posts)

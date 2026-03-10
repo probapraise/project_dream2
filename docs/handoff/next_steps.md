@@ -1,7 +1,7 @@
 # 다음 작업 목록
 
-최종 업데이트: 2026-03-10 (worktree 기준 Layer B `ATOM-012` 반영 상태)
-진행 상태 기준: `ep002` canon 확정, episode summary 추가, Layer B `ATOM-012` 및 `GRAMMAR-001~003` 초안 반영 상태
+최종 업데이트: 2026-03-10 (Quick Sim 기본 / tuned API fallback 전환 반영 상태)
+진행 상태 기준: `ep002` canon 확정, episode summary 추가, Layer B `ATOM-012` 및 `GRAMMAR-001~003` 초안 반영, `Quick Sim` 1차 파일럿/비교 완료 상태
 
 ---
 
@@ -99,8 +99,15 @@
   - `world/live/board_states/simrun-001_cold_start.json`
   - `world/live/board_states/simrun-002_pro_cold_start.json`
   - `world/live/board_states/simrun-003_pro_thinking_cold_start.json`
+- 현재 primary explore 산출물:
+  - `artifacts/quick_sims/QSIM-20260310-001_human_backend/`
+- 비교용 API run:
+  - `artifacts/runs/RUN-QSIM-COMPARE-20260310-001/`
+  - `artifacts/runs/RUN-QSIM-COMPARE-20260310-002/`
 - 작가 결정:
-  - 이 산출물들은 **간략 smoke test 결과물**
+  - `Quick Sim`을 기본 경로로 사용
+  - API run은 fallback이자 검증 레인으로 사용
+  - 기존 `simrun-001~003`은 여전히 **간략 smoke test 결과물**
   - 당분간 정식 Layer A 문화 판단 근거로 쓰지 않음
   - `community_memory.md`나 `community_grammar_layer_a.md`에 승격하지 않음
 
@@ -216,6 +223,33 @@
 - 실제 커뮤니티 사례를 더 수집해 `ATOM-012+` 이어서 추가
 - 12~15개 구간에서 `GRAMMAR-*` 경계와 `synthesis_of` 구성을 재조정
 - 필요 시 각 `GRAMMAR-*`를 시뮬레이션 발동 규칙/캐릭터 타입 조건과 직접 연결
+
+### A-6. Quick Sim 기본 레인 후속 구현
+
+이유:
+- Quick Sim을 기본 경로로 채택했으므로, 이제는 파일럿 검증 단계가 아니라 운영 루틴으로 굳혀야 한다.
+
+해야 할 일:
+- `bash scripts/sim/new_quick_sim_run.sh <run_id>` 스캐폴드를 실제 운영 루틴에 정착
+- Layer B / 비-Layer B / 정보 전달형 / 갈등 유발형 seed를 섞어 Quick Sim 5-run 묶음 누적
+- Quick Sim 결과의 `skeptic -> scorecard -> summary` 후처리 규격 고정
+- Quick Sim에서 API fallback으로 올리는 조건을 케이스 기반으로 더 정교화
+
+완료 조건:
+- Quick Sim이 ad hoc 실험이 아니라 저장소의 일상적인 기본 시뮬레이션 레인으로 굳는다.
+
+### A-7. tuned API fallback 다양성 보정
+
+이유:
+- `BOARD-001` 전용 프롬프트를 붙인 API run은 표면 톤은 좋아졌지만, 반응이 `인간 지피티 / 추론 high / 대기열` 축으로 과수렴했다.
+
+해야 할 일:
+- tuned API용 prompt에 `rough diversity` 규칙을 추가해 반응자 간 밈 수렴을 완화
+- 구조 읽기형 / 조롱형 / 분위기 부스터형 / 삐딱한 한 줄형의 분화를 더 강하게 유도
+- `Quick Sim vs tuned API` 비교를 다음부터는 주력 기준으로 사용
+
+완료 조건:
+- API fallback이 Quick Sim보다 느리더라도, 적어도 "격리된 검증 레인"으로서 별도 가치가 분명해진다.
 
 ---
 

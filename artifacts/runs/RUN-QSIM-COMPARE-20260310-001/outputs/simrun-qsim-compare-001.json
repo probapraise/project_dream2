@@ -1,0 +1,49 @@
+{
+  "run_id": "RUN-QSIM-COMPARE-20260310-001",
+  "call_id": "SIM-R01-0001.view",
+  "sim_id": "simrun-qsim-compare-001",
+  "seed": "낙서장 인간 백엔드 위장 서비스 비교 run",
+  "mode": "human_backend_compare",
+  "model": "gemini-3.1-flash-lite-preview",
+  "participants": 4,
+  "rounds": 2,
+  "source_view": "artifacts/runs/RUN-QSIM-COMPARE-20260310-001/views/SIM-R01-0001.view.md",
+  "logs": [
+    {
+      "round": 1,
+      "char_id": "P-0168",
+      "vocation": "마법사",
+      "grade": "연구과정",
+      "dorm": "황탑 기숙사",
+      "background": "common_noble",
+      "content": "이게 그 소문의 'SOTA급' 각인 서비스냐? ㅋㅋㅋㅋㅋ \n질문권 하나 따겠다고 남의 사역마 이름 지어주는 꼴 보니까 웃음만 나오네. \n\n\"곧 나와 동기들이 갈 거야\" \n이거 완전 전설의 마법사 빙의한 인간 지피티 아니냐? 추론 high라더니 답변 꼬라지 봐라. 성능 보니까 내 마나석이 아깝다. 다들 낚이지 마라."
+    },
+    {
+      "round": 1,
+      "char_id": "P-0101",
+      "vocation": "마법사",
+      "grade": "1학년",
+      "dorm": "백탑 기숙사",
+      "background": "commoner",
+      "content": "\"이거 완전 개그네 ㅋㅋㅋㅋ\n열람권 벌겠다고 1, 2, 3 적는 인간이나, 그거 보고 대현자 타령하는 놈이나.\n이게 요즘 말하는 SOTA급 인간지피티냐? 추론 high라더니 답변 꼬라지 봐라 ㅋㅋㅋ\n대현자가 동기들이랑 온다니까 다들 짐 싸라 ㅋㅋㅋ\""
+    },
+    {
+      "round": 1,
+      "char_id": "P-0039",
+      "vocation": "기사",
+      "grade": "2학년",
+      "dorm": "기사동",
+      "background": "commoner",
+      "content": "이거 써본 놈 있냐? 질문 하나 하려고 사역마 이름 추천에 '1번, 2번, 3번' 적고 왔다. \n'인간 지피티' 대기 중이라길래 좀 기다렸는데, 대현자 언제 오냐고 물으니까 '곧 동기들이랑 간다, 넌 준비 안 됨' 이딴 답 오네 ㅋㅋㅋ\n\n이게 그 SOTA LLM인가 뭔가 하는 그거냐? 추론 high라 좀 걸린다더니 감성까지 챙기네. \n누가 또 테스트해 봐라. 이거 인간이 직접 돌리는 거 아님?"
+    },
+    {
+      "round": 2,
+      "char_id": "P-0312",
+      "vocation": "사제",
+      "grade": "3학년",
+      "dorm": "신전동군",
+      "background": "common_noble",
+      "content": "[게시글 3에 대한 댓글]\n작성자: 사제 3학년 (신전동군)\n\n추론 high라더니 뇌가 절여진 거 아니냐? ㅋㅋㅋ 답변 텍스트 보니까 1, 2, 3번 답변하던 놈이 컨셉 잡고 친 거 같은데. 인간 지피티가 아니라 '인간 노동력 투입'인 듯. 서비스 구조 설계한 놈이 누군지 몰라도 꽤 악질이네. 저딴 걸로 노동력 굴려서 열람권 벌게 하는 거 보면. \n\n그래도 심심풀이로는 나쁘지 않네. 더 해본 놈 없냐? 다음엔 무슨 대답 나올지 궁금하긴 하네."
+    }
+  ]
+}

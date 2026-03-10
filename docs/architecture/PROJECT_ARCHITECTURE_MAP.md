@@ -117,8 +117,12 @@ project_dream2/
   - **아직 CULTURE 레코드 등재 미완료** (작가 승인 대기)
 - Layer B: 작가 투사형 **— ATOM-001~003 등록 완료**, BOARD-001 "낙서장" 적용
   - `world/live/docs/community_grammar_layer_b.md`
+- Quick Sim primary lane:
+  - `artifacts/quick_sims/`
+  - Codex 멀티 에이전트 기반 기본 탐색 경로
 - API 시뮬레이션 런너: `scripts/sim/sim_runner.py`
   - Google Vertex AI (Gemini 3.1) 직접 호출
+  - 현재는 fallback / 검증 레인
   - 기본 모델: `gemini-3.1-flash-lite-preview` (global endpoint)
   - 고품질 모델: `gemini-3.1-pro-preview` (thinking ON, maxOutputTokens=8000 권장)
   - Writer Report는 API 미사용 — Claude Code 오케스트레이터가 JSON 직접 분석
@@ -248,7 +252,8 @@ world_ops_compile_execution_views
 | community Layer B | 부분 완료 | 방법론 + ATOM-001 + BOARD-001 확정 |
 | Voice Fingerprint | **v1 완료** | 방법론 문서 + NC-0001 VFP 추출 완료 |
 | community Layer A | **문서 완료, 시뮬 실행 완료** | 문서 생성 + simrun-001/002/003 실행, CULTURE 등재 대기 |
-| API 시뮬레이션 런너 | **완료** | `sim_runner.py` — Vertex AI Gemini 3.1 직접 호출 |
+| Quick Sim primary lane | **완료** | `artifacts/quick_sims/` + Codex 멀티 에이전트 기본 탐색 루프 |
+| API 시뮬레이션 런너 | **완료** | `sim_runner.py` — Vertex AI Gemini 3.1 직접 호출, 현재 fallback |
 | simulation run 기록 | **완료** | simrun-001/002/003 JSON 저장 완료, `world/live/docs/simulation_state_index.md`에 run/board snapshot 반영 |
 | world_ops 게이트 체인 | 완료 | compile/pre/output/delete_guard 동작 |
 
@@ -297,9 +302,10 @@ world_ops_compile_execution_views
   - `scripts/population/assign_foreigner_origin.py` (`--check` for read-only, `--apply` for writes)
   - `scripts/population/bootstrap_core_cast.py`
 - **시뮬레이션 실행**:
-  - `scripts/sim/sim_runner.py` — Layer A 콜드 스타트 / API 기반 커뮤니티 시뮬레이션
+  - `scripts/sim/new_quick_sim_run.sh` — Quick Sim 기본 스캐폴드
+  - `scripts/sim/sim_runner.py` — API fallback 커뮤니티 시뮬레이션
     - 입력: `world/live/population/population_slots.csv` (P-* 슬롯)
-    - 출력: `world/live/board_states/simrun-NNN_*.json`
+    - 출력: `artifacts/runs/<run_id>/outputs/*.json` (필요 시 승인 후 `world/live/board_states/`로 promote)
     - 모델: `gemini-3.1-flash-lite-preview` (기본) / `gemini-3.1-pro-preview` (고품질)
     - 인증: `vertex_key.json` (서비스 계정, git 제외)
     - Writer Report: API 미사용, Claude Code 오케스트레이터가 직접 분석

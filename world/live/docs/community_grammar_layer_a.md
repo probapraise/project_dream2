@@ -114,7 +114,7 @@ Layer A 주입 방식 (경향):
    가끔 이를 지적하거나 담론으로 번지는 경우도 있다."
 ```
 
-API 호출 시 위치: `system_prompt` 또는 `user_message`의 board context 항목에 포함.
+모델 실행 시 위치: `system_prompt` 또는 `user_message`의 board context 항목에 포함.
 강도(`strength`)에 따라 서술의 확신도를 조절한다.
 
 | strength | 서술 톤 |

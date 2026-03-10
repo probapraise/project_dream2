@@ -1,7 +1,7 @@
 # Project Dream2 Full World Dossier for External Review
 
 - generated_at: 2026-03-10
-- repo_head: `d67f941`
+- repo_head: `44a313f`
 - document_role: 외부 고급 모델용 상세 설정 도감
 - ssot_status: non-SSOT compiled artifact
 - source_priority:
@@ -3919,6 +3919,7 @@ voice_fingerprint:
   extracted_from:
     - "ep000_prologue/canon/프롤로그_리라이트_v2"
     - "ep001/canon/1화_리라이트_v2"
+    - "ep002/canon/2화_리라이트_v1"
 
   # 1. 문장 구조
   sentence_structure: >
@@ -3959,7 +3960,7 @@ voice_fingerprint:
     assertion: >
       단정적. 체언 종결 또는 "~이다/~인 것이다" 종결.
       근거를 나열한 뒤 결론을 단문으로 끊는다.
-      ("이 사람은 대화를 하고 있는 게 아니다. 나를 검증하고 있다.")
+      ("오답이 나와도 교정의 기회를 주지 않고, 정답이 나와도 안심의 여지를 주지 않는다.")
     question: >
       극히 드묾. 자기 내면에서만 자문한다.
       타인에게 묻는 질문은 정보 수집 목적의 단문.
@@ -3996,7 +3997,7 @@ voice_fingerprint:
   # 5. 앵커 대사
   anchor_lines:
     - "한 수 위다."
-    - "이 사람은 대화를 하고 있는 게 아니다. 나를 검증하고 있다."
+    - "틀린 풀이로 정답을 맞히는 건, 다음 문제에서 죽는 방식이다."
     - "그렇다면 여기서 살아남는 수밖에 없다."
     - "먼저, 이 집에서."
 

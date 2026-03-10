@@ -9,6 +9,33 @@
 - 같은 라운드 내 정보 격리만 엔진 규칙으로 유지한다.
 - 산출물은 `official`(작품 반영 후보)과 `explore`(탐색 메모)를 분리한다.
 - run 결과가 곧바로 새 live 보드 생성/승격을 뜻하지 않는다.
+- 기본 시뮬레이션 경로는 `Quick Sim`이다.
+- API run은 fallback이자 검증 레인으로 사용한다.
+
+## 실행 트랙
+
+### 1. Quick Sim (default)
+- Codex 멀티 에이전트를 활용한 기본 탐색 경로다.
+- 산출물은 `artifacts/quick_sims/<run_id>/`에 남긴다.
+- 목표:
+  - 시드 사건 탐색
+  - 게시판 초반 댓글 흐름 샘플
+  - Layer B 밈/문법 발화 여부 확인
+  - 반응자 선발 논리 점검
+- 등급:
+  - 기본값은 `explore only`
+  - live 직접 반영 금지
+
+### 2. API Sim (fallback / verify)
+- gated API runner를 통한 검증 경로다.
+- 산출물은 `artifacts/runs/<run_id>/`에 남긴다.
+- 목표:
+  - hard isolation
+  - leak scan
+  - board_state promote 직전 검증
+  - Quick Sim 결과가 마음에 들지 않을 때 재실행
+- 등급:
+  - `official candidate`
 
 ## 보드 선택 규칙
 
@@ -46,12 +73,13 @@
 
 ## 절차 템플릿
 1. 입력 정의: 목표 장면, 관련 캐논 범위, 금지/주의 항목 확정
-2. 보드 범위 결정: 기존 registered 보드인지, `concept_only` 후보인지, 승격 검토 대상인지 확정
-3. 참여자 구성: 역할 카드 배정, 공개/비공개 정보 경계 설정
-4. 라운드 진행: 라운드별 입력 -> 행동/발화 -> 로그 기록
-5. 수렴 판정: 충돌 감소 여부, 근거 등급, 남은 모순 점검
-6. 결과 분리: `official`과 `explore`를 분리 제출
-7. promote 판정: live 반영, 상태 파일 생성, 신규 보드 등록 여부를 별도 판단
+2. 실행 트랙 결정: 기본은 `Quick Sim`, 필요 시 `API Sim`
+3. 보드 범위 결정: 기존 registered 보드인지, `concept_only` 후보인지, 승격 검토 대상인지 확정
+4. 참여자 구성: 역할 카드 배정, 공개/비공개 정보 경계 설정
+5. 라운드 진행: 라운드별 입력 -> 행동/발화 -> 로그 기록
+6. 수렴 판정: 충돌 감소 여부, 근거 등급, 남은 모순 점검
+7. 결과 분리: `official`과 `explore`를 분리 제출
+8. promote 판정: live 반영, 상태 파일 생성, 신규 보드 등록 여부를 별도 판단
 
 ## 조절 가능한 파라미터
 - 참여자 수: 최소 1명, 상한은 장면 복잡도 기준으로 결정
@@ -68,13 +96,33 @@
 ## 운영
 - 시뮬레이션 관련 변경은 별도 변경 건(`CR-*`)으로 기록한다.
 - 과거 강제형 플레이북은 `quarantine/docs/simulation_playbook.md`에 보존한다.
-- 실제 모델 실행은 `bash scripts/ops/world_ops_run_sim.sh <run_id> <call_spec_env> <sim_id> <board_state_file>`를 기본 진입점으로 사용한다.
+- 기본 진입점은 `Quick Sim`이다.
+  - 스캐폴드: `bash scripts/sim/new_quick_sim_run.sh <run_id>`
+  - 이후 `artifacts/quick_sims/<run_id>/inputs/`를 채우고 Codex 멀티 에이전트로 실행한다.
+  - 결과는 `thread_sample`, `participant_notes`, `scorecard`, `summary`까지 남긴다.
+- API fallback 진입점:
+  - `bash scripts/ops/world_ops_run_sim.sh <run_id> <call_spec_env> <sim_id> <board_state_file>`
 - exploratory/smoke run의 `board_state_file`은 기본적으로 `simrun-*.json` 계열을 사용한다.
 - 새 보드가 필요해 보인다고 해서 run 출력만으로 `BOARD-###`를 자동 발급하지 않는다.
-- `python3 scripts/sim/sim_runner.py` 직접 실행은 금지한다. 이 스크립트는 gated payload 소비용 하위 실행기다.
+- `python3 scripts/sim/sim_runner.py` 직접 실행은 금지한다. 이 스크립트는 API fallback용 gated payload 소비 하위 실행기다.
 - 저수준 디버깅이 필요할 때만 아래 순서를 수동으로 사용한다.
   - compile: `scripts/ops/world_ops_compile_execution_views.sh`
   - pre-injection gate: `scripts/ops/world_ops_pre_injection_gate.sh`
   - gated worker: `scripts/sim/sim_runner.py --gated-payload ... --output-json ...`
   - output leak scan: `scripts/ops/world_ops_output_leak_scan.sh`
   - leak scan 통과 후 artifact output을 `board_states/`로 promote
+
+## 트랙 선택 규칙
+
+### Quick Sim부터 시작하는 경우
+- 새 사건을 처음 탐색할 때
+- Layer B / 낙서장처럼 반응 결과 밈 감도가 중요한 경우
+- 작가가 시드 문장을 빠르게 다듬고 싶은 경우
+- 반응자 결 차이와 아이디어 밀도를 먼저 보고 싶은 경우
+
+### API로 올리는 경우
+- Quick Sim 결과가 마음에 들지 않을 때
+- leak scan이 꼭 필요할 때
+- live 반영 후보로 승격 검토할 때
+- META/CONFIDENTIAL 의존도가 높을 때
+- 격리된 재실행이 필요할 때

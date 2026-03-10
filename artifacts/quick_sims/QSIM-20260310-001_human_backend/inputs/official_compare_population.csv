@@ -1,0 +1,6 @@
+id,background_type,crest_vision_holder,O,C,E,A,N,DT,NFC,SM,status,ch_id,dorm,grade,mana_color,major,vocation,noble_house,race,origin
+P-0168,common_noble,false,0.96,0.70,0.73,0.35,0.53,0.44,0.77,0.57,uninstantiated,,황탑 기숙사,연구과정,황,관성조율학파,마법사,,,
+P-0101,commoner,false,0.86,0.51,0.75,0.86,0.74,0.22,0.59,0.55,uninstantiated,,백탑 기숙사,1학년,백,순백응급학파,마법사,,,
+P-0039,commoner,false,0.72,0.41,0.77,0.34,0.71,0.41,0.51,0.74,uninstantiated,,기사동,2학년,적,방패호위과,기사,,,
+P-0312,common_noble,false,0.67,0.75,0.35,0.54,0.25,0.24,0.93,0.20,uninstantiated,,신전동군,3학년,황,Valerion 신전과,사제,,,
+

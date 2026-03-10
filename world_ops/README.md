@@ -94,10 +94,15 @@
 8. `world_ops/world_change_log.md` 갱신
 
 ## 시뮬/집필 실행 전 필수 게이트
-### 권장 단일 진입점 (simulation)
+### 기본 경로 (Quick Sim)
+- `bash scripts/sim/new_quick_sim_run.sh <run_id>`
+- 이 스캐폴드 아래 `artifacts/quick_sims/<run_id>/inputs/`를 채우고, Codex 멀티 에이전트로 run을 진행한다.
+- Quick Sim은 기본적으로 `explore only`이며 live 직접 반영 경로가 아니다.
+
+### fallback 경로 (API simulation)
 - `bash scripts/ops/world_ops_run_sim.sh <run_id> <call_spec_env> <sim_id> <board_state_file>`
 - 이 래퍼가 `compile -> pre-injection gate -> sim_runner -> output leak scan -> live promote`를 순서대로 수행한다.
-- `python3 scripts/sim/sim_runner.py` 직접 실행은 지원하지 않는다. `sim_runner.py`는 gated payload 소비용 하위 실행기다.
+- `python3 scripts/sim/sim_runner.py` 직접 실행은 지원하지 않는다. `sim_runner.py`는 API fallback용 gated payload 소비 하위 실행기다.
 
 ### 저수준 수동 절차
 1. `bash scripts/ops/world_ops_compile_execution_views.sh <run_id> <call_spec_env>`
