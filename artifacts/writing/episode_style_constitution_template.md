@@ -1,4 +1,4 @@
-# 이번 화 문체 헌법 템플릿
+# 이번 화 문체 헌법
 
 - episode_id: `<episode_id>`
 - style_constitution_version: `v1`
@@ -38,15 +38,15 @@
 - 이번 화에서 실제로 중요한 인물 말투/VFP 포인트만 적는다.
 - 스타일 패턴보다 캐릭터의 고유 화법이 우선되는 경우를 짧게 명시한다.
 
-- 
+-
 
 ## Episode hard-no
 - 이번 화에서 특히 피해야 할 문체 실수나 과잉 연출을 적는다.
 
-- 
+-
 
 ## One-screen injection summary
 - 외부 모델에 빠르게 붙일 수 있는 6~10줄 압축본을 적는다.
 - 이 블록은 `Fixed rules`와 `Episode-selected patterns`를 짧게 요약한 결과여야 한다.
 
-- 
+-

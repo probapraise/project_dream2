@@ -1,9 +1,15 @@
-# 집필 주입 패킷 템플릿
+# 집필 주입 패킷
 
 - episode_id: `ep003`
 - packet_version: `v1`
 - purpose: `draft_generation`
 - target_output: `drafts/draft_<source>_v1.txt`
+- recent_canon_1_path: `artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md`
+- recent_canon_1_sha256: `17673b87624ec2a117ae5776a5ebf816a593199f158942f07badf25f84528203`
+- recent_canon_2_path: `artifacts/writing/episodes/ep001/canon/1화_리라이트_v2.md`
+- recent_canon_2_sha256: `d2344e2681d8e2be208f7409fff010d794334f5ece2f68ca05ab82eff25acdad`
+- recent_canon_3_path: `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v2.md`
+- recent_canon_3_sha256: `7bf464213044f52e2853189e745d1cb340cebb4f2502159453bd80ddb3319523`
 
 ## 역할
 - 이 문서는 이번 화 집필에 사용할 컨텍스트 패킷의 주입 순서와 우선순위를 명시한다.

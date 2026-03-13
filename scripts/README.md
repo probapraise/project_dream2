@@ -13,6 +13,7 @@
 - `bash scripts/writing/new_canon_patch.sh <episode_id> <new_canon_filename>`
 - `bash scripts/writing/post_canon_sync.sh <episode_id>`
 - `python3 scripts/writing/audit_live_sync.py`
+- `python3 scripts/writing/audit_prompt_packet.py <episode_id>`
 - `python3 scripts/writing/refresh_canon_metadata.py <episode_id>`
 
 시뮬레이션 기본 경로는 `Quick Sim`이다.

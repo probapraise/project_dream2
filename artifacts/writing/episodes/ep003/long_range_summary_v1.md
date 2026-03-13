@@ -1,4 +1,4 @@
-# 장기 맥락 요약 템플릿
+# 장기 맥락 요약
 
 - episode_id: `ep003`
 - long_range_summary_version: `v1`

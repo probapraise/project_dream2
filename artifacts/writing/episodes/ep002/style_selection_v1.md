@@ -1,7 +1,9 @@
 # ep002 style_selection_v1
 
 - episode_id: `ep002`
-- target_prompt: `prompt_v1.md`
+- style_selection_version: `v1`
+- target_style_constitution: `episode_style_constitution_v1.md`
+- target_packet: `prompt_packet_v1.md`
 - pov: `키리온 1인칭`
 - narrative_phase: `pre-academy / 렌바렌 저택 감시 국면 / 첫 설계 성공`
 - always_load:
@@ -49,7 +51,11 @@
 - S-09 IT 레퍼런스 직접 호출은 과잉 설명 위험이 있어 제외한다.
 - S-10 전생 신원 흐림 환기는 이번 화 중심 갈등과 거리가 있어 제외한다.
 
-## 프롬프트 압축 주입 메모
-- `house_rules`는 별도 요약보다 항상 준수 대상으로 처리한다.
+## 문체 헌법 컴파일 메모
+- `house_rules`의 고정 규약은 `episode_style_constitution_v1.md`에 기본값으로 포함한다.
 - 이번 화 압축 주입본에는 S-02, S-04, S-05, S-06, S-08, S-14, S-15, S-16, S-17, S-18만 실질 반영한다.
 - Optional 패턴은 초안에서 자연스럽게 생기면 살리고, 없다고 억지로 추가하지 않는다.
+
+## 후처리 메모
+- `ep002`는 패킷 구조 도입 이전에 완성된 회차라, 이 문서는 사후 백필된 운영 기록이다.
+- 다음 회차부터는 이 선택 결과를 `episode_style_constitution_vN.md`로 컴파일해 직접 주입한다.

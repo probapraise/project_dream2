@@ -94,6 +94,8 @@ bash scripts/writing/new_episode_scaffold.sh ep002
 12. `bash scripts/writing/post_canon_sync.sh <episode_id>`로 live sync 대상 점검
    ↓
 13. `python3 scripts/writing/audit_live_sync.py` 통과 확인
+   ↓
+14. 다음 회차 폴더가 이미 있으면 `python3 scripts/writing/audit_prompt_packet.py <next_episode_id>`로 패킷 stale 여부 확인
 ```
 
 ## 파일 종류별 형식
@@ -133,6 +135,7 @@ bash scripts/writing/new_episode_scaffold.sh ep002
 - 실제 모델 주입 순서는 기본적으로 `episode_style_constitution -> setting_brief -> 최근 3회차 raw canon -> long_range_summary -> prompt_vN`이다.
 - `style_selection_vN.md`는 작성용 선택 문서이고, 실제 주입 문서는 `episode_style_constitution_vN.md`다.
 - `prompt_vN.md`는 더 이상 단독 컨텍스트 문서가 아니다. 이번 화 비트와 목표만 담당한다.
+- `prompt_packet_vN.md` 상단의 `recent_canon_*_path/sha256`는 현재 canon window와 맞아야 한다.
 - 사실 충돌 시 `raw canon > long_range_summary > prompt_vN`을 따른다.
 - 문체 충돌 시 `episode_style_constitution_vN.md`가 우선한다.
 - 새 프롬프트를 만들 때는 기존 회차 `prompt_vN.md`를 복사하기보다 `prompt_packet_template.md`와 `prompt_template.md`를 출발점으로 사용한다.
@@ -152,6 +155,7 @@ bash scripts/writing/new_episode_scaffold.sh ep002
 
 - 선언 파일: `artifacts/writing/live_sync_manifest.json`
 - 감사 스크립트: `python3 scripts/writing/audit_live_sync.py`
+- 패킷 감사 스크립트: `python3 scripts/writing/audit_prompt_packet.py <episode_id>`
 - post-canon 보조 스크립트: `bash scripts/writing/post_canon_sync.sh <episode_id>`
 - canon metadata refresh: `python3 scripts/writing/refresh_canon_metadata.py <episode_id>`
 - canon patch snapshot: `bash scripts/writing/new_canon_patch.sh <episode_id> <new_canon_filename>`
@@ -160,3 +164,4 @@ bash scripts/writing/new_episode_scaffold.sh ep002
 - `required` 문서는 최신 current canon과 반드시 같아야 한다.
 - `conditional` 문서는 소폭 lag를 허용하지만, manifest 기준을 넘으면 drift 실패로 본다.
 - `manual` 문서는 참고용으로 추적하되, audit 실패 대상에는 포함하지 않는다.
+- 다음 회차가 이미 scaffold되어 있으면, 캐논 수정 뒤 그 회차의 `prompt_packet_vN.md`와 패킷 문서도 함께 stale 여부를 확인한다.

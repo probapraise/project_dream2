@@ -293,19 +293,20 @@
 - 필요 시 `bash scripts/writing/new_canon_patch.sh <episode_id> <new_canon_filename>`로 사후 패치 snapshot 생성
 - `artifacts/writing/episodes/<episode_id>/summary_v1.md` 작성 또는 최신 상태로 갱신
 - `artifacts/writing/style/style_pattern_library.md` 갱신
-- `artifacts/writing/episodes/<episode_id>/style_selection_v1.md` 작성 또는 갱신
-- `artifacts/writing/episodes/<episode_id>/episode_style_constitution_v1.md` 작성 또는 갱신
-- `artifacts/writing/episodes/<episode_id>/setting_brief_v1.md` 작성 또는 갱신
-- `artifacts/writing/episodes/<episode_id>/long_range_summary_v1.md` 작성 또는 갱신
-- `artifacts/writing/episodes/<episode_id>/prompt_packet_v1.md` 작성 또는 갱신
-- `artifacts/writing/episodes/<episode_id>/prompt_v1.md` 작성 또는 갱신
-- `artifacts/writing/episodes/<episode_id>/analysis/revision_delta_v1.md` 작성 또는 갱신
+- `artifacts/writing/episodes/<episode_id>/style_selection_vN.md` 작성 또는 갱신
+- `artifacts/writing/episodes/<episode_id>/episode_style_constitution_vN.md` 작성 또는 갱신
+- `artifacts/writing/episodes/<episode_id>/setting_brief_vN.md` 작성 또는 갱신
+- `artifacts/writing/episodes/<episode_id>/long_range_summary_vN.md` 작성 또는 갱신
+- `artifacts/writing/episodes/<episode_id>/prompt_packet_vN.md` 작성 또는 갱신
+- `artifacts/writing/episodes/<episode_id>/prompt_vN.md` 작성 또는 갱신
+- `artifacts/writing/episodes/<episode_id>/analysis/revision_delta_vN.md` 작성 또는 갱신
 - `world/live/docs/style_bible.md` 갱신
 - `world/live/docs/narrative_state.md` 갱신
 - `world/live/docs/episode_deltas.md`에 상태 변화 추가
 - 필요 시 `world/live/docs/story_arcs.md`, `world/live/docs/foreshadow_registry.md` 압축 갱신
 - `bash scripts/writing/post_canon_sync.sh <episode_id>` 실행
 - `python3 scripts/writing/audit_live_sync.py --episode-id <episode_id>` 통과 확인
+- 다음 회차가 이미 scaffold되어 있으면 `python3 scripts/writing/audit_prompt_packet.py <next_episode_id>` 실행
 
 ### 정식 시뮬레이션 실행 직후
 - `world/live/docs/simulation_state_index.md` 갱신

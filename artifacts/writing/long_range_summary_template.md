@@ -1,4 +1,4 @@
-# 장기 맥락 요약 템플릿
+# 장기 맥락 요약
 
 - episode_id: `<episode_id>`
 - long_range_summary_version: `v1`
@@ -12,24 +12,24 @@
 ## Macro situation
 - 최근 3회차 바깥에서 계속 유효한 장기 상황
 
-- 
+-
 
 ## Carried relationships
 - 최근 3회차 바깥에서 이미 형성된 관계 온도, 신뢰/경계, 반복 패턴
 
-- 
+-
 
 ## Older open foreshadowing
 - 아직 살아 있지만 최근 3회차 원문에는 직접 안 들어오는 복선
 
-- 
+-
 
 ## Known truths that should not be re-explained
 - 주인공/독자에게 이미 익숙한 사실이라 다시 장황하게 설명하면 안 되는 것
 
-- 
+-
 
 ## Closed or outdated points to avoid resurrecting
 - 이미 회수되었거나 현재 방향과 안 맞는 과거 정보
 
-- 
+-

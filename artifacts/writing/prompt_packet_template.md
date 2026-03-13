@@ -1,9 +1,15 @@
-# 집필 주입 패킷 템플릿
+# 집필 주입 패킷
 
 - episode_id: `<episode_id>`
 - packet_version: `v1`
 - purpose: `draft_generation`
 - target_output: `drafts/draft_<source>_v1.txt`
+- recent_canon_1_path: `<recent_canon_1>`
+- recent_canon_1_sha256: `<recent_canon_1_sha256>`
+- recent_canon_2_path: `<recent_canon_2>`
+- recent_canon_2_sha256: `<recent_canon_2_sha256>`
+- recent_canon_3_path: `<recent_canon_3>`
+- recent_canon_3_sha256: `<recent_canon_3_sha256>`
 
 ## 역할
 - 이 문서는 이번 화 집필에 사용할 컨텍스트 패킷의 주입 순서와 우선순위를 명시한다.
@@ -43,3 +49,4 @@
 - 토큰이 빠듯해도 최신 raw canon부터 유지한다.
 - long-range 정보가 비면 `현재 없음`으로 적고 빈 문서로 두지 않는다.
 - 이번 화에 안 쓰는 설정은 setting brief에 넣지 않는다.
+- raw canon이 3회차보다 적으면 남는 슬롯은 `none`으로 둔다.

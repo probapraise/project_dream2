@@ -31,6 +31,50 @@ assembly_file="$assembled_dir/assembly_notes_v1.md"
 revision_delta_template="$repo_root/artifacts/writing/revision_delta_template.md"
 revision_delta_file="$analysis_dir/revision_delta_v1.md"
 
+if [[ "$episode_id" =~ ^ep([0-9]+) ]]; then
+  target_episode_num=$((10#${BASH_REMATCH[1]}))
+else
+  echo "unsupported episode id format: $episode_id" >&2
+  exit 1
+fi
+
+recent_canon_paths=()
+recent_canon_hashes=()
+while IFS= read -r readme; do
+  readme_episode_id="$(basename "$(dirname "$(dirname "$readme")")")"
+  if [[ ! "$readme_episode_id" =~ ^ep([0-9]+) ]]; then
+    continue
+  fi
+  readme_episode_num=$((10#${BASH_REMATCH[1]}))
+  if (( readme_episode_num >= target_episode_num )); then
+    continue
+  fi
+
+  current_text_canon="$(sed -n 's/^- current_text_canon: //p' "$readme" | head -n 1)"
+  current_text_canon_sha256="$(sed -n 's/^- current_text_canon_sha256: //p' "$readme" | head -n 1)"
+  if [[ -z "$current_text_canon" || "$current_text_canon" == "none" ]]; then
+    continue
+  fi
+
+  recent_canon_paths+=("artifacts/writing/episodes/$readme_episode_id/canon/$current_text_canon")
+  if [[ -n "$current_text_canon_sha256" ]]; then
+    recent_canon_hashes+=("$current_text_canon_sha256")
+  else
+    recent_canon_hashes+=("none")
+  fi
+
+  if (( ${#recent_canon_paths[@]} == 3 )); then
+    break
+  fi
+done < <(find "$repo_root/artifacts/writing/episodes" -path '*/canon/README.md' | sort -r)
+
+recent_canon_1="${recent_canon_paths[0]:-none}"
+recent_canon_1_sha256="${recent_canon_hashes[0]:-none}"
+recent_canon_2="${recent_canon_paths[1]:-none}"
+recent_canon_2_sha256="${recent_canon_hashes[1]:-none}"
+recent_canon_3="${recent_canon_paths[2]:-none}"
+recent_canon_3_sha256="${recent_canon_hashes[2]:-none}"
+
 if [[ -e "$episode_dir" ]]; then
   echo "episode directory already exists: $episode_dir" >&2
   exit 1
@@ -71,7 +115,15 @@ if [[ -f "$long_range_summary_template" ]]; then
 fi
 
 if [[ -f "$prompt_packet_template" ]]; then
-  sed "s/<episode_id>/$episode_id/g" "$prompt_packet_template" > "$prompt_packet_file"
+  sed \
+    -e "s#<episode_id>#$episode_id#g" \
+    -e "s#<recent_canon_1>#$recent_canon_1#g" \
+    -e "s#<recent_canon_1_sha256>#$recent_canon_1_sha256#g" \
+    -e "s#<recent_canon_2>#$recent_canon_2#g" \
+    -e "s#<recent_canon_2_sha256>#$recent_canon_2_sha256#g" \
+    -e "s#<recent_canon_3>#$recent_canon_3#g" \
+    -e "s#<recent_canon_3_sha256>#$recent_canon_3_sha256#g" \
+    "$prompt_packet_template" > "$prompt_packet_file"
 fi
 
 if [[ -f "$prompt_template" ]]; then
