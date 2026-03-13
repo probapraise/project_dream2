@@ -13,6 +13,8 @@ episode_dir="$repo_root/artifacts/writing/episodes/$episode_id"
 canon_dir="$episode_dir/canon"
 style_template="$repo_root/artifacts/writing/style/episode_style_selection_template.md"
 style_selection_file="$episode_dir/style_selection_v1.md"
+prompt_template="$repo_root/artifacts/writing/prompt_template.md"
+prompt_file="$episode_dir/prompt_v1.md"
 
 if [[ -e "$episode_dir" ]]; then
   echo "episode directory already exists: $episode_dir" >&2
@@ -39,9 +41,16 @@ if [[ -f "$style_template" ]]; then
   sed "s/<episode_id>/$episode_id/g" "$style_template" > "$style_selection_file"
 fi
 
+if [[ -f "$prompt_template" ]]; then
+  cp "$prompt_template" "$prompt_file"
+fi
+
 echo "created episode scaffold:"
 echo "$episode_dir"
 echo "$canon_dir/README.md"
 if [[ -f "$style_selection_file" ]]; then
   echo "$style_selection_file"
+fi
+if [[ -f "$prompt_file" ]]; then
+  echo "$prompt_file"
 fi

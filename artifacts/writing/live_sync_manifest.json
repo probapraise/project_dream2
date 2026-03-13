@@ -1,0 +1,40 @@
+{
+  "required": [
+    {
+      "path": "world/live/docs/narrative_state.md",
+      "label": "Narrative State",
+      "description": "다음 회차 기본 로딩 허브. 최신 current canon과 항상 맞아야 한다."
+    },
+    {
+      "path": "world/live/docs/episode_deltas.md",
+      "label": "Episode Deltas",
+      "description": "최신 canon 이후 실제 상태 변화를 누락 없이 기록해야 한다."
+    },
+    {
+      "path": "world/live/docs/style_bible.md",
+      "label": "Style Bible",
+      "description": "현재 필체 요약. 최신 canon 기준 corpus와 핵심 패턴이 반영되어야 한다."
+    }
+  ],
+  "conditional": [
+    {
+      "path": "world/live/docs/story_arcs.md",
+      "label": "Story Arcs",
+      "max_episode_lag": 2,
+      "description": "5~10화 단위 압축 갱신을 허용하지만, 과도한 지연은 drift로 간주한다."
+    },
+    {
+      "path": "world/live/docs/foreshadow_registry.md",
+      "label": "Foreshadow Registry",
+      "max_episode_lag": 1,
+      "description": "활성 복선 상태 문서. 직전 회차 lag는 경고, 그 이상은 실패로 본다."
+    }
+  ],
+  "manual": [
+    {
+      "path": "world/live/docs/master_map.md",
+      "label": "Master Map",
+      "description": "구조 변화나 포인터, 운영 체계 변화가 있을 때 수동 갱신한다."
+    }
+  ]
+}

@@ -28,6 +28,8 @@ episodes/
 - 초안, 중간 수정본, diff는 에피소드 루트에 둬서 canon과 작업 흔적을 분리한다.
 - `style_selection_vN.md`는 이번 화에만 적용할 스타일 패턴 선택 문서다.
 - 프롬프트 작성 시에는 `artifacts/writing/style/house_rules.md`와 해당 회차 `style_selection_vN.md`를 함께 참조한다.
+- 새 프롬프트 초안은 `artifacts/writing/prompt_template.md`를 기준으로 작성하고, 과거 `prompt_vN.md`는 히스토리로 취급한다.
+- canon 확정 뒤에는 `bash scripts/writing/post_canon_sync.sh <episode_id>`로 live sync 대상과 drift 상태를 바로 확인한다.
 - canon 파일명은 `revision_vN.*`처럼 기계식 버전명을 써도 되고, `프롤로그_리라이트_v2.md`처럼 제목형 파일명을 써도 된다. 현재 canon 여부는 파일명 패턴이 아니라 `canon/README.md`가 결정한다.
 
 ## 생성 커맨드
@@ -36,4 +38,4 @@ episodes/
 bash scripts/writing/new_episode_scaffold.sh ep002
 ```
 
-- 스캐폴드는 `canon/README.md`와 `style_selection_v1.md`를 함께 만든다.
+- 스캐폴드는 `canon/README.md`, `style_selection_v1.md`, `prompt_v1.md`를 함께 만든다.

@@ -1,5 +1,11 @@
 # master_map
 
+## Sync metadata
+- sync_category: manual
+- last_synced_episode: ep002
+- sync_source: artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md
+- sync_summary: artifacts/writing/episodes/ep002/summary_v1.md
+
 ## What is this
 - 이 파일은 오케스트레이터가 항상 로딩하는 유일한 문서다.
 - 다른 문서는 필요할 때만 로딩한다.
@@ -50,6 +56,7 @@
 - quarantine_index: quarantine/README.md
 
 ## Recent changes (selected)
+- 2026-03-13 WRITING-010: canon 후속 live 문서 drift를 줄이기 위해 `live_sync_manifest`와 `audit_live_sync.py` 기반의 sync audit 체계를 추가
 - 2026-03-13 WRITING-009: 문체 헌법을 `house_rules / style_pattern_library / style_selection` 구조로 분리하고, 회차별 선택 프로세스를 집필 기본 흐름에 편입
 - 2026-03-10 SIM-ARCH-001: `Quick Sim 기본 / API fallback` 구조를 채택하고 simulation_playbook/simulation_state_index 운영 기준을 재정렬
 - 2026-03-10 LAYERB-011: community_grammar_layer_b에 ATOM-012 추가 — AI 자동화 외피 아래 인간 백엔드가 숨어 있는 역자동화 노동 놀이 문법 반영

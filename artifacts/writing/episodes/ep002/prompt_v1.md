@@ -1,5 +1,7 @@
 # 집필 프롬프트 — 2화 v1
 
+> 운영 메모: 이 문서는 현재 기준으로 `artifacts/writing/style/house_rules.md`와 `artifacts/writing/episodes/ep002/style_selection_v1.md`를 압축 반영한 작업본으로 본다. 다음 회차 프롬프트는 이 파일 복사가 아니라 `artifacts/writing/prompt_template.md`에서 시작한다.
+
 ## 역할
 당신은 한국 웹소설 작가다. 아래 정보만으로 바로 원고를 써라.  
 별도 사전지식은 없다고 가정한다.  
@@ -134,9 +136,9 @@
 
 ---
 
-## 문체 헌법 압축 주입
+## 이번 화 스타일 압축 주입
 
-아래는 반드시 반영할 문체 규칙이다.
+아래는 `house_rules.md`와 `ep002/style_selection_v1.md`에서 이번 화에 필요한 항목만 압축한 것이다.
 
 ### 1. 호흡
 - 문단은 의미 단락보다 `호흡 블록`으로 자른다.

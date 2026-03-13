@@ -1,5 +1,11 @@
 # foreshadow_registry
 
+## Sync metadata
+- sync_category: conditional
+- last_synced_episode: ep002
+- sync_source: artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md
+- sync_summary: artifacts/writing/episodes/ep002/summary_v1.md
+
 역할: 활성 복선과 장기 서사 약속을 상태 기반으로 관리하는 레지스트리. 회차 요약이 아니라 "무엇이 아직 열려 있는가"를 추적한다.
 
 ## Usage rule
@@ -16,6 +22,7 @@
 - narrative function: 아버지 장면이 단순 권위자 연출이 아니라 상시 검증 시스템이라는 사실을 유지한다.
 - latest carry:
   - `ep001`에서 직접 심문 대신 `흑색 표준식 입문서`를 보내 장기 관찰 국면으로 전환
+  - `ep002`에서 안내판 성공 직후 서고 접근권을 열어, 시험 단위를 `행동`에서 `선택 구조`로 확장
 - payoff window: pre-academy
 - linked_arcs:
   - `ARC-001`
@@ -27,6 +34,7 @@
 - narrative function: 따뜻한 돌봄이 곧바로 안전 선언이 되지 않게 만들고, 긴장 리듬을 역설적으로 키운다.
 - latest carry:
   - `ep001` 복도 산책에서 주인공의 경계가 잠깐 느슨해지는 장면으로 재강조
+  - `ep002`에서 칭찬 직후의 부드러운 꾸지람이 보호와 긴장을 동시에 강화
 - payoff window: recurring
 - linked_arcs:
   - `ARC-001`
@@ -38,7 +46,8 @@
 - status: open
 - narrative function: 주인공의 정보 인프라 야망을 추상 포부가 아니라 관찰 가능한 구조 문제와 연결한다.
 - latest carry:
-  - 집사실에서 질문이 단일 인터페이스를 반복 통과하고, 답 주변에 군집/농담이 자생하는 구조까지 확인
+  - `ep001`에서 집사실 질문이 단일 인터페이스를 반복 통과하고, 답 주변에 군집/농담이 자생하는 구조까지 확인
+  - `ep002`에서 조악한 안내판만으로도 질문 경로와 실무 동선이 실제로 바뀌는 것이 증명됨
 - payoff window: pre-academy -> academy
 - linked_arcs:
   - `ARC-002`
@@ -50,7 +59,8 @@
 - status: open
 - narrative function: 책 읽기 자체를 다음 회차의 긴장 장치로 만든다.
 - latest carry:
-  - 칼리온의 짧은 메모 `[궁금하다고 했으니.]`
+  - `ep001`의 칼리온 메모 `[궁금하다고 했으니.]`
+  - `ep002` 종료 시점에서 책 읽기 자체보다 `첫 책 선택 구조 전체`가 채점 대상이라는 사실이 확정
 - payoff window: immediate
 - linked_arcs:
   - `ARC-001`
@@ -73,7 +83,19 @@
 - narrative function: 작품의 장기 방향을 정보 인프라/커뮤니티 구축 서사로 고정하되, 당장의 생존 서사와 충돌하지 않게 점진적으로 키운다.
 - latest carry:
   - `ep001`에서 집사실 병목과 하인들의 자생적 문답 온도를 보고, 종이 게시판 수준의 첫 골격까지 상상
+  - `ep002`에서 안내판 실험이 첫 소규모 성공을 거두며 구상이 실제 설계 경험으로 전환
 - payoff window: long horizon
 - linked_arcs:
   - `ARC-002`
   - `ARC-003`
+
+### FS-007 데리온의 과민 반응은 서고 시험을 비틀 수 있는 변수다
+- type: threat
+- planted_in: `ep002`
+- status: open
+- narrative function: 서고/마법책 관련 시험을 형제 갈등과 보호 본능이 개입하는 새 긴장축으로 전환한다.
+- latest carry:
+  - 키리온은 데리온이 동생의 마법책 접근에 예민하다는 사실을 이용해, `첫 책 선택` 시험을 정면으로 받지 않는 우회 해법을 세웠다.
+- payoff window: immediate
+- linked_arcs:
+  - `ARC-001`

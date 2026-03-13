@@ -1,5 +1,11 @@
 # episode_deltas
 
+## Sync metadata
+- sync_category: required
+- last_synced_episode: ep002
+- sync_source: artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md
+- sync_summary: artifacts/writing/episodes/ep002/summary_v1.md
+
 역할: 회차별 줄거리 요약이 아니라, 캐논 이후 실제로 바뀐 상태만 남기는 로그.
 
 ## Usage rule
@@ -43,3 +49,19 @@
   - 없음
 - carry_forward:
   - `ep002`는 책 자체보다 "읽는 방식이 관찰 대상이 되는 상황"과 "설계 충동을 얼마나 숨길 수 있는가"를 함께 중심축으로 가져가야 한다.
+
+## DELTA-EP002 `ep002`
+- canon_source: `artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md`
+- state_changes:
+  - 키리온은 리리아를 통해 `타인이 기억하는 원래 키리온의 행동 규칙`을 일부 회수했고, 단순 위장이 아니라 타인 기억 기반 보정이 필요하다는 사실을 분명히 인식했다.
+  - 집사실 앞 정보 병목을 조악한 안내판으로 정리해, 이 세계에서 처음으로 작은 설계 성공을 실제 사용자의 반응으로 증명했다.
+  - 리리아는 정서 자산을 넘어, 정보를 모으고 사람 사이를 오가며 장면을 움직이는 실행 조력자로 자리 잡았다.
+  - 칼리온의 시험은 `흑색 입문서를 읽는가`에서 끝나지 않고, `서고에서 무엇을 먼저 고르는가`까지 포함하는 선택 구조 평가로 확장됐다.
+  - 보상처럼 보이는 `서고 접근권`과 `자색 표준식 입문서 열람 허가`는 즉시 다음 감시 단계로 재해석됐다.
+  - 키리온은 서고 시험을 정면으로 받지 않기 위해 데리온의 예민한 반응을 먼저 끌어들이는 우회 해법을 택했다.
+- activated_refs:
+  - `FS-007`
+- closed_refs:
+  - 없음
+- carry_forward:
+  - `ep003`는 `첫 책 선택` 자체가 시험이 된 상황과, 데리온 개입으로 그 시험장을 비틀려는 키리온의 우회 설계를 함께 중심축으로 가져가야 한다.

@@ -297,6 +297,8 @@
 - `world/live/docs/narrative_state.md` 갱신
 - `world/live/docs/episode_deltas.md`에 상태 변화 추가
 - 필요 시 `world/live/docs/story_arcs.md`, `world/live/docs/foreshadow_registry.md` 압축 갱신
+- `bash scripts/writing/post_canon_sync.sh <episode_id>` 실행
+- `python3 scripts/writing/audit_live_sync.py --episode-id <episode_id>` 통과 확인
 
 ### 정식 시뮬레이션 실행 직후
 - `world/live/docs/simulation_state_index.md` 갱신
