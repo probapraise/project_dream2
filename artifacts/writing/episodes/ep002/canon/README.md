@@ -2,6 +2,7 @@
 
 - episode_id: ep002
 - current_text_canon: 2화_리라이트_v1.md
+- current_text_canon_sha256: 17673b87624ec2a117ae5776a5ebf816a593199f158942f07badf25f84528203
 - current_word_canon: none
 
 ## Policy

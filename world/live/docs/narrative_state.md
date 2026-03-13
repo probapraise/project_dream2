@@ -4,6 +4,7 @@
 - sync_category: required
 - last_synced_episode: ep002
 - sync_source: artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md
+- sync_source_sha256: 17673b87624ec2a117ae5776a5ebf816a593199f158942f07badf25f84528203
 - sync_summary: artifacts/writing/episodes/ep002/summary_v1.md
 
 역할: 작가가 다음 회차 집필 전에 기본 로딩하는 서사 상태 허브. 과거 회차 전체를 다시 읽는 대신, 현재 활성 상태와 다음 진행 방향만 유지한다.

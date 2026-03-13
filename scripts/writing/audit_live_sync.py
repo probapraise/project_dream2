@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import sys
@@ -11,10 +12,16 @@ from dataclasses import dataclass
 from pathlib import Path
 
 
-BULLET_RE = re.compile(r"^- ([a-z_]+):\s*(.+?)\s*$")
+BULLET_RE = re.compile(r"^- ([a-z0-9_]+):\s*(.+?)\s*$")
 EPISODE_RE = re.compile(r"^ep(\d+)")
 SYNC_HEADER = "## Sync metadata"
-REQUIRED_METADATA_KEYS = ("sync_category", "last_synced_episode", "sync_source", "sync_summary")
+REQUIRED_METADATA_KEYS = (
+    "sync_category",
+    "last_synced_episode",
+    "sync_source",
+    "sync_source_sha256",
+    "sync_summary",
+)
 
 
 @dataclass(frozen=True)
@@ -23,6 +30,8 @@ class CanonSnapshot:
     canon_readme: Path
     canon_path: Path
     summary_path: Path
+    canon_sha256: str
+    readme_declared_sha256: str | None
 
 
 @dataclass(frozen=True)
@@ -67,6 +76,14 @@ def strip_markdown(value: str) -> str:
     if value.startswith("`") and value.endswith("`"):
         return value[1:-1]
     return value
+
+
+def sha256_file(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(65536), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def parse_bullet_metadata(lines: list[str]) -> dict[str, str]:
@@ -118,12 +135,15 @@ def discover_current_canons(repo_root: Path) -> list[CanonSnapshot]:
             continue
         canon_path = readme.parent / current_text_canon
         summary_path = readme.parent.parent / "summary_v1.md"
+        canon_sha256 = sha256_file(canon_path) if canon_path.exists() else ""
         snapshots.append(
             CanonSnapshot(
                 episode_id=episode_id,
                 canon_readme=readme,
                 canon_path=canon_path,
                 summary_path=summary_path,
+                canon_sha256=canon_sha256,
+                readme_declared_sha256=metadata.get("current_text_canon_sha256"),
             )
         )
     return sorted(snapshots, key=lambda item: episode_sort_key(item.episode_id))
@@ -219,6 +239,12 @@ def audit_entry(
         return AuditResult("fail", entry, f"sync_source missing or unreadable: {metadata['sync_source']}")
     if sync_summary is None or not sync_summary.exists():
         return AuditResult("fail", entry, f"sync_summary missing or unreadable: {metadata['sync_summary']}")
+    if metadata["sync_source_sha256"] != target.canon_sha256:
+        return AuditResult(
+            "fail",
+            entry,
+            "sync_source_sha256 does not match current canon content",
+        )
 
     if metadata["last_synced_episode"] not in metadata["sync_source"]:
         return AuditResult(
@@ -258,6 +284,22 @@ def audit_entry(
     )
 
 
+def precheck_target_snapshot(target: CanonSnapshot) -> list[str]:
+    failures: list[str] = []
+    if not target.canon_path.exists():
+        failures.append(f"current_text_canon missing: {target.canon_path}")
+        return failures
+    declared = target.readme_declared_sha256
+    if not declared or declared == "none":
+        failures.append("canon README missing current_text_canon_sha256")
+    elif declared != target.canon_sha256:
+        failures.append(
+            "canon README hash mismatch: "
+            f"declared={declared} actual={target.canon_sha256}"
+        )
+    return failures
+
+
 def print_targets(entries: list[ManifestEntry]) -> None:
     current_category = None
     for entry in entries:
@@ -271,15 +313,19 @@ def print_targets(entries: list[ManifestEntry]) -> None:
         print(f"  {entry.description}")
 
 
-def render_results(target: CanonSnapshot, results: list[AuditResult]) -> int:
+def render_results(target: CanonSnapshot, results: list[AuditResult], precheck_failures: list[str]) -> int:
     print(f"target_episode: {target.episode_id}")
     print(f"target_canon: {target.canon_path.relative_to(target.canon_readme.parents[3])}")
     print(f"target_summary: {target.summary_path.relative_to(target.canon_readme.parents[3])}")
+    print(f"target_canon_sha256: {target.canon_sha256}")
     print()
 
     order = ("fail", "warn", "info", "ok")
     label_map = {"fail": "FAIL", "warn": "WARN", "info": "INFO", "ok": "OK"}
     counts = {key: 0 for key in order}
+    for message in precheck_failures:
+        counts["fail"] += 1
+        print(f"[FAIL] Canon Registry: {message}")
     for result in results:
         counts[result.level] += 1
         print(
@@ -307,8 +353,9 @@ def main() -> int:
 
     snapshots = discover_current_canons(repo_root)
     target = resolve_target_snapshot(snapshots, args.episode_id)
+    precheck_failures = precheck_target_snapshot(target)
     results = [audit_entry(repo_root, target, entry) for entry in entries]
-    return render_results(target, results)
+    return render_results(target, results, precheck_failures)
 
 
 if __name__ == "__main__":

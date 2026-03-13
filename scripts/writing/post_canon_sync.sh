@@ -13,6 +13,7 @@ repo_root="$(cd "$script_dir/../.." && pwd)"
 canon_readme="$repo_root/artifacts/writing/episodes/$episode_id/canon/README.md"
 summary_path="$repo_root/artifacts/writing/episodes/$episode_id/summary_v1.md"
 audit_script="$repo_root/scripts/writing/audit_live_sync.py"
+refresh_script="$repo_root/scripts/writing/refresh_canon_metadata.py"
 
 if [[ ! -f "$canon_readme" ]]; then
   echo "missing canon README: $canon_readme" >&2
@@ -27,6 +28,8 @@ fi
 
 canon_path="$repo_root/artifacts/writing/episodes/$episode_id/canon/$current_text_canon"
 
+python3 "$refresh_script" "$episode_id" >/dev/null
+
 echo "post-canon sync target"
 echo "- episode_id: $episode_id"
 echo "- canon: $canon_path"
@@ -40,7 +43,7 @@ echo "sync targets"
 python3 "$audit_script" --print-targets
 echo
 echo "recommended order"
-echo "1. summary_v1.md and style_pattern_library.md update"
+echo "1. summary_v1.md, revision_delta_vN.md, and style_pattern_library.md update"
 echo "2. required live docs update: narrative_state, episode_deltas, style_bible"
 echo "3. conditional live docs update: story_arcs, foreshadow_registry"
 echo "4. manual live docs check: master_map"

@@ -2,6 +2,7 @@
 
 - episode_id: ep003
 - current_text_canon: none
+- current_text_canon_sha256: none
 - current_word_canon: none
 
 ## Policy

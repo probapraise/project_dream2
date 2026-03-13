@@ -10,8 +10,10 @@
 
 집필 관련 주요 커맨드:
 - `bash scripts/writing/new_episode_scaffold.sh <episode_id>`
+- `bash scripts/writing/new_canon_patch.sh <episode_id> <new_canon_filename>`
 - `bash scripts/writing/post_canon_sync.sh <episode_id>`
 - `python3 scripts/writing/audit_live_sync.py`
+- `python3 scripts/writing/refresh_canon_metadata.py <episode_id>`
 
 시뮬레이션 기본 경로는 `Quick Sim`이다.
 - 스캐폴드: `bash scripts/sim/new_quick_sim_run.sh <run_id>`

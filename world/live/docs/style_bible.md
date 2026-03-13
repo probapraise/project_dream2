@@ -4,6 +4,7 @@
 - sync_category: required
 - last_synced_episode: ep002
 - sync_source: artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md
+- sync_source_sha256: 17673b87624ec2a117ae5776a5ebf816a593199f158942f07badf25f84528203
 - sync_summary: artifacts/writing/episodes/ep002/summary_v1.md
 
 ## Track A: Current style (descriptive)

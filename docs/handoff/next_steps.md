@@ -290,9 +290,11 @@
 ### 다음 회차 원고 캐논 확정 직후
 - `artifacts/writing/episodes/<episode_id>/canon/`에 정식 반영본 배치
 - `artifacts/writing/episodes/<episode_id>/canon/README.md` current 항목 갱신
+- 필요 시 `bash scripts/writing/new_canon_patch.sh <episode_id> <new_canon_filename>`로 사후 패치 snapshot 생성
 - `artifacts/writing/episodes/<episode_id>/summary_v1.md` 작성 또는 최신 상태로 갱신
 - `artifacts/writing/style/style_pattern_library.md` 갱신
 - `artifacts/writing/episodes/<episode_id>/style_selection_v1.md` 작성 또는 갱신
+- `artifacts/writing/episodes/<episode_id>/analysis/revision_delta_v1.md` 작성 또는 갱신
 - `world/live/docs/style_bible.md` 갱신
 - `world/live/docs/narrative_state.md` 갱신
 - `world/live/docs/episode_deltas.md`에 상태 변화 추가

@@ -11,23 +11,32 @@ script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 repo_root="$(cd "$script_dir/../.." && pwd)"
 episode_dir="$repo_root/artifacts/writing/episodes/$episode_id"
 canon_dir="$episode_dir/canon"
+drafts_dir="$episode_dir/drafts"
+assembled_dir="$episode_dir/assembled"
+analysis_dir="$episode_dir/analysis"
 style_template="$repo_root/artifacts/writing/style/episode_style_selection_template.md"
 style_selection_file="$episode_dir/style_selection_v1.md"
 prompt_template="$repo_root/artifacts/writing/prompt_template.md"
 prompt_file="$episode_dir/prompt_v1.md"
+assembly_template="$repo_root/artifacts/writing/assembly_notes_template.md"
+assembly_file="$assembled_dir/assembly_notes_v1.md"
+revision_delta_template="$repo_root/artifacts/writing/revision_delta_template.md"
+revision_delta_file="$analysis_dir/revision_delta_v1.md"
 
 if [[ -e "$episode_dir" ]]; then
   echo "episode directory already exists: $episode_dir" >&2
   exit 1
 fi
 
-mkdir -p "$canon_dir"
+mkdir -p "$canon_dir" "$drafts_dir" "$assembled_dir" "$analysis_dir"
+touch "$drafts_dir/.gitkeep"
 
 cat > "$canon_dir/README.md" <<EOF
 # canon
 
 - episode_id: $episode_id
 - current_text_canon: none
+- current_text_canon_sha256: none
 - current_word_canon: none
 
 ## Policy
@@ -42,7 +51,15 @@ if [[ -f "$style_template" ]]; then
 fi
 
 if [[ -f "$prompt_template" ]]; then
-  cp "$prompt_template" "$prompt_file"
+  sed "s/<episode_id>/$episode_id/g" "$prompt_template" > "$prompt_file"
+fi
+
+if [[ -f "$assembly_template" ]]; then
+  sed "s/<episode_id>/$episode_id/g" "$assembly_template" > "$assembly_file"
+fi
+
+if [[ -f "$revision_delta_template" ]]; then
+  sed "s/<episode_id>/$episode_id/g" "$revision_delta_template" > "$revision_delta_file"
 fi
 
 echo "created episode scaffold:"
@@ -53,4 +70,13 @@ if [[ -f "$style_selection_file" ]]; then
 fi
 if [[ -f "$prompt_file" ]]; then
   echo "$prompt_file"
+fi
+if [[ -d "$drafts_dir" ]]; then
+  echo "$drafts_dir/"
+fi
+if [[ -f "$assembly_file" ]]; then
+  echo "$assembly_file"
+fi
+if [[ -f "$revision_delta_file" ]]; then
+  echo "$revision_delta_file"
 fi

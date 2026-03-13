@@ -5,7 +5,7 @@
 ## 작성 전 입력
 - 최신 캐논 요약: `summary_vN.md`
 - 항상 주입: `artifacts/writing/style/house_rules.md`
-- 회차 선택 패턴: `episodes/<episode_id>/style_selection_vN.md`
+- 회차 선택 패턴: `episodes/ep003/style_selection_vN.md`
 - 현재 필체 요약: `world/live/docs/style_bible.md`
 - 관련 인물 VFP/캐릭터 카드
 - 사용 후 산출물은 보통 `drafts/draft_<source>_vN.txt`에 저장한다.
@@ -44,7 +44,7 @@
 
 ## 문체 입력 소스
 - 전역 규약: `artifacts/writing/style/house_rules.md`
-- 이번 화 선택지: `artifacts/writing/episodes/<episode_id>/style_selection_vN.md`
+- 이번 화 선택지: `artifacts/writing/episodes/ep003/style_selection_vN.md`
 - 현재 필체 설명: `world/live/docs/style_bible.md`
 
 ## 이번 화 스타일 압축 주입
