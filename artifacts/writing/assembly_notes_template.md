@@ -2,7 +2,8 @@
 
 - episode_id: `<episode_id>`
 - target_revision: `assembled/revision_assembled_v1.txt`
-- prompt_source: `prompt_v1.md`
+- packet_source: `prompt_packet_v1.md`
+- final_instruction_doc: `prompt_v1.md`
 
 ## Draft inputs
 - `drafts/draft_codex_v1.txt`

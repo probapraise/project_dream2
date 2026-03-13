@@ -101,8 +101,8 @@ project_dream2/
 
 - 방법론: `world/live/docs/voice_fingerprint_spec.md`
 - 개별 인물 VFP: core_cast 카드 내 `voice_fingerprint` 섹션
-- 운영 파이프라인: 추출(Post-Sim/Writing) → `style_pattern_library` 적재 → 회차별 `style_selection` 선택 → 주입(Pre-Sim/Writing) → 검증(Post-Output)
-- 우선순위: house_rules > episode_style_selection > VFP > Layer A/B culture > Big5+population_grammar
+- 운영 파이프라인: 추출(Post-Sim/Writing) → `style_pattern_library` 적재 → 회차별 `style_selection` 선택 → `episode_style_constitution` 컴파일 → 주입(Pre-Sim/Writing) → 검증(Post-Output)
+- 우선순위: episode_style_constitution > VFP > Layer A/B culture > Big5+population_grammar
 - 현재 상태: NC-0001 VFP v1 추출 완료
 
 ### 3.4 커뮤니티/시뮬레이션 레이어

@@ -1,6 +1,6 @@
 # 집필 프롬프트 — 2화 v1
 
-> 운영 메모: 이 문서는 현재 기준으로 `artifacts/writing/style/house_rules.md`와 `artifacts/writing/episodes/ep002/style_selection_v1.md`를 압축 반영한 작업본으로 본다. 다음 회차 프롬프트는 이 파일 복사가 아니라 `artifacts/writing/prompt_template.md`에서 시작한다.
+> 운영 메모: 이 문서는 단일 프롬프트 패킷 시기의 작업본이다. 다음 회차부터는 `episode_style_constitution_vN.md`, `setting_brief_vN.md`, 최근 raw canon, `long_range_summary_vN.md`, `prompt_vN.md`를 `prompt_packet_vN.md` 순서로 묶는 방식이 기준이다.
 
 ## 역할
 당신은 한국 웹소설 작가다. 아래 정보만으로 바로 원고를 써라.  

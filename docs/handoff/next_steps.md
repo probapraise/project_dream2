@@ -126,7 +126,7 @@
   - `artifacts/writing/episodes/ep000_prologue/summary_v1.md`
   - `artifacts/writing/episodes/ep001/summary_v1.md`
   - `artifacts/writing/episodes/ep002/summary_v1.md`
-- `artifacts/writing/style/house_rules.md`는 항상 주입하는 전역 규약이고, diff 추출 규칙은 `style_pattern_library.md`와 회차별 `style_selection_vN.md`로 분리 운영한다
+- `artifacts/writing/style/house_rules.md`는 항상 읽는 전역 작성 소스이고, diff 추출 규칙은 `style_pattern_library.md`와 회차별 `style_selection_vN.md`로 분리 운영한다. 실제 모델 주입은 `episode_style_constitution_vN.md`를 기준으로 한다
 - 에피소드 폴더 규칙:
   - 각 에피소드 폴더는 생성 시점부터 `canon/` 하위 폴더 포함
   - 정식 반영된 최종본은 `canon/` 안에만 둠
@@ -294,6 +294,11 @@
 - `artifacts/writing/episodes/<episode_id>/summary_v1.md` 작성 또는 최신 상태로 갱신
 - `artifacts/writing/style/style_pattern_library.md` 갱신
 - `artifacts/writing/episodes/<episode_id>/style_selection_v1.md` 작성 또는 갱신
+- `artifacts/writing/episodes/<episode_id>/episode_style_constitution_v1.md` 작성 또는 갱신
+- `artifacts/writing/episodes/<episode_id>/setting_brief_v1.md` 작성 또는 갱신
+- `artifacts/writing/episodes/<episode_id>/long_range_summary_v1.md` 작성 또는 갱신
+- `artifacts/writing/episodes/<episode_id>/prompt_packet_v1.md` 작성 또는 갱신
+- `artifacts/writing/episodes/<episode_id>/prompt_v1.md` 작성 또는 갱신
 - `artifacts/writing/episodes/<episode_id>/analysis/revision_delta_v1.md` 작성 또는 갱신
 - `world/live/docs/style_bible.md` 갱신
 - `world/live/docs/narrative_state.md` 갱신

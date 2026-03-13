@@ -18,7 +18,7 @@
   - 3. `docs/foreshadow_registry.md`에서 `status: open` 항목만
   - 4. `docs/episode_deltas.md`에서 직전 1~2화만
   - 5. `writing/style/house_rules.md` + `docs/style_bible.md`
-  - 6. 집필 대상 회차의 `writing/episodes/<episode_id>/style_selection_vN.md` (준비된 경우)
+  - 6. 집필 대상 회차의 `writing/episodes/<episode_id>/episode_style_constitution_vN.md`, `setting_brief_vN.md`, `prompt_packet_vN.md`, `prompt_vN.md` (준비된 경우)
 
 ## Narrative context policy
 - 전체 원고 재로딩은 canon 충돌 검증이나 세부 디테일 회수가 필요할 때만 한다.

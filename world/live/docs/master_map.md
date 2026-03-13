@@ -49,6 +49,11 @@
 - community_memory: docs/community_memory.md
 - community_grammar_layer_b: docs/community_grammar_layer_b.md
 - writing_index: writing/README.md
+- writing_episode_style_constitution_template: writing/episode_style_constitution_template.md
+- writing_episode_setting_brief_template: writing/episode_setting_brief_template.md
+- writing_long_range_summary_template: writing/long_range_summary_template.md
+- writing_prompt_packet_template: writing/prompt_packet_template.md
+- writing_prompt_template: writing/prompt_template.md
 - style_constitution: writing/style/style_constitution.md
 - house_rules: writing/style/house_rules.md
 - style_pattern_library: writing/style/style_pattern_library.md
@@ -57,6 +62,7 @@
 - quarantine_index: quarantine/README.md
 
 ## Recent changes (selected)
+- 2026-03-13 WRITING-011: 단일 `prompt_vN.md` 중심 집필 방식을 `episode_style_constitution / setting_brief / 최근 3회차 raw canon / long_range_summary / prompt_packet / prompt_vN` 주입 패킷 구조로 재편
 - 2026-03-13 WRITING-010: canon 후속 live 문서 drift를 줄이기 위해 `live_sync_manifest`와 `audit_live_sync.py` 기반의 sync audit 체계를 추가
 - 2026-03-13 WRITING-009: 문체 헌법을 `house_rules / style_pattern_library / style_selection` 구조로 분리하고, 회차별 선택 프로세스를 집필 기본 흐름에 편입
 - 2026-03-10 SIM-ARCH-001: `Quick Sim 기본 / API fallback` 구조를 채택하고 simulation_playbook/simulation_state_index 운영 기준을 재정렬

@@ -1,6 +1,6 @@
 # 집필 프롬프트 — 1화 "선물" v2
 
-> 아카이브 메모: 이 문서는 문체 분리 이전 작업본이다. 재사용 시 `writing/style/style_constitution.md` 단독 참조 대신 `artifacts/writing/style/house_rules.md`와 해당 회차 `style_selection_vN.md`를 함께 사용할 것.
+> 아카이브 메모: 이 문서는 문체 패킷 분리 이전 작업본이다. 현재 재사용 기준은 `episode_style_constitution_vN.md`, `setting_brief_vN.md`, 최근 raw canon, `long_range_summary_vN.md`, `prompt_vN.md` 순의 주입 패킷이다.
 
 ## 역할
 당신은 한국 웹소설 작가입니다. 아래 지시에 따라 1화를 집필하세요.
@@ -337,7 +337,7 @@
 - 서술에서는 부모를 거리감 있게 보고, 대화에서는 예절을 지킬 것
 - 개발자 화자의 비유는 필요할 때만 정확하게 쓸 것
 
-이 블록은 당시 기준 문체 헌법 요약이다. 현재 재사용 기준 문서는 `artifacts/writing/style/house_rules.md`와 해당 회차 `style_selection_vN.md`다.
+이 블록은 당시 기준 문체 헌법 요약이다. 현재 재사용 기준은 `episode_style_constitution_vN.md`를 포함한 주입 패킷 구조다.
 
 ---
 

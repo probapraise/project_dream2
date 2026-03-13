@@ -2,7 +2,8 @@
 
 - episode_id: `ep003`
 - style_selection_version: `v1`
-- target_prompt: `prompt_v1.md`
+- target_style_constitution: `episode_style_constitution_v1.md`
+- target_packet: `prompt_packet_v1.md`
 - pov: ``
 - narrative_phase: ``
 - always_load:
@@ -14,7 +15,8 @@
 1. `house_rules.md`를 먼저 읽는다.
 2. `style_pattern_library.md`에서 이번 화에 유효한 패턴만 고른다.
 3. 선택 결과를 이 문서에 `Apply / Skip / Optional`로 기록한다.
-4. 프롬프트에는 `house_rules + Apply 패턴 요약`만 넣는다.
+4. `house_rules + Apply 패턴`을 합쳐 `episode_style_constitution_vN.md`를 작성한다.
+5. 실제 모델 주입에는 `style_selection_vN.md`가 아니라 `episode_style_constitution_vN.md`를 사용한다.
 
 ## 선택 기준
 - 이번 화의 중심 갈등을 직접 강화하는가?
@@ -57,10 +59,10 @@
 ## 이번 화 명시적 Skip
 - 
 
-## 프롬프트 압축 주입 메모
-- `house_rules`는 따로 요약하지 말고 항상 준수 대상으로 취급한다.
-- 여기에는 이번 화에서 선택한 패턴만 짧게 압축한다.
-- 패턴 설명은 `왜 쓰는지`와 `어디에 쓰는지`가 드러나야 한다.
+## 문체 헌법 컴파일 메모
+- `house_rules`의 고정 규약은 `episode_style_constitution_vN.md`에 기본값으로 포함한다.
+- 여기에는 이번 화에서 선택한 패턴만 추가해 `어디에 어떻게 쓰는지`가 드러나게 적는다.
+- 실제 모델 주입은 `style_selection_vN.md`가 아니라 컴파일된 `episode_style_constitution_vN.md`를 기준으로 한다.
 
 ## 후처리 메모
 - 실제 수정본에서 효과가 없었던 패턴은 다음 화에서 기본값을 `Skip`으로 돌린다.

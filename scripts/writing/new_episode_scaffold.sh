@@ -16,6 +16,14 @@ assembled_dir="$episode_dir/assembled"
 analysis_dir="$episode_dir/analysis"
 style_template="$repo_root/artifacts/writing/style/episode_style_selection_template.md"
 style_selection_file="$episode_dir/style_selection_v1.md"
+style_constitution_template="$repo_root/artifacts/writing/episode_style_constitution_template.md"
+style_constitution_file="$episode_dir/episode_style_constitution_v1.md"
+setting_brief_template="$repo_root/artifacts/writing/episode_setting_brief_template.md"
+setting_brief_file="$episode_dir/setting_brief_v1.md"
+long_range_summary_template="$repo_root/artifacts/writing/long_range_summary_template.md"
+long_range_summary_file="$episode_dir/long_range_summary_v1.md"
+prompt_packet_template="$repo_root/artifacts/writing/prompt_packet_template.md"
+prompt_packet_file="$episode_dir/prompt_packet_v1.md"
 prompt_template="$repo_root/artifacts/writing/prompt_template.md"
 prompt_file="$episode_dir/prompt_v1.md"
 assembly_template="$repo_root/artifacts/writing/assembly_notes_template.md"
@@ -50,6 +58,22 @@ if [[ -f "$style_template" ]]; then
   sed "s/<episode_id>/$episode_id/g" "$style_template" > "$style_selection_file"
 fi
 
+if [[ -f "$style_constitution_template" ]]; then
+  sed "s/<episode_id>/$episode_id/g" "$style_constitution_template" > "$style_constitution_file"
+fi
+
+if [[ -f "$setting_brief_template" ]]; then
+  sed "s/<episode_id>/$episode_id/g" "$setting_brief_template" > "$setting_brief_file"
+fi
+
+if [[ -f "$long_range_summary_template" ]]; then
+  sed "s/<episode_id>/$episode_id/g" "$long_range_summary_template" > "$long_range_summary_file"
+fi
+
+if [[ -f "$prompt_packet_template" ]]; then
+  sed "s/<episode_id>/$episode_id/g" "$prompt_packet_template" > "$prompt_packet_file"
+fi
+
 if [[ -f "$prompt_template" ]]; then
   sed "s/<episode_id>/$episode_id/g" "$prompt_template" > "$prompt_file"
 fi
@@ -67,6 +91,18 @@ echo "$episode_dir"
 echo "$canon_dir/README.md"
 if [[ -f "$style_selection_file" ]]; then
   echo "$style_selection_file"
+fi
+if [[ -f "$style_constitution_file" ]]; then
+  echo "$style_constitution_file"
+fi
+if [[ -f "$setting_brief_file" ]]; then
+  echo "$setting_brief_file"
+fi
+if [[ -f "$long_range_summary_file" ]]; then
+  echo "$long_range_summary_file"
+fi
+if [[ -f "$prompt_packet_file" ]]; then
+  echo "$prompt_packet_file"
 fi
 if [[ -f "$prompt_file" ]]; then
   echo "$prompt_file"
