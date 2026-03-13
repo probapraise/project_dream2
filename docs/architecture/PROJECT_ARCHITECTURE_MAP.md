@@ -173,7 +173,7 @@ generate_population_slots
   - P-0001~P-3600 뼈대 생성
   - 초기 dorm은 `UNASSIGNED`
 - `add_student_fields.py`
-  - grade/mana_color/major/vocation + 조건부 필드 부여
+  - `world/live/population/profiles/current_term_snapshot_v1.yaml` 기준 current-term 분포를 읽어 grade/mana_color/major/vocation + 조건부 필드를 재생성
 - `recompute_derived.py` 또는 batch 경로
   - `DT/NFC/SM` 파생값 채움
 - `apply_population_bootstrap_policy.py`
@@ -263,6 +263,7 @@ world_ops_compile_execution_views
   - `recompute_dorms.py` vs `apply_population_bootstrap_policy.py` 책임 겹침
 - R2. major 배정 중복
   - `add_student_fields.py`와 `recompute_role_majors.py` 역할 경계 불명확
+  - 현재 정책: `add_student_fields.py`는 snapshot 재생성, `recompute_role_majors.py`는 부분 보정
 - R3. derived 경로 이원화
   - 로컬 재계산 vs 외부 배치 적용 공존
 - R4. YAML 스키마 드리프트 위험

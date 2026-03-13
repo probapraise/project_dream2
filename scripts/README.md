@@ -8,6 +8,16 @@
 - `sim/`: Quick Sim 스캐폴드와 API fallback 시뮬레이션 worker
 - `writing/`: 에피소드 집필 폴더 스캐폴드와 집필 보조 스크립트
 
+population 관련 주요 커맨드:
+- `python3 scripts/population/add_student_fields.py --dry-run`
+- `python3 scripts/population/add_student_fields.py --profile world/live/population/profiles/current_term_snapshot_v1.yaml`
+- `python3 scripts/population/audit_population_invariants.py`
+
+population 운영 원칙:
+- `add_student_fields.py`는 세계관 정본 빌더가 아니라 `current-term snapshot` 재생성기다.
+- 고정 분포는 코드가 아니라 `world/live/population/profiles/current_term_snapshot_v1.yaml`에서 관리한다.
+- 장기 설정 변경은 `WB-0015` 같은 SSOT를 먼저 수정한 뒤 snapshot profile을 맞춘다.
+
 집필 관련 주요 커맨드:
 - `bash scripts/writing/new_episode_scaffold.sh <episode_id>`
 - `bash scripts/writing/new_canon_patch.sh <episode_id> <new_canon_filename>`
