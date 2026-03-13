@@ -24,6 +24,8 @@ MEMORY_TIER_PATHS = (
     "world/live/docs/memory_tiers/recent.md",
     "world/live/docs/memory_tiers/current_arc.md",
     "world/live/docs/memory_tiers/entity_registry.md",
+    "world/live/docs/memory_tiers/knowledge_state_registry.md",
+    "world/live/docs/memory_tiers/access_control_matrix.md",
     "world/live/docs/memory_tiers/long_term.md",
 )
 

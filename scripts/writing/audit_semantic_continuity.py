@@ -293,6 +293,26 @@ def parse_character_blocks(path: Path) -> dict[str, list[tuple[int, str]]]:
     return blocks
 
 
+def extract_list_field_entries(block: SectionBlock, field_name: str) -> list[tuple[str, int]]:
+    entries: list[tuple[str, int]] = []
+    collecting = False
+    target_prefix = f"- {field_name}:"
+    for line_no, line in block.lines:
+        stripped = line.strip()
+        if stripped == target_prefix:
+            collecting = True
+            continue
+        if collecting:
+            if stripped.startswith("- ") and not line.startswith("  "):
+                break
+            if line.startswith("  - "):
+                entries.append((strip_markdown(stripped[2:]), line_no))
+                continue
+            if stripped and not line.startswith("  "):
+                break
+    return entries
+
+
 def find_placeholder_lines(path: Path) -> list[int]:
     flagged: list[int] = []
     for index, line in enumerate(read_lines(path), start=1):
@@ -469,10 +489,68 @@ def knowledge_guard_findings(
     return findings
 
 
-def calion_certainty_findings(entity_registry: Path, target_paths: list[Path]) -> list[Finding]:
+def knowledge_registry_findings(
+    knowledge_registry: Path,
+    target_paths: list[Path],
+) -> list[Finding]:
+    findings: list[Finding] = []
+    know_terms = ("알고", "안다", "눈치챘", "간파", "확신", "파악")
+    blocked_entry_re = re.compile(r"^[A-Za-z0-9가-힣]{2,20}$")
+
+    for item in parse_section_blocks(knowledge_registry, "### KS-"):
+        statement, statement_line = item.fields.get("canonical statement", ("", item.start_line))
+        anchors = extract_priority_anchors(statement, item.title)
+        if not anchors:
+            continue
+
+        blocked_entries: list[tuple[str, int]] = []
+        for line_no, line in item.lines:
+            stripped = line.strip()
+            if stripped.startswith("- must_not_") and stripped.endswith(":"):
+                field_name = stripped[2:-1].strip()
+                blocked_entries.extend(extract_list_field_entries(item, field_name))
+
+        for blocked_name, blocked_line in blocked_entries:
+            if not blocked_entry_re.match(blocked_name):
+                continue
+            if blocked_name in {"독자", "모델"}:
+                continue
+            patterns = [
+                re.compile(
+                    rf"{re.escape(blocked_name)}.{{0,40}}(?:{'|'.join(re.escape(anchor) for anchor in anchors)}).{{0,20}}(?:{'|'.join(know_terms)})"
+                ),
+                re.compile(
+                    rf"(?:{'|'.join(re.escape(anchor) for anchor in anchors)}).{{0,20}}{re.escape(blocked_name)}.{{0,20}}(?:{'|'.join(know_terms)})"
+                ),
+            ]
+            target_evidence = first_match(target_paths, patterns, ignore_markers=TARGET_NEGATION_MARKERS)
+            if target_evidence is None:
+                continue
+            findings.append(
+                Finding(
+                    "fail",
+                    "Knowledge",
+                    blocked_name,
+                    "target episode docs advance a fact that the live knowledge registry still marks as blocked",
+                    Evidence(knowledge_registry, blocked_line or statement_line, statement or item.heading_text),
+                    target_evidence,
+                )
+            )
+    return findings
+
+
+def calion_certainty_findings(
+    knowledge_registry: Path,
+    entity_registry: Path,
+    target_paths: list[Path],
+) -> list[Finding]:
     live_evidence = first_match(
-        [entity_registry],
-        [re.compile(r"칼리온.*의심 중"), re.compile(r"current read on Kirion:.*의심 중")],
+        [knowledge_registry, entity_registry],
+        [
+            re.compile(r"칼리온.*최종 판정.*비공개"),
+            re.compile(r"칼리온.*의심 중"),
+            re.compile(r"current read on Kirion:.*의심 중"),
+        ],
     )
     if live_evidence is None:
         return []
@@ -503,12 +581,14 @@ def calion_certainty_findings(entity_registry: Path, target_paths: list[Path]) -
 def access_rights_findings(
     recent_doc: Path,
     entity_registry: Path,
+    access_control_matrix: Path,
+    knowledge_registry: Path,
     episode_deltas: Path,
     target_paths: list[Path],
 ) -> list[Finding]:
     findings: list[Finding] = []
     live_evidence = first_match(
-        [recent_doc, entity_registry, episode_deltas],
+        [access_control_matrix, knowledge_registry, recent_doc, entity_registry, episode_deltas],
         [
             re.compile(r"서고 접근권"),
             re.compile(r"자색 표준식 입문서 열람 허가"),
@@ -547,7 +627,7 @@ def access_rights_findings(
         ignore_markers=TARGET_NEGATION_MARKERS,
     )
     flattening_evidence = first_match(
-        [recent_doc],
+        [knowledge_registry, recent_doc],
         [re.compile(r"접근권 부여형 감시"), re.compile(r"보상형 통제"), re.compile(r"안도나 자유가 아니라")],
     )
     if flattened_control is not None and flattening_evidence is not None:
@@ -707,16 +787,26 @@ def main() -> int:
     live_root = repo_root / "world" / "live" / "docs"
     recent_doc = live_root / "memory_tiers" / "recent.md"
     entity_registry = live_root / "memory_tiers" / "entity_registry.md"
+    knowledge_registry = live_root / "memory_tiers" / "knowledge_state_registry.md"
+    access_control_matrix = live_root / "memory_tiers" / "access_control_matrix.md"
     episode_deltas = live_root / "episode_deltas.md"
     foreshadow_registry = live_root / "foreshadow_registry.md"
     base_episode_dir = repo_root / "artifacts" / "writing" / "episodes" / latest_current.episode_id
     base_setting_brief = find_latest_versioned_file(base_episode_dir, "setting_brief")
 
     findings.extend(
-        access_rights_findings(recent_doc, entity_registry, episode_deltas, target_paths)
+        access_rights_findings(
+            recent_doc,
+            entity_registry,
+            access_control_matrix,
+            knowledge_registry,
+            episode_deltas,
+            target_paths,
+        )
     )
-    findings.extend(calion_certainty_findings(entity_registry, target_paths))
+    findings.extend(calion_certainty_findings(knowledge_registry, entity_registry, target_paths))
     findings.extend(knowledge_guard_findings(base_setting_brief, target_paths))
+    findings.extend(knowledge_registry_findings(knowledge_registry, target_paths))
     findings.extend(immediate_promise_findings(foreshadow_registry, target_paths))
     findings.extend(recent_bridge_findings(recent_doc, target_paths))
     findings.extend(time_skip_findings(foreshadow_registry, target_paths))

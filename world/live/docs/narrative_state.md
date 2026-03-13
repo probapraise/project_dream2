@@ -17,17 +17,21 @@
   - 2. `docs/memory_tiers/recent.md`
   - 3. `docs/memory_tiers/current_arc.md`
   - 4. `docs/memory_tiers/entity_registry.md`
-  - 5. `docs/memory_tiers/long_term.md`
-  - 6. `writing/style/house_rules.md` + `docs/style_bible.md`
-  - 7. 집필 대상 회차의 `writing/episodes/<episode_id>/episode_style_constitution_vN.md`, `setting_brief_vN.md`, `prompt_packet_vN.md`, `prompt_vN.md` (준비된 경우)
-  - 8. 더 깊은 검증이 필요할 때만 `docs/story_arcs.md`, `docs/foreshadow_registry.md`, `docs/episode_deltas.md`
+  - 5. `docs/memory_tiers/knowledge_state_registry.md`
+  - 6. `docs/memory_tiers/access_control_matrix.md`
+  - 7. `docs/memory_tiers/long_term.md`
+  - 8. `writing/style/house_rules.md` + `docs/style_bible.md`
+  - 9. 집필 대상 회차의 `writing/episodes/<episode_id>/episode_style_constitution_vN.md`, `setting_brief_vN.md`, `prompt_packet_vN.md`, `prompt_vN.md` (준비된 경우)
+  - 10. 더 깊은 검증이 필요할 때만 `docs/story_arcs.md`, `docs/foreshadow_registry.md`, `docs/episode_deltas.md`, `docs/pre_academy_checkpoint_plan.md`
 
 ## Narrative context policy
 - 전체 원고 재로딩은 canon 충돌 검증이나 세부 디테일 회수가 필요할 때만 한다.
 - `docs/memory_tiers/`는 `story_arcs`, `foreshadow_registry`, `episode_deltas`, core cast 카드에서 뽑아낸 prompt-facing compiled view다.
+- `docs/memory_tiers/knowledge_state_registry.md`는 누가 무엇을 알고/의심/오해하는지, `docs/memory_tiers/access_control_matrix.md`는 지금 실제로 열린 권한과 막힌 권한이 무엇인지 별도로 붙잡는다.
 - 회차 종료 후에는 사건 요약보다 상태 변화만 `docs/episode_deltas.md`에 추가한다.
 - 5~10화 단위로 `docs/story_arcs.md`를 압축 갱신하고, 이 문서에는 활성 항목만 남긴다.
 - 복선 회수/폐기 여부는 `docs/foreshadow_registry.md`에서 먼저 처리한 뒤 이 문서를 갱신한다.
+- `docs/pre_academy_checkpoint_plan.md`는 집필 입력 기본층이 아니라, academy 진입 전 지급 누락을 막기 위한 pacing companion이다.
 
 ## Active foreshadowing
 - `FS-001`: 칼리온은 키리온의 말투, 반응 속도, 독서 습관을 통해 정체 변조 여부를 추적 중이다.

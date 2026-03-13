@@ -20,6 +20,7 @@
 semantic audit 운영 원칙:
 - 기본 모드: hard contradiction만 실패
 - `--strict-warn`: carry 누락/placeholder 같은 경고도 실패 처리
+- 주요 semantic source: `memory_tiers/recent.md`, `current_arc.md`, `entity_registry.md`, `knowledge_state_registry.md`, `access_control_matrix.md`
 
 시뮬레이션 기본 경로는 `Quick Sim`이다.
 - 스캐폴드: `bash scripts/sim/new_quick_sim_run.sh <run_id>`

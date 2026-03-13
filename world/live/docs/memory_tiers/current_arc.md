@@ -41,3 +41,7 @@
 ## Arc exit direction
 - 하급 과정 첫 진입은 잠정적으로 `ep010` 전후를 목표로 둔다.
 - 그 전까지는 `감시를 버틴다 -> 작은 실무 개선이 통한다 -> 더 큰 통제로 되돌아온다`의 리듬을 유지한다.
+
+## Companion docs
+- checkpoint pacing companion: `world/live/docs/pre_academy_checkpoint_plan.md`
+- fact/permission state: `world/live/docs/memory_tiers/knowledge_state_registry.md`, `world/live/docs/memory_tiers/access_control_matrix.md`

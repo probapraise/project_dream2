@@ -79,7 +79,7 @@ bash scripts/writing/new_episode_scaffold.sh ep002
    ↓
 4. `setting_brief_vN.md` 작성 + `world/live/docs/memory_tiers/*.md` 확인
    ↓
-5. 최근 raw canon window 선정 + 필요 시 `long_range_summary_vN.md` 보정 + `prompt_packet_vN.md` 작성
+5. 최근 raw canon window 선정 + 필요 시 `world/live/docs/pre_academy_checkpoint_plan.md` 확인 + `long_range_summary_vN.md` 보정 + `prompt_packet_vN.md` 작성
    ↓
 6. `prompt_vN.md` 작성 (이번 화 비트 지시서)
    ↓
@@ -140,11 +140,14 @@ bash scripts/writing/new_episode_scaffold.sh ep002
 
 ## Prompt Packet 운영 규칙
 
-- 실제 모델 주입 순서는 기본적으로 `episode_style_constitution -> setting_brief -> 최근 raw canon window -> memory_tiers(recent/current_arc/entity_registry/long_term) -> long_range_summary -> prompt_vN`이다.
+- 실제 모델 주입 순서는 기본적으로 `episode_style_constitution -> setting_brief -> 최근 raw canon window -> memory_tiers(recent/current_arc/entity_registry/knowledge_state_registry/access_control_matrix/long_term) -> long_range_summary -> prompt_vN`이다.
 - `style_selection_vN.md`는 작성용 선택 문서이고, 실제 주입 문서는 `episode_style_constitution_vN.md`다.
 - `prompt_vN.md`는 더 이상 단독 컨텍스트 문서가 아니다. 이번 화 비트와 목표만 담당한다.
 - `prompt_packet_vN.md` 상단의 `recent_canon_*_path/sha256`는 현재 canon window와 맞아야 한다.
 - `world/live/docs/memory_tiers/*.md`는 `story_arcs`, `foreshadow_registry`, `episode_deltas`, 캐릭터 카드에서 뽑은 global compiled memory다.
+- `knowledge_state_registry.md`는 `누가 무엇을 아는가/오해하는가/아직 몰라야 하는가`를 사실 단위로 정리한 지식 상태표다.
+- `access_control_matrix.md`는 `누가 무엇에 접근 가능한가/막혀 있는가/허가가 곧 통제인가`를 resource 단위로 정리한 접근 권한표다.
+- `world/live/docs/pre_academy_checkpoint_plan.md`는 pre-academy 구간의 planning companion이다. 기본 packet 주입 문서는 아니지만, 회차 기획과 점검 때 함께 본다.
 - 사실 충돌 시 `raw canon > memory_tiers > long_range_summary > prompt_vN`을 따른다.
 - 문체 충돌 시 `episode_style_constitution_vN.md`가 우선한다.
 - 새 프롬프트를 만들 때는 기존 회차 `prompt_vN.md`를 복사하기보다 `prompt_packet_template.md`와 `prompt_template.md`를 출발점으로 사용한다.
@@ -183,6 +186,7 @@ bash scripts/writing/new_episode_scaffold.sh ep002
 - 각 live 문서는 상단 `## Sync metadata` 섹션에 `sync_category`, `last_synced_episode`, `sync_source`, `sync_summary`를 기록한다.
 - 각 live 문서는 `sync_source_sha256`도 함께 기록해, 같은 episode 안의 캐논 사후 패치도 감지한다.
 - `world/live/docs/memory_tiers/*.md`도 prompt-facing live 문서이므로 manifest 감사 대상에 포함한다.
+- `world/live/docs/pre_academy_checkpoint_plan.md`는 conditional live 문서로 manifest 감사 대상에 포함한다.
 - `required` 문서는 최신 current canon과 반드시 같아야 한다.
 - `conditional` 문서는 소폭 lag를 허용하지만, manifest 기준을 넘으면 drift 실패로 본다.
 - `manual` 문서는 참고용으로 추적하되, audit 실패 대상에는 포함하지 않는다.

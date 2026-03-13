@@ -31,6 +31,16 @@
       "description": "현재 서사에서 중요한 인물들의 동적 상태값을 모은 주입용 엔티티 레지스트리. 최신 canon과 항상 맞아야 한다."
     },
     {
+      "path": "world/live/docs/memory_tiers/knowledge_state_registry.md",
+      "label": "Memory Tier Knowledge State Registry",
+      "description": "누가 무엇을 알고, 의심하고, 오해하고, 아직 몰라야 하는지 추적하는 지식 비대칭 레지스트리. 최신 canon과 항상 맞아야 한다."
+    },
+    {
+      "path": "world/live/docs/memory_tiers/access_control_matrix.md",
+      "label": "Memory Tier Access Control Matrix",
+      "description": "현재 열린 권한, 막힌 권한, 허가와 통제가 어떻게 작동하는지 추적하는 접근 권한 매트릭스. 최신 canon과 항상 맞아야 한다."
+    },
+    {
       "path": "world/live/docs/memory_tiers/long_term.md",
       "label": "Memory Tier Long Term",
       "description": "장기 서사 불변값과 미래 배치 약속을 압축한 장기 기억 계층. 최신 canon 기준으로 유지한다."
@@ -48,6 +58,12 @@
       "label": "Foreshadow Registry",
       "max_episode_lag": 1,
       "description": "활성 복선 상태 문서. 직전 회차 lag는 경고, 그 이상은 실패로 본다."
+    },
+    {
+      "path": "world/live/docs/pre_academy_checkpoint_plan.md",
+      "label": "Pre-Academy Checkpoint Plan",
+      "max_episode_lag": 3,
+      "description": "학술원 진입 전 반드시 심어야 할 감정/제도/관계/정보 지급 목표를 soft checkpoint로 관리한다."
     }
   ],
   "manual": [

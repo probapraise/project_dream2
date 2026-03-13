@@ -49,7 +49,10 @@
 - memory_tier_recent: docs/memory_tiers/recent.md
 - memory_tier_current_arc: docs/memory_tiers/current_arc.md
 - memory_tier_entity_registry: docs/memory_tiers/entity_registry.md
+- memory_tier_knowledge_state_registry: docs/memory_tiers/knowledge_state_registry.md
+- memory_tier_access_control_matrix: docs/memory_tiers/access_control_matrix.md
 - memory_tier_long_term: docs/memory_tiers/long_term.md
+- pre_academy_checkpoint_plan: docs/pre_academy_checkpoint_plan.md
 - community_memory: docs/community_memory.md
 - community_grammar_layer_b: docs/community_grammar_layer_b.md
 - writing_index: writing/README.md
@@ -67,6 +70,7 @@
 - quarantine_index: quarantine/README.md
 
 ## Recent changes (selected)
+- 2026-03-13 WRITING-013: `memory_tiers/knowledge_state_registry`, `access_control_matrix`를 추가해 지식 비대칭과 권한 상태를 prompt-facing 운영 문서로 분리하고, `pre_academy_checkpoint_plan.md`로 학술원 진입 전 soft checkpoint 체계를 도입
 - 2026-03-13 WRITING-012: `memory_tiers/recent`, `current_arc`, `entity_registry`, `long_term`를 prompt-facing compiled memory로 추가하고, 주입 패킷의 장기 기억 구조를 `최근 raw canon + memory tiers + episode-local summary` 방식으로 재편
 - 2026-03-13 WRITING-011: 단일 `prompt_vN.md` 중심 집필 방식을 `episode_style_constitution / setting_brief / 최근 3회차 raw canon / long_range_summary / prompt_packet / prompt_vN` 주입 패킷 구조로 재편
 - 2026-03-13 WRITING-010: canon 후속 live 문서 drift를 줄이기 위해 `live_sync_manifest`와 `audit_live_sync.py` 기반의 sync audit 체계를 추가

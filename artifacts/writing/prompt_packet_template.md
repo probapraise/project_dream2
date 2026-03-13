@@ -14,7 +14,7 @@
 ## 역할
 - 이 문서는 이번 화 집필에 사용할 컨텍스트 패킷의 주입 순서와 우선순위를 명시한다.
 - raw canon은 이 문서에 요약하지 않고, 원문 파일 자체를 순서대로 주입한다.
-- `world/live/docs/memory_tiers/*.md`는 raw canon이 밀려나며 사라지기 쉬운 `최근성 / 현재 아크 / 동적 엔티티 / 장기 불변값`을 보정하는 global compiled memory다.
+- `world/live/docs/memory_tiers/*.md`는 raw canon이 밀려나며 사라지기 쉬운 `최근성 / 현재 아크 / 동적 엔티티 / 사실별 지식 비대칭 / 접근 권한 / 장기 불변값`을 보정하는 global compiled memory다.
 - `prompt_vN.md`는 패킷의 마지막 지시층이다. 문체와 설정 사실을 새로 정의하지 않는다.
 
 ## Authority order
@@ -24,9 +24,11 @@
 4. `world/live/docs/memory_tiers/recent.md`
 5. `world/live/docs/memory_tiers/current_arc.md`
 6. `world/live/docs/memory_tiers/entity_registry.md`
-7. `world/live/docs/memory_tiers/long_term.md`
-8. `long_range_summary_v1.md` (필요한 경우에만 보조)
-9. `prompt_v1.md`
+7. `world/live/docs/memory_tiers/knowledge_state_registry.md`
+8. `world/live/docs/memory_tiers/access_control_matrix.md`
+9. `world/live/docs/memory_tiers/long_term.md`
+10. `long_range_summary_v1.md` (필요한 경우에만 보조)
+11. `prompt_v1.md`
 
 ## Conflict rules
 - 사실 충돌 시 `raw canon > memory_tiers > long_range_summary > prompt_v1.md`
@@ -43,9 +45,11 @@
 6. `world/live/docs/memory_tiers/recent.md`
 7. `world/live/docs/memory_tiers/current_arc.md`
 8. `world/live/docs/memory_tiers/entity_registry.md`
-9. `world/live/docs/memory_tiers/long_term.md`
-10. `long_range_summary_v1.md`
-11. `prompt_v1.md`
+9. `world/live/docs/memory_tiers/knowledge_state_registry.md`
+10. `world/live/docs/memory_tiers/access_control_matrix.md`
+11. `world/live/docs/memory_tiers/long_term.md`
+12. `long_range_summary_v1.md`
+13. `prompt_v1.md`
 
 ## Optional companion docs
 - 관련 인물 VFP/캐릭터 카드:
@@ -55,6 +59,7 @@
   - `world/live/docs/story_arcs.md`
   - `world/live/docs/foreshadow_registry.md`
   - `world/live/docs/episode_deltas.md`
+  - `world/live/docs/pre_academy_checkpoint_plan.md`
 
 ## Operator notes
 - 최근 raw canon 3회차는 기본값이지 고정 법칙이 아니다. scene continuity가 길면 window를 늘릴 수 있다.
@@ -62,3 +67,4 @@
 - long-range 정보가 비면 `현재 없음`으로 적고 빈 문서로 두지 않는다.
 - 이번 화에 안 쓰는 설정은 setting brief에 넣지 않는다.
 - raw canon이 3회차보다 적으면 남는 슬롯은 `none`으로 둔다.
+- pre-academy 구간에서는 `world/live/docs/pre_academy_checkpoint_plan.md`를 집필 직전 planning companion으로 같이 확인한다.

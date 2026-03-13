@@ -23,9 +23,11 @@
 4. `world/live/docs/memory_tiers/recent.md`
 5. `world/live/docs/memory_tiers/current_arc.md`
 6. `world/live/docs/memory_tiers/entity_registry.md`
-7. `world/live/docs/memory_tiers/long_term.md`
-8. `long_range_summary_v1.md`
-9. `prompt_v2.md`
+7. `world/live/docs/memory_tiers/knowledge_state_registry.md`
+8. `world/live/docs/memory_tiers/access_control_matrix.md`
+9. `world/live/docs/memory_tiers/long_term.md`
+10. `long_range_summary_v1.md`
+11. `prompt_v2.md`
 
 ## Conflict rules
 - 사실 충돌 시 `raw canon > episode-local docs > memory_tiers > prompt_v2.md`로 본다.
@@ -40,9 +42,11 @@
 4. `world/live/docs/memory_tiers/recent.md`
 5. `world/live/docs/memory_tiers/current_arc.md`
 6. `world/live/docs/memory_tiers/entity_registry.md`
-7. `world/live/docs/memory_tiers/long_term.md`
-8. `long_range_summary_v1.md`
-9. `prompt_v2.md`
+7. `world/live/docs/memory_tiers/knowledge_state_registry.md`
+8. `world/live/docs/memory_tiers/access_control_matrix.md`
+9. `world/live/docs/memory_tiers/long_term.md`
+10. `long_range_summary_v1.md`
+11. `prompt_v2.md`
 
 ## Optional companion docs
 - 관련 인물 VFP/캐릭터 카드:
@@ -52,6 +56,7 @@
   - `world/live/docs/story_arcs.md`
   - `world/live/docs/foreshadow_registry.md`
   - `world/live/docs/episode_deltas.md`
+  - `world/live/docs/pre_academy_checkpoint_plan.md`
 
 ## Operator notes
 - 1화는 prior canon이 프롤로그 한 편뿐이라 recent raw canon도 1개만 주입한다.
