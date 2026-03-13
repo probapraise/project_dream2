@@ -126,7 +126,7 @@
   - `artifacts/writing/episodes/ep000_prologue/summary_v1.md`
   - `artifacts/writing/episodes/ep001/summary_v1.md`
   - `artifacts/writing/episodes/ep002/summary_v1.md`
-- `artifacts/writing/style/style_constitution.md`는 리라이트 캐논의 결말 박자에 맞춰 S-07/S-08을 보정했고, live `style_bible.md`도 새 캐논 기준으로 재동기화됨
+- `artifacts/writing/style/house_rules.md`는 항상 주입하는 전역 규약이고, diff 추출 규칙은 `style_pattern_library.md`와 회차별 `style_selection_vN.md`로 분리 운영한다
 - 에피소드 폴더 규칙:
   - 각 에피소드 폴더는 생성 시점부터 `canon/` 하위 폴더 포함
   - 정식 반영된 최종본은 `canon/` 안에만 둠
@@ -291,7 +291,8 @@
 - `artifacts/writing/episodes/<episode_id>/canon/`에 정식 반영본 배치
 - `artifacts/writing/episodes/<episode_id>/canon/README.md` current 항목 갱신
 - `artifacts/writing/episodes/<episode_id>/summary_v1.md` 작성 또는 최신 상태로 갱신
-- `artifacts/writing/style/style_constitution.md` 갱신
+- `artifacts/writing/style/style_pattern_library.md` 갱신
+- `artifacts/writing/episodes/<episode_id>/style_selection_v1.md` 작성 또는 갱신
 - `world/live/docs/style_bible.md` 갱신
 - `world/live/docs/narrative_state.md` 갱신
 - `world/live/docs/episode_deltas.md`에 상태 변화 추가

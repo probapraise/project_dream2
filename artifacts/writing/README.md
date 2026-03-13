@@ -10,13 +10,17 @@
 writing/
 ├── README.md                          ← 이 파일
 ├── style/
-│   └── style_constitution.md          ← 문체 헌법 (에피소드 횡단, 누적)
+│   ├── style_constitution.md          ← 문체 운영 인덱스
+│   ├── house_rules.md                 ← 항상 주입하는 고정 집필 규약
+│   ├── style_pattern_library.md       ← diff 추출 패턴 라이브러리
+│   └── episode_style_selection_template.md
 ├── episodes/
 │   ├── README.md                      ← 에피소드 폴더 규칙 / canon 운영 규칙
 │   ├── ep000_prologue/
 │   │   ├── canon/
 │   │   │   ├── README.md              ← current canon 지시 파일
 │   │   │   └── 프롤로그_리라이트_v2.md ← current text canon
+│   │   ├── style_selection_v1.md      ← 이번 화 적용 패턴 선택지
 │   │   ├── prompt_v1.md               ← 집필 프롬프트 (markdown)
 │   │   ├── draft_v1.txt               ← 텍스트 초안
 │   │   ├── diff_v1.md                 ← 초안↔수정본 비교 분석
@@ -50,7 +54,7 @@ writing/
 bash scripts/writing/new_episode_scaffold.sh ep002
 ```
 
-- 위 스크립트는 에피소드 폴더와 `canon/README.md`를 함께 생성한다.
+- 위 스크립트는 에피소드 폴더, `canon/README.md`, `style_selection_v1.md`를 함께 생성한다.
 - 현재 canon 파일이 아직 없으면 `current_text_canon: none`, `current_word_canon: none` 상태로 시작한다.
 
 ## 워크플로우
@@ -60,19 +64,19 @@ bash scripts/writing/new_episode_scaffold.sh ep002
    ↓
 1. 기획 대화 (오케스트레이터)
    ↓
-2. prompt_vN.md 작성 (markdown)
+2. `house_rules` 확인 + `style_selection_vN.md` 작성
    ↓
-3. 집필 모델에 프롬프트 전달 → 초안 저장 (`draft_vN.txt` 또는 `.docx`)
+3. prompt_vN.md 작성 (markdown)
    ↓
-4. 작가 직접 수정 → 작업본 저장 (`revision_vN.txt` 또는 리비전 `.docx`)
+4. 집필 모델에 프롬프트 전달 → 초안 저장 (`draft_vN.txt` 또는 `.docx`)
    ↓
-5. 정식 반영본 확정 → `canon/<canon_filename>`으로 이동/저장 + `canon/README.md` current 갱신
+5. 작가 직접 수정 → 작업본 저장 (`revision_vN.txt` 또는 리비전 `.docx`)
    ↓
-6. 초안↔정식 반영본 비교 분석 → diff_vN.md 저장
+6. 정식 반영본 확정 → `canon/<canon_filename>`으로 이동/저장 + `canon/README.md` current 갱신
    ↓
-7. diff 누적 → style/style_constitution.md 갱신
+7. 초안↔정식 반영본 비교 분석 → diff_vN.md 저장
    ↓
-8. 다음 에피소드 prompt에 문체 헌법 반영
+8. diff 누적 → style/style_pattern_library.md 갱신
 ```
 
 ## 파일 종류별 형식
@@ -84,12 +88,21 @@ bash scripts/writing/new_episode_scaffold.sh ep002
 | 작업 수정본 | text / Word | `revision_v1.txt`, `work_revision_v1.docx` |
 | 정식 canon | text / Word | `canon/revision_v1.txt`, `canon/프롤로그_리라이트_v2.md` |
 | 비교 분석 | markdown (.md) | `diff_v1.md` |
+| 스타일 선택지 | markdown (.md) | `style_selection_v1.md` |
 
 ## 네이밍 규칙
 
 - **폴더**: `ep000` (프롤로그), `ep001` (1화), `ep002` (2화), ...
 - **프롬프트/diff**: `_v1`, `_v2`, ... (재집필 반복 시 버전 관리)
+- **스타일 선택지**: `style_selection_vN.md`
 - **텍스트 초안/작업 리비전**: `draft_vN.txt`, `revision_vN.txt`
 - **정식 canon**: `canon/revision_vN.txt` 또는 `canon/<제목>_vN.md`
 - **Word 초안/작업 수정본**: 한국어 제목 자유 명명 가능
 - **current canon 지시 파일**: `canon/README.md`
+
+## 문체 운영 규칙
+
+- `style/house_rules.md`는 항상 읽는 문서다.
+- diff에서 뽑은 문체 규칙은 곧바로 전역 주입하지 않고 `style/style_pattern_library.md`에 후보로만 추가한다.
+- 집필 전에는 `episodes/<episode_id>/style_selection_vN.md`에서 이번 화 적용 패턴만 고른다.
+- 프롬프트에는 `house_rules + style_selection`만 압축 주입한다.

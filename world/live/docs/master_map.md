@@ -43,10 +43,14 @@
 - community_grammar_layer_b: docs/community_grammar_layer_b.md
 - writing_index: writing/README.md
 - style_constitution: writing/style/style_constitution.md
+- house_rules: writing/style/house_rules.md
+- style_pattern_library: writing/style/style_pattern_library.md
+- episode_style_selection_template: writing/style/episode_style_selection_template.md
 - voice_fingerprint_spec: docs/voice_fingerprint_spec.md
 - quarantine_index: quarantine/README.md
 
 ## Recent changes (selected)
+- 2026-03-13 WRITING-009: 문체 헌법을 `house_rules / style_pattern_library / style_selection` 구조로 분리하고, 회차별 선택 프로세스를 집필 기본 흐름에 편입
 - 2026-03-10 SIM-ARCH-001: `Quick Sim 기본 / API fallback` 구조를 채택하고 simulation_playbook/simulation_state_index 운영 기준을 재정렬
 - 2026-03-10 LAYERB-011: community_grammar_layer_b에 ATOM-012 추가 — AI 자동화 외피 아래 인간 백엔드가 숨어 있는 역자동화 노동 놀이 문법 반영
 - 2026-03-09 LAYERB-010: community_grammar_layer_b에 ATOM-011 추가 — 이름 음절 하나로 범주와 장비 체계를 과잉 확장하는 명칭 literal reading 문법 반영
