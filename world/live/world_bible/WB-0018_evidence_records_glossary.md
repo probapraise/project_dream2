@@ -4,7 +4,7 @@ type: world_bible_section
 title: "16. 기록·증거 매체 사전 (Evidence & Records)"
 visibility: PUBLIC
 entities: ["기록", "증거", "매체", "사전"]
-last_updated: 2026-03-03
+last_updated: 2026-03-13
 source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx"
 ---
 
@@ -13,6 +13,7 @@ source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx"
 - 준정본(공식 로그): 배지/중계주/시설 로그 중 감정·공증을 거쳐 채택된 것.
 - 광장 글(원문) / 발췌각인(Excerpt): 맥락 유지 vs 절단의 싸움.
 - 영상 각인(Video): 강력하나 ‘찍힌 부분만 진실’이 될 수 있음.
+- `발췌각인`, `영상 각인`은 기록 매체명이지 독립 형 이름이 아니다.
 
 ## 본문
 ### 16.1 증거 유형 카탈로그(요약)
@@ -23,6 +24,12 @@ source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx"
 - 시전 흔적(잔흔): 감정사의 해석이 필요.
 - 마나핵/회로 감정: 대상이 "지금까지 마법을 사용해 본 몸인가"를 판정하는 신체 포렌식. 벨쿠란의 조기 수련 금지 조사에서 핵심 증거로 쓰인다.
 - 서약 진술: 거짓말을 어렵게 하지만 완전한 진실 보장은 아님.
+
+### 16.1-A 표기 주석
+
+- `발췌각인`, `영상 각인`, `연장각인`은 기록 매체·기술명으로 유지한다.
+- 다만 현행 마법 분류 설명에서는 이를 독립 형으로 쓰지 않고, `표식` 또는 `탐지` 계열 기록 기술로 재해석한다.
+
 ### 16.2 논쟁/징계 장면용 템플릿 3
 - 만료 직전 폭로: 증거가 내일 만료. 지금 올리면 살고, 늦으면 죽는다.
 - 발췌각인 프레임전: 한 문장만 잘라 퍼져 사람을 죽이는 사건. 원문 열람권이 갈등의 핵.

@@ -4,7 +4,7 @@ type: world_bible_section
 title: "Appendix E. 작명 헌법(PNC-1.0) + 확정 네이밍 매핑"
 visibility: META
 entities: ["작명", "헌법", "확정", "네이밍", "매핑"]
-last_updated: 2026-03-03
+last_updated: 2026-03-13
 source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx"
 ---
 
@@ -39,7 +39,7 @@ source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx"
 - CHAR-STU-001 | 카르단 (학생회장)
 - CHAR-ELF-001 | 실라나 (클랜의 젊은 수호자)
 - CHAR-PRO-001 | 아르데론 (지도교수)
-- CHAR-GIL-001 | 미렌 (각인학파 견습/천재 — 멸종 위기 학파의 ‘마지막 세대’)
+- CHAR-GIL-001 | 미렌 (보존각인학파 견습/천재 — 멸종 위기 아카이브 학파의 ‘마지막 세대’)
 - CHAR-MER-001 | 울자드 (상단 브로커)
 - CHAR-RIV-001 | 레그리안 (증명전 라이벌)
 - CHAR-TRU-001 | 사마렌 (서약 집행자)
