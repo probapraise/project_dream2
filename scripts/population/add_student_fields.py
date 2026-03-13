@@ -257,9 +257,16 @@ def print_stats(slots: list[dict], profile: dict) -> None:
     show("직능 배정", Counter(s["vocation"] for s in slots), profile["vocation_quotas"])
 
     print("\n[마법사 학파 배정]")
-    major_counter = Counter(s["major"] for s in slots)
+    print("  note: actual_mage는 직능 재배정 후 남은 마법사 수, profile_baseline은 snapshot profile의 탑별 초기 배치 기준이다.")
     for tower, majors in profile["tower_majors"].items():
-        print(f"  {tower}:")
+        mage_total_in_tower = sum(
+            1
+            for s in slots
+            if profile["color_to_tower"].get(s["mana_color"]) == tower
+            and s["vocation"] == "마법사"
+        )
+        tower_total = dict(profile["tower_quotas"])[tower]
+        print(f"  {tower}: mage_total={mage_total_in_tower} / tower_total={tower_total}")
         for label, quota in majors:
             actual = sum(
                 1
@@ -268,7 +275,7 @@ def print_stats(slots: list[dict], profile: dict) -> None:
                 and s["vocation"] == "마법사"
                 and s["major"] == label
             )
-            print(f"    {label:16s}: {actual:4d} / tower_quota={quota}")
+            print(f"    {label:16s}: actual_mage={actual:4d} / profile_baseline={quota}")
 
     print("\n[기사 과정 배정]")
     knight_counter = Counter(s["major"] for s in slots if s["vocation"] == "기사")

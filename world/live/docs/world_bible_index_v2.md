@@ -21,7 +21,7 @@
   - file: world_bible/WB-0004_world_common_sense.md
   - summary: [PUBLIC] 행정/계약/징계/등록은 ‘접수된 원본 서류(정본)’ + ‘당사자/책임자 마나사인’으로 성립한다.
   - visibility: PUBLIC
-- [WB-0005] 3. 마법 시스템: 표준식/등록식/서명(Signature)/마나사인
+- [WB-0005] 3. 마법 시스템: 색 × 형 × 잔류 / 등록식 / 문장비전
   - file: world_bible/WB-0005_magic_system.md
   - summary: [PUBLIC] 마나는 ‘내계(內界: 신체/소우주)’와 ‘외계(外界: 바깥 현상)’를 매개하는 에너지/규칙 자원이다. 벨쿠란은 `계승조회식` 이전 아동의 마나핵/회로 활성화 보조를 금지하며, 사용 경험자는 미사용자와 감정 결과가 다르게 남는다.
   - visibility: PUBLIC
