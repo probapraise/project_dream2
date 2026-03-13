@@ -54,6 +54,7 @@ if [[ "$episode_id" =~ ^ep([0-9]+)$ ]]; then
   next_episode_id="$(printf "ep%03d" $((10#${BASH_REMATCH[1]} + 1)))"
   if [[ -d "$repo_root/artifacts/writing/episodes/$next_episode_id" ]]; then
     echo "7. next-episode packet audit: python3 scripts/writing/audit_prompt_packet.py $next_episode_id"
+    echo "8. next-episode semantic audit: python3 scripts/writing/audit_semantic_continuity.py $next_episode_id"
   fi
 fi
 

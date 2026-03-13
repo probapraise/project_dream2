@@ -14,7 +14,12 @@
 - `bash scripts/writing/post_canon_sync.sh <episode_id>`
 - `python3 scripts/writing/audit_live_sync.py`
 - `python3 scripts/writing/audit_prompt_packet.py <episode_id>`
+- `python3 scripts/writing/audit_semantic_continuity.py <episode_id>`
 - `python3 scripts/writing/refresh_canon_metadata.py <episode_id>`
+
+semantic audit 운영 원칙:
+- 기본 모드: hard contradiction만 실패
+- `--strict-warn`: carry 누락/placeholder 같은 경고도 실패 처리
 
 시뮬레이션 기본 경로는 `Quick Sim`이다.
 - 스캐폴드: `bash scripts/sim/new_quick_sim_run.sh <run_id>`

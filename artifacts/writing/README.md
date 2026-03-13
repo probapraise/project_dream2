@@ -100,6 +100,8 @@ bash scripts/writing/new_episode_scaffold.sh ep002
 14. `python3 scripts/writing/audit_live_sync.py` 통과 확인
    ↓
 15. 다음 회차 폴더가 이미 있으면 `python3 scripts/writing/audit_prompt_packet.py <next_episode_id>`로 패킷 stale 여부 확인
+   ↓
+16. 다음 회차 폴더가 이미 있으면 `python3 scripts/writing/audit_semantic_continuity.py <next_episode_id>`로 semantic drift 여부 확인
 ```
 
 ## 파일 종류별 형식
@@ -174,6 +176,7 @@ bash scripts/writing/new_episode_scaffold.sh ep002
 - 선언 파일: `artifacts/writing/live_sync_manifest.json`
 - 감사 스크립트: `python3 scripts/writing/audit_live_sync.py`
 - 패킷 감사 스크립트: `python3 scripts/writing/audit_prompt_packet.py <episode_id>`
+- semantic continuity 감사 스크립트: `python3 scripts/writing/audit_semantic_continuity.py <episode_id>`
 - post-canon 보조 스크립트: `bash scripts/writing/post_canon_sync.sh <episode_id>`
 - canon metadata refresh: `python3 scripts/writing/refresh_canon_metadata.py <episode_id>`
 - canon patch snapshot: `bash scripts/writing/new_canon_patch.sh <episode_id> <new_canon_filename>`
@@ -184,3 +187,6 @@ bash scripts/writing/new_episode_scaffold.sh ep002
 - `conditional` 문서는 소폭 lag를 허용하지만, manifest 기준을 넘으면 drift 실패로 본다.
 - `manual` 문서는 참고용으로 추적하되, audit 실패 대상에는 포함하지 않는다.
 - 다음 회차가 이미 scaffold되어 있으면, 캐논 수정 뒤 그 회차의 `prompt_packet_vN.md`와 패킷 문서도 함께 stale 여부를 확인한다.
+- semantic audit는 구조/해시가 아니라 `지식`, `권한`, `즉시 회수해야 할 약속`, `다음 장면 압박` 같은 의미 충돌을 근거 텍스트 A/B 형태로 점검한다.
+- 기본 exit 정책은 `hard contradiction만 fail`이다. 즉 명백한 지식/권한/상태 충돌만 non-zero로 보고, handoff 누락·즉시 약속 미반영·placeholder는 기본적으로 warn이다.
+- 필요할 때만 `python3 scripts/writing/audit_semantic_continuity.py <episode_id> --strict-warn`으로 경고까지 실패 처리한다.
