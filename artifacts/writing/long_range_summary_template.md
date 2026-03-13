@@ -2,11 +2,11 @@
 
 - episode_id: `<episode_id>`
 - long_range_summary_version: `v1`
-- coverage_rule: `recent raw canon 3회차보다 이전 내용만 요약`
+- coverage_rule: `recent raw canon + global memory tiers에 실리지 않는 보조 장기 맥락만 요약`
 
 ## 역할
-- 이 문서는 최근 3회차 raw canon에 포함되지 않는 과거 맥락을 요약한다.
-- 최근 3회차 내용은 여기서 다시 자세히 반복하지 않는다.
+- 이 문서는 `world/live/docs/memory_tiers/*.md`로도 커버되지 않는, 이번 화 한정의 보조 장기 맥락만 덧붙인다.
+- 최근 raw canon과 global memory tiers에 이미 있는 내용은 여기서 다시 반복하지 않는다.
 - 시리즈 초반이라 이전 회차가 부족하면 `현재 없음`으로 명시한다.
 
 ## Macro situation

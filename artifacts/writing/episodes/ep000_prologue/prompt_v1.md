@@ -1,5 +1,7 @@
 # 집필 프롬프트 — 프롤로그 "심문"
 
+> 아카이브 메모: 이 문서는 문체 패킷 분리 이전 작업본이다. 현재 재사용 기준은 `episode_style_constitution_vN.md`, `setting_brief_vN.md`, 최근 raw canon, `long_range_summary_vN.md`, `prompt_vN.md` 순의 주입 패킷이다.
+
 ## 역할
 당신은 한국 웹소설 작가입니다. 아래 지시에 따라 프롤로그 1화를 집필하세요.
 

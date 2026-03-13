@@ -14,11 +14,17 @@ from pathlib import Path
 BULLET_RE = re.compile(r"^- ([a-z0-9_]+):\s*(.+?)\s*$")
 EPISODE_RE = re.compile(r"^ep(\d+)")
 VERSIONED_FILE_RE = re.compile(r"^(?P<stem>.+)_v(?P<version>\d+)\.md$")
-RAW_CANON_LINE_RE = re.compile(r"^\d+\.\s+`?(artifacts/writing/episodes/.+/canon/.+?)`?\s*$")
+INJECTION_LINE_RE = re.compile(r"^\d+\.\s+`?(.+?)`?\s*$")
 EMPTY_BULLET_RE = re.compile(r"^\s*-\s*$")
 EMPTY_BACKTICK_BULLET_RE = re.compile(r"^\s*-\s*``\s*$")
 UNRESOLVED_TOKEN_RE = re.compile(
     r"<(episode_id|recent_canon_[123](?:_sha256)?|anchor_[^>]+)>"
+)
+MEMORY_TIER_PATHS = (
+    "world/live/docs/memory_tiers/recent.md",
+    "world/live/docs/memory_tiers/current_arc.md",
+    "world/live/docs/memory_tiers/entity_registry.md",
+    "world/live/docs/memory_tiers/long_term.md",
 )
 
 
@@ -150,18 +156,18 @@ def extract_section_lines(path: Path, heading: str) -> list[str]:
     return collected
 
 
-def extract_injection_canon_paths(path: Path) -> list[str]:
+def extract_injection_items(path: Path) -> list[str]:
     section_lines = extract_section_lines(path, "Injection order")
-    paths: list[str] = []
+    items: list[str] = []
     for line in section_lines:
-        match = RAW_CANON_LINE_RE.match(line.strip())
+        match = INJECTION_LINE_RE.match(line.strip())
         if not match:
             continue
-        raw_path = strip_markdown(match.group(1))
-        if raw_path == "none":
+        raw_item = strip_markdown(match.group(1))
+        if raw_item == "none":
             continue
-        paths.append(raw_path)
-    return paths
+        items.append(raw_item)
+    return items
 
 
 def find_placeholder_lines(path: Path) -> list[int]:
@@ -192,7 +198,12 @@ def is_empty_table_row(line: str) -> bool:
     return len(cells) >= 2 and all(not cell for cell in cells)
 
 
-def audit_packet_metadata(repo_root: Path, packet_file: Path, episode_id: str) -> list[AuditMessage]:
+def audit_packet_metadata(
+    repo_root: Path,
+    packet_file: Path,
+    episode_id: str,
+    required_docs: dict[str, Path | None],
+) -> list[AuditMessage]:
     messages: list[AuditMessage] = []
     metadata = read_bullet_metadata(packet_file, limit=20)
     expected = expected_recent_canons(repo_root, episode_id)
@@ -236,18 +247,40 @@ def audit_packet_metadata(repo_root: Path, packet_file: Path, episode_id: str) -
             continue
         messages.append(AuditMessage("ok", "Prompt Packet", f"{path_key} synced"))
 
-    actual_injection_paths = extract_injection_canon_paths(packet_file)
-    expected_injection_paths = [path for path in expected_paths if path != "none"]
-    if actual_injection_paths != expected_injection_paths:
+    for memory_path in MEMORY_TIER_PATHS:
+        if not (repo_root / memory_path).exists():
+            messages.append(
+                AuditMessage("fail", "Prompt Packet", f"missing memory tier doc: {memory_path}")
+            )
+
+    style_file = required_docs["Episode Style Constitution"]
+    setting_file = required_docs["Setting Brief"]
+    long_range_file = required_docs["Long Range Summary"]
+    prompt_file = required_docs["Writing Prompt"]
+
+    expected_injection_order: list[str] = []
+    if style_file is not None:
+        expected_injection_order.append(style_file.name)
+    if setting_file is not None:
+        expected_injection_order.append(setting_file.name)
+    expected_injection_order.extend(path for path in expected_paths if path != "none")
+    expected_injection_order.extend(MEMORY_TIER_PATHS)
+    if long_range_file is not None:
+        expected_injection_order.append(long_range_file.name)
+    if prompt_file is not None:
+        expected_injection_order.append(prompt_file.name)
+
+    actual_injection_items = extract_injection_items(packet_file)
+    if actual_injection_items != expected_injection_order:
         messages.append(
             AuditMessage(
                 "fail",
                 "Prompt Packet",
-                "Injection order canon paths do not match current recent canon window",
+                "Injection order does not match expected raw canon + memory tier + local doc sequence",
             )
         )
     else:
-        messages.append(AuditMessage("ok", "Prompt Packet", "Injection order canon paths synced"))
+        messages.append(AuditMessage("ok", "Prompt Packet", "Injection order synced"))
 
     return messages
 
@@ -303,7 +336,7 @@ def main() -> int:
 
     prompt_packet = required_docs["Prompt Packet"]
     if prompt_packet is not None:
-        messages.extend(audit_packet_metadata(repo_root, prompt_packet, args.episode_id))
+        messages.extend(audit_packet_metadata(repo_root, prompt_packet, args.episode_id, required_docs))
 
     for label in ("Episode Style Constitution", "Setting Brief", "Long Range Summary", "Prompt Packet", "Writing Prompt"):
         path = required_docs[label]

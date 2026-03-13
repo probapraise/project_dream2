@@ -44,15 +44,16 @@ python3 "$audit_script" --print-targets
 echo
 echo "recommended order"
 echo "1. summary_v1.md, episode_scorecard_vN.md, revision_delta_vN.md, and style_pattern_library.md update"
-echo "2. if next episode exists, refresh its packet docs: style_selection, episode_style_constitution, setting_brief, prompt_packet, prompt"
-echo "3. required live docs update: narrative_state, episode_deltas, style_bible"
-echo "4. conditional live docs update: story_arcs, foreshadow_registry"
-echo "5. manual live docs check: master_map"
+echo "2. prompt-facing memory tiers update: recent, current_arc, entity_registry, long_term"
+echo "3. if next episode exists, refresh its packet docs: style_selection, episode_style_constitution, setting_brief, long_range_summary, prompt_packet, prompt"
+echo "4. required live docs update: narrative_state, episode_deltas, style_bible"
+echo "5. conditional live docs update: story_arcs, foreshadow_registry"
+echo "6. manual live docs check: master_map"
 
 if [[ "$episode_id" =~ ^ep([0-9]+)$ ]]; then
   next_episode_id="$(printf "ep%03d" $((10#${BASH_REMATCH[1]} + 1)))"
   if [[ -d "$repo_root/artifacts/writing/episodes/$next_episode_id" ]]; then
-    echo "6. next-episode packet audit: python3 scripts/writing/audit_prompt_packet.py $next_episode_id"
+    echo "7. next-episode packet audit: python3 scripts/writing/audit_prompt_packet.py $next_episode_id"
   fi
 fi
 

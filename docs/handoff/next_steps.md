@@ -301,6 +301,7 @@
 - `artifacts/writing/episodes/<episode_id>/prompt_vN.md` 작성 또는 갱신
 - `artifacts/writing/episodes/<episode_id>/analysis/episode_scorecard_vN.md` 작성 또는 갱신
 - `artifacts/writing/episodes/<episode_id>/analysis/revision_delta_vN.md` 작성 또는 갱신
+- `world/live/docs/memory_tiers/recent.md`, `current_arc.md`, `entity_registry.md`, `long_term.md` 갱신
 - `world/live/docs/style_bible.md` 갱신
 - `world/live/docs/narrative_state.md` 갱신
 - `world/live/docs/episode_deltas.md`에 상태 변화 추가

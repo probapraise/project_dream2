@@ -14,14 +14,17 @@
 - macro_position: Part 1 오프닝 / 렌바렌 저택 생존 부트스트랩 / 하급 과정 진입 전
 - default_load_order:
   - 1. `docs/narrative_state.md`
-  - 2. `docs/story_arcs.md`에서 `status: active` arc만
-  - 3. `docs/foreshadow_registry.md`에서 `status: open` 항목만
-  - 4. `docs/episode_deltas.md`에서 직전 1~2화만
-  - 5. `writing/style/house_rules.md` + `docs/style_bible.md`
-  - 6. 집필 대상 회차의 `writing/episodes/<episode_id>/episode_style_constitution_vN.md`, `setting_brief_vN.md`, `prompt_packet_vN.md`, `prompt_vN.md` (준비된 경우)
+  - 2. `docs/memory_tiers/recent.md`
+  - 3. `docs/memory_tiers/current_arc.md`
+  - 4. `docs/memory_tiers/entity_registry.md`
+  - 5. `docs/memory_tiers/long_term.md`
+  - 6. `writing/style/house_rules.md` + `docs/style_bible.md`
+  - 7. 집필 대상 회차의 `writing/episodes/<episode_id>/episode_style_constitution_vN.md`, `setting_brief_vN.md`, `prompt_packet_vN.md`, `prompt_vN.md` (준비된 경우)
+  - 8. 더 깊은 검증이 필요할 때만 `docs/story_arcs.md`, `docs/foreshadow_registry.md`, `docs/episode_deltas.md`
 
 ## Narrative context policy
 - 전체 원고 재로딩은 canon 충돌 검증이나 세부 디테일 회수가 필요할 때만 한다.
+- `docs/memory_tiers/`는 `story_arcs`, `foreshadow_registry`, `episode_deltas`, core cast 카드에서 뽑아낸 prompt-facing compiled view다.
 - 회차 종료 후에는 사건 요약보다 상태 변화만 `docs/episode_deltas.md`에 추가한다.
 - 5~10화 단위로 `docs/story_arcs.md`를 압축 갱신하고, 이 문서에는 활성 항목만 남긴다.
 - 복선 회수/폐기 여부는 `docs/foreshadow_registry.md`에서 먼저 처리한 뒤 이 문서를 갱신한다.

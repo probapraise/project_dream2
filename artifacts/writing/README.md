@@ -77,9 +77,9 @@ bash scripts/writing/new_episode_scaffold.sh ep002
    ↓
 3. `episode_style_constitution_vN.md` 컴파일
    ↓
-4. `setting_brief_vN.md` + `long_range_summary_vN.md` 작성
+4. `setting_brief_vN.md` 작성 + `world/live/docs/memory_tiers/*.md` 확인
    ↓
-5. 최근 3회차 raw canon 선정 + `prompt_packet_vN.md` 작성
+5. 최근 raw canon window 선정 + 필요 시 `long_range_summary_vN.md` 보정 + `prompt_packet_vN.md` 작성
    ↓
 6. `prompt_vN.md` 작성 (이번 화 비트 지시서)
    ↓
@@ -138,15 +138,18 @@ bash scripts/writing/new_episode_scaffold.sh ep002
 
 ## Prompt Packet 운영 규칙
 
-- 실제 모델 주입 순서는 기본적으로 `episode_style_constitution -> setting_brief -> 최근 3회차 raw canon -> long_range_summary -> prompt_vN`이다.
+- 실제 모델 주입 순서는 기본적으로 `episode_style_constitution -> setting_brief -> 최근 raw canon window -> memory_tiers(recent/current_arc/entity_registry/long_term) -> long_range_summary -> prompt_vN`이다.
 - `style_selection_vN.md`는 작성용 선택 문서이고, 실제 주입 문서는 `episode_style_constitution_vN.md`다.
 - `prompt_vN.md`는 더 이상 단독 컨텍스트 문서가 아니다. 이번 화 비트와 목표만 담당한다.
 - `prompt_packet_vN.md` 상단의 `recent_canon_*_path/sha256`는 현재 canon window와 맞아야 한다.
-- 사실 충돌 시 `raw canon > long_range_summary > prompt_vN`을 따른다.
+- `world/live/docs/memory_tiers/*.md`는 `story_arcs`, `foreshadow_registry`, `episode_deltas`, 캐릭터 카드에서 뽑은 global compiled memory다.
+- 사실 충돌 시 `raw canon > memory_tiers > long_range_summary > prompt_vN`을 따른다.
 - 문체 충돌 시 `episode_style_constitution_vN.md`가 우선한다.
 - 새 프롬프트를 만들 때는 기존 회차 `prompt_vN.md`를 복사하기보다 `prompt_packet_template.md`와 `prompt_template.md`를 출발점으로 사용한다.
-- 최근 3회차 raw canon은 기본값이다. 토큰이 빠듯해도 최신 회차 원문부터 유지한다.
+- 최근 3회차 raw canon은 기본값이다. continuity 체인이 길면 window를 늘릴 수 있다.
+- 토큰이 빠듯해도 최신 raw canon과 memory_tiers를 먼저 유지하고, episode-local `long_range_summary_vN.md`를 나중에 줄인다.
 - 과거 단일 `prompt_vN.md` 작업본은 히스토리로 취급한다.
+- `long_range_summary_vN.md`는 global memory tiers를 반복하는 문서가 아니라, 이번 화 한정의 보조 장기 맥락 메모로 쓴다.
 
 ## 문체 운영 규칙
 
@@ -176,6 +179,7 @@ bash scripts/writing/new_episode_scaffold.sh ep002
 - canon patch snapshot: `bash scripts/writing/new_canon_patch.sh <episode_id> <new_canon_filename>`
 - 각 live 문서는 상단 `## Sync metadata` 섹션에 `sync_category`, `last_synced_episode`, `sync_source`, `sync_summary`를 기록한다.
 - 각 live 문서는 `sync_source_sha256`도 함께 기록해, 같은 episode 안의 캐논 사후 패치도 감지한다.
+- `world/live/docs/memory_tiers/*.md`도 prompt-facing live 문서이므로 manifest 감사 대상에 포함한다.
 - `required` 문서는 최신 current canon과 반드시 같아야 한다.
 - `conditional` 문서는 소폭 lag를 허용하지만, manifest 기준을 넘으면 drift 실패로 본다.
 - `manual` 문서는 참고용으로 추적하되, audit 실패 대상에는 포함하지 않는다.

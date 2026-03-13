@@ -1,7 +1,7 @@
 # episode_scorecard_v1
 
 - episode_id: `ep002`
-- target_revision: `2화 수정본.txt`
+- target_revision: `assembled/revision_assembled_v1.txt`
 - target_canon: `canon/2화_리라이트_v1.md`
 - status: `final`
 

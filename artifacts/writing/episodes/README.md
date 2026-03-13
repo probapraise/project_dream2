@@ -41,10 +41,11 @@ episodes/
 - scorecard는 `assembled/revision_assembled_vN.txt` 기준으로 1차 작성하고, canon 확정 뒤 최종 갱신한다.
 - `style_selection_vN.md`는 내부 선택 문서다. 실제 모델에는 `episode_style_constitution_vN.md`를 넣는다.
 - `setting_brief_vN.md`는 이번 화에 실제로 필요한 설정만 담는다.
-- `long_range_summary_vN.md`는 최근 3회차 raw canon보다 이전 맥락만 담는다.
+- `long_range_summary_vN.md`는 global `memory_tiers`에 안 들어가는 이번 화 한정 보조 장기 맥락만 담는다.
 - `prompt_packet_vN.md`는 주입 순서와 우선순위를 명시하는 패킷 문서다.
 - `prompt_vN.md`는 이번 화 비트와 목표만 담당하는 마지막 지시서다.
 - `prompt_packet_vN.md`의 `recent_canon_*_path/sha256`는 현재 canon window와 맞아야 한다.
+- 실제 기본 주입에는 `world/live/docs/memory_tiers/recent.md`, `current_arc.md`, `entity_registry.md`, `long_term.md`가 함께 들어간다.
 - 새 프롬프트 초안은 `artifacts/writing/prompt_packet_template.md`와 `artifacts/writing/prompt_template.md`를 기준으로 작성하고, 과거 단일 `prompt_vN.md`는 히스토리로 취급한다.
 - canon 확정 뒤에는 `bash scripts/writing/post_canon_sync.sh <episode_id>`로 live sync 대상과 drift 상태를 바로 확인한다.
 - 다음 회차가 이미 준비돼 있으면 `python3 scripts/writing/audit_prompt_packet.py <next_episode_id>`로 패킷 stale 여부도 확인한다.

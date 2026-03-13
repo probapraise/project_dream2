@@ -14,6 +14,26 @@
       "path": "world/live/docs/style_bible.md",
       "label": "Style Bible",
       "description": "현재 필체 요약. 최신 canon 기준 corpus와 핵심 패턴이 반영되어야 한다."
+    },
+    {
+      "path": "world/live/docs/memory_tiers/recent.md",
+      "label": "Memory Tier Recent",
+      "description": "직전 연속성의 미세 상태를 주입용으로 압축한 최근 기억 계층. 최신 canon과 항상 맞아야 한다."
+    },
+    {
+      "path": "world/live/docs/memory_tiers/current_arc.md",
+      "label": "Memory Tier Current Arc",
+      "description": "현재 활성 아크의 압력, 금지, 지급 목표를 주입용으로 압축한 계층. 최신 canon과 항상 맞아야 한다."
+    },
+    {
+      "path": "world/live/docs/memory_tiers/entity_registry.md",
+      "label": "Memory Tier Entity Registry",
+      "description": "현재 서사에서 중요한 인물들의 동적 상태값을 모은 주입용 엔티티 레지스트리. 최신 canon과 항상 맞아야 한다."
+    },
+    {
+      "path": "world/live/docs/memory_tiers/long_term.md",
+      "label": "Memory Tier Long Term",
+      "description": "장기 서사 불변값과 미래 배치 약속을 압축한 장기 기억 계층. 최신 canon 기준으로 유지한다."
     }
   ],
   "conditional": [
