@@ -4,7 +4,7 @@
 - sync_category: required
 - last_synced_episode: ep002
 - sync_source: artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md
-- sync_source_sha256: 17673b87624ec2a117ae5776a5ebf816a593199f158942f07badf25f84528203
+- sync_source_sha256: 1f41ae47ec5c50e74161f792935f5b18b3a79d27193425109d39122957b170ac
 - sync_summary: artifacts/writing/episodes/ep002/summary_v1.md
 
 역할: 현재 서사에서 중요한 인물들의 `동적 상태값`을 모아 둔 prompt-facing 엔티티 레지스트리. 고정 설정 카드의 대체물이 아니라, 지금 이 시점의 태도/의심/압박/다음 행동만 추적한다.

@@ -4,7 +4,7 @@
 - sync_category: required
 - last_synced_episode: ep002
 - sync_source: artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md
-- sync_source_sha256: 17673b87624ec2a117ae5776a5ebf816a593199f158942f07badf25f84528203
+- sync_source_sha256: 1f41ae47ec5c50e74161f792935f5b18b3a79d27193425109d39122957b170ac
 - sync_summary: artifacts/writing/episodes/ep002/summary_v1.md
 
 역할: 최근 raw canon window가 밀려나더라도 바로 다음 화를 쓸 때 필요한 미세 상태를 prompt-friendly하게 압축한 최근 기억 계층.
@@ -25,7 +25,7 @@
 ## Immediate carry
 - 키리온은 `원래 키리온답게` 보이는 행동 규칙 일부를 회수했지만, 모방만으로는 칼리온의 장기 관찰을 더 못 버틴다고 판단했다.
 - 안내판 실험은 실제 효용을 증명했고, 그 성공 때문에 오히려 칼리온이 시험 단위를 `행동`에서 `선택 구조`로 넓혔다.
-- `서고 접근권`과 `자색 표준식 입문서 열람 허가`는 안도나 자유가 아니라, 더 높은 해상도의 채점표다.
+- `서고 접근권`은 안도나 자유가 아니라, 더 높은 해상도의 채점표고 저번에 몰래 읽다 걸린 `자색 입문서`는 그 안에서 가장 자연스러운 첫 선택지로 떠올랐다.
 - 키리온은 그 채점표 위에서 정답을 고르기보다, `판 바깥에서 시작되는 변수`를 먼저 만들려는 쪽으로 사고를 틀었다.
 
 ## Soft-state values to retain

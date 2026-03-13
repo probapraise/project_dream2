@@ -2,7 +2,7 @@
 
 - episode_id: ep000_prologue
 - current_text_canon: 프롤로그_리라이트_v2.md
-- current_text_canon_sha256: 7bf464213044f52e2853189e745d1cb340cebb4f2502159453bd80ddb3319523
+- current_text_canon_sha256: 1f41586e1b00f3a887480828f78f4523d0c1e086bb86b7593dc1cff948d697cf
 - current_word_canon: none
 
 ## Policy

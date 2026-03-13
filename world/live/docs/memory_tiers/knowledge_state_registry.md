@@ -4,7 +4,7 @@
 - sync_category: required
 - last_synced_episode: ep002
 - sync_source: artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md
-- sync_source_sha256: 17673b87624ec2a117ae5776a5ebf816a593199f158942f07badf25f84528203
+- sync_source_sha256: 1f41ae47ec5c50e74161f792935f5b18b3a79d27193425109d39122957b170ac
 - sync_summary: artifacts/writing/episodes/ep002/summary_v1.md
 
 역할: 현재 서사에서 중요한 `사실` 단위로 누가 무엇을 알고, 의심하고, 오해하고, 아직 몰라야 하는지를 관리하는 prompt-facing 지식 상태 레지스트리.
@@ -35,8 +35,8 @@
 - next volatility:
   - 서고/첫 책 선택, 데리온 개입, 가족 반응이 이 의심을 더 넓힐 수 있다.
 
-### KS-002 서고 접근권과 자색 입문서 열람 허가의 진짜 의미
-- canonical statement: `서고 접근권`과 `자색 표준식 입문서 열람 허가`는 보상처럼 보이지만 실제로는 보상형 통제이자 감시 확장이다.
+### KS-002 서고 접근권과 `첫 책 선택`의 진짜 의미
+- canonical statement: `서고 접근권`은 보상처럼 보이지만 실제로는 보상형 통제다. 저번에 몰래 읽다 걸린 `자색 입문서`는 그 안에서 가장 자연스러운 첫 선택지로 떠올라 감시를 더 정교하게 만든다.
 - known_by:
   - 키리온
   - 칼리온
@@ -51,7 +51,7 @@
 - latest shift:
   - `ep002` 말미에 시험 단위가 `흑색 책을 읽는가`에서 `서고에서 무엇을 먼저 고르는가`로 확장됐다.
 - next volatility:
-  - 다음 화에서 첫 책 선택과 데리온 변수 개입이 이 허가의 진짜 성격을 더 선명하게 드러낸다.
+  - 다음 화에서 첫 책 선택과 데리온 변수 개입이 이 접근권의 진짜 성격을 더 선명하게 드러낸다.
 
 ### KS-003 계승조회식 이전 조기 수련 금지의 실질 위험
 - canonical statement: `계승조회식` 이전 아동의 실제 마법 수련은 제도적으로 매우 위험하며, 흔적이 남는 종류의 금지다.

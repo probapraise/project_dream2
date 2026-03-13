@@ -196,7 +196,7 @@
 해야 할 일:
 - `artifacts/writing/episodes/ep000_prologue/summary_v1.md`, `ep001/summary_v1.md`, `ep002/summary_v1.md`와 `ep002` current canon을 묶어 다음 회차 입력 패키지 작성
 - `world/live/docs/narrative_state.md`, `story_arcs.md`, `foreshadow_registry.md`, `episode_deltas.md`를 참조해 `ep003` 기획 입력 정리
-  - `서고 접근권` 획득 이후 `자색 표준식 입문서`와 서고 열람이 동시에 보상과 감시 장치로 작동하는 구도 유지
+  - `서고 접근권` 획득 이후, 저번에 몰래 읽다 걸린 `자색 입문서`가 자연스러운 첫 선택지로 떠오르고 서고 열람 전체가 동시에 보상과 감시 장치로 작동하는 구도 유지
   - 칼리온이 `행동`에서 `독서 패턴`으로 감시 해상도를 올린다는 축 명시
   - 아직 학술원/외부 확장으로 점프하지 않고 저택 내부 관찰전의 압력을 유지
 

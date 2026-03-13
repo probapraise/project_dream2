@@ -4,7 +4,7 @@
 - sync_category: required
 - last_synced_episode: ep002
 - sync_source: artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md
-- sync_source_sha256: 17673b87624ec2a117ae5776a5ebf816a593199f158942f07badf25f84528203
+- sync_source_sha256: 1f41ae47ec5c50e74161f792935f5b18b3a79d27193425109d39122957b170ac
 - sync_summary: artifacts/writing/episodes/ep002/summary_v1.md
 
 역할: 현재 서사에서 중요한 `접근 권한 / 금지 / 허가 / 통제` 상태를 resource 중심으로 추적하는 prompt-facing 접근 권한 매트릭스.
@@ -44,18 +44,18 @@
 - dramatic meaning:
   - 자유권이 아니라 `첫 선택을 읽기 위한 시험장 개방`이다.
 
-### ACL-003 자색 표준식 입문서 열람
+### ACL-003 서고 내 `자색 입문서` 접근
 - holder:
   - 키리온
-- status: `conditional_allow`
+- status: `available_within_acl_002`
 - granted_by:
-  - 칼리온
+  - `ACL-002`의 서고 출입 허가
 - observed_by:
   - 칼리온
 - public justification:
-  - 키리온의 주색과 더 자연스럽게 맞는 입문서 허가
+  - 키리온의 주색이 자색이라면 그 계열 입문서를 먼저 집는 것이 가장 자연스럽다.
 - dramatic meaning:
-  - 합리적인 허가처럼 보이지만, 어떤 책을 먼저 고르는지 더 정교하게 읽기 위한 미끼다.
+  - 별도 명시 허가가 없어도, 이 책은 `가장 무난해 보이는 첫 선택`이라 더 정교한 시험지가 된다.
 
 ### ACL-004 흑색 표준식 입문서 접근
 - holder:

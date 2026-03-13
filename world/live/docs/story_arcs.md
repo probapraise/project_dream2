@@ -4,7 +4,7 @@
 - sync_category: conditional
 - last_synced_episode: ep002
 - sync_source: artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md
-- sync_source_sha256: 17673b87624ec2a117ae5776a5ebf816a593199f158942f07badf25f84528203
+- sync_source_sha256: 1f41ae47ec5c50e74161f792935f5b18b3a79d27193425109d39122957b170ac
 - sync_summary: artifacts/writing/episodes/ep002/summary_v1.md
 
 역할: 장기 연재에서 오래된 회차를 통째로 다시 읽지 않기 위해, 아크 단위로 압축된 서사 기억을 보관한다.
@@ -55,7 +55,7 @@
 - core question: 12세 하급 과정 진입과 15세 상급 과정 점프 사이에 무엇을 먼저 보여줘야 이후 학술원 본편이 가장 강하게 열린다.
 - compressed memory:
   - 현재 서사는 넓은 세계를 바로 열지 않고, 렌바렌 저택이라는 좁은 공간에서 감시/돌봄/행정 구조를 먼저 세팅하고 있다.
-  - `ep001`에서 아르케이온 권역 첫 진입까지 4년이 남았다는 시간축이 제시되어, 외부 무대가 당장 열리지 않는 이유가 구체화됐다.
+  - `ep001`에서 남매 모두 언젠가 아카데미에 보내질 것이라는 가문 계획이 제시되어, 외부 무대가 당장 열리지 않는 이유가 구체화됐다.
   - `ep002`에서 저택 내부의 작은 설계 성공과 더 정교해진 가족 감시가 맞물리며, academy 이전 파트를 지탱할 내적 동력이 한 번 더 보강됐다.
   - NC 코어 캐스트 확장과 정식 시뮬레이션은 입학 이후로 미뤄진 상태다.
 - current state:

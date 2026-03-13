@@ -4,7 +4,7 @@
 - sync_category: required
 - last_synced_episode: ep002
 - sync_source: artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md
-- sync_source_sha256: 17673b87624ec2a117ae5776a5ebf816a593199f158942f07badf25f84528203
+- sync_source_sha256: 1f41ae47ec5c50e74161f792935f5b18b3a79d27193425109d39122957b170ac
 - sync_summary: artifacts/writing/episodes/ep002/summary_v1.md
 
 역할: 작가가 다음 회차 집필 전에 기본 로딩하는 서사 상태 허브. 과거 회차 전체를 다시 읽는 대신, 현재 활성 상태와 다음 진행 방향만 유지한다.
@@ -70,7 +70,7 @@
   - next pressure: 서고 접근권과 첫 책 선택이 모두 진술서가 된 상황에서, 자기 사고 방식의 출처를 얼마나 숨길 수 있는가
 - `칼리온 렌바렌`
   - current state: 직접 추궁보다 허가, 칭찬, 선택지 제공으로 다음 시험장을 여는 감시자
-  - latest turn: 안내판 효용을 확인한 뒤 서고 접근권과 자색 입문서 열람 허가를 미끼처럼 던져, 시험 단위를 `행동`에서 `선택 구조`로 확장했다
+  - latest turn: 안내판 효용을 확인한 뒤 서고 접근권을 열고 `몰래 들어가지 말고 당당히 읽으라`는 식으로 말해, 시험 단위를 `행동`에서 `선택 구조`로 확장했다
   - next pressure: 친절과 보상을 늘려도 독자가 위협을 더 강하게 느끼게 해야 한다
 - `셀리아 그라비온`
   - current state: 주인공에게 유일한 무계산 온기를 제공하는 보호자
