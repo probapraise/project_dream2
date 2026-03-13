@@ -10,6 +10,7 @@
 writing/
 ├── README.md                               ← 이 파일
 ├── assembly_notes_template.md              ← 멀티 초고 조립 메모 템플릿
+├── episode_scorecard_template.md           ← 회차 속도계 템플릿
 ├── episode_setting_brief_template.md       ← 이번 화 설정 정리 템플릿
 ├── episode_style_constitution_template.md  ← 이번 화 문체 헌법 템플릿
 ├── live_sync_manifest.json                 ← canon -> live 문서 sync 감사 대상 선언
@@ -62,6 +63,7 @@ bash scripts/writing/new_episode_scaffold.sh ep002
 ```
 
 - 위 스크립트는 에피소드 폴더, `canon/README.md`, `drafts/`, `assembled/`, `analysis/`, `style_selection_v1.md`, `episode_style_constitution_v1.md`, `setting_brief_v1.md`, `long_range_summary_v1.md`, `prompt_packet_v1.md`, `prompt_v1.md`를 함께 생성한다.
+- `analysis/`에는 `revision_delta_v1.md`와 `episode_scorecard_v1.md`가 함께 생성된다.
 - 현재 canon 파일이 아직 없으면 `current_text_canon: none`, `current_word_canon: none` 상태로 시작한다.
 
 ## 워크플로우
@@ -85,17 +87,19 @@ bash scripts/writing/new_episode_scaffold.sh ep002
    ↓
 8. 작가가 여러 초고를 조립 → `assembled/assembly_notes_vN.md` + `assembled/revision_assembled_vN.txt`
    ↓
-9. 정식 반영본 확정 → `canon/<canon_filename>`으로 이동/저장 + `canon/README.md` current 갱신
+9. `analysis/episode_scorecard_vN.md` 1차 작성 (이번 화가 독자에게 실제로 준 변화/보상/훅 점검)
    ↓
-10. 멀티 초고↔조립본↔캐논 비교 분석 → `analysis/revision_delta_vN.md` 저장
+10. 정식 반영본 확정 → `canon/<canon_filename>`으로 이동/저장 + `canon/README.md` current 갱신
    ↓
-11. diff 누적 → style/style_pattern_library.md 갱신
+11. 멀티 초고↔조립본↔캐논 비교 분석 + `episode_scorecard_vN.md` 최종 갱신
    ↓
-12. `bash scripts/writing/post_canon_sync.sh <episode_id>`로 live sync 대상 점검
+12. diff 누적 → style/style_pattern_library.md 갱신
    ↓
-13. `python3 scripts/writing/audit_live_sync.py` 통과 확인
+13. `bash scripts/writing/post_canon_sync.sh <episode_id>`로 live sync 대상 점검
    ↓
-14. 다음 회차 폴더가 이미 있으면 `python3 scripts/writing/audit_prompt_packet.py <next_episode_id>`로 패킷 stale 여부 확인
+14. `python3 scripts/writing/audit_live_sync.py` 통과 확인
+   ↓
+15. 다음 회차 폴더가 이미 있으면 `python3 scripts/writing/audit_prompt_packet.py <next_episode_id>`로 패킷 stale 여부 확인
 ```
 
 ## 파일 종류별 형식
@@ -112,6 +116,7 @@ bash scripts/writing/new_episode_scaffold.sh ep002
 | 조립 메모 | markdown (.md) | `assembled/assembly_notes_v1.md` |
 | 조립 수정본 | text / Word | `assembled/revision_assembled_v1.txt` |
 | 정식 canon | text / Word | `canon/revision_v1.txt`, `canon/프롤로그_리라이트_v2.md` |
+| 회차 속도계 | markdown (.md) | `analysis/episode_scorecard_v1.md` |
 | 멀티 초고 비교 분석 | markdown (.md) | `analysis/revision_delta_v1.md` |
 
 ## 네이밍 규칙
@@ -126,6 +131,7 @@ bash scripts/writing/new_episode_scaffold.sh ep002
 - **병렬 초고**: `drafts/draft_<source>_vN.txt`
 - **조립 수정본**: `assembled/revision_assembled_vN.txt`
 - **조립 메모**: `assembled/assembly_notes_vN.md`
+- **회차 속도계**: `analysis/episode_scorecard_vN.md`
 - **비교 분석**: `analysis/revision_delta_vN.md`
 - **정식 canon**: `canon/revision_vN.txt` 또는 `canon/<제목>_vN.md`
 - **current canon 지시 파일**: `canon/README.md`
@@ -150,6 +156,15 @@ bash scripts/writing/new_episode_scaffold.sh ep002
 - 고른 결과는 `episodes/<episode_id>/episode_style_constitution_vN.md`로 컴파일해 실제 주입한다.
 - 조립본은 "초고 하나의 수정본"이 아니라 "여러 초고의 합성본"으로 취급한다.
 - `style_pattern_library.md` 반영 판단은 가능하면 단일 초고가 아니라 `analysis/revision_delta_vN.md`의 멀티 초고 비교 기록을 근거로 한다.
+
+## Episode Scorecard 운영 규칙
+
+- `analysis/episode_scorecard_vN.md`는 이번 화의 사건을 다시 요약하는 문서가 아니라, 독자 체감 기준의 속도계다.
+- `narrative_state`, `story_arcs`, `foreshadow_registry`가 장기 상태를 추적한다면, scorecard는 "이번 화가 실제로 무엇을 지급했고 무엇을 다음 화로 넘겼는가"를 본다.
+- scorecard는 `assembled/revision_assembled_vN.txt` 단계에서 1차 작성하고, canon 확정 뒤 최종 갱신한다.
+- 점수는 `1~5`를 쓰되, 반드시 한 줄 근거를 붙인다. 숫자만 적으면 금방 형식화된다.
+- `풀린 약속 / 새로 열린 약속`은 가능하면 `foreshadow_registry.md`의 ID와 연결한다.
+- 다음 화 기획 전에 직전 2~3화의 scorecard만 빠르게 다시 읽어도 저택 파트의 늘어짐이나 반복 리듬을 잡기 쉽다.
 
 ## Live Sync Audit
 

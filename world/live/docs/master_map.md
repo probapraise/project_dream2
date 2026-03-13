@@ -49,6 +49,7 @@
 - community_memory: docs/community_memory.md
 - community_grammar_layer_b: docs/community_grammar_layer_b.md
 - writing_index: writing/README.md
+- writing_episode_scorecard_template: writing/episode_scorecard_template.md
 - writing_episode_style_constitution_template: writing/episode_style_constitution_template.md
 - writing_episode_setting_brief_template: writing/episode_setting_brief_template.md
 - writing_long_range_summary_template: writing/long_range_summary_template.md

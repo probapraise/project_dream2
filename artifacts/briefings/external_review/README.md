@@ -51,4 +51,5 @@ bash scripts/indexes/build_external_review_dossier.sh
 ## 현재 파일
 
 - `world_snapshot_external_review_20260310.md`
+- `world_snapshot_external_review_20260313.md`
 - `world_dossier_external_review_full_20260310.md`

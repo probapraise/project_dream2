@@ -19,6 +19,7 @@ episodes/
     │   ├── assembly_notes_vN.md
     │   └── revision_assembled_vN.txt
     ├── analysis/
+    │   ├── episode_scorecard_vN.md
     │   └── revision_delta_vN.md
     ├── style_selection_vN.md
     ├── episode_style_constitution_vN.md
@@ -36,6 +37,8 @@ episodes/
 - `canon/README.md`는 `current_text_canon`, `current_text_canon_sha256`, `current_word_canon`을 명시하는 지시 파일이다.
 - canon은 수정 가능하다. 새 리비전이나 사후 패치가 채택되면 `canon/` 안에 새 canon 파일을 추가하고 `canon/README.md` current 항목을 갱신한다.
 - 병렬 초고는 `drafts/`, 조립 메모/수정본은 `assembled/`, 멀티 초고 비교 분석은 `analysis/`에 둔다.
+- `analysis/episode_scorecard_vN.md`는 회차 속도계다. 요약문이 아니라 감정/정보/위험/약속/훅 기준으로 독자 체감을 점검한다.
+- scorecard는 `assembled/revision_assembled_vN.txt` 기준으로 1차 작성하고, canon 확정 뒤 최종 갱신한다.
 - `style_selection_vN.md`는 내부 선택 문서다. 실제 모델에는 `episode_style_constitution_vN.md`를 넣는다.
 - `setting_brief_vN.md`는 이번 화에 실제로 필요한 설정만 담는다.
 - `long_range_summary_vN.md`는 최근 3회차 raw canon보다 이전 맥락만 담는다.
@@ -54,4 +57,4 @@ episodes/
 bash scripts/writing/new_episode_scaffold.sh ep002
 ```
 
-- 스캐폴드는 `canon/README.md`, `drafts/`, `assembled/`, `analysis/`, `style_selection_v1.md`, `episode_style_constitution_v1.md`, `setting_brief_v1.md`, `long_range_summary_v1.md`, `prompt_packet_v1.md`, `prompt_v1.md`를 함께 만든다.
+- 스캐폴드는 `canon/README.md`, `drafts/`, `assembled/`, `analysis/`, `style_selection_v1.md`, `episode_style_constitution_v1.md`, `setting_brief_v1.md`, `long_range_summary_v1.md`, `prompt_packet_v1.md`, `prompt_v1.md`, `analysis/episode_scorecard_v1.md`, `analysis/revision_delta_v1.md`를 함께 만든다.

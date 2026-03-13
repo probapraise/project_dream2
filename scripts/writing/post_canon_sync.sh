@@ -43,7 +43,7 @@ echo "sync targets"
 python3 "$audit_script" --print-targets
 echo
 echo "recommended order"
-echo "1. summary_v1.md, revision_delta_vN.md, and style_pattern_library.md update"
+echo "1. summary_v1.md, episode_scorecard_vN.md, revision_delta_vN.md, and style_pattern_library.md update"
 echo "2. if next episode exists, refresh its packet docs: style_selection, episode_style_constitution, setting_brief, prompt_packet, prompt"
 echo "3. required live docs update: narrative_state, episode_deltas, style_bible"
 echo "4. conditional live docs update: story_arcs, foreshadow_registry"

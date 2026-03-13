@@ -30,6 +30,8 @@ assembly_template="$repo_root/artifacts/writing/assembly_notes_template.md"
 assembly_file="$assembled_dir/assembly_notes_v1.md"
 revision_delta_template="$repo_root/artifacts/writing/revision_delta_template.md"
 revision_delta_file="$analysis_dir/revision_delta_v1.md"
+episode_scorecard_template="$repo_root/artifacts/writing/episode_scorecard_template.md"
+episode_scorecard_file="$analysis_dir/episode_scorecard_v1.md"
 
 if [[ "$episode_id" =~ ^ep([0-9]+) ]]; then
   target_episode_num=$((10#${BASH_REMATCH[1]}))
@@ -138,6 +140,10 @@ if [[ -f "$revision_delta_template" ]]; then
   sed "s/<episode_id>/$episode_id/g" "$revision_delta_template" > "$revision_delta_file"
 fi
 
+if [[ -f "$episode_scorecard_template" ]]; then
+  sed "s/<episode_id>/$episode_id/g" "$episode_scorecard_template" > "$episode_scorecard_file"
+fi
+
 echo "created episode scaffold:"
 echo "$episode_dir"
 echo "$canon_dir/README.md"
@@ -167,4 +173,7 @@ if [[ -f "$assembly_file" ]]; then
 fi
 if [[ -f "$revision_delta_file" ]]; then
   echo "$revision_delta_file"
+fi
+if [[ -f "$episode_scorecard_file" ]]; then
+  echo "$episode_scorecard_file"
 fi
