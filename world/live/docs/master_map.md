@@ -70,6 +70,10 @@
 - quarantine_index: quarantine/README.md
 
 ## Recent changes (selected)
+- 2026-03-15 WORLDBUILD-020: `EX-0001/0003`, `WB-0003`, `community_grammar_layer_b`, `story_arcs`, `episode_deltas`, `memory_tiers/*`에 남아 있던 구 정체성 표현을 `외래 기억 잔향` 기준으로 최종 정리하고, 열구 관련 잔존 문구도 새 금역 설명으로 정돈
+- 2026-03-15 WORLDBUILD-019: `NC-0001`과 `memory_tiers/long_term`의 주인공 정체성 메타를 새 바닥 기준으로 정리해, 과도하게 직접적인 정체성 표현과 구 우주론 직결 용어 대신 `외래 기억·사고 구조의 잔향이 키리온 렌바렌으로 수렴한다`는 설명으로 통일
+- 2026-03-15 WORLDBUILD-018: `WB-0016/0017/0026`을 새 바닥 기준으로 동기화해 벨쿠란의 사회 구조를 `혈통 편중 + 종족별 전문화 + 봉건적 차별` 축으로 재정의하고, 경제 구조를 `권한 / 노드 / 마력석 / 배지 인프라` 중심으로 재편했으며, 문장비전 개념부를 `혈통키에 잠긴 특수 등록식` 기준으로 재서술
+- 2026-03-15 WORLDBUILD-017: `프라미시오_무대용_설정_통합정리.docx` 기준의 바닥 재정렬을 반영해 `WB-0028/0029`를 신설하고, `WB-0005/0006/0007`을 `표준식 / 등록식 / 문장비전`, 특수 지형 노드, `마나 사인 + 하급 정령 계약 + 배지` 기준으로 재작성했으며, `WB-0009/0010/0011/0013/0025`의 기존 열구 표면 설명을 `심층 마나층 균열 / 잔향역 / 고대 재앙 상흔` 구조로 교체
 - 2026-03-13 WRITING-013: `memory_tiers/knowledge_state_registry`, `access_control_matrix`를 추가해 지식 비대칭과 권한 상태를 prompt-facing 운영 문서로 분리하고, `pre_academy_checkpoint_plan.md`로 학술원 진입 전 soft checkpoint 체계를 도입
 - 2026-03-13 WRITING-012: `memory_tiers/recent`, `current_arc`, `entity_registry`, `long_term`를 prompt-facing compiled memory로 추가하고, 주입 패킷의 장기 기억 구조를 `최근 raw canon + memory tiers + episode-local summary` 방식으로 재편
 - 2026-03-13 WRITING-011: 단일 `prompt_vN.md` 중심 집필 방식을 `episode_style_constitution / setting_brief / 최근 3회차 raw canon / long_range_summary / prompt_packet / prompt_vN` 주입 패킷 구조로 재편
@@ -89,7 +93,7 @@
 - 2026-03-08 WORLDBUILD-013: WB-0015/narrative_state/story_arcs/NC-0001/handoff에 `12~14세 하급 아카데미 + 15세 본과 진입성취평가` 구조를 반영하고, 3년 스킵 뒤 보존각인학파 선택 클리프행어를 본과 도입선으로 고정
 - 2026-03-08 WRITING-008: pre-academy 정체성 축 재조정 — 입학 전에는 `칼리온 시험 통과` 수준의 안도만 주고, `그럼에도 내 아들이다` 확언은 학술원 진입 후로 이연
 - 2026-03-08 WRITING-007: `narrative_state`/`story_arcs`/handoff에 학술원 입학 목표 시점(`ep010` 전후)과 그 이전 필수 처리 이벤트(칼리온 확언, 키리온 정체성 수렴) 추가
-- 2026-03-08 WORLDBUILD-012: NC-0001과 handoff에 주인공 정체성의 META 진실을 추가 — 자전적 앵커 기억 제거, 지식/사고 구조 이식, 장기적으로 `키리온 렌바렌`으로 수렴
+- 2026-03-08 WORLDBUILD-012: NC-0001과 handoff에 주인공 정체성의 META 진실을 추가 — 외래 자전 기억은 걷어내고 절차 기억·지식·사고 구조만 남긴 채, 장기적으로 `키리온 렌바렌`으로 수렴하는 방향을 고정
 - 2026-03-08 WORLDBUILD-011: 혼인 후 성 표기를 `출생 가문 성 유지 + 혼인 가문 직위` 규칙으로 정리하고 셀리아 표기를 `셀리아 그라비온`으로 교정
 - 2026-03-08 WORLDBUILD-010: 리리아 렌바렌(EX-0004) 카드 신설, 그라비온 진위감정 잔향 설정 및 가족/키리온 참조 실명화
 - 2026-03-08 WORLDBUILD-009: 데리온 렌바렌(EX-0003) 카드 신설, 부모/키리온 카드 참조 실명화, 장남의 강압적 보호자 성격/말투 앵커 확정
@@ -110,7 +114,7 @@
 - 2026-03-05 VFP-001: Voice Fingerprint 시스템 신설 — voice_fingerprint_spec.md 작성, NC-0001 VFP v1 추출 완료
 - 2026-03-05 WRITING-002: ep001 "선물" 집필 프롬프트 v1 작성. 프롤로그 자→흑색 수정 반영(canon/revision_v1.txt, draft_v1.txt, style_constitution.md)
 - 2026-03-05 WRITING-001: writing/ 폴더 계층 신설 — 집필 파이프라인(프롬프트/초안/수정본/diff/문체 헌법) 구조화. 프롤로그 프롬프트 v1 작성 완료
-- 2026-03-05 WORLDBUILD-001: WB-0011에 열구 외계 문명 유입 3층 정보 구조 추가 (공공 상식/국가 기밀/마사토라 전략)
+- 2026-03-05 WORLDBUILD-001: WB-0011에 열구 3층 정보 구조 추가 (공공 상식/국가 기밀/마사토라 전략, 이후 2026-03-15 WORLDBUILD-017에서 교체)
 - 2026-03-05 WORLDBUILD-002: WB-0009/0026에 렌바렌 백작가 설정 추가 — 비밀 서명귀족, 식흔(蝕痕, 흑 주색, 타인 마법 잔흔 실시간 소거), 왕국 최상위 정보기관 수장
 - 2026-03-05 LAYERB-002: community_grammar_layer_b에 ATOM-002(자기비하적 기여 선언), ATOM-003(상호 비열의 서사시화) 추가
 - 2026-03-04 PR-BOOTSTRAP-0006: [RESET] NC-* 코어 캐스트 전면 삭제 — 생성 규칙 재설계 진행 중

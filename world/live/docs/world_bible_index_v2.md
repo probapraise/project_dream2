@@ -1,8 +1,8 @@
 # world_bible_index
 
-- regenerated_at: 2026-03-08
+- regenerated_at: 2026-03-15
 - source: world_bible/WB-*.md
-- note: 2026-03-08 세션 — WB-0005/0009/0015/0018/0026에 `계승조회식` 이전 아동 마법 수련 금지, 사용 경험자와 미사용자의 감정 차이, 귀족 견제 조사, 특권 선행학습 격차를 반영
+- note: 정리 작업으로 충돌 파일 삭제 후 최소 인덱스로 재생성
 
 ## Sections
 - [WB-0001] 서문: 통합/정제 방법론(이번 통합본 제작 원칙)
@@ -21,17 +21,17 @@
   - file: world_bible/WB-0004_world_common_sense.md
   - summary: [PUBLIC] 행정/계약/징계/등록은 ‘접수된 원본 서류(정본)’ + ‘당사자/책임자 마나사인’으로 성립한다.
   - visibility: PUBLIC
-- [WB-0005] 3. 마법 시스템: 색 × 형 × 잔류 / 등록식 / 문장비전
+- [WB-0005] 3. 초월력 체계: 표준식 / 등록식 / 문장비전 / 계약 / 수련 초월
   - file: world_bible/WB-0005_magic_system.md
-  - summary: [PUBLIC] 마나는 ‘내계(內界: 신체/소우주)’와 ‘외계(外界: 바깥 현상)’를 매개하는 에너지/규칙 자원이다. 벨쿠란은 `계승조회식` 이전 아동의 마나핵/회로 활성화 보조를 금지하며, 사용 경험자는 미사용자와 감정 결과가 다르게 남는다.
+  - summary: [PUBLIC] 프라미시오에서 마법사의 공식 분류는 `표준식 / 등록식 / 문장비전`이다.
   - visibility: PUBLIC
-- [WB-0006] 4. 성목(Irminsul): 인프라 코어/정령/엘프 클랜
+- [WB-0006] 4. 특수 지형 노드와 성목(Irminsul): 영험지 / 신격 / 정령군
   - file: world_bible/WB-0006_irminsul_infra.md
-  - summary: [PUBLIC] 성목(聖木, Irminsul)은 대규모 마법 인프라의 중심(코어) 역할을 맡을 수 있는 희귀 신목이다.
+  - summary: [PUBLIC] 성목, 성산, 폭포, 화산 같은 일부 특수 지형은 영험지이자 마나 노드로 여겨진다.
   - visibility: PUBLIC
-- [WB-0007] 5. 배지 & 학내 중계망(표준 마법 단말)
+- [WB-0007] 5. 배지 네트워크: 마나 사인 / 하급 정령 계약 / 표준 단말
   - file: world_bible/WB-0007_badge_network.md
-  - summary: [PUBLIC] 배지는 신분표가 아니라 ‘학내 표준 프로토콜’의 단말이다: 정보 표시, 출입/열람 인증, 공지 수신, 실습 로그 기록을 한 번에 수행한다.
+  - summary: [PUBLIC] `마나 사인`은 개인의 고유 인증 수단이고, `하급 정령 계약`은 노드 인프라 접속권이며, `배지`는 둘을 실무적으로 묶어 쓰는 표준 단말이다.
   - visibility: PUBLIC
 - [WB-0008] 6. 각인광장(Archive Plaza): 광장식(UI)·플랫폼 경제·영상제약·LMM
   - file: world_bible/WB-0008_archive_plaza_overview.md
@@ -39,15 +39,15 @@
   - visibility: PUBLIC
 - [WB-0009] 7. 권력 구조 & 집단(정보·면허·보존권·징계)
   - file: world_bible/WB-0009_power_structure_factions.md
-  - summary: 정본(원본 서류)과 열람권이 사회의 기본 권력 자원이다. 왕실은 서명귀족 혈통 추적, 10세 `계승조회식`, 아동 마법 수련 금지 조사로 귀족을 통제하며, 7.2-A의 렌바렌 백작가는 라베르니온 공작가 아래에서 방계 청소로 혈통 비밀을 유지한다.
+  - summary: 정본(원본 서류)과 열람권이 사회의 기본 권력 자원이다.
   - visibility: PUBLIC
 - [WB-0010] 8. 프라미시오 행성: 4대륙/국가/금기(네이밍 PNC-1.0)
   - file: world_bible/WB-0010_planet_continents_naming.md
   - summary: ARC 벨라리온: 온대-초원 중심. 인류권 왕국·공국 다수. 주인공 조국 벨쿠란 왕국이 위치.
   - visibility: PUBLIC
-- [WB-0011] 9. 잔향역(殘響域)과 열구(裂口): 봉쇄선/오염/기록 공백/외계 문명 유입
+- [WB-0011] 9. 잔향역(殘響域)과 열구(裂口): 봉쇄선 / 오염 / 기록 공백
   - file: world_bible/WB-0011_echo_zone_rifts.md
-  - summary: [PUBLIC] 열구(裂口)는 마사토라 거대륙에 존재하며, 관문수(關門守)가 봉쇄. 외계 문명 유입에 대한 3층 정보 구조: 공공 상식(고대 마도 문명 지식 파편) / 국가 기밀(열구 통한 외계 유입) / 마사토라 전략(적극 흡수·연구).
+  - summary: [PUBLIC] 열구(裂口)는 마사토라 거대륙에 존재하며, 이를 봉쇄하는 관문수(關門守)는 관문제국 소속이다.
   - visibility: CONFIDENTIAL
 - [WB-0012] 10. 핵심 갈등 아크(초-중반): 성목 각성/엘프 클랜/플랫폼 전쟁
   - file: world_bible/WB-0012_core_conflict_arcs.md
@@ -55,23 +55,23 @@
   - visibility: PUBLIC
 - [WB-0013] 11. 연표(최근 10년) & 사건 엔진
   - file: world_bible/WB-0013_timeline_event_engine.md
-  - summary: 10년 전: 마사토라 열구 재앙 → 대규모 기록 공백/정신 오염. 관문제국/서약원 권한 확대.
+  - summary: 10년 전: 마사토라 열구 재앙 → 정격선 일부 붕괴와 심층 마나 폭주, 대규모 기록 공백/정신 오염. 관문제국/서약원 권한 확대.
   - visibility: PUBLIC
-- [WB-0015] 13. 아르케이온 왕립학술원 운영 규정서(Academy Bible)
+- [WB-0015] 13. 아르케이온 왕립학술원 하급·상급 과정 운영 규정서(Academy Bible)
   - file: world_bible/WB-0015_academy_bible.md
-  - summary: [PUBLIC] 아르케이온은 `12~14세 하급 과정 3년`과 `15세 이후 상급 과정 4년`으로 나뉜다. 하급 과정이 기초과정을 담당하고, 15세 `상급 과정 진입성취평가` 점수대가 입학 즉시 전공 확정 우선권과 초기 서열을 가른다.
+  - summary: [PUBLIC] 아르케이온은 `12~14세 하급 과정 3년`과 `15세 이후 상급 과정 4년`으로 나뉜다.
   - visibility: META
-- [WB-0016] 14. 사회 계층·종족·언어/예절 (Social Stratification)
+- [WB-0016] 14. 사회 구조: 계층 / 혈통 / 종족 / 혼혈 / 예절
   - file: world_bible/WB-0016_social_stratification.md
-  - summary: 1계층: 왕실·대귀족(서명귀족 상층)
+  - summary: [PUBLIC] 벨쿠란의 사회 질서는 화폐보다 `혈통`, `권능`, `노드 접근권`, `기록 권한`에 크게 좌우된다.
   - visibility: PUBLIC
-- [WB-0017] 15. 경제·자원·시장 (Economy & Scarce Resources)
+- [WB-0017] 15. 경제 구조: 권한 / 노드 / 마력석 / 인프라
   - file: world_bible/WB-0017_economy_resources.md
-  - summary: 이 세계의 돈은 화폐만이 아니라 ‘권한과 접근’을 사고파는 구조다: 열람권/면허, 노드(마나결절) 사용권, 관문 통행권, 배지·중계망 접속권, 광장 정렬/보존권(플랫폼 토큰), 영상 슬롯 등이 곧 권력이다.
+  - summary: [PUBLIC] 이 세계의 돈은 화폐만이 아니라 `권한과 접근`을 사고파는 구조다.
   - visibility: PUBLIC
 - [WB-0018] 16. 기록·증거 매체 사전 (Evidence & Records)
   - file: world_bible/WB-0018_evidence_records_glossary.md
-  - summary: 정본 서류: 등록청/공보회/학술원 공보 라인이 정본 번호를 부여한 문서. 마나핵/회로 감정은 벨쿠란의 조기 수련 금지 조사에서 핵심 신체 포렌식이다.
+  - summary: 정본 서류: 등록청/공보회/학술원 공보 라인이 정본 번호를 부여한 문서.
   - visibility: PUBLIC
 - [WB-0019] 17. 각인광장 운영 규칙 상세(플랫폼 스펙)
   - file: world_bible/WB-0019_platform_spec.md
@@ -91,5 +91,13 @@
   - visibility: META
 - [WB-0026] Appendix F. 문장비전(Crest Arcana) & 문장대장(24가문) 상세
   - file: world_bible/WB-0026_appendix_crest_arcana.md
-  - summary: 이 세계는 마법을 통한 ‘기적 발현’ 난이도가 의도적으로 낮춰진 세계다. 따라서 마법은 특권이 아니라, 사회·문화·경제의 ‘기반 인프라’로 취급된다. 왕실은 10세 `계승조회식`과 아동 조기 수련 금지로 서명귀족 혈통을 통제하며, F.4의 렌바렌은 식흔(蝕痕)과 방계 청소 규약을 가진 비밀 가문이다.
+  - summary: [PUBLIC] 문장비전은 창시자 계열 서명과 혈통키에 잠긴 특수 권능 범주로 널리 알려져 있다.
+  - visibility: PUBLIC
+- [WB-0028] Appendix G. 비공개 우주론 SSOT: 관찰자 / 심연 / 아키텍트 / 워든 / Axis
+  - file: world_bible/WB-0028_appendix_hidden_cosmology_ssot.md
+  - summary: 이 부록은 현재 작품 운용에서 `META`로만 유지하는 비공개 우주론 SSOT다.
+  - visibility: META
+- [WB-0029] Appendix H. 적성 체계 공통 원리: 혈통 / 종족 / 권능의 서명 / 마나색 / 마력석
+  - file: world_bible/WB-0029_appendix_aptitude_signature_materials.md
+  - summary: [PUBLIC] 선천적 재능의 편차와 혈통 편중은 세계의 일반 상식이다.
   - visibility: PUBLIC

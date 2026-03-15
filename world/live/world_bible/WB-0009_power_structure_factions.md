@@ -4,8 +4,8 @@ type: world_bible_section
 title: "7. 권력 구조 & 집단(정보·면허·보존권·징계)"
 visibility: PUBLIC
 entities: ["권력", "구조", "집단"]
-last_updated: 2026-03-03
-source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx"
+last_updated: 2026-03-15
+source: "프라미시오_무대용_설정_통합정리.docx + world_ops/cases/CR-20260315-001/tagging_draft.md"
 ---
 
 ## 요약(선택)
@@ -42,7 +42,7 @@ source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx"
 - 현 시점 기준 렌바렌의 식흔 후계자는 10세 장남이며, 그는 두 달 전 `계승조회식` 직후 가문 비밀과 장래의 형제자매 제거 의무를 전수받아 혼란 상태에 놓여 있다.
 - 이 방계 청소 관행은 왕실과 라베르니온 공작가가 공동으로 묵인하는 최상위 흑역사 중 하나다.
 - 가문의 존재 자체가 국가 최상위 기밀이다. 상세는 WB-0026 부록 참조.
-- 직능 상 열구를 통한 외계 문명 유입의 진실(WB-0011 국가 기밀 층위)을 인지한다.
+- 직능 상 열구권 유물 회수와 잔향역 기록 공백의 기밀 층위(WB-0011)를 인지한다.
 - 주인공 키리온 렌바렌은 이 가문의 차남이다.
 
 ### 7.3 학생회 공보국(신문부+홍보/검열 라인)

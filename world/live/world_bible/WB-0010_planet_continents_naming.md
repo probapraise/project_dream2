@@ -4,8 +4,8 @@ type: world_bible_section
 title: "8. 프라미시오 행성: 4대륙/국가/금기(네이밍 PNC-1.0)"
 visibility: PUBLIC
 entities: ["프라미시오", "행성", "4대륙", "국가", "금기"]
-last_updated: 2026-03-03
-source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx"
+last_updated: 2026-03-15
+source: "프라미시오_무대용_설정_통합정리.docx + world_ops/cases/CR-20260315-001/tagging_draft.md"
 ---
 
 ## 요약(선택)
@@ -26,7 +26,7 @@ source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx"
 - 학술원: 아르케이온 왕립학술원(라브리온 성곽 내부).
 - 서명귀족 24가문(문장대장 등재)이 봉건권(징세/치안/병력/추천권 일부)을 가진다.
 ### 8.3 오스테르(마사토라) 금기: 열구와 잔향역
-- [PUBLIC] 열구(裂口)는 ‘세계 시스템 결함’이 물리 공간에 투영된 금기 지점. 접근 기록 자체가 국가급 기밀이다.
+- [PUBLIC] 열구(裂口)는 심층 마나층이 찢어져 드러난 금기 지점으로 여겨지며, 접근 기록 자체가 국가급 기밀이다.
 - 열구 주변에는 완충지대 ‘잔향역(殘響域)’이 형성되고 오염/금기가 동반된다.
 - 관문제국은 관문수(關門守)를 통해 봉쇄선(공개 명칭: 정격선)을 운용하며, 기록·이주·검열이 국가 정체성에 가깝다.
 ### 8.4 네이밍 헌법(PNC-1.0) 적용
