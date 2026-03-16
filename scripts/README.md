@@ -17,6 +17,7 @@ population 운영 원칙:
 - `add_student_fields.py`는 세계관 정본 빌더가 아니라 `current-term snapshot` 재생성기다.
 - 고정 분포는 코드가 아니라 `world/live/population/profiles/current_term_snapshot_v1.yaml`에서 관리한다.
 - 장기 설정 변경은 `WB-0015` 같은 SSOT를 먼저 수정한 뒤 snapshot profile을 맞춘다.
+- narrative frontier가 pre-academy여도 snapshot은 academy layer를 유지한다. 현재 canon 상태는 `world/live/docs/narrative_state.md`, `world/live/population/core_cast/*.md`에서 읽는다.
 
 집필 관련 주요 커맨드:
 - `bash scripts/writing/new_episode_scaffold.sh <episode_id>`

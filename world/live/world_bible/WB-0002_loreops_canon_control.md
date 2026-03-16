@@ -4,15 +4,15 @@ type: world_bible_section
 title: "0. 정합성 운영 규약(LoreOps) & 캐논 컨트롤"
 visibility: META
 entities: ["정합성", "운영", "규약", "캐논", "컨트롤"]
-last_updated: 2026-03-04
-source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx"
+last_updated: 2026-03-16
+source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx + world_ops/cases/CR-20260315-002/runtime_interface_contract.md"
 ---
 
 ## 요약(선택)
 - [PUBLIC] 초반 인물/독자가 ‘세상 상식’으로 받아들이는 정보.
 - [CONFIDENTIAL] 특정 기관·상층부만 아는 정보. 작품 전개에 따라 단계적으로 노출.
 - [META] 작가 전용 ‘세계의 진실’. 작중 직접 노출은 제한(최종부/후일담 등).
-- 불변식(Invariants): 바꾸면 연쇄 수정이 폭발하는 핵심 법칙(예: 마나사인 유통기한/갱신 규칙, 권한 경제(열람권·면허·접속권·영상 슬롯), 커뮤니티 레이어와 UI 공간의 분리 원칙).
+- 불변식(Invariants): 바꾸면 연쇄 수정이 폭발하는 핵심 법칙(예: 마나사인 유통기한/갱신 규칙, 권한 경제(열람권·면허·접속권·영상 업로더 할당량·현상 열람 자격), 커뮤니티 레이어와 UI 공간의 분리 원칙).
 
 ## 본문
 ### 0.1 정보 공개 레벨(스포일러/노출 규칙)
@@ -20,7 +20,7 @@ source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx"
 - [CONFIDENTIAL] 특정 기관·상층부만 아는 정보. 작품 전개에 따라 단계적으로 노출.
 - [META] 작가 전용 ‘세계의 진실’. 작중 직접 노출은 제한(최종부/후일담 등).
 ### 0.2 캐논 레이어(불변/안정/주장)
-- 불변식(Invariants): 바꾸면 연쇄 수정이 폭발하는 핵심 법칙(예: 마나사인 유통기한/갱신 규칙, 권한 경제(열람권·면허·접속권·영상 슬롯), 커뮤니티 레이어와 UI 공간의 분리 원칙).
+- 불변식(Invariants): 바꾸면 연쇄 수정이 폭발하는 핵심 법칙(예: 마나사인 유통기한/갱신 규칙, 권한 경제(열람권·면허·접속권·영상 업로더 할당량·현상 열람 자격), 커뮤니티 레이어와 UI 공간의 분리 원칙).
 - 안정 캐논(Stable): 대체로 유지하지만 수정 가능(영향 분석 필수).
 - 주장/루머(Claim): 논쟁적·가변적·스포일러성 정보. 모순이 ‘오류’가 아니라 ‘세계 내부의 충돌’이 되도록 관리.
 ### 0.3 증거 등급(권장 메타)

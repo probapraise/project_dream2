@@ -3,6 +3,9 @@
 - last_checked: 2026-03-10
 - 이 문서는 bundle-relative 경로를 사용한다.
 - 실행 게이트 산출물은 `runs/`(실제 위치: `artifacts/runs/`)에, Quick Sim 산출물은 `quick_sims/`(실제 위치: `artifacts/quick_sims/`)에, 시뮬레이션 상태 스냅샷은 `board_states/`에 누적된다.
+- 아래 run/board_state 목록은 `current_canon`과 `academy_sandbox`가 섞일 수 있다.
+- 경로가 등록되어 있다는 사실만으로 현재 narrative frontier에서 해당 보드/상태가 이미 개방되었다고 보지 않는다.
+- 현재 서사 시점의 실제 개방 상태는 `docs/narrative_state.md`와 승인된 회차 canon을 우선 참조한다.
 
 ## Quick Sim artifacts (primary explore lane)
 
@@ -60,6 +63,10 @@
 - `board_states/simrun-001_cold_start.json`
 - `board_states/simrun-002_pro_cold_start.json`
 - `board_states/simrun-003_pro_thinking_cold_start.json`
+
+기본 해석:
+- 위 cold-start 스냅샷은 별도 표기가 없으면 bootstrap/sandbox 검증 산출물로 읽는다.
+- current canon 반영본은 대응 회차 canon 또는 후속 apply 문서와 함께 확인한다.
 
 ## Update rule
 

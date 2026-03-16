@@ -6,6 +6,9 @@ P-* 학생 슬롯 current-term snapshot 필드 배정 스크립트
 `world/live/population/profiles/current_term_snapshot_v1.yaml`에 적힌
 현재 학기 스냅샷 분포를 기준으로 `population/P-*.yaml`과
 `population/population_slots.csv`를 재현한다.
+current canon frontier가 pre-academy여도 academy snapshot layer는 유지하며,
+현재 서사 시점은 `world/live/docs/narrative_state.md`와
+`world/live/population/core_cast/*.md`를 먼저 읽어야 한다.
 """
 
 import argparse
@@ -158,6 +161,8 @@ def write_yaml(path: Path, s: dict) -> None:
     d  = s["derived"]
 
     lines = [
+        "# academy current-term snapshot slot",
+        "# current narrative frontier는 별도이며, `world/live/docs/narrative_state.md`를 먼저 본다.",
         f"id: {s['id']}",
         f"background_type: {s['background_type']}",
         f"crest_vision_holder: {'true' if bool(s['crest_vision_holder']) else 'false'}",

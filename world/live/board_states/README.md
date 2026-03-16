@@ -1,6 +1,8 @@
 # board_states
 
 - 이 디렉터리에는 현재 활성 보드의 상태 파일과 실행 결과에서 promote된 상태 스냅샷만 둔다.
+- 이 디렉터리의 스냅샷은 `current_canon`뿐 아니라 `academy_sandbox` bootstrap 검증본을 포함할 수 있다.
+- 파일이 존재한다는 사실만으로 현재 narrative frontier에서 해당 보드가 이미 개방됐다고 보지 않는다.
 - 고정 18보드 bootstrap stub은 2026-03-06부로 live에서 제거했다.
 - `simrun-*.json`: 실행 결과 스냅샷. exploratory/smoke run의 기본 형식이다.
 - `BOARD-###_<slug>.md`: 반복 보드의 human-readable 상태 요약이 필요할 때만 만드는 선택 파일이다.

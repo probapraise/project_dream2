@@ -4,8 +4,8 @@ type: world_bible_section
 title: "Appendix F. 문장비전(Crest Arcana) & 문장대장(24가문) 상세"
 visibility: PUBLIC
 entities: ["문장비전", "서명귀족", "문장대장", "비전관"]
-last_updated: 2026-03-15
-source: "프라미시오_무대용_설정_통합정리.docx + world_ops/cases/CR-20260315-001/tagging_draft.md"
+last_updated: 2026-03-16
+source: "프라미시오_무대용_설정_통합정리.docx + world_ops/cases/CR-20260315-001/tagging_draft.md + world_ops/cases/CR-20260315-002/community_unlock_blueprint.md"
 ---
 
 ## 요약(선택)
@@ -63,7 +63,7 @@ source: "프라미시오_무대용_설정_통합정리.docx + world_ops/cases/CR
 
 #### 7) 기록과 증거의 관계
 - [PUBLIC] 문장비전은 혈통 잠금이라 타인이 그대로 복제하기는 어렵다.
-- [PUBLIC] 그러나 시전 로그, 발췌각인, 영상 슬롯, 감정 기록은 모두 전술과 명예, 약점이 된다.
+- [PUBLIC] 그러나 시전 로그, 발췌각인, `영상 각인`, 감정 기록은 모두 전술과 명예, 약점이 된다.
 - [PUBLIC] 그래서 문장비전은 `보여주면 강해지지만, 보여준 만큼 남는다`는 각인광장 시대의 규칙과 특히 강하게 충돌한다.
 
 #### 8) 안정 전승 시그니처 수(가이드)

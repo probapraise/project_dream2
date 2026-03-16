@@ -9,6 +9,9 @@
 - 같은 라운드 내 정보 격리만 엔진 규칙으로 유지한다.
 - 산출물은 `official`(작품 반영 후보)과 `explore`(탐색 메모)를 분리한다.
 - run 결과가 곧바로 새 live 보드 생성/승격을 뜻하지 않는다.
+- 모든 run은 `temporal_frame`(`current_canon` / `academy_sandbox` / `future_outline`)를 먼저 명시한다.
+- registered 보드를 사용해도 그 보드가 current canon에서 이미 개방됐다는 뜻은 아니다.
+- `current_canon` run은 `docs/narrative_state.md`와 해당 회차 canon에서 실제로 열린 표면만 사용한다.
 - 기본 시뮬레이션 경로는 `Quick Sim`이다.
 - API run은 fallback이자 검증 레인으로 사용한다.
 
@@ -42,6 +45,7 @@
 ### 1. 기존 registered 보드 사용
 - 이미 `community_map.md`에 등록된 보드를 대상으로 실행한다.
 - 같은 보드의 지속 상태가 필요하면 기존 `board_states/` 요약 또는 직전 승인 스냅샷을 함께 참조한다.
+- 단, `academy_sandbox` 등록 보드는 current canon에서 아직 미개방일 수 있으므로 run brief에 시간축을 함께 적는다.
 
 ### 2. `concept_only` 보드 후보로 탐색
 - 장면상 새 게시판이 필요해 보이지만 recurring surface인지 아직 모를 때 사용한다.

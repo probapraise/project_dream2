@@ -2,6 +2,7 @@
 
 | change_id | date | branch | summary | status |
 |---|---|---|---|---|
+| CR-20260315-002 | 2026-03-16 | major | LMM/그리모어 재설계를 live SSOT와 prompt-facing 문서에 반영하고, `하급 과정 = 실제 기능 축적`, `상급 과정 = 확장·제도화`, `현상 각인/영상 각인술`, 후행 LMM/세계수 장기선을 기준으로 전수 감사를 진행 중이며 `academy current-term snapshot`과 `current narrative time`의 경계도 population/simulation 문서에 고정 | in_progress |
 | CR-20260310-001 | 2026-03-10 | minor | Layer B용 인간 백엔드 위장 SOTA/역자동화 노동 놀이 밈을 ATOM-012로 반영하고 master_map/log/hand off를 동기화 | done |
 | CR-20260309-006 | 2026-03-09 | minor | Layer B용 명칭 literal reading/음절 납치 밈을 ATOM-011로 반영하고 케이스/로그/hand off를 동기화 | done |
 | CR-20260309-005 | 2026-03-09 | minor | Layer B ATOM-001~010을 `GRAMMAR-001~003` 초안으로 1차 합성하고 케이스/로그/hand off를 동기화 | done |

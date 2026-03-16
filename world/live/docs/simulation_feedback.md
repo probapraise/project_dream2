@@ -5,6 +5,8 @@
 - 이 문서는 post-run 관찰/문제/후속 작업 메모를 적는 운영 문서다.
 - 실제 run registry와 산출물 위치는 `docs/simulation_state_index.md`를 먼저 본다.
 - 기존 `voice_pack`, `character_card 10명 보정` 체크리스트는 폐기되었다.
+- run 해석 전에는 반드시 해당 실행의 `temporal_frame`을 확인한다.
+- 별도 표기가 없으면 cold-start/board bootstrap run은 current canon 장면이 아니라 academy_sandbox 검증으로 읽는다.
 
 ## Current run baseline
 - 등록된 cold-start run:

@@ -1,17 +1,22 @@
 id: POP-SNAPSHOT-001
 type: population_snapshot_profile
-scope: current_term
+scope: academy_current_term_snapshot
 version: v1
 last_updated: 2026-03-13
+temporal_boundary: >-
+  현재 narrative frontier와 분리된 academy snapshot 재생성 레이어.
+  pre-academy canon과 직접 동기화된 현황표가 아니다.
 description: >-
   아르케이온 재학생 3,600명 current-term 스냅샷을 재생성하기 위한 분포 프로필.
-  세계관 정본 자체가 아니라, 현재 운영 중인 population YAML/CSV를 재현하는 배치 기준이다.
+  세계관 정본 자체가 아니라, academy current-term 기준의 population YAML/CSV를 재현하는 배치 기준이다.
 source_refs:
   - world/live/world_bible/WB-0015_academy_bible.md
   - world/live/world_bible/WB-0005_magic_system.md
 notes:
   - 학파 정원과 직능 분포는 현행 학기 snapshot 재현용이다.
   - 장기 SSOT 변경은 WB-0015를 먼저 수정한 뒤 이 프로필을 조정한다.
+  - current canon frontier가 pre-academy여도 이 프로필은 academy layer를 유지한다.
+  - 현재 서사 시점은 world/live/docs/narrative_state.md를 먼저 본다.
 seed: 42
 expected_slot_count: 3600
 

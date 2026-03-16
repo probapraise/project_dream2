@@ -3,15 +3,20 @@
 ## 상태
 - 이 문서는 고정 4권역/18보드 모델을 사용하지 않는다.
 - 커뮤니티/게시판 수는 작품 진행에 따라 증감한다.
-- 본 문서는 현재 활성 구조만 기록한다.
+- 본 문서는 `registered` 커뮤니티/게시판 레지스트리다.
+- 여기에는 `current_canon`뿐 아니라 `academy_sandbox`용 등록 표면도 함께 들어갈 수 있다.
+- 보드가 여기에 등록되어 있어도 현재 narrative frontier에서 이미 개방됐다는 뜻은 아니다.
+- 현재 서사 시점의 실제 개방 여부는 `docs/narrative_state.md`와 해당 회차 canon을 우선 참조한다.
 - 과거 고정 18보드 bootstrap stub은 live에서 제거되었고, 역사 자료는 quarantine에만 남긴다.
 
-## Active communities
+## Registered communities
 
 ### BOARD-001 (레이어 B 대상)
 - `board_id`: BOARD-001
 - `display_name`: 낙서장
 - `lifecycle_status`: registered
+- `temporal_frame`: academy_current_term_bootstrap
+- `canon_open_status`: pre-academy frontier에서는 아직 미개방
 - `tone`: 혼돈·냉소·내부자 유머
 - `anonymity_mode`: 완전 익명
 - `taboos[]`: (ATOM 누적 후 도출)
@@ -30,13 +35,13 @@
 ### 1. `concept_only`
 - 장면 기획/시뮬레이션 시드 안에서만 쓰는 임시 보드 후보
 - 아직 recurring surface가 아니므로 `BOARD-###` ID를 부여하지 않는다.
-- `community_map.md` Active communities에 등록하지 않는다.
+- `community_map.md` Registered communities에 등록하지 않는다.
 - run 문서나 프롬프트 안에서는 기능 설명형 이름으로만 부른다.
 
 ### 2. `registered`
 - 작가가 반복 사용 가능한 게시판으로 승인한 상태
 - 이 단계에서만 새 `BOARD-###` ID를 부여한다.
-- `community_map.md` Active communities에 등록한다.
+- `community_map.md` Registered communities에 등록한다.
 - 아직 지속 상태가 필요 없다면 `board_states/` 파일은 만들지 않는다.
 
 ### 3. `stateful`
@@ -46,7 +51,7 @@
 
 ### 4. `retired`
 - 더 이상 활성 구조에 쓰지 않는 상태
-- Active communities에서 제거한다.
+- Registered communities에서 제거한다.
 - 필요 시 history/quarantine에만 흔적을 남긴다.
 
 ## ID Policy

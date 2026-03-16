@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild character_index_v2 from population slots."""
+"""Rebuild academy current-term character_index_v2 from population slots."""
 
 from __future__ import annotations
 
@@ -158,15 +158,19 @@ def main() -> int:
 
     generated_at = datetime.now().strftime("%Y-%m-%d")
     lines: list[str] = []
-    lines.append("# character_index_v2 (population bootstrap)")
+    lines.append("# character_index_v2 (academy population bootstrap)")
     lines.append("")
     lines.append(f"- generated_at: {generated_at}")
     lines.append(f"- source_csv: `{args.population_csv}`")
     lines.append(f"- total_p_slots: {total}")
+    lines.append("- scope: academy current-term simulation bootstrap")
+    lines.append("- temporal_boundary: 현재 narrative time과 분리된 academy-slot registry")
     lines.append("- ssot: `population/P-*.yaml` + `population/population_slots.csv`")
     lines.append("- note: 기존 CH-* 카드/보이스팩 체계는 2026-03-04부로 폐기 완료(영구 삭제). 활성 캐릭터 체계는 `population/P-*`만 사용.")
+    lines.append("- read_rule: 현재 서사 시점과 실제 장면 등장 상태는 `docs/narrative_state.md`, `population/core_cast/*.md`를 먼저 본다.")
     lines.append("")
     lines.append("## 1) Status Registry")
+    lines.append("- 본 표의 count는 academy bootstrap layer 기준이며, pre-academy current canon의 장면 현황표가 아니다.")
     lines.append("| status | count |")
     lines.append("|---|---:|")
     for status in ("uninstantiated", "instantiated", "named"):
@@ -212,9 +216,10 @@ def main() -> int:
         )
     lines.append("")
     lines.append("## 4) Reverse Indexes")
-    lines.append("### 4.1 Active Index (instantiated 이상만)")
+    lines.append("### 4.1 Academy-layer Active Index (instantiated 이상만)")
     lines.append(f"- active_count: {len(active_ids)}")
     lines.append(f"- pool_file: `docs/character_index_pools/active_instantiated_ids.txt`")
+    lines.append("- note: 이 active_count는 academy simulation layer에서 instantiated/named 된 슬롯 수이며, current canon의 실출연 인원 수와 다르다.")
     lines.append("")
     lines.append("### 4.2 Candidate Pools (P-* 전체에서 사전 계산)")
     lines.append(f"- NFC 상위 20%: {len(nfc_top_ids)}명 (`docs/character_index_pools/nfc_top20_ids.txt`)")

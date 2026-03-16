@@ -1,6 +1,6 @@
 # world_bible_index
 
-- regenerated_at: 2026-03-15
+- regenerated_at: 2026-03-16
 - source: world_bible/WB-*.md
 - note: 정리 작업으로 충돌 파일 삭제 후 최소 인덱스로 재생성
 
@@ -15,7 +15,7 @@
   - visibility: META
 - [WB-0003] 1. 한눈 요약(로그라인/테마/주인공 고정)
   - file: world_bible/WB-0003_onepage_summary.md
-  - summary: 상층부만 누리던 전심 통신과 휘발되는 마나 기록의 시대. 백작가 차남 ‘키리온 렌바렌’은 성목을 학습형 마나 모델(LMM)로 진화시켜, 처음으로 ‘검색·인용·증거화 가능한 공론장(각인광장)’을 만들고 권력의 방향을 뒤집는다.
+  - summary: 상층부만 누리던 전심 통신과 휘발되는 마나 기록의 시대. 백작가 차남 ‘키리온 렌바렌’은 그리모어와 성목 분지를 엮어, 처음으로 ‘검색·인용·증거화 가능한 공론장(각인광장)’을 단계적으로 열고 권력의 방향을 뒤집는다.
   - visibility: PUBLIC
 - [WB-0004] 2. 세계의 일반 상식(기록/통신/미디어)
   - file: world_bible/WB-0004_world_common_sense.md
@@ -33,9 +33,9 @@
   - file: world_bible/WB-0007_badge_network.md
   - summary: [PUBLIC] `마나 사인`은 개인의 고유 인증 수단이고, `하급 정령 계약`은 노드 인프라 접속권이며, `배지`는 둘을 실무적으로 묶어 쓰는 표준 단말이다.
   - visibility: PUBLIC
-- [WB-0008] 6. 각인광장(Archive Plaza): 광장식(UI)·플랫폼 경제·영상제약·LMM
+- [WB-0008] 6. 각인광장(Archive Plaza): 공용 런타임·플랫폼 경제·현상/영상·LMM
   - file: world_bible/WB-0008_archive_plaza_overview.md
-  - summary: 배지로 입력된 발화를 ‘문장 단위 텍스트 패킷’으로 정형화해 성목 코어에 각인 저장하고, 스레드/댓글/정렬/추천/신고/잠금/보존권 같은 UI 규칙으로 ‘대중 공론장’을 성립시킨 플랫폼.
+  - summary: 각인광장은 `그리모어 -> 성목 분지 -> 배지` 삼층 구조 위에서 `조회 -> 보충 -> 질문 -> 검색 -> 추천/정렬 -> 고밀도 기록 -> 현상 열람실 -> 영상 각인 플랫폼` 순으로 열리는 로컬 공용 인프라다.
   - visibility: PUBLIC
 - [WB-0009] 7. 권력 구조 & 집단(정보·면허·보존권·징계)
   - file: world_bible/WB-0009_power_structure_factions.md
@@ -51,7 +51,7 @@
   - visibility: CONFIDENTIAL
 - [WB-0012] 10. 핵심 갈등 아크(초-중반): 성목 각성/엘프 클랜/플랫폼 전쟁
   - file: world_bible/WB-0012_core_conflict_arcs.md
-  - summary: 각인광장 출현으로, 공보회·학생회 공보국·등록청·서약원이 ‘정렬/봉문/징계/보존권’으로 플랫폼을 길들이려 든다.
+  - summary: 각인광장과 후행 `현상 열람실/영상 각인술`이 열리며, 공보회·학생회·등록청·서약원·학파 파벌이 정렬, 봉문, 업로더 자격, 열람 자격을 둘러싸고 충돌한다.
   - visibility: PUBLIC
 - [WB-0013] 11. 연표(최근 10년) & 사건 엔진
   - file: world_bible/WB-0013_timeline_event_engine.md
@@ -71,11 +71,11 @@
   - visibility: PUBLIC
 - [WB-0018] 16. 기록·증거 매체 사전 (Evidence & Records)
   - file: world_bible/WB-0018_evidence_records_glossary.md
-  - summary: 정본 서류: 등록청/공보회/학술원 공보 라인이 정본 번호를 부여한 문서.
+  - summary: `정본 서류`, `배지 로그`, `감정 기록`, `영상 각인`, `현상 각인`처럼 이 세계에서 진실성과 증거력을 나누는 기록 매체들을 정의한다.
   - visibility: PUBLIC
 - [WB-0019] 17. 각인광장 운영 규칙 상세(플랫폼 스펙)
   - file: world_bible/WB-0019_platform_spec.md
-  - summary: [PUBLIC] 정규 계정(배지 연동): 재학생/교직원 기본. 운영진에 신원 항상 노출.
+  - summary: [PUBLIC] 각인광장은 완성형 게시판이 아니라 단계적으로 해금되는 인프라이고, `현상 열람실`과 `영상 각인 플랫폼`도 권한·할당량·로그 추적 아래에서만 열린다.
   - visibility: PUBLIC
 - [WB-0021] Appendix A. 용어/별칭 매핑(구용어→현행)
   - file: world_bible/WB-0021_appendix_terms_aliases.md

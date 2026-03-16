@@ -1,12 +1,16 @@
-# character_index_v2 (population bootstrap)
+# character_index_v2 (academy population bootstrap)
 
-- generated_at: 2026-03-04
+- generated_at: 2026-03-16
 - source_csv: `/home/dlwhdgus/project_dream2/world/live/population/population_slots.csv`
 - total_p_slots: 3600
+- scope: academy current-term simulation bootstrap
+- temporal_boundary: 현재 narrative time과 분리된 academy-slot registry
 - ssot: `population/P-*.yaml` + `population/population_slots.csv`
 - note: 기존 CH-* 카드/보이스팩 체계는 2026-03-04부로 폐기 완료(영구 삭제). 활성 캐릭터 체계는 `population/P-*`만 사용.
+- read_rule: 현재 서사 시점과 실제 장면 등장 상태는 `docs/narrative_state.md`, `population/core_cast/*.md`를 먼저 본다.
 
 ## 1) Status Registry
+- 본 표의 count는 academy bootstrap layer 기준이며, pre-academy current canon의 장면 현황표가 아니다.
 | status | count |
 |---|---:|
 | uninstantiated | 3599 |
@@ -203,9 +207,10 @@
 | 흑 | 연구과정 | `common_noble` | UNASSIGNED | 2 | 0 | 2 |
 
 ## 4) Reverse Indexes
-### 4.1 Active Index (instantiated 이상만)
+### 4.1 Academy-layer Active Index (instantiated 이상만)
 - active_count: 1
 - pool_file: `docs/character_index_pools/active_instantiated_ids.txt`
+- note: 이 active_count는 academy simulation layer에서 instantiated/named 된 슬롯 수이며, current canon의 실출연 인원 수와 다르다.
 
 ### 4.2 Candidate Pools (P-* 전체에서 사전 계산)
 - NFC 상위 20%: 720명 (`docs/character_index_pools/nfc_top20_ids.txt`)
