@@ -2,7 +2,8 @@
 
 | change_id | date | branch | summary | status |
 |---|---|---|---|---|
-| CR-20260315-002 | 2026-03-16 | major | LMM/그리모어 재설계를 live SSOT와 prompt-facing 문서에 반영하고, `하급 과정 = 실제 기능 축적`, `상급 과정 = 확장·제도화`, `현상 각인/영상 각인술`, 후행 LMM/세계수 장기선을 기준으로 전수 감사를 진행 중이며 `academy current-term snapshot`과 `current narrative time`의 경계도 population/simulation 문서에 고정 | in_progress |
+| CR-20260316-002 | 2026-03-16 | minor | `영상 슬롯 경제`를 제외한 `CR-20260315-002` 잔여 드리프트를 live SSOT에 반영해 `주좌 / 전위권`, `자생 노드`, 일반 노드/성목의 신격·정령군 차이, `frontier-feudal` 질서, `노드 안정화`, `픽시 둥지화 -> 요정 동행`, `질의 인장 / 기록 인장` 메커니즘을 `WB-0003/0006/0008/0015/0017/0019`에 동기화 | done |
+| CR-20260315-002 | 2026-03-16 | major | LMM/그리모어 재설계의 live SSOT 반영을 완료해 `픽시 계약` 명칭, `색인 -> 주석 -> 실타래` 전반부 성장선, `비공식 운용 -> 감리 허가 -> 시범 운영 -> 드리아드 협약` 상태기계, 각인광장 공용 패킷/자동 서명 채널, `관리/정화`, `현상 각인/영상 각인술`, 하급/상급 과정 축적선과 `academy current-term snapshot` 경계를 world_bible/population/prompt-facing 문서에 동기화 | done |
 | CR-20260310-001 | 2026-03-10 | minor | Layer B용 인간 백엔드 위장 SOTA/역자동화 노동 놀이 밈을 ATOM-012로 반영하고 master_map/log/hand off를 동기화 | done |
 | CR-20260309-006 | 2026-03-09 | minor | Layer B용 명칭 literal reading/음절 납치 밈을 ATOM-011로 반영하고 케이스/로그/hand off를 동기화 | done |
 | CR-20260309-005 | 2026-03-09 | minor | Layer B ATOM-001~010을 `GRAMMAR-001~003` 초안으로 1차 합성하고 케이스/로그/hand off를 동기화 | done |

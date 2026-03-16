@@ -27,15 +27,15 @@
   - visibility: PUBLIC
 - [WB-0006] 4. 특수 지형 노드와 성목(Irminsul): 영험지 / 신격 / 정령군
   - file: world_bible/WB-0006_irminsul_infra.md
-  - summary: [PUBLIC] 성목, 성산, 폭포, 화산 같은 일부 특수 지형은 영험지이자 마나 노드로 여겨진다.
+  - summary: [PUBLIC] 마나 노드는 단순한 에너지 결절이 아니라, 시간이 지나면 `주좌`와 `전위권`을 갖춘 영험지/영지로 굳는 특수 지형 노드다.
   - visibility: PUBLIC
-- [WB-0007] 5. 배지 네트워크: 마나 사인 / 하급 정령 계약 / 표준 단말
+- [WB-0007] 5. 배지 네트워크: 마나 사인 / 픽시 계약 / 표준 단말
   - file: world_bible/WB-0007_badge_network.md
-  - summary: [PUBLIC] `마나 사인`은 개인의 고유 인증 수단이고, `하급 정령 계약`은 노드 인프라 접속권이며, `배지`는 둘을 실무적으로 묶어 쓰는 표준 단말이다.
+  - summary: [PUBLIC] `마나 사인`은 개인의 고유 인증 수단이고, `픽시 계약`은 노드 인프라 접속권이며, `배지`는 둘을 실무적으로 묶어 쓰는 표준 단말이다.
   - visibility: PUBLIC
-- [WB-0008] 6. 각인광장(Archive Plaza): 공용 런타임·플랫폼 경제·현상/영상·LMM
+- [WB-0008] 6. 각인광장(Archive Plaza): 공용 런타임·플랫폼 경제·현상/영상
   - file: world_bible/WB-0008_archive_plaza_overview.md
-  - summary: 각인광장은 `그리모어 -> 성목 분지 -> 배지` 삼층 구조 위에서 `조회 -> 보충 -> 질문 -> 검색 -> 추천/정렬 -> 고밀도 기록 -> 현상 열람실 -> 영상 각인 플랫폼` 순으로 열리는 로컬 공용 인프라다.
+  - summary: 각인광장은 `색인 -> 주석 -> 실타래`로 자란 그리모어가 `성목 분지`에 기록 구조를 단계적으로 외부화하며 생겨난 로컬 공용 플랫폼이다.
   - visibility: PUBLIC
 - [WB-0009] 7. 권력 구조 & 집단(정보·면허·보존권·징계)
   - file: world_bible/WB-0009_power_structure_factions.md
@@ -51,7 +51,7 @@
   - visibility: CONFIDENTIAL
 - [WB-0012] 10. 핵심 갈등 아크(초-중반): 성목 각성/엘프 클랜/플랫폼 전쟁
   - file: world_bible/WB-0012_core_conflict_arcs.md
-  - summary: 각인광장과 후행 `현상 열람실/영상 각인술`이 열리며, 공보회·학생회·등록청·서약원·학파 파벌이 정렬, 봉문, 업로더 자격, 열람 자격을 둘러싸고 충돌한다.
+  - summary: 각인광장은 단일 사건처럼 한 번에 출현하는 것이 아니라, `조회 -> 보충 -> 질문 -> 검색 -> 추천/정렬 -> 관리/정화 -> 고밀도 기록 -> 현상 열람실 -> 영상 각인 플랫폼` 순으로 단계별 개시된다.
   - visibility: PUBLIC
 - [WB-0013] 11. 연표(최근 10년) & 사건 엔진
   - file: world_bible/WB-0013_timeline_event_engine.md
@@ -71,11 +71,11 @@
   - visibility: PUBLIC
 - [WB-0018] 16. 기록·증거 매체 사전 (Evidence & Records)
   - file: world_bible/WB-0018_evidence_records_glossary.md
-  - summary: `정본 서류`, `배지 로그`, `감정 기록`, `영상 각인`, `현상 각인`처럼 이 세계에서 진실성과 증거력을 나누는 기록 매체들을 정의한다.
+  - summary: 정본 서류: 등록청/공보회/학술원 공보 라인이 정본 번호를 부여한 문서.
   - visibility: PUBLIC
 - [WB-0019] 17. 각인광장 운영 규칙 상세(플랫폼 스펙)
   - file: world_bible/WB-0019_platform_spec.md
-  - summary: [PUBLIC] 각인광장은 완성형 게시판이 아니라 단계적으로 해금되는 인프라이고, `현상 열람실`과 `영상 각인 플랫폼`도 권한·할당량·로그 추적 아래에서만 열린다.
+  - summary: [PUBLIC] 각인광장은 한 번에 완성형으로 열리는 게시판이 아니라, `조회 전용 -> 보충 -> 질문 -> 검색 -> 추천/정렬 -> 관리/정화 -> 고밀도 기록 -> 현상 열람실 -> 영상 각인 플랫폼` 순으로 확장되는 인프라다.
   - visibility: PUBLIC
 - [WB-0021] Appendix A. 용어/별칭 매핑(구용어→현행)
   - file: world_bible/WB-0021_appendix_terms_aliases.md
