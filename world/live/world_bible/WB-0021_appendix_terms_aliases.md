@@ -4,8 +4,8 @@ type: world_bible_section
 title: "Appendix A. 용어/별칭 매핑(구용어→현행)"
 visibility: PUBLIC
 entities: ["용어", "별칭", "매핑"]
-last_updated: 2026-03-13
-source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx"
+last_updated: 2026-03-17
+source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx + world_ops/cases/CR-20260316-001/phase0_major_rename_map.md + world_ops/cases/CR-20260316-001/phase1_red_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_blue_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_blue_tower_audit.md"
 ---
 
 ## 요약(선택)
@@ -28,6 +28,12 @@ source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx"
 | 복원형 | 형 이름으로 쓰지 않음 | `복원`은 효과 태그로 내려감 |
 | 판독형 | 형 이름으로 쓰지 않음 | 보통 `탐지 + 판독 태그`로 읽음 |
 | 각인학파(구 학내 속칭) | 보존각인학파 | 아카이빙 중심. 설명할 때는 `표식 + 탐지` 계열로 읽음 |
+| 열압포격학파 | 홍련포화학파 | 적탑 포화축. 화탄/화선/낙성 실루엣을 앞세운 현행 명칭 |
+| 용융형상학파 | 용철무구학파 | 적탑 무구축. 재주형/장비 파괴/즉석 병장 중심 현행 명칭 |
+| 연무통제학파 | 화연장막학파 | 적탑 장막축. 연막/화선/화재 구획 중심 현행 명칭 |
+| 성벽수호학파 | 경면수호학파 | 청탑 경면축. 반사/봉문/거점 수호 중심 현행 명칭 |
+| 결박제어학파 | 빙쇄구속학파 | 청탑 빙결축. 빙결 구속과 시전 봉쇄 중심 현행 명칭 |
+| 좌표감리학파 | 수류유도학파 | 청탑 유수축. 관문 이미지는 폐기하고 수맥정 기반 유체 흐름 제어로 재설계 |
 | 전장연산학파 | 군진선도학파 | 황탑 재편 후 현행 명칭 |
 | 법정무효학파 | 서약집행학파 | 백탑 재편 후 현행 명칭 |
 | 오염격리학파 | 단절추방학파 | 흑탑 재편 후 현행 명칭 |

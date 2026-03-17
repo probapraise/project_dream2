@@ -3,7 +3,7 @@
 - change_id: CR-20260316-001
 - date: 2026-03-16
 - requester: writer
-- status: phase0_in_progress
+- status: phase4_partial_sync_done
 - source_of_truth:
   - primary:
     - world/live/docs/master_map.md
@@ -80,4 +80,5 @@
 - approved_at: 2026-03-16
 - note:
   - 작가가 `fantasy_magic_casebook.xlsx` 기준의 오버홀 착수를 승인했다.
-  - 현재 상태는 Phase 0 준비 문서 작성과 영향 범위 고정까지를 목표로 한다.
+  - 현재 상태는 Phase 1 중앙 프레임워크(`독자용 슬롯 문법`, `교차색 콤보`, `마법/학파용 작명 가드레일`) 확정 작업까지 포함한다.
+  - 2026-03-17 기준 적탑/청탑 6학파는 live SSOT에 partial sync 완료. 나머지 탑과 전역 규칙은 후속 검토 후 반영 예정.

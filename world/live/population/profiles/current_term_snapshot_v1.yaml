@@ -2,7 +2,7 @@ id: POP-SNAPSHOT-001
 type: population_snapshot_profile
 scope: academy_current_term_snapshot
 version: v1
-last_updated: 2026-03-13
+last_updated: 2026-03-17
 temporal_boundary: >-
   현재 narrative frontier와 분리된 academy snapshot 재생성 레이어.
   pre-academy canon과 직접 동기화된 현황표가 아니다.
@@ -47,17 +47,17 @@ mana_color_map:
 
 tower_majors:
   청탑:
-    - ["성벽수호학파", 520]
-    - ["결박제어학파", 350]
-    - ["좌표감리학파", 30]
+    - ["경면수호학파", 520]
+    - ["빙쇄구속학파", 350]
+    - ["수류유도학파", 30]
   황탑:
     - ["탄도관성학파", 350]
     - ["자계유도학파", 160]
     - ["군진선도학파", 140]
   적탑:
-    - ["열압포격학파", 380]
-    - ["용융형상학파", 165]
-    - ["연무통제학파", 55]
+    - ["홍련포화학파", 380]
+    - ["용철무구학파", 165]
+    - ["화연장막학파", 55]
   녹탑:
     - ["응급약리학파", 330]
     - ["생태계약학파", 150]
