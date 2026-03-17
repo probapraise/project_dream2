@@ -2,7 +2,7 @@
 
 | change_id | date | branch | summary | status |
 |---|---|---|---|---|
-| CR-20260316-001 | 2026-03-17 | major (partial live sync) | `CR-20260316-001` 전체를 일괄 반영하지 않고 작가 검수가 끝난 적탑/청탑 6학파만 먼저 live SSOT에 동기화해 `홍련포화 / 용철무구 / 화연장막 / 경면수호 / 빙쇄구속 / 수류유도`를 `WB-0015`, alias, academy current-term snapshot, population CSV/YAML, population audit/recompute 스크립트에 반영 | partial |
+| CR-20260316-001 | 2026-03-17 | major (partial live sync) | `CR-20260316-001` 전체를 일괄 반영하지 않고 작가 검수가 끝난 적탑/청탑/녹탑 9학파만 먼저 live SSOT에 동기화해 `홍련포화 / 용철무구 / 화연장막 / 경면수호 / 빙쇄구속 / 수류유도 / 생맥약초 / 야생교감 / 포자영토`를 `WB-0015`, alias, academy current-term snapshot, population CSV/YAML, population audit/recompute 스크립트에 반영 | partial |
 | CR-20260316-002 | 2026-03-16 | minor | `영상 슬롯 경제`를 제외한 `CR-20260315-002` 잔여 드리프트를 live SSOT에 반영해 `주좌 / 전위권`, `자생 노드`, 일반 노드/성목의 신격·정령군 차이, `frontier-feudal` 질서, `노드 안정화`, `픽시 둥지화 -> 요정 동행`, `질의 인장 / 기록 인장` 메커니즘을 `WB-0003/0006/0008/0015/0017/0019`에 동기화 | done |
 | CR-20260315-002 | 2026-03-16 | major | LMM/그리모어 재설계의 live SSOT 반영을 완료해 `픽시 계약` 명칭, `색인 -> 주석 -> 실타래` 전반부 성장선, `비공식 운용 -> 감리 허가 -> 시범 운영 -> 드리아드 협약` 상태기계, 각인광장 공용 패킷/자동 서명 채널, `관리/정화`, `현상 각인/영상 각인술`, 하급/상급 과정 축적선과 `academy current-term snapshot` 경계를 world_bible/population/prompt-facing 문서에 동기화 | done |
 | CR-20260310-001 | 2026-03-10 | minor | Layer B용 인간 백엔드 위장 SOTA/역자동화 노동 놀이 밈을 ATOM-012로 반영하고 master_map/log/hand off를 동기화 | done |

@@ -5,7 +5,7 @@ title: "Appendix A. 용어/별칭 매핑(구용어→현행)"
 visibility: PUBLIC
 entities: ["용어", "별칭", "매핑"]
 last_updated: 2026-03-17
-source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx + world_ops/cases/CR-20260316-001/phase0_major_rename_map.md + world_ops/cases/CR-20260316-001/phase1_red_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_blue_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_blue_tower_audit.md"
+source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx + world_ops/cases/CR-20260316-001/phase0_major_rename_map.md + world_ops/cases/CR-20260316-001/phase1_red_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_blue_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_blue_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_green_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_green_tower_audit.md"
 ---
 
 ## 요약(선택)
@@ -34,6 +34,9 @@ source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx + 
 | 성벽수호학파 | 경면수호학파 | 청탑 경면축. 반사/봉문/거점 수호 중심 현행 명칭 |
 | 결박제어학파 | 빙쇄구속학파 | 청탑 빙결축. 빙결 구속과 시전 봉쇄 중심 현행 명칭 |
 | 좌표감리학파 | 수류유도학파 | 청탑 유수축. 관문 이미지는 폐기하고 수맥정 기반 유체 흐름 제어로 재설계 |
+| 응급약리학파 | 생맥약초학파 | 녹탑 약초축. 준비한 약재를 증폭·유도하는 전장 약사형 현행 명칭 |
+| 생태계약학파 | 야생교감학파 | 녹탑 교감축. 정령·몬스터와의 개인화 계약과 역할 모사 중심 현행 명칭 |
+| 균사환경학파 | 포자영토학파 | 녹탑 포자축. 개토와 포자 배양, 영토화, 자원 회수 중심 현행 명칭 |
 | 전장연산학파 | 군진선도학파 | 황탑 재편 후 현행 명칭 |
 | 법정무효학파 | 서약집행학파 | 백탑 재편 후 현행 명칭 |
 | 오염격리학파 | 단절추방학파 | 흑탑 재편 후 현행 명칭 |
