@@ -5,7 +5,7 @@ title: "Appendix A. 용어/별칭 매핑(구용어→현행)"
 visibility: PUBLIC
 entities: ["용어", "별칭", "매핑"]
 last_updated: 2026-03-17
-source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx + world_ops/cases/CR-20260316-001/phase0_major_rename_map.md + world_ops/cases/CR-20260316-001/phase1_red_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_blue_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_blue_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_green_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_green_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_yellow_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_yellow_tower_audit.md"
+source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx + world_ops/cases/CR-20260316-001/phase0_major_rename_map.md + world_ops/cases/CR-20260316-001/phase0_spell_rename_map.md + world_ops/cases/CR-20260316-001/phase1_red_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_blue_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_blue_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_green_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_green_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_yellow_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_yellow_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_purple_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_purple_tower_audit.md"
 ---
 
 ## 요약(선택)
@@ -41,6 +41,36 @@ source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx + 
 | 자계유도학파 | 뇌철견인학파 | 황탑 뇌전축. 철침 표식, 금속 견인, 전기 연쇄 중심 현행 명칭 |
 | 군진선도학파 | 결정변성학파 | 황탑 변성축. 결정침, 취화·경결, 상변고정 중심 현행 명칭 |
 | 전장연산학파 | 결정변성학파 | 황탑 셋째 축의 구 구명. 현행명은 변성축 재설계까지 포함한 최종 표기 |
+| 발췌색인 | 각인연장 | 보존축 입문식. 시각 각인의 유지 시간을 늘리는 현행 명칭 |
+| 매체보존막 | 음성각인 | 보존축 입문식. 음성과 음악을 매체에 저장하는 현행 명칭 |
+| 조건영속각인 | 조건각인 | 보존축 초급 보안식. 열람 조건 부여가 핵심인 현행 명칭 |
+| 추적회랑 | 열상각인 | 보존축 초급 전투식. 절개형 각인을 활성화해 상처를 내는 현행 명칭 |
+| 반향재현 | 향미각인 | 보존축 중급 유틸. 냄새와 맛을 매체에 새기는 현행 명칭 |
+| 만상채록 | 서고색인 | 구 보존축 중급 색인식. 현행 상급식 `만상채록`과 구별되는 이름이다 |
+| 군집색인 | 통각각인 | 보존축 상급 금지술. 통각을 다수에게 각인하는 현행 명칭 |
+| 자기복기각인 | 만상채록 | 보존축 상급 기록식. 기존 `현상 각인` 계열을 가리키는 현행 명칭 |
+| 사후채록 | 지식각인 | 보존축 상급 기록식. 발화 전 생각을 저장하는 현행 명칭 |
+| 공기서고 | 만상기록고 | 보존축 오의. 열람 불가능한 근원 저장소 보존식을 가리키는 현행 명칭 |
+| 교신전심학파 | 전심공명학파 | 자탑 전달축. `심향채청 / 공명연결 / 전심전이` 중심의 현행 명칭 |
+| 서명채청 | 심향채청 | 자탑 전달축 입문식. 감정과 정신 서명 흔들림을 듣는 현행 명칭 |
+| 정신막 | 전심막 | 자탑 전달축 입문 방호식. 공포와 혼선을 막는 현행 명칭 |
+| 잔향교신 | 잔향전언 | 자탑 전달축 초급 전령식. 공기 잔향에 짧은 의도를 싣는 현행 명칭 |
+| 감각정렬 | 감각정돈 | 자탑 전달축 초급 유틸. 감각 붕괴와 멀미를 가라앉히는 현행 명칭 |
+| 전심링크 | 공명연결 | 자탑 전달축 중급 핵심식. 소수 인원의 사고 리듬을 묶는 현행 명칭 |
+| 소문혼선 | 심향쇄파 | 자탑 전달축 중급 직격식. 잡음 공명으로 감각과 사고를 후려치는 현행 명칭 |
+| 우선청취 | 쌍심교신 | 자탑 전달축 상급 교신식. 양방향 텔레파시를 여는 현행 명칭 |
+| 교신폐막 | 전심폐막 | 자탑 전달축 상급 차단식. 적 교신과 원격 지시를 끊는 현행 명칭 |
+| 명령반사 | 단문령 | 자탑 전달축 상급 송신식. 짧은 지시를 다수 아군에게 즉시 보내는 현행 명칭 |
+| 합창령 | 전심전이 | 자탑 전달축 오의. 확보한 회선을 좌표로 사람과 물자를 전송하는 현행 명칭 |
+| 허상연출학파 | 환영직조학파 | 자탑 합성축. `왜곡점 / 환영투사 / 환영극장` 중심의 현행 명칭 |
+| 허상막 | 환영투사 | 자탑 초급 투사식. 학술원 지급 배지에 내장되는 `환영극장` 하위호환 |
+| 주의편광 | 유인표식 | 자탑 초급 유인식. 허상이나 빈 공간에 거짓 중요도를 붙이는 현행 명칭 |
+| 무대전환 | 허상교대 | 자탑 중급 연계식. `허수분신`과 자신의 위치를 바꿔 보이게 하는 현행 명칭 |
+| 분신시차 | 허수분신 | 자탑 중급 분신식. 술자와 다른 궤도를 따로 움직이는 가짜 분신 현행 명칭 |
+| 감정색채 | 분위기착색 | 자탑 비전투 유틸. 공간과 군중에 해석 분위기를 덧칠하는 현행 명칭 |
+| 관객분리 | 환영극장 | 자탑 간판기. `왜곡점` 기반 구형 체험실을 세우는 상급식 |
+| 허상회수 | 허상붕락 | 자탑 상급 공격식. 준비한 환영 자산과 기준점을 실타격으로 붕락시키는 현행 명칭 |
+| 자색대막 | 자색환계 | 자탑 오의. 현실 전장 위에 환영 레이어를 덧씌우는 증강현실형 환계 |
 | 법정무효학파 | 서약집행학파 | 백탑 재편 후 현행 명칭 |
 | 오염격리학파 | 단절추방학파 | 흑탑 재편 후 현행 명칭 |
 
