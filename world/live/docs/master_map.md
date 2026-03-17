@@ -70,7 +70,7 @@
 - quarantine_index: quarantine/README.md
 
 ## Recent changes (selected)
-- 2026-03-17 WORLDBUILD-024: `WB-0015`, `WB-0021`, academy current-term snapshot, population CSV/YAML, population audit/recompute 스크립트에 `CR-20260316-001`의 적탑/청탑/녹탑 확정안만 먼저 반영해 `홍련포화 / 용철무구 / 화연장막 / 경면수호 / 빙쇄구속 / 수류유도 / 생맥약초 / 야생교감 / 포자영토` 9학파명을 live SSOT에 부분 동기화
+- 2026-03-17 WORLDBUILD-024: `WB-0015`, `WB-0021`, academy current-term snapshot, population CSV/YAML, population audit/recompute 스크립트에 `CR-20260316-001`의 적탑/청탑/녹탑/황탑 확정안까지 반영해 `홍련포화 / 용철무구 / 화연장막 / 경면수호 / 빙쇄구속 / 수류유도 / 생맥약초 / 야생교감 / 포자영토 / 황도유성 / 뇌철견인 / 결정변성` 12학파명을 live SSOT에 부분 동기화
 - 2026-03-16 WORLDBUILD-023: `WB-0003/0006/0008/0015/0017/0019`를 재동기화해 `주좌 / 전위권`, `모든 마나 노드 = 특수 지형 노드` 바닥 규칙, 성목의 `자생 노드` 성격, 일반 노드/성목의 신격·정령군 차이, `frontier-feudal` 질서, `노드 안정화`, `픽시 둥지화 -> 요정 동행`, `질의 인장 / 기록 인장` 메커니즘을 live SSOT에 반영
 - 2026-03-16 WORLDBUILD-022: `WB-0003/0005/0006/0007/0008/0012/0017/0019/0029`, `NC-0001`, `story_arcs`, `memory_tiers/long_term`를 다시 동기화해 `픽시 계약` 명칭, `색인 -> 주석 -> 실타래` 전반부 성장선, `비공식 운용 -> 감리 허가 -> 시범 운영 -> 드리아드 협약` 상태기계, 공용 패킷/자동 서명 채널, `관리/정화` 단계, 후행 패턴 학습의 비공개 표면 규칙을 live SSOT에 최종 반영
 - 2026-03-16 WORLDBUILD-021: `WB-0003/0005/0006/0007/0008/0009/0012/0013/0015/0017/0018/0019`, `NC-0001`, `story_arcs`, `memory_tiers/long_term`를 `CR-20260315-002` 최신 설계에 맞춰 동기화해, 각인광장을 `그리모어 -> 성목 분지 -> 배지` 삼층 인프라와 단계별 해금 구조로 재정의하고 `현상 각인/현상 열람실/영상 각인술` 및 후행 LMM 성장선을 live SSOT에 반영

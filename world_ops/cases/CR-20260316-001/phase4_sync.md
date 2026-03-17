@@ -9,15 +9,15 @@
 
 ## 2. 반영 내역
 - `world/live/world_bible/WB-0015_academy_bible.md`
-  - 적탑 3학파를 `홍련포화 / 용철무구 / 화연장막`으로, 청탑 3학파를 `경면수호 / 빙쇄구속 / 수류유도`로, 녹탑 3학파를 `생맥약초 / 야생교감 / 포자영토`로 live 표기 교체
-  - 적/청/녹 탑 요약 문장을 최신 판타지 기준으로 재서술
+  - 적탑 3학파를 `홍련포화 / 용철무구 / 화연장막`으로, 청탑 3학파를 `경면수호 / 빙쇄구속 / 수류유도`로, 녹탑 3학파를 `생맥약초 / 야생교감 / 포자영토`로, 황탑 3학파를 `황도유성 / 뇌철견인 / 결정변성`으로 live 표기 교체
+  - 적/청/녹/황 탑 요약 문장을 최신 판타지 기준으로 재서술
   - 외국/인외 교환학생 로스터 전공명을 동기화
 - `world/live/world_bible/WB-0021_appendix_terms_aliases.md`
-  - 적/청/녹 9학파의 구명 -> 현행명 alias 추가
+  - 적/청/녹/황 12학파의 구명 -> 현행명 alias 추가
 - `world/live/population/profiles/current_term_snapshot_v1.yaml`
-  - 적/청/녹 탑 major 분포 표기를 새 학파명 기준으로 교체
+  - 적/청/녹/황 탑 major 분포 표기를 새 학파명 기준으로 교체
 - `world/live/population/population_slots.csv`, `world/live/population/P-*.yaml`
-  - live 모집단 major 필드를 적/청/녹 9학파 신명 기준으로 일괄 치환
+  - live 모집단 major 필드를 적/청/녹/황 12학파 신명 기준으로 일괄 치환
 - `scripts/population/recompute_role_majors.py`, `scripts/population/audit_population_invariants.py`
   - mage major 허용 집합을 새 학파명 기준으로 교체
 - `world/live/docs/master_map.md`, `world_ops/world_change_log.md`
@@ -37,4 +37,4 @@ notes:
 ## 4. 작가 승인
 - approved: yes
 - note:
-  - 2026-03-17 작가가 `적탑+청탑+녹탑만 먼저 live SSOT에 반영`하는 partial sync를 승인했다.
+  - 2026-03-17 작가가 `확정된 탑부터 먼저 live SSOT에 반영`하는 partial sync를 승인했고, 현재 반영 범위는 적탑/청탑/녹탑/황탑이다.

@@ -5,7 +5,7 @@ title: "Appendix A. 용어/별칭 매핑(구용어→현행)"
 visibility: PUBLIC
 entities: ["용어", "별칭", "매핑"]
 last_updated: 2026-03-17
-source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx + world_ops/cases/CR-20260316-001/phase0_major_rename_map.md + world_ops/cases/CR-20260316-001/phase1_red_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_blue_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_blue_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_green_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_green_tower_audit.md"
+source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx + world_ops/cases/CR-20260316-001/phase0_major_rename_map.md + world_ops/cases/CR-20260316-001/phase1_red_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_blue_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_blue_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_green_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_green_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_yellow_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_yellow_tower_audit.md"
 ---
 
 ## 요약(선택)
@@ -37,7 +37,10 @@ source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx + 
 | 응급약리학파 | 생맥약초학파 | 녹탑 약초축. 준비한 약재를 증폭·유도하는 전장 약사형 현행 명칭 |
 | 생태계약학파 | 야생교감학파 | 녹탑 교감축. 정령·몬스터와의 개인화 계약과 역할 모사 중심 현행 명칭 |
 | 균사환경학파 | 포자영토학파 | 녹탑 포자축. 개토와 포자 배양, 영토화, 자원 회수 중심 현행 명칭 |
-| 전장연산학파 | 군진선도학파 | 황탑 재편 후 현행 명칭 |
+| 탄도관성학파 | 황도유성학파 | 황탑 유성축. 표식 사출, 도탄, 낙성 중심 현행 명칭 |
+| 자계유도학파 | 뇌철견인학파 | 황탑 뇌전축. 철침 표식, 금속 견인, 전기 연쇄 중심 현행 명칭 |
+| 군진선도학파 | 결정변성학파 | 황탑 변성축. 결정침, 취화·경결, 상변고정 중심 현행 명칭 |
+| 전장연산학파 | 결정변성학파 | 황탑 셋째 축의 구 구명. 현행명은 변성축 재설계까지 포함한 최종 표기 |
 | 법정무효학파 | 서약집행학파 | 백탑 재편 후 현행 명칭 |
 | 오염격리학파 | 단절추방학파 | 흑탑 재편 후 현행 명칭 |
 
