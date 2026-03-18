@@ -16,7 +16,7 @@
 
 - `CR-20260315-001` 바닥 재정렬은 live SSOT에 대체로 반영 완료 상태다.
 - `CR-20260315-002` LMM/그리모어 재설계는 live SSOT에 핵심 성장선과 플랫폼 구조가 들어왔지만, 용어 치환과 운영 세부는 아직 부분 반영 상태다.
-- `CR-20260316-001` 마법 상업 독법 오버홀은 적탑·청탑·녹탑·황탑 12학파명까지는 live SSOT에 partial sync 되었고, 자/백/흑탑과 전역 규칙은 아직 케이스 문서에 더 많이 남아 있다.
+- `CR-20260316-001` 마법 상업 독법 오버홀은 2026-03-18 기준 7탑 21학파 final sync와 전역 규칙 요약까지 live SSOT에 반영 완료 상태다.
 
 ## 2. 케이스별 판정
 
@@ -73,35 +73,36 @@
 - `단계 10~13` 확장선(`다중 성목 연합`, `대륙 간 성목 연방`, `세계수 백본`, `루트 전용 그림자 아카이브`)의 live 문서 반영
 
 보조 문서 드리프트:
-- `docs/handoff/next_steps.md`는 아직 `2026-03-15`, `CR-20260315-002 설계 문서화 진행 중` 상태에 머물러 있다.
-- 실제 live SSOT는 2026-03-16 기준으로 이미 일부 반영됐기 때문에 handoff 문서가 현재 저장소 상태를 늦게 따라가고 있다.
+- `next_steps.md`의 최상단 상태선은 2026-03-18 기준으로 정리됐지만, `CR-20260315-002` 세부 운영 설계 자체는 여전히 케이스 문서에 더 많이 남아 있다.
 
 ### 2.3 `CR-20260316-001`
 
 판정:
-- `부분 반영`
+- `반영 완료`
 
 근거:
-- 케이스 상태는 여전히 진행 중이지만, `phase3_apply`와 `phase4_sync`에 적탑·청탑·녹탑·황탑 partial sync 로그가 기록돼 있다.
-- `WB-0015`, `WB-0021`, academy current-term snapshot, population CSV/YAML, population scripts에는 적/청/녹/황 12학파명이 실제 반영돼 있다.
-- 다만 자/백/흑탑과 전역 규칙 문서는 아직 live로 내려오지 않았다.
+- `phase3_apply`, `phase4_sync`, `world_change_log` 기준으로 7탑 21학파 최종명과 전역 규칙 요약이 live SSOT에 내려왔다.
+- `WB-0005`, `WB-0015`, `WB-0021`, `WB-0025`, `WB-0029`, academy current-term snapshot, population CSV/YAML, population scripts, handoff 문서까지 동기화됐다.
 
 반영 완료로 볼 수 있는 축:
 - 적탑 3학파 rename live 반영
 - 청탑 3학파 rename live 반영
 - 녹탑 3학파 rename live 반영
 - 황탑 3학파 rename live 반영
-- generated layer 재생성 없이도 필요한 snapshot / population / 검증 스크립트 명칭 동기화
-
-미반영 또는 부분 반영으로 봐야 하는 축:
-- 자/백/흑탑 학파 rename 및 주문/전투 교리의 live 반영
+- 자탑 3학파 36식 live 반영
+- 백탑 3학파 rename 및 요약 반영
+- 흑탑 3학파 rename 및 요약 반영
 - `7색 감정/문화 레지스터`
-- `교차색 콤보 규칙`
+- `교차색 콤보 규칙` 상위 요약
 - `독자용 슬롯 문법`
 - `마법/학파 상업 네이밍 헌법`
+- generated layer와 검증 스크립트 동기화
 
 현재 live에 반영된 현행명 기준 위치:
+- `WB-0005_magic_system.md`
 - `WB-0015_academy_bible.md`
+- `WB-0025_appendix_naming_constitution.md`
+- `WB-0029_appendix_aptitude_signature_materials.md`
 - `WB-0021_appendix_terms_aliases.md`
 - `world/live/population/profiles/current_term_snapshot_v1.yaml`
 - `scripts/population/recompute_role_majors.py`
@@ -123,20 +124,18 @@
 - `LMM` 전면 노출 후퇴 원칙 부분 반영
 - 상태 기계(`비공식 운용 / 감리 허가 / 시범 운영 / 드리아드 협약`) 미반영
 - packet/internal channel 설계 미반영
-- `CR-20260316-001`의 자/백/흑탑 및 전역 규칙 live 미반영
 
 ### P2. 요약/인덱스 계층 드리프트
 
 - `관리/정화` 단계가 일부 인덱스/장기 기억 계층에서 누락
-- `docs/handoff/next_steps.md`가 실제 live 상태보다 뒤처짐
 
 ### P3. 운영 메타 드리프트
 
 - `world_ops/world_change_log.md`에 `CR-20260315-001` 부재
-- `CR-20260315-001`, `CR-20260315-002`, `CR-20260316-001` 모두 request/phase 문서 상태값이 완전히 닫히지 않음
+- `CR-20260315-001`, `CR-20260315-002`는 request/phase 문서 상태값이 완전히 닫히지 않음
 
 ## 4. 결론
 
 - 3월 15일 대화 중 `바닥 재정렬`은 SSOT에 거의 반영됐다.
 - 3월 15일 대화 중 `LMM/그리모어 재설계`는 SSOT에 핵심 서사 방향만 먼저 들어갔고, 용어 치환/운영 상태/패킷 계층은 아직 케이스 문서에 더 많이 남아 있다.
-- 3월 16일 대화 중 `마법 네이밍/상업 독법 오버홀`은 적탑·청탑·녹탑·황탑 12학파명까지는 live SSOT에 반영됐지만, 아직 전체 오버홀 완료라고 보기는 어렵다.
+- 3월 16일 대화 중 `마법 네이밍/상업 독법 오버홀`은 2026-03-18 기준 7탑 21학파 final sync와 전역 규칙 요약까지 live SSOT에 반영 완료됐다.

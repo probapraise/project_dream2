@@ -4,8 +4,8 @@ type: world_bible_section
 title: "Appendix A. 용어/별칭 매핑(구용어→현행)"
 visibility: PUBLIC
 entities: ["용어", "별칭", "매핑"]
-last_updated: 2026-03-17
-source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx + world_ops/cases/CR-20260316-001/phase0_major_rename_map.md + world_ops/cases/CR-20260316-001/phase0_spell_rename_map.md + world_ops/cases/CR-20260316-001/phase1_red_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_blue_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_blue_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_green_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_green_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_yellow_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_yellow_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_purple_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_purple_tower_audit.md"
+last_updated: 2026-03-18
+source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx + world_ops/cases/CR-20260316-001/phase0_major_rename_map.md + world_ops/cases/CR-20260316-001/phase0_spell_rename_map.md + world_ops/cases/CR-20260316-001/phase1_red_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_blue_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_blue_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_green_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_green_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_yellow_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_yellow_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_white_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_white_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_black_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_black_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_purple_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_purple_tower_audit.md"
 ---
 
 ## 요약(선택)
@@ -71,8 +71,12 @@ source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx + 
 | 관객분리 | 환영극장 | 자탑 간판기. `왜곡점` 기반 구형 체험실을 세우는 상급식 |
 | 허상회수 | 허상붕락 | 자탑 상급 공격식. 준비한 환영 자산과 기준점을 실타격으로 붕락시키는 현행 명칭 |
 | 자색대막 | 자색환계 | 자탑 오의. 현실 전장 위에 환영 레이어를 덧씌우는 증강현실형 환계 |
-| 법정무효학파 | 서약집행학파 | 백탑 재편 후 현행 명칭 |
-| 오염격리학파 | 단절추방학파 | 흑탑 재편 후 현행 명칭 |
+| 생명고정학파 | 시차유예학파 | 백탑 시간축 재편 후 현행 명칭 |
+| 법정무효학파 | 극간열개학파 | 백탑 공간축 재편 후 현행 명칭 |
+| 서약집행학파 | 극간열개학파 | 백탑 셋째 축 리빌드 후 현행 명칭 |
+| 침식주술학파 | 침식정련학파 | 흑탑 침식축 재편 후 현행 명칭 |
+| 오염격리학파 | 공허간섭학파 | 흑탑 공허축의 구 구명. `단절추방학파` 재리빌드까지 포함한 현행 명칭 |
+| 단절추방학파 | 공허간섭학파 | 흑탑 공허축 재편 후 현행 명칭 |
 
 ### A.2 플랫폼/운영어 매핑
 

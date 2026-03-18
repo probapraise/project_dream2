@@ -4,8 +4,8 @@ type: world_bible_section
 title: "13. 아르케이온 왕립학술원 하급·상급 과정 운영 규정서(Academy Bible)"
 visibility: META
 entities: ["아르케이온", "왕립학술원", "운영", "규정서"]
-last_updated: 2026-03-17
-source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx + docs/design/source_texts/magic_system/프라미시오_마법도감_정본_3_1_표식탐지_전면재작성_20260313.md + world_ops/cases/CR-20260315-002/community_unlock_blueprint.md + world_ops/cases/CR-20260315-002/major_prompt_log.md + world_ops/cases/CR-20260315-002/mana_node_frontier_draft.md + world_ops/cases/CR-20260316-001/request.md + world_ops/cases/CR-20260316-001/phase0_spell_rename_map.md + world_ops/cases/CR-20260316-001/phase1_red_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_blue_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_blue_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_green_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_green_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_purple_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_purple_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_reader_exposure_framework.md + world_ops/cases/CR-20260316-002/request.md"
+last_updated: 2026-03-18
+source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx + docs/design/source_texts/magic_system/프라미시오_마법도감_정본_3_1_표식탐지_전면재작성_20260313.md + world_ops/cases/CR-20260315-002/community_unlock_blueprint.md + world_ops/cases/CR-20260315-002/major_prompt_log.md + world_ops/cases/CR-20260315-002/mana_node_frontier_draft.md + world_ops/cases/CR-20260316-001/request.md + world_ops/cases/CR-20260316-001/phase0_spell_rename_map.md + world_ops/cases/CR-20260316-001/phase1_red_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_blue_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_blue_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_green_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_green_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_white_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_white_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_black_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_black_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_purple_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_purple_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_reader_exposure_framework.md + world_ops/cases/CR-20260316-001/phase1_color_emotion_registry.md + world_ops/cases/CR-20260316-002/request.md"
 ---
 
 ## 요약(선택)
@@ -162,12 +162,12 @@ source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx + 
 | 자 | 보존각인학파 | 보존 / 색인 / 재현 / 증거화 | 최하 | 12 | 서고, 정본실, 박물고, 감식청 |
 | 자 | 전심공명학파 | 회선 연결 / 교신 차단 / 위치 전송 | 상 | 12 | 교신망, 전령, 지휘, 구조 수송 |
 | 자 | 환영직조학파 | 환영 직조 / 체험형 환영 / 기만 | 중 | 12 | 외교, 선무, 보안 기만, 실습 전장 구축 |
-| 백 | 생명고정학파 | 생존 고정 / 구조 | 상 | 12 | 치료원, 구조대, 응급소 |
-| 백 | 정화광휘학파 | 오염 제거 / 환영 파훼 | 중상 | 12 | 성소, 정화실, 재난 수습 |
-| 백 | 서약집행학파 | 해제 / 반사 / 제재 | 중상 | 12 | 성소 경비, 허가 감찰, 계약 집행 |
-| 흑 | 침식주술학파 | 장기전 / 부식 / 저주 | 중하 | 12 | 위험물 해체, 저주 유물 처리 |
-| 흑 | 음영잠행학파 | 은폐 / 맹점 / 침투 | 중하 | 12 | 제한구역 경비, 비밀 작전 |
-| 흑 | 단절추방학파 | 차단 / 추방 / 연결 절단 | 중하 | 12 | 금고 봉쇄, 소환체 처리, 금역 관리 |
+| 백 | 시차유예학파 | 선행 / 완속 / 찰나 정지 | 상 | 12 | 구조대, 돌입조, 응급 후송 |
+| 백 | 정화광휘학파 | 오염 제거 / 광휘 제어 | 중상 | 12 | 성소, 정화실, 재난 수습 |
+| 백 | 극간열개학파 | 공간 상흔 / 이면 격리 / 현실 요동 | 중상 | 12 | 위험물 격리, 응급 후송, 공간 재해 대응 |
+| 흑 | 침식정련학파 | 감산 정련 / 부식 / 누적 파손 | 중하 | 12 | 위험물 해체, 마도구 공방, 마나석 정련 |
+| 흑 | 음영잠행학파 | 은폐 / 맹점 / 그림자 침투 | 중하 | 12 | 제한구역 경비, 비밀 작전 |
+| 흑 | 공허간섭학파 | 천공 / 반발 / 술식 교란 | 중하 | 12 | 방벽 파쇄, 소환 붕괴, 위험물 비활성화 |
 #### 13.4.2 기사 과정 전공 10개
 - 1) 검창전술과: 보병 주력 교전·돌파·연계 진형.
 - 2) 방패호위과: 호위·엄호·군중 통제·요인 방호.
@@ -273,14 +273,14 @@ source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx + 
 - [PUBLIC] `환영극장`과 `자색환계`의 차이는 `닫힌 체험실 안에서 겪는 4D 환영`과 `현실 전장 전체 위에 덧씌우는 증강현실형 환계`의 차이다.
 
 #### 백탑
-- 생명고정학파: 생존 고정, 응급 구조, 생명선 유지.
-- 정화광휘학파: 오염 제거, 환영 파훼, 재난 정화.
-- 서약집행학파: 해제, 반사, 제재, 허가 집행. 구 `법정무효학파`의 현행 명칭이다.
+- 시차유예학파: `백금시침`, `적금시침`으로 선행과 완속을 걸고 `찰나정지`, `백금생환`으로 속전 구출을 만든다.
+- 정화광휘학파: `정화광`, `광휘장`, `백야등화`로 오염 정화와 전장 조도를 장악한다.
+- 극간열개학파: `균열감식`으로 틈을 찾고 `공열조`, `열면확장`, `이면격리`, `현계요동`으로 공간 상흔을 운용한다. 백탑 공간축 리빌드 후 현행 명칭이다.
 
 #### 흑탑
-- 침식주술학파: 장기전, 부식, 저주, 장비 열화.
-- 음영잠행학파: 은폐, 맹점, 침투, 감시 회피.
-- 단절추방학파: 차단, 추방, 연결 절단. 구 `오염격리학파`의 현행 명칭이다.
+- 침식정련학파: `분해선`, `부식편`, `서명소거`, `흑정련역`을 중심으로 존재를 감산하고 마도구 회로를 정련하는 침식축이다.
+- 음영잠행학파: `시선빗김`, `암영비수`, `사각보행`, `암영도약`으로 시야와 그림자 틈을 타는 잠행축이다.
+- 공허간섭학파: `공허탄`, `간섭선`, `공허천공`, `공허붕락`으로 만물의 맞물림을 깨고 천공과 반발을 퍼뜨리는 공허축이다.
 
 #### 13.5.1 운영 메모
 - [PUBLIC] 강력한 유지형과 흔적형일수록 감독 로그와 권한선이 또렷하게 남는다.
@@ -461,8 +461,8 @@ source: "Pramisio_WorldBible_Unified_v1_2_20260302_AcademyCharacterCards.docx + 
   - 배지 사전 등록: 참가자/감독/사용 가능 계열(표준식/등록식/서명)과 안전 한도를 선언한다.
   - 결계·구호 의무: 결계학부/백탑 인원 배치가 없으면 “공식 대련” 성립 불가.
   - 무허가 자유 촬영/업로드 불가: 공식 행사거나 허가 업로더·교수 감독 하의 제한적 `영상 각인`만 인정된다. 누가 합법적 기록을 확보하느냐가 후원/정렬 싸움이 된다(제6.4, 15.3).
-- [PUBLIC] 금지/제한(학칙상) — 특히 흑탑/저주 계열
-  - 치명 상해 가능성이 높은 저주·침식·오염 계열은 사전 허가 없이는 실습 금지(위반 시 L4~L5).
+- [PUBLIC] 금지/제한(학칙상) — 특히 흑탑/결손 계열
+  - 치명 상해 가능성이 높은 침식·공허 천공·오염 계열은 사전 허가 없이는 실습 금지(위반 시 L4~L5).
   - 타인의 서명 구조를 강제로 드러내는 기술(‘서명 뜯기’)은 금기. 성공 여부만으로도 서열이 고정되므로, 시도 자체가 중징계 사유.
 - [PUBLIC] 교류전 참사 이후 추가된 “안전점수”
   - 실습조/동아리/학파는 사고·규정위반 누적 시 안전점수가 떨어져 ‘실습 제한→대표 선발 제외→예산 삭감’ 루프에 들어간다.
