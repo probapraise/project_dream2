@@ -70,6 +70,13 @@
 - quarantine_index: quarantine/README.md
 
 ## Recent changes (selected)
+- 2026-03-18 LAYERB-018: community_grammar_layer_b에 ATOM-018 추가 — 장르적 정석을 비열한 실전주의로 뒤집고 댓글이 `비열님/효율님`류 칭송으로 봉인하는 문법을 반영하고 GRAMMAR-003 예시를 확장
+- 2026-03-18 LAYERB-017: community_grammar_layer_b의 상위 규칙을 `GRAMMAR-001~004` 2차 합성안으로 재작성해 `결함 승격 / 역설적 승인 / 격조 붕괴 / 명칭 파편 놀이` 4축으로 재정렬
+- 2026-03-18 LAYERB-016: community_grammar_layer_b에 ATOM-017 추가 — 진지한 등급명이 `가정권력`류 생활어/폭력어 어감으로 붕괴할 때 댓글이 생활권 조롱과 범죄 연상으로 봉인하는 문법 반영
+- 2026-03-18 LAYERB-015: community_grammar_layer_b에 ATOM-016 추가 — 불완전한 제목 기억이 정답 복구 뒤에도 `세균맨`류 오답 파편 밈으로 더 오래 살아남는 문법 반영
+- 2026-03-18 LAYERB-014: community_grammar_layer_b에 ATOM-015 추가 — 비밀 공개형 제목이 적자 스크린샷과 `못 벌고 있음` 한 줄로 끝날 때 댓글이 웃음과 팩트 승인으로 봉인하는 문법 반영
+- 2026-03-18 LAYERB-013: community_grammar_layer_b에 ATOM-014 추가 — 거창한 전문가 제목이 `내 돈 아님` 한 줄로 붕괴할 때 댓글이 과잉 학위와 전문성 찬양을 붙이는 문법 반영
+- 2026-03-18 LAYERB-012: community_grammar_layer_b에 ATOM-013 추가 — 장엄한 초원 서정문이 하찮은 음식 구걸로 착지할 때 댓글이 첫 문장과 낙차를 집단 숭배하는 문법 반영
 - 2026-03-18 WORLDBUILD-026: `CR-20260316-001` 7탑 21학파 final sync를 완료해 `WB-0005/0015/0021/0025/0029`, academy current-term snapshot, population CSV/YAML, population audit/recompute 스크립트, handoff 문서에 흑탑 `침식정련 / 음영잠행 / 공허간섭`, `7색 감정/문화 레지스터`, `독자용 슬롯 문법`, `제한된 교차색 콤보`, `마법/학파 네이밍 헌법`을 반영
 - 2026-03-17 WORLDBUILD-025: `WB-0007/0012/0015/0021`, academy current-term snapshot, population CSV/YAML, population audit/recompute 스크립트에 `CR-20260316-001` 자탑 3축 최종안을 반영해 `교신전심학파 -> 전심공명학파`, `허상연출학파 -> 환영직조학파`, 보존축 `각인연장 / 만상채록 / 만상기록고`, 전달축 `심향채청 / 공명연결 / 전심전이`, 합성축 `환영투사 / 환영극장 / 자색환계`를 live SSOT에 부분 동기화
 - 2026-03-17 WORLDBUILD-024: `WB-0015`, `WB-0021`, academy current-term snapshot, population CSV/YAML, population audit/recompute 스크립트에 `CR-20260316-001`의 적탑/청탑/녹탑/황탑 확정안까지 반영해 `홍련포화 / 용철무구 / 화연장막 / 경면수호 / 빙쇄구속 / 수류유도 / 생맥약초 / 야생교감 / 포자영토 / 황도유성 / 뇌철견인 / 결정변성` 12학파명을 live SSOT에 부분 동기화
