@@ -70,6 +70,7 @@
 - quarantine_index: quarantine/README.md
 
 ## Recent changes (selected)
+- 2026-03-19 WORLDBUILD-027: WB-0009/0026, EX-0001/0003/0005/0006, long_term에 비밀 서명귀족 중 한 가문의 `통제계약` 비전을 반영 — `수경원` 침묵계약의 근원, 조직 장기 존속 논리, 벨쿠란 복속 이유(복잡한 시전 조건과 느린 운용)를 canon에 추가
 - 2026-03-18 LAYERB-018: community_grammar_layer_b에 ATOM-018 추가 — 장르적 정석을 비열한 실전주의로 뒤집고 댓글이 `비열님/효율님`류 칭송으로 봉인하는 문법을 반영하고 GRAMMAR-003 예시를 확장
 - 2026-03-18 LAYERB-017: community_grammar_layer_b의 상위 규칙을 `GRAMMAR-001~004` 2차 합성안으로 재작성해 `결함 승격 / 역설적 승인 / 격조 붕괴 / 명칭 파편 놀이` 4축으로 재정렬
 - 2026-03-18 LAYERB-016: community_grammar_layer_b에 ATOM-017 추가 — 진지한 등급명이 `가정권력`류 생활어/폭력어 어감으로 붕괴할 때 댓글이 생활권 조롱과 범죄 연상으로 봉인하는 문법 반영
@@ -93,6 +94,12 @@
 - 2026-03-13 WRITING-010: canon 후속 live 문서 drift를 줄이기 위해 `live_sync_manifest`와 `audit_live_sync.py` 기반의 sync audit 체계를 추가
 - 2026-03-13 WRITING-009: 문체 헌법을 `house_rules / style_pattern_library / style_selection` 구조로 분리하고, 회차별 선택 프로세스를 집필 기본 흐름에 편입
 - 2026-03-10 SIM-ARCH-001: `Quick Sim 기본 / API fallback` 구조를 채택하고 simulation_playbook/simulation_state_index 운영 기준을 재정렬
+- 2026-03-19 WORLDBUILD-021: `EX-0006/0007` 사리엔·세렌 라베르니온 카드를 신설하고, `EX-0005`에 자매 관계를 연결 — 장녀는 수경원 실무 후계/내부 증인, 차녀는 공개 권력 후계 후보/기능적 동료형 히로인 후보로 고정
+- 2026-03-19 WORLDBUILD-020: `EX-0005` 세르반 라베르니온 카드를 신설 — 문경청 수장/수경원 상위 통제권자, 온건한 관리형 권력자, `ep005` 보상 동기의 실무 평가+측은지심 축을 고정
+- 2026-03-19 WRITING-011: `pre_academy_ep003_ep006_pacing_plan_v1`과 `memory_tiers/long_term`에 세르반 라베르니온의 `ep005` 보상 동기 보강 — 게시판 실무 가치 평가와 함께, 수경원 업보로 언젠가 희생될 수도 있는 키리온에 대한 측은지심이 섞인 행동으로 기록
+- 2026-03-19 WORLDBUILD-019: WB-0009/0026, EX-0001/0003, NC-0001, memory_tiers에 데리온의 핵심 공포/집착 축과 `수경원` 침묵계약 규칙을 반영 — 타가문 집행 공포, 키리온 단련 집착, 세르반의 온건한 묵인, 형제 누설 시 즉시 발각/패널티/청취자 살처분 구조 고정
+- 2026-03-19 WORLDBUILD-018: WB-0009/0026, EX-0001/0003, NC-0001, memory_tiers에 비밀 서명귀족 `4가문 교차 방계 청소` 규칙을 반영 — 당사 가문 직접 살해 대신 나머지 세 가문 집행, 라베르니온 감독 체계로 재정렬
+- 2026-03-19 WORLDBUILD-017: WB-0009/0026, EX-0001, NC-0001에 `문경청 -> 수경원` 2층 구조와 세르반 라베르니온/칼리온 위계를 반영 — 세르반은 문경청 수장, 칼리온은 렌바렌 성주이자 비공개 수경원 수장으로 정리
 - 2026-03-10 LAYERB-011: community_grammar_layer_b에 ATOM-012 추가 — AI 자동화 외피 아래 인간 백엔드가 숨어 있는 역자동화 노동 놀이 문법 반영
 - 2026-03-09 LAYERB-010: community_grammar_layer_b에 ATOM-011 추가 — 이름 음절 하나로 범주와 장비 체계를 과잉 확장하는 명칭 literal reading 문법 반영
 - 2026-03-09 LAYERB-009: community_grammar_layer_b에 `GRAMMAR-001~003` 초안 추가 — 결함 승격형 조롱 / 역설적 지지 합창 / 권위의 바닥화 재해석 축으로 Layer B 상위 규칙 1차 합성
