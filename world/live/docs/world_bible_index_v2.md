@@ -1,6 +1,6 @@
 # world_bible_index
 
-- regenerated_at: 2026-03-16
+- regenerated_at: 2026-03-20
 - source: world_bible/WB-*.md
 - note: 정리 작업으로 충돌 파일 삭제 후 최소 인덱스로 재생성
 
@@ -101,3 +101,7 @@
   - file: world_bible/WB-0029_appendix_aptitude_signature_materials.md
   - summary: [PUBLIC] 선천적 재능의 편차와 혈통 편중은 세계의 일반 상식이다.
   - visibility: PUBLIC
+- [WB-0030] Appendix I. 무흔술 교본: 정본 원리 / 전수 병목 / 렌바렌 형제 변형
+  - file: world_bible/WB-0030_appendix_muhunsul_doctrine.md
+  - summary: [CONFIDENTIAL] `무흔술`은 기사계 품새 안에 숨은 비마나 실전 전투술이며, 칼리온 -> 데리온 -> 키리온 전수 병목 속에서 정본/데리온형/키리온형으로 갈라진다.
+  - visibility: CONFIDENTIAL

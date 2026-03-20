@@ -2,10 +2,10 @@
 
 ## Sync metadata
 - sync_category: required
-- last_synced_episode: ep002
-- sync_source: artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md
-- sync_source_sha256: 1f41ae47ec5c50e74161f792935f5b18b3a79d27193425109d39122957b170ac
-- sync_summary: artifacts/writing/episodes/ep002/summary_v1.md
+- last_synced_episode: ep003
+- sync_source: artifacts/writing/episodes/ep003/canon/3화_리라이트_v1.md
+- sync_source_sha256: 6c65fe6820526e8595010d9a84748edcd285117a70725efe3c08e21d0f338ca7
+- sync_summary: artifacts/writing/episodes/ep003/summary_v1.md
 
 역할: 회차별 줄거리 요약이 아니라, 캐논 이후 실제로 바뀐 상태만 남기는 로그.
 
@@ -66,3 +66,19 @@
   - 없음
 - carry_forward:
   - `ep003`는 `첫 책 선택` 자체가 시험이 된 상황과, 데리온 개입으로 그 시험장을 비틀려는 키리온의 우회 설계를 함께 중심축으로 가져가야 한다.
+
+## DELTA-EP003 `ep003`
+- canon_source: `artifacts/writing/episodes/ep003/canon/3화_리라이트_v1.md`
+- state_changes:
+  - 키리온은 서고에서 `자색 입문서`를 집으며 첫 선택 시험을 실제로 열었지만, 데리온의 난입을 끌어들여 독서 패턴 감시를 정면으로 받지 않는 데 성공했다.
+  - 데리온은 동생의 마법책 접근에 과민하게 반응하는 이유가 단순 폭력성이 아니라 보호/공포/통제가 뒤섞인 축임을 처음 선명하게 드러냈다.
+  - 서고 권한 규칙과 집사의 제지로, 데리온조차 문턱을 함부로 넘지 못하는 저택 내부 권한 구조가 장면으로 확인됐다.
+  - 형제 대련은 귀족 아동 체술 수련처럼 보이면서도 지나치게 짧고 실전적인 압력으로 묘사되며, 이후 루틴의 전투 축이 본격 가동됐다.
+  - 키리온의 일상은 `연무장 -> 치유 -> 취침 전 독서` 구조로 재편되기 시작했고, 낮의 자유 독서 시간은 크게 줄어들었다.
+  - 키리온은 데리온의 검술을 여전히 `귀족가 사전 체술` 정도로 오해한 채 받아들이며, 자기 전투 자산의 비정상성을 자각하지 못한 상태를 유지한다.
+- activated_refs:
+  - 없음
+- closed_refs:
+  - 없음
+- carry_forward:
+  - `ep004`는 새로 시작된 루틴이 며칠과 몇 달을 지나며 어떻게 몸과 시간표를 바꾸는지, 그리고 그 와중에도 정보 인프라 욕망이 어떻게 다시 고개를 드는지를 함께 중심축으로 가져가야 한다.

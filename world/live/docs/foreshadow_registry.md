@@ -2,10 +2,10 @@
 
 ## Sync metadata
 - sync_category: conditional
-- last_synced_episode: ep002
-- sync_source: artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md
-- sync_source_sha256: 1f41ae47ec5c50e74161f792935f5b18b3a79d27193425109d39122957b170ac
-- sync_summary: artifacts/writing/episodes/ep002/summary_v1.md
+- last_synced_episode: ep003
+- sync_source: artifacts/writing/episodes/ep003/canon/3화_리라이트_v1.md
+- sync_source_sha256: 6c65fe6820526e8595010d9a84748edcd285117a70725efe3c08e21d0f338ca7
+- sync_summary: artifacts/writing/episodes/ep003/summary_v1.md
 
 역할: 활성 복선과 장기 서사 약속을 상태 기반으로 관리하는 레지스트리. 회차 요약이 아니라 "무엇이 아직 열려 있는가"를 추적한다.
 
@@ -24,6 +24,7 @@
 - latest carry:
   - `ep001`에서 직접 심문 대신 `흑색 표준식 입문서`를 보내 장기 관찰 국면으로 전환
   - `ep002`에서 안내판 성공 직후 서고 접근권을 열어, 시험 단위를 `행동`에서 `선택 구조`로 확장
+  - `ep003`에서 서고 첫 선택 시험이 실제로 열렸고, 데리온의 난입으로 관찰 단위가 `책 선택`에서 `가족 반응과 일상 루틴`까지 넓어졌다
 - payoff window: pre-academy
 - linked_arcs:
   - `ARC-001`
@@ -62,6 +63,7 @@
 - latest carry:
   - `ep001`의 칼리온 메모 `[궁금하다고 했으니.]`
   - `ep002` 종료 시점에서 책 읽기 자체보다 `첫 책 선택 구조 전체`가 채점 대상이라는 사실이 확정
+  - `ep003`에서 첫 선택은 한 번 흐려졌지만, 감시는 `밤 독서까지 포함한 장기 관찰`로 변형돼 계속 살아남았다
 - payoff window: immediate
 - linked_arcs:
   - `ARC-001`
@@ -96,7 +98,8 @@
 - status: open
 - narrative function: 서고/마법책 관련 시험을 형제 갈등과 보호 본능이 개입하는 새 긴장축으로 전환한다.
 - latest carry:
-  - 키리온은 데리온이 동생의 마법책 접근에 예민하다는 사실을 이용해, `첫 책 선택` 시험을 정면으로 받지 않는 우회 해법을 세웠다.
+  - `ep002`에서 키리온은 데리온이 동생의 마법책 접근에 예민하다는 사실을 이용해, `첫 책 선택` 시험을 정면으로 받지 않는 우회 해법을 세웠다.
+  - `ep003`에서 데리온은 실제로 서고 문밖까지 들이닥쳤고, 그 반응은 `연무장 -> 치유 -> 취침 전 독서` 루틴을 여는 새 압력 축으로 전환됐다.
 - payoff window: immediate
 - linked_arcs:
   - `ARC-001`

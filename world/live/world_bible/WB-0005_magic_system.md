@@ -3,9 +3,9 @@ id: WB-0005
 type: world_bible_section
 title: "3. 초월력 체계: 표준식 / 등록식 / 문장비전 / 계약 / 수련 초월"
 visibility: PUBLIC
-entities: ["초월력", "표준식", "등록식", "문장비전", "계약", "수련 초월", "마나색"]
-last_updated: 2026-03-18
-source: "프라미시오_무대용_설정_통합정리.docx + world_ops/cases/CR-20260315-001/tagging_draft.md + world_ops/cases/CR-20260315-002/magic_usage_map.md + world_ops/cases/CR-20260316-001/phase1_color_emotion_registry.md + world_ops/cases/CR-20260316-001/phase1_reader_exposure_framework.md + world_ops/cases/CR-20260316-001/phase1_white_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_white_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_black_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_black_tower_audit.md"
+entities: ["초월력", "표준식", "등록식", "문장비전", "계약", "수련 초월", "마나색", "무흔술"]
+last_updated: 2026-03-20
+source: "프라미시오_무대용_설정_통합정리.docx + world_ops/cases/CR-20260315-001/tagging_draft.md + world_ops/cases/CR-20260315-002/magic_usage_map.md + world_ops/cases/CR-20260316-001/phase1_color_emotion_registry.md + world_ops/cases/CR-20260316-001/phase1_reader_exposure_framework.md + world_ops/cases/CR-20260316-001/phase1_white_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_white_tower_audit.md + world_ops/cases/CR-20260316-001/phase1_black_tower_architecture.md + world_ops/cases/CR-20260316-001/phase1_black_tower_audit.md + world_ops/cases/CR-20260320-001/request.md + world_ops/cases/CR-20260320-005/request.md"
 ---
 
 ## 요약(선택)
@@ -14,6 +14,7 @@ source: "프라미시오_무대용_설정_통합정리.docx + world_ops/cases/CR
 - [PUBLIC] 영창, 마법진, 촉매는 시전을 더 쉽고 안정적이고 강하게 만들어 주는 장치로 널리 인식된다.
 - [PUBLIC] 신성 계약, 정령 계약, 수련 초월은 마법과 나란한 초월 경로로 받아들여진다.
 - [PUBLIC] 기록 계열 등록식은 `현상 각인술` 같은 초고밀도 보존식과 `영상 각인술` 같은 경량 촉매식을 포함하며, 권한과 교육 절차에 따라 운용 범위가 갈린다.
+- [PUBLIC] 제도권 기사 교범과 귀족 자제의 사전 무예 교육은 순수 맨몸 실전 격투술이라기보다, 마나와 식이 몸을 따라오게 만드는 의례화된 동작 학습 비중이 크다.
 - [CONFIDENTIAL] 경지의 끝에 닿은 일부 초월자는 서로 다른 권능이 결국 같은 종류의 기적을 만진다는 감각에 도달한다.
 
 ## 본문
@@ -143,6 +144,14 @@ source: "프라미시오_무대용_설정_통합정리.docx + world_ops/cases/CR
 - [PUBLIC] 누구나 도달할 수 있는 길은 아니며, 재능, 혈통, 운이 모두 크게 작용한다고 여겨진다.
 - [PUBLIC] 평민에게 완전히 닫힌 길은 아니지만, 현실적으로는 막대한 시간과 자원이 필요해 사치에 가깝다.
 - [PUBLIC] 무로 최종경지에 이르렀다고 평가받는 인물들은 세계에 꽤 존재하며, 공인된 강자와 전설의 범주에 속한다.
+- [PUBLIC] 다만 제도권 기사 교범과 귀족 자제의 사전 무예 교육은 순수 맨몸 실전 격투술이라기보다, 마나와 식으로 몸을 설득해 기적 발동을 더 쉽게 만드는 `의례화된 동작` 비중이 크다.
+- [PUBLIC] 그래서 아카데미 입학 전 일반 귀족 자제가 준비하는 것은 기초 체력, 특정 초식의 형 흉내, 교양 독서가 대부분이며, 마나를 끊은 상태의 순수 실전 살상 능력을 바로 보장하지 않는다.
+- [PUBLIC] 반대로 변경 실전병력, 암살자 집단, 특정 금욕 교단처럼 제도권 바깥에 가까운 집단은 마나 없이도 제압과 살상을 노리는 별도 실전술을 전승하기도 한다. 이런 비마나 실전술은 세계 전역에 산발적으로 존재하지만, 일반인이 주변에서 흔히 보는 종류의 무예는 아니다.
+- [PUBLIC] 또한 비마나 실전술은 마법이 주도권을 쥐는 중후반 전장으로 갈수록 한계가 뚜렷해지므로, 존재를 알아도 이를 `결정적 주류 전장 문법`으로 보는 사람은 드물다.
+- [CONFIDENTIAL] 벨쿠란 `수경원`은 문장비전 은폐와 비마나 공작 수행을 위해 수백 년 동안 비마나 실전 전투술 `무흔술(無痕術)`을 체계화했다.
+- [CONFIDENTIAL] `무흔술`은 기사 교범의 품새를 닮은 외형 아래 실제 살상·침투·제압 기술을 숨기는 전승으로, 평범한 귀족 자제 훈련처럼 위장되기 쉽다는 점까지 포함해 설계된 체계다.
+- [CONFIDENTIAL] 그래서 `무흔술`은 존재를 아는 자가 적고 전승도 선별적으로만 이뤄지는 반면, 겉으로 보면 다른 기사계 무예 수련과 크게 다르지 않아 외부에서 쉽사리 의심받지 않는다.
+- [CONFIDENTIAL] `무흔술` 정본은 `선수 확보 -> 축 붕괴 -> 짧은 결착 -> 즉시 이탈`을 판정 기준으로 삼으며, 제도권 기사 교범과 닮은 외형 아래 완전히 다른 실전 목적을 숨긴다. 상세 교본과 렌바렌 형제형 변형은 `WB-0030`을 참조한다.
 - [CONFIDENTIAL] 기사와 무인의 전승은 마법사들의 등록식 전통보다 체계화가 약해, 자신만의 초식을 만드는 일은 매우 어렵게 여겨진다.
 
 ### 3.11 보조 표기와 교범용 약기법
@@ -154,3 +163,4 @@ source: "프라미시오_무대용_설정_통합정리.docx + world_ops/cases/CR
 - [PUBLIC] 특수 지형 노드, 성목, 정령군, 픽시 계약은 `WB-0006`, `WB-0007`을 참조한다.
 - [PUBLIC] 혈통, 종족, 권능의 서명, 마나색, 마력석은 `WB-0029`를 참조한다.
 - [PUBLIC] 문장비전 가문별 상세는 `WB-0026`을 참조한다.
+- [CONFIDENTIAL] `무흔술` 정본 원리와 렌바렌 형제 변형은 `WB-0030`을 참조한다.
