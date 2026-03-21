@@ -28,7 +28,7 @@ writing/
 │   ├── ep000_prologue/
 │   │   ├── canon/
 │   │   │   ├── README.md
-│   │   │   └── 프롤로그_리라이트_v2.md
+│   │   │   └── <current_text_canon>.md
 │   │   └── ...
 │   ├── ep002/
 │   │   ├── canon/
@@ -49,12 +49,13 @@ writing/
 
 - 각 에피소드 폴더는 생성 시점부터 반드시 `canon/` 하위 폴더를 포함한다.
 - 정식 반영된 최종본은 항상 `canon/` 안에 둔다.
-- canon은 고정 불변이 아니다. 새 리비전이나 사후 패치가 채택되면 `canon/` 안에 새 snapshot 파일을 추가하고 `canon/README.md`의 current 항목을 갱신한다.
-- superseded canon도 비교와 회고를 위해 `canon/` 안에 남길 수 있다.
+- `canon/`에는 `README.md`를 제외하고 현재 정식 canon 파일 1개만 둔다.
+- 과거 canon snapshot, patch snapshot, Word 복제본은 `canon/` 안에 두지 않는다. 비교와 회고는 `git history`, `assembled/`, `analysis/`로 처리한다.
 - current canon 내용 해시는 `canon/README.md`의 `current_text_canon_sha256`로 관리한다.
-- current canon을 나중에 다시 손볼 때는 가능하면 기존 파일을 덮어쓰기보다 `bash scripts/writing/new_canon_patch.sh <episode_id> <new_canon_filename>`로 새 snapshot을 만든 뒤 수정한다.
+- current canon을 나중에 다시 손볼 때도 `canon/` 안에 새 파일을 만들지 말고, 현재 canon 파일을 직접 수정한 뒤 metadata와 downstream 문서를 다시 sync한다.
+- `current_word_canon`은 단일 파일 원칙 때문에 항상 `none`으로 유지한다.
 - 초안, 중간 수정본, 비교 분석, 주입 패킷 문서는 에피소드 루트에 남겨 workflow 흔적과 구분한다.
-- canon 파일명은 `revision_vN.*`처럼 버전형이어도 되고, 제목형 파일명이어도 된다. 어떤 파일이 current canon인지는 `canon/README.md`가 결정한다.
+- canon 파일명은 버전형이어도 되고 제목형이어도 되지만, `canon/` 안에는 현재 파일 1개만 남긴다. 어떤 파일이 current canon인지는 `canon/README.md`가 결정한다.
 
 ## 새 에피소드 폴더 생성
 
@@ -117,7 +118,7 @@ bash scripts/writing/new_episode_scaffold.sh ep002
 | 병렬 초고 | text / Word | `drafts/draft_codex_v1.txt`, `drafts/draft_external_a_v1.txt` |
 | 조립 메모 | markdown (.md) | `assembled/assembly_notes_v1.md` |
 | 조립 수정본 | text / Word | `assembled/revision_assembled_v1.txt` |
-| 정식 canon | text / Word | `canon/revision_v1.txt`, `canon/프롤로그_리라이트_v2.md` |
+| 정식 canon | text / Word | `canon/<current_text_canon>.txt`, `canon/<current_text_canon>.md` |
 | 회차 속도계 | markdown (.md) | `analysis/episode_scorecard_v1.md` |
 | 멀티 초고 비교 분석 | markdown (.md) | `analysis/revision_delta_v1.md` |
 
@@ -182,7 +183,7 @@ bash scripts/writing/new_episode_scaffold.sh ep002
 - semantic continuity 감사 스크립트: `python3 scripts/writing/audit_semantic_continuity.py <episode_id>`
 - post-canon 보조 스크립트: `bash scripts/writing/post_canon_sync.sh <episode_id>`
 - canon metadata refresh: `python3 scripts/writing/refresh_canon_metadata.py <episode_id>`
-- canon patch snapshot: `bash scripts/writing/new_canon_patch.sh <episode_id> <new_canon_filename>`
+- `bash scripts/writing/new_canon_patch.sh ...`는 deprecated다. `canon/` 단일 파일 원칙 때문에 더 이상 사용하지 않는다.
 - 각 live 문서는 상단 `## Sync metadata` 섹션에 `sync_category`, `last_synced_episode`, `sync_source`, `sync_summary`를 기록한다.
 - 각 live 문서는 `sync_source_sha256`도 함께 기록해, 같은 episode 안의 캐논 사후 패치도 감지한다.
 - `world/live/docs/memory_tiers/*.md`도 prompt-facing live 문서이므로 manifest 감사 대상에 포함한다.

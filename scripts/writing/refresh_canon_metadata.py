@@ -33,6 +33,12 @@ def sha256_file(path: Path) -> str:
     return digest.hexdigest()
 
 
+def canon_payload_files(canon_dir: Path) -> list[Path]:
+    return sorted(
+        path for path in canon_dir.iterdir() if path.is_file() and path.name != "README.md"
+    )
+
+
 def replace_or_insert(lines: list[str], key: str, value: str, after_key: str | None = None) -> list[str]:
     target_prefix = f"- {key}:"
     new_line = f"- {key}: {value}"
@@ -73,12 +79,32 @@ def main() -> int:
         lines = replace_or_insert(lines, "current_text_canon", args.set_current_text_canon)
 
     current_text_canon = metadata.get("current_text_canon", "none")
+    current_word_canon = metadata.get("current_word_canon", "none")
+    canon_files = canon_payload_files(canon_readme.parent)
+
+    if current_word_canon not in ("", "none"):
+        raise SystemExit(
+            "single-file canon policy violation: current_word_canon must remain none"
+        )
+
     if current_text_canon == "none":
+        if canon_files:
+            listed = ", ".join(path.name for path in canon_files)
+            raise SystemExit(
+                "single-file canon policy violation: current_text_canon is none but "
+                f"canon/ contains files: {listed}"
+            )
         canon_hash = "none"
     else:
         canon_path = canon_readme.parent / current_text_canon
         if not canon_path.exists():
             raise SystemExit(f"current_text_canon does not exist: {canon_path}")
+        if len(canon_files) != 1 or canon_files[0].name != current_text_canon:
+            listed = ", ".join(path.name for path in canon_files) or "(none)"
+            raise SystemExit(
+                "single-file canon policy violation: canon/ must contain exactly one "
+                f"non-README file matching current_text_canon. found: {listed}"
+            )
         canon_hash = sha256_file(canon_path)
 
     lines = replace_or_insert(

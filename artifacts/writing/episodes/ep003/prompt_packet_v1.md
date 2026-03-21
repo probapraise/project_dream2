@@ -5,11 +5,11 @@
 - purpose: `draft_generation`
 - target_output: `drafts/draft_<source>_v1.txt`
 - recent_canon_1_path: `artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md`
-- recent_canon_1_sha256: `1f41ae47ec5c50e74161f792935f5b18b3a79d27193425109d39122957b170ac`
+- recent_canon_1_sha256: `8a9c63933bf4975d265be511c0ecc613efab76af6de8c926cf6311450811346c`
 - recent_canon_2_path: `artifacts/writing/episodes/ep001/canon/1화_리라이트_v2.md`
-- recent_canon_2_sha256: `be944917661e50a73c108121e922265033d742915297f8f1de4571be5bc18235`
-- recent_canon_3_path: `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v2.md`
-- recent_canon_3_sha256: `1f41586e1b00f3a887480828f78f4523d0c1e086bb86b7593dc1cff948d697cf`
+- recent_canon_2_sha256: `46442b0d76ef421adbd5fd48a8058fefc202caf1e19a8fdbb9104b1695f0f2dd`
+- recent_canon_3_path: `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v3.md`
+- recent_canon_3_sha256: `952e14dde9e50324f7d34e37493d96e15a6290e2310a04d9bcabbd958875269a`
 
 ## 역할
 - 이 문서는 이번 화 집필에 사용할 컨텍스트 패킷의 주입 순서와 우선순위를 명시한다.
@@ -41,7 +41,7 @@
 2. `setting_brief_v1.md`
 3. `artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md`
 4. `artifacts/writing/episodes/ep001/canon/1화_리라이트_v2.md`
-5. `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v2.md`
+5. `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v3.md`
 6. `world/live/docs/memory_tiers/recent.md`
 7. `world/live/docs/memory_tiers/current_arc.md`
 8. `world/live/docs/memory_tiers/entity_registry.md`

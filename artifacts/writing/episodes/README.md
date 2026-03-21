@@ -9,8 +9,7 @@ episodes/
 └── <episode_id>/
     ├── canon/
     │   ├── README.md
-    │   ├── revision_vN.txt
-    │   └── revision_vN.docx   (선택)
+    │   └── <current_text_canon>.md
     ├── drafts/
     │   ├── draft_codex_vN.txt
     │   ├── draft_external_a_vN.txt
@@ -33,9 +32,10 @@ episodes/
 ## 규칙
 
 - 모든 에피소드 폴더는 생성 시점부터 `canon/` 하위 폴더를 포함한다.
-- `canon/`에는 현재 또는 과거에 정식 반영된 canonical snapshot만 둔다.
-- `canon/README.md`는 `current_text_canon`, `current_text_canon_sha256`, `current_word_canon`을 명시하는 지시 파일이다.
-- canon은 수정 가능하다. 새 리비전이나 사후 패치가 채택되면 `canon/` 안에 새 canon 파일을 추가하고 `canon/README.md` current 항목을 갱신한다.
+- `canon/`에는 `README.md`를 제외하고 현재 정식 canon 파일 1개만 둔다.
+- `canon/README.md`는 `current_text_canon`과 `current_text_canon_sha256`를 명시하는 지시 파일이며, `current_word_canon`은 단일 파일 원칙 때문에 항상 `none`으로 유지한다.
+- canon 사후 수정이 필요하면 새 canon 파일을 추가하지 말고 현재 canon 파일을 직접 수정한 뒤 `canon/README.md` 해시와 downstream 참조를 갱신한다.
+- 과거 canon snapshot, patch snapshot, Word 복제본은 `canon/` 안에 두지 않는다. 비교와 회고는 `git history`, `assembled/`, `analysis/`로 처리한다.
 - 병렬 초고는 `drafts/`, 조립 메모/수정본은 `assembled/`, 멀티 초고 비교 분석은 `analysis/`에 둔다.
 - `analysis/episode_scorecard_vN.md`는 회차 속도계다. 요약문이 아니라 감정/정보/위험/약속/훅 기준으로 독자 체감을 점검한다.
 - scorecard는 `assembled/revision_assembled_vN.txt` 기준으로 1차 작성하고, canon 확정 뒤 최종 갱신한다.
@@ -49,8 +49,7 @@ episodes/
 - 새 프롬프트 초안은 `artifacts/writing/prompt_packet_template.md`와 `artifacts/writing/prompt_template.md`를 기준으로 작성하고, 과거 단일 `prompt_vN.md`는 히스토리로 취급한다.
 - canon 확정 뒤에는 `bash scripts/writing/post_canon_sync.sh <episode_id>`로 live sync 대상과 drift 상태를 바로 확인한다.
 - 다음 회차가 이미 준비돼 있으면 `python3 scripts/writing/audit_prompt_packet.py <next_episode_id>`로 패킷 stale 여부도 확인한다.
-- 캐논 사후 수정은 가능하면 기존 current 파일을 덮어쓰기보다 `bash scripts/writing/new_canon_patch.sh <episode_id> <new_canon_filename>`로 새 snapshot을 만든 뒤 진행한다.
-- canon 파일명은 `revision_vN.*`처럼 기계식 버전명을 써도 되고, `프롤로그_리라이트_v2.md`처럼 제목형 파일명을 써도 된다. 현재 canon 여부는 파일명 패턴이 아니라 `canon/README.md`가 결정한다.
+- canon 파일명은 제목형이든 기계식이든 가능하지만, `canon/` 안에는 현재 파일 1개만 남겨 둔다. 어떤 파일이 current canon인지는 `canon/README.md`가 결정한다.
 
 ## 생성 커맨드
 

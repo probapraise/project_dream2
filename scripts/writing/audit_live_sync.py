@@ -289,6 +289,20 @@ def precheck_target_snapshot(target: CanonSnapshot) -> list[str]:
     if not target.canon_path.exists():
         failures.append(f"current_text_canon missing: {target.canon_path}")
         return failures
+    canon_files = sorted(
+        path.name
+        for path in target.canon_readme.parent.iterdir()
+        if path.is_file() and path.name != "README.md"
+    )
+    if canon_files != [target.canon_path.name]:
+        failures.append(
+            "single-file canon policy violation: "
+            f"expected only {target.canon_path.name}, found {', '.join(canon_files) or '(none)'}"
+        )
+    metadata = read_canon_metadata(target.canon_readme)
+    current_word_canon = metadata.get("current_word_canon", "none")
+    if current_word_canon not in ("", "none"):
+        failures.append("single-file canon policy violation: current_word_canon must be none")
     declared = target.readme_declared_sha256
     if not declared or declared == "none":
         failures.append("canon README missing current_text_canon_sha256")

@@ -21,12 +21,16 @@ population 운영 원칙:
 
 집필 관련 주요 커맨드:
 - `bash scripts/writing/new_episode_scaffold.sh <episode_id>`
-- `bash scripts/writing/new_canon_patch.sh <episode_id> <new_canon_filename>`
 - `bash scripts/writing/post_canon_sync.sh <episode_id>`
 - `python3 scripts/writing/audit_live_sync.py`
 - `python3 scripts/writing/audit_prompt_packet.py <episode_id>`
 - `python3 scripts/writing/audit_semantic_continuity.py <episode_id>`
 - `python3 scripts/writing/refresh_canon_metadata.py <episode_id>`
+
+집필 canon 운영 원칙:
+- `canon/`에는 `README.md`를 제외하고 현재 정식 canon 파일 1개만 둔다.
+- 과거 snapshot과 patch 비교본은 `canon/` 밖에 둔다.
+- `scripts/writing/new_canon_patch.sh`는 deprecated다.
 
 semantic audit 운영 원칙:
 - 기본 모드: hard contradiction만 실패

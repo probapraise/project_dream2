@@ -159,7 +159,7 @@
 
 ### 6. 집필
 - 확정 원고:
-  - `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v2.md`
+  - `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v3.md`
   - `artifacts/writing/episodes/ep001/canon/1화_리라이트_v2.md`
   - `artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md`
 - 회차 요약:
@@ -362,7 +362,7 @@
 ### 다음 회차 원고 캐논 확정 직후
 - `artifacts/writing/episodes/<episode_id>/canon/`에 정식 반영본 배치
 - `artifacts/writing/episodes/<episode_id>/canon/README.md` current 항목 갱신
-- 필요 시 `bash scripts/writing/new_canon_patch.sh <episode_id> <new_canon_filename>`로 사후 패치 snapshot 생성
+- `canon/`에는 `README.md` 외 파일 1개만 유지하고, 사후 수정은 current canon 파일 직접 수정 후 metadata/sync를 갱신
 - `artifacts/writing/episodes/<episode_id>/summary_v1.md` 작성 또는 최신 상태로 갱신
 - `artifacts/writing/style/style_pattern_library.md` 갱신
 - `artifacts/writing/episodes/<episode_id>/style_selection_vN.md` 작성 또는 갱신

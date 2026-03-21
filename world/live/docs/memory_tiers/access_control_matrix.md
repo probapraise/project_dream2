@@ -2,10 +2,10 @@
 
 ## Sync metadata
 - sync_category: required
-- last_synced_episode: ep002
-- sync_source: artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md
-- sync_source_sha256: 1f41ae47ec5c50e74161f792935f5b18b3a79d27193425109d39122957b170ac
-- sync_summary: artifacts/writing/episodes/ep002/summary_v1.md
+- last_synced_episode: ep003
+- sync_source: artifacts/writing/episodes/ep003/canon/3화_리라이트_v1.md
+- sync_source_sha256: 6c65fe6820526e8595010d9a84748edcd285117a70725efe3c08e21d0f338ca7
+- sync_summary: artifacts/writing/episodes/ep003/summary_v1.md
 
 역할: 현재 서사에서 중요한 `접근 권한 / 금지 / 허가 / 통제` 상태를 resource 중심으로 추적하는 prompt-facing 접근 권한 매트릭스.
 
@@ -42,7 +42,7 @@
 - public justification:
   - 회복 중 차남에게 내려진 이례적 배려/학습 허가
 - dramatic meaning:
-  - 자유권이 아니라 `첫 선택을 읽기 위한 시험장 개방`이다.
+  - 자유권이 아니라 `첫 선택을 읽기 위한 시험장 개방`이었고, `ep003` 이후에는 가족 변수 때문에 더 긴 관찰전으로 변형됐다.
 
 ### ACL-003 서고 내 `자색 입문서` 접근
 - holder:
@@ -52,10 +52,11 @@
   - `ACL-002`의 서고 출입 허가
 - observed_by:
   - 칼리온
+  - 서고 동행 실무선
 - public justification:
   - 키리온의 주색이 자색이라면 그 계열 입문서를 먼저 집는 것이 가장 자연스럽다.
 - dramatic meaning:
-  - 별도 명시 허가가 없어도, 이 책은 `가장 무난해 보이는 첫 선택`이라 더 정교한 시험지가 된다.
+  - 별도 명시 허가가 없어도, 이 책은 `가장 무난해 보이는 첫 선택`이라 현장 관찰의 핵심 센서가 된다.
 
 ### ACL-004 흑색 표준식 입문서 접근
 - holder:
@@ -85,7 +86,7 @@
 
 ### ACL-006 계승조회식 이전 실제 마법 수련
 - holder:
-  - 없음. `ep002` 기준 키리온과 리리아 모두 합법적 실제 수련 권한이 없다.
+  - 없음. 키리온과 리리아 모두 합법적 실제 수련 권한이 없다.
 - status: `blocked`
 - enforced_by:
   - 왕국 규정
@@ -107,3 +108,22 @@
   - 거의 기록되지 않음
 - dramatic meaning:
   - 공식 권한선은 집사실에 몰려 있지만, 실제 장면을 움직이는 빠른 전달은 비공식 인맥과 발품에서 나온다.
+
+### ACL-008 `연무장 -> 치유 -> 취침 전 독서` 루틴
+- holder:
+  - 키리온
+- status: `conditionally_open_but_family_enforced`
+- granted_by:
+  - 칼리온의 서고 허가
+  - 회복 이후 저택 생활 리듬
+- enforced_by:
+  - 데리온
+- constrained_by:
+  - 연무장 소모
+  - 치유 이후 남는 체력
+- observed_by:
+  - 데리온
+  - 가족선
+  - 저택 생활선
+- dramatic meaning:
+  - 서고 시험을 한 번 유예하는 대가로 생긴 새 통제선이다. 독서 시간은 남아 있지만, 실제론 몸과 시간을 점유당한 뒤에야 열리는 좁은 자유다.

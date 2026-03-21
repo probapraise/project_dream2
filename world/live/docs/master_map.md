@@ -2,10 +2,10 @@
 
 ## Sync metadata
 - sync_category: manual
-- last_synced_episode: ep002
-- sync_source: artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md
-- sync_source_sha256: 1f41ae47ec5c50e74161f792935f5b18b3a79d27193425109d39122957b170ac
-- sync_summary: artifacts/writing/episodes/ep002/summary_v1.md
+- last_synced_episode: ep003
+- sync_source: artifacts/writing/episodes/ep003/canon/3화_리라이트_v1.md
+- sync_source_sha256: 6c65fe6820526e8595010d9a84748edcd285117a70725efe3c08e21d0f338ca7
+- sync_summary: artifacts/writing/episodes/ep003/summary_v1.md
 
 ## What is this
 - 이 파일은 오케스트레이터가 항상 로딩하는 유일한 문서다.

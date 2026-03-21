@@ -15,7 +15,7 @@
 - 각 엔트리는 `state_changes`, `activated_refs`, `closed_refs`, `carry_forward`만 남기고 줄거리 재현은 최소화한다.
 
 ## DELTA-EP000 `ep000_prologue`
-- canon_source: `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v2.md`
+- canon_source: `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v3.md`
 - state_changes:
   - 주인공은 8세 `키리온 렌바렌`의 몸에서 깨어났고, 현재 상황을 생존 문제로 인식했다.
   - 칼리온 렌바렌은 질문 구조와 미세한 반응 관찰로 주인공의 정합성을 테스트하는 위협 축으로 설정됐다.

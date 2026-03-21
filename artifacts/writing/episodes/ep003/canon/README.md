@@ -7,6 +7,6 @@
 
 ## Policy
 
-- 이 폴더에는 현재 또는 과거에 정식 반영된 canon 스냅샷만 둔다.
-- canon은 고정 불변이 아니다. 새 리비전이 정식 채택되면 이 폴더 안에 새 canon 파일을 추가하고 위 current 항목을 갱신한다.
-- superseded canon은 비교와 회고를 위해 이 폴더에 남길 수 있다.
+- 이 폴더에는 `README.md`를 제외하고 현재 정식 canon 파일 1개만 둔다.
+- 과거 canon snapshot, patch snapshot, Word 복제본은 이 폴더에 두지 않는다. 비교와 회고는 `git history`, `assembled/`, `analysis/`로 처리한다.
+- `current_text_canon`은 위 단일 canon 파일과 항상 같아야 하며, `current_word_canon`은 단일 파일 원칙 때문에 `none`으로 유지한다.

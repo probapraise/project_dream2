@@ -4,8 +4,8 @@
 - packet_version: `v1`
 - purpose: `draft_generation`
 - target_output: `drafts/draft_<source>_v1.txt`
-- recent_canon_1_path: `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v2.md`
-- recent_canon_1_sha256: `7bf464213044f52e2853189e745d1cb340cebb4f2502159453bd80ddb3319523`
+- recent_canon_1_path: `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v3.md`
+- recent_canon_1_sha256: `952e14dde9e50324f7d34e37493d96e15a6290e2310a04d9bcabbd958875269a`
 - recent_canon_2_path: `none`
 - recent_canon_2_sha256: `none`
 - recent_canon_3_path: `none`
@@ -19,7 +19,7 @@
 ## Authority order
 1. `episode_style_constitution_v1.md`
 2. `setting_brief_v1.md`
-3. `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v2.md`
+3. `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v3.md`
 4. `world/live/docs/memory_tiers/recent.md`
 5. `world/live/docs/memory_tiers/current_arc.md`
 6. `world/live/docs/memory_tiers/entity_registry.md`
@@ -38,7 +38,7 @@
 ## Injection order
 1. `episode_style_constitution_v1.md`
 2. `setting_brief_v1.md`
-3. `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v2.md`
+3. `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v3.md`
 4. `world/live/docs/memory_tiers/recent.md`
 5. `world/live/docs/memory_tiers/current_arc.md`
 6. `world/live/docs/memory_tiers/entity_registry.md`

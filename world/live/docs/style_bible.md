@@ -2,16 +2,17 @@
 
 ## Sync metadata
 - sync_category: required
-- last_synced_episode: ep002
-- sync_source: artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md
-- sync_source_sha256: 1f41ae47ec5c50e74161f792935f5b18b3a79d27193425109d39122957b170ac
-- sync_summary: artifacts/writing/episodes/ep002/summary_v1.md
+- last_synced_episode: ep003
+- sync_source: artifacts/writing/episodes/ep003/canon/3화_리라이트_v1.md
+- sync_source_sha256: 6c65fe6820526e8595010d9a84748edcd285117a70725efe3c08e21d0f338ca7
+- sync_summary: artifacts/writing/episodes/ep003/summary_v1.md
 
 ## Track A: Current style (descriptive)
 - corpus 기준:
-  - `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v2.md`
+  - `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v3.md`
   - `artifacts/writing/episodes/ep001/canon/1화_리라이트_v2.md`
   - `artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md`
+  - `artifacts/writing/episodes/ep003/canon/3화_리라이트_v1.md`
 - 현재 필체의 중심은 `1인칭 근접 시점 + 분석적 내면 + 신체 감각으로 새는 균열`이다.
 - 주인공은 상황을 빠르게 구조화하고 분류하지만, 감정은 직접 명명하지 않고 몸의 반응으로 드러난다. 불안, 긴장, 안도는 손, 목, 배, 숨, 시선, 심장 박동 같은 신체 신호로 먼저 찍힌다.
 - 문장은 긴 설명문보다 짧은 호흡 블록의 연쇄로 움직인다. 한 블록 안에서 감각 하나, 판단 하나, 전환 하나를 처리하고, 다음 블록에서 곧바로 다른 기능으로 넘어간다.
@@ -25,6 +26,7 @@
 - 보상은 휴식으로 끝나지 않는다. 허가, 칭찬, 접근권은 곧바로 더 높은 해상도의 감시와 다음 시험장으로 뒤집히는 편이 현재 캐논의 긴장 구조에 가깝다.
 - 핵심 인식은 바로 해설하지 않고 짧은 단문 블록으로 찍는다. `끝이었다.`, `그게 오히려 이상했다.`, `한 수 위다.` 같은 결론 블록이 장면 박자를 잠근다.
 - 에피소드 후반부는 단순한 깨달음보다 `구조 인식 -> 작은 실행 또는 시험 통과 -> 보상처럼 보이는 다음 압박 -> 압축된 결말 비트`의 순서로 수렴한다. 마지막 문장은 거창한 선언보다, 다음 회차 압박을 단문으로 잠그는 방식이 현재 캐논에 더 가깝다.
+- 최근 캐논에서는 `시험을 통과했다`보다 `가족 변수로 일단 유예했다`는 감각이 더 중요하다. 승리보다 유예, 해소보다 다음 루틴 압박으로 닫는 편이 현재 박자에 맞다.
 
 ## Track A Notes
 - 현재 필체는 `설명`보다 `관찰 -> 해석 -> 압축 결론`의 순서를 선호한다.
