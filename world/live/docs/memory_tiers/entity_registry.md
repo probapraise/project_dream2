@@ -4,7 +4,7 @@
 - sync_category: required
 - last_synced_episode: ep003
 - sync_source: artifacts/writing/episodes/ep003/canon/3화_리라이트_v1.md
-- sync_source_sha256: 6c65fe6820526e8595010d9a84748edcd285117a70725efe3c08e21d0f338ca7
+- sync_source_sha256: 340f47e4338f88d9ef3dc38d7a5276e77208fc29dd2ba8ccbd59825178c12e2c
 - sync_summary: artifacts/writing/episodes/ep003/summary_v1.md
 
 역할: 현재 서사에서 중요한 인물들의 `동적 상태값`을 모아 둔 prompt-facing 엔티티 레지스트리. 고정 설정 카드의 대체물이 아니라, 지금 이 시점의 태도/의심/압박/다음 행동만 추적한다.
@@ -19,10 +19,10 @@
 ### ENT-001 키리온 렌바렌
 - surface role: 회복 중인 8세 차남, 정리벽이 있는 아이
 - true state: 외래 기억 잔향을 바탕으로 `현재의 키리온` 행동 규칙을 보정하며 위장 중
-- current goal: `연무장 -> 치유 -> 취침 전 독서` 루틴 속에서 감시를 버티며, 줄어든 자유 시간 안에서도 관찰/설계 씨앗을 유지하기
+- current goal: 반복 중인 `연무장 -> 치유 -> 취침 전 독서` 루틴 속에서 감시를 버티며, 드문 데리온 부재일의 틈 안에서도 관찰/설계 씨앗을 유지하기
 - what he is hiding: 사고 구조의 출처, 과도한 분류 습관, 외래 기억식 문제 해결 방식
 - current pressure: 서고 시험을 한 번 비틀었지만, 그 대가로 몸과 시간을 점유하는 새 루틴에 묶인 상태
-- next likely move: 리리아와 저택 생활선 틈에서 작은 정보/게시판 프로토타입 욕망을 다시 점화한다
+- next likely move: 리리아와 함께 데리온 부재일의 집사실 앞 틈에서 작은 정보/게시판 프로토타입 욕망을 다시 점화한다
 
 ### ENT-002 칼리온 렌바렌
 - surface role: 절제된 아버지, 허가와 보상을 줄 줄 아는 보호자
@@ -45,14 +45,14 @@
 - stance toward Kirion: 경계 없음, 애정 높음, 오빠와 같이 노는 것을 즐김
 - current strength: 사람에게 자연스럽게 말을 걸고 정보를 물어오며, 분위기를 망치지 않고 장면을 움직인다
 - risk if flattened: 편의용 전달 장치로만 쓰이면 캐릭터성이 죽는다
-- next likely move: 새 루틴 사이사이로 파고들어 정보 전달과 놀이 감각을 다시 만든다
+- next likely move: 데리온이 없는 날의 집사실 앞에서 정보 전달과 놀이 감각을 다시 만들며, 다음 게시판 고도화 장면을 연다
 
 ### ENT-005 데리온 렌바렌
 - surface role: 강압적이고 훈련 집착이 강한 형
 - hidden state: 계승조회식 이후 가문 비밀과 방계 청소 구조를 안 채 흔들리고 있음. 실질 공포는 타가문 집행자들이 언젠가 동생들을 죽이러 온다는 점이고, 키리온을 단련시키는 집착은 그 구조를 뒤집을 수 있을지 모른다는 불가능한 희망과 연결된다
 - current sensitivity: 동생의 마법책 접근, 이상 징후, 연약함에 과민 반응
 - narrative use right now: 서고 시험을 생활 루틴과 형제 대련으로 뒤틀어 버리는 가족 압력 축
-- next likely move: 연무장, 교정, 치유를 묶은 왜곡된 보호 루틴을 계속 강요한다
+- next likely move: 연무장, 교정, 치유를 묶은 왜곡된 보호 루틴을 계속 강요하고, 없는 날에는 뜻하지 않은 빈틈을 남긴다
 
 ### ENT-006 렌바렌 저택 실무 인력 군집
 - surface role: 하인, 하녀, 집사실 실무자

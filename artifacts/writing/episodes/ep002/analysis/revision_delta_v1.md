@@ -3,6 +3,11 @@
 - episode_id: `ep002`
 - compared_revision: `assembled/revision_assembled_v1.txt`
 - target_canon: `canon/2화_리라이트_v1.md`
+- previous_canon_sha256: `8a9c63933bf4975d265be511c0ecc613efab76af6de8c926cf6311450811346c`
+- current_canon_sha256: `1d6d85e7574178720cec2be3ebbef994f8d0a33a8d0828b7ce5835fb3c7b757d`
+- adopted_user_revision: `canon/2화_리라이트_v2.md`
+- adopted_user_revision_sha256: `1141870b9d41033cb1306726e4df8b90f10719ab1f64d22d99f6109d31c8283a`
+- merge_note: `사용자 업로드 v2의 화말 설명 감량 수정본을 canonical v1 경로에 병합했고, 업로드 원본은 단일 canon 정책에 따라 제거한다.`
 
 ## Compared drafts
 - `drafts/draft_legacy_v1.txt`
@@ -19,6 +24,7 @@
 - 실제 하인과 집사의 사용 반응을 더 넣어 작은 승리의 체감을 분명히 했다.
 - 칼리온의 질문을 행동 자체보다 `사고 방식의 출처`를 읽는 단계로 격상시켰다.
 - 엔딩에서 서고 허가를 보상보다 다음 감시 단계로 해석해 압박을 더 강하게 잠갔다.
+- 후속 정본 갱신에서 서고 화말의 선택지/자색 입문서/분기 해설을 덜어, `로그가 쌓인다`는 핵심 압박과 `판 바깥 변수` 필요성만 남기도록 다시 압축했다.
 
 ## Style learning candidates
 - `S-15` 타인의 기억 기반 행동 모델 보정

@@ -3,6 +3,11 @@
 - episode_id: `ep000_prologue`
 - compared_revision: `assembled/revision_assembled_v1.txt`
 - target_canon: `canon/프롤로그_리라이트_v3.md`
+- previous_canon_sha256: `952e14dde9e50324f7d34e37493d96e15a6290e2310a04d9bcabbd958875269a`
+- current_canon_sha256: `7bfb24d6125718677474b396a512fd3a0c71f92adf15fadba887901bb0ce8b81`
+- adopted_user_revision: `canon/프롤로그_리라이트_v4.md`
+- adopted_user_revision_sha256: `0a16d3846cd48a5867168c6f6c3da0fccd9aa12f208feb99856fa046dfc746f9`
+- merge_note: `사용자 업로드 v4의 설명 감량 수정 2건을 canonical v3 경로에 병합했고, 업로드 원본은 단일 canon 정책에 따라 제거한다.`
 
 ## Compared drafts
 - `drafts/draft_legacy_v1.txt`
@@ -18,6 +23,7 @@
 - 공포와 당혹감을 직접 말하지 않고 신체 반응으로 밀어 넣어, 분석적 1인칭과 8세 몸의 불일치를 살렸다.
 - 부모 호칭을 `남자/여자` 중심으로 조정해 심리적 거리와 연기 상태를 더 분명히 했다.
 - 마지막 결론을 열린 혼란보다 `우선 이 집에서 살아남기`로 정리해 다음 화 동력을 고정했다.
+- 후속 정본 갱신에서 `검수 루틴` 설명 문단과 `계산 없는 온기` 직접 규정이 덜어져, 해석보다 장면 반응이 앞서는 방향으로 한 번 더 눌렸다.
 
 ## Style learning candidates
 - `S-01` 감각 중첩

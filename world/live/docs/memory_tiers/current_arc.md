@@ -4,7 +4,7 @@
 - sync_category: required
 - last_synced_episode: ep003
 - sync_source: artifacts/writing/episodes/ep003/canon/3화_리라이트_v1.md
-- sync_source_sha256: 6c65fe6820526e8595010d9a84748edcd285117a70725efe3c08e21d0f338ca7
+- sync_source_sha256: 340f47e4338f88d9ef3dc38d7a5276e77208fc29dd2ba8ccbd59825178c12e2c
 - sync_summary: artifacts/writing/episodes/ep003/summary_v1.md
 
 역할: 현재 활성 아크의 엔진과 금지선을 장면 설계용으로 압축한 아크 기억 계층.
@@ -27,7 +27,7 @@
 - 데리온-키리온 연무장이 `정식 사제 수업`이 아니라, 칼리온에게서 내려온 교정이 하루 늦게 형제 대련으로 재연되는 비정상적 relay라는 점이 장면 압력으로 체감되는가.
 
 ## Must-pay beats before arc exit
-- 서고/첫 책 선택 관련 시험장은 `ep003`에서 한 번 비틀어졌으므로, 이제 그 유예가 어떤 생활 비용과 루틴으로 굳는지 보여줘야 한다.
+- 서고/첫 책 선택 관련 시험장은 `ep003`에서 한 번 비틀어졌고, 그 유예가 며칠짜리 생활 비용과 루틴으로 굳기 시작했다. 이제는 그 드문 빈틈이 어떻게 다음 욕망 장면을 여는지 보여줘야 한다.
 - 데리온과 리리아의 가족 기능을 `설명`이 아니라 장면 단위 행동으로 더 분명히 해야 한다.
 - 저택 내부의 권한 구조와 감시 해상도를 몇 단계 더 보여줘야 한다.
 - 입학 전 파트 말미에는 `완전한 확언`이 아니라 `일단은 버텼다`는 안도만 지급하는 것이 맞다.

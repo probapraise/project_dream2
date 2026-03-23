@@ -3,6 +3,11 @@
 - episode_id: `ep001`
 - compared_revision: `assembled/revision_assembled_v2.txt`
 - target_canon: `canon/1화_리라이트_v2.md`
+- previous_canon_sha256: `46442b0d76ef421adbd5fd48a8058fefc202caf1e19a8fdbb9104b1695f0f2dd`
+- current_canon_sha256: `c735a280646418f27377c4fee2ccb1f749b64f8dfb115e24757de0fd52c3251b`
+- adopted_user_revision: `canon/1화_리라이트_v3.md`
+- adopted_user_revision_sha256: `c735a280646418f27377c4fee2ccb1f749b64f8dfb115e24757de0fd52c3251b`
+- merge_note: `사용자 업로드 v3의 설명 감량 수정 2건을 canonical v2 경로에 병합했고, 업로드 원본은 단일 canon 정책에 따라 제거한다.`
 
 ## Compared drafts
 - `drafts/draft_legacy_v2.txt`
@@ -20,6 +25,7 @@
 - 긴장은 단문 절단으로 찍고, 셀리아의 정상성은 안심이 아니라 `위험한 이완`으로 돌렸다.
 - 집사실 병목은 해결 설명으로 넘어가지 않고 `해볼 만한 문제를 봤다`에서 멈추도록 조정했다.
 - 칼리온의 위협을 직접 질문보다 `책을 통한 관찰 시간`으로 이동시켜 다음 화 동력을 강화했다.
+- 후속 정본 갱신에서 치유사 장면의 직접 독백과 커뮤니티 회상 장문을 덜어, 긴장과 향수 모두 설명보다 압축된 잔향으로 남기도록 한 번 더 눌렀다.
 
 ## Style learning candidates
 - `S-11` 정지 묘사에 시간축 삽입

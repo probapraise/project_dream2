@@ -5,9 +5,9 @@
 - purpose: `draft_generation`
 - target_output: `drafts/draft_<source>_v1.txt`
 - recent_canon_1_path: `artifacts/writing/episodes/ep001/canon/1화_리라이트_v2.md`
-- recent_canon_1_sha256: `46442b0d76ef421adbd5fd48a8058fefc202caf1e19a8fdbb9104b1695f0f2dd`
+- recent_canon_1_sha256: `c735a280646418f27377c4fee2ccb1f749b64f8dfb115e24757de0fd52c3251b`
 - recent_canon_2_path: `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v3.md`
-- recent_canon_2_sha256: `952e14dde9e50324f7d34e37493d96e15a6290e2310a04d9bcabbd958875269a`
+- recent_canon_2_sha256: `7bfb24d6125718677474b396a512fd3a0c71f92adf15fadba887901bb0ce8b81`
 - recent_canon_3_path: `none`
 - recent_canon_3_sha256: `none`
 

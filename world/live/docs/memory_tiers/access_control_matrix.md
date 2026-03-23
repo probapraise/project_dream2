@@ -4,7 +4,7 @@
 - sync_category: required
 - last_synced_episode: ep003
 - sync_source: artifacts/writing/episodes/ep003/canon/3화_리라이트_v1.md
-- sync_source_sha256: 6c65fe6820526e8595010d9a84748edcd285117a70725efe3c08e21d0f338ca7
+- sync_source_sha256: 340f47e4338f88d9ef3dc38d7a5276e77208fc29dd2ba8ccbd59825178c12e2c
 - sync_summary: artifacts/writing/episodes/ep003/summary_v1.md
 
 역할: 현재 서사에서 중요한 `접근 권한 / 금지 / 허가 / 통제` 상태를 resource 중심으로 추적하는 prompt-facing 접근 권한 매트릭스.
@@ -126,4 +126,4 @@
   - 가족선
   - 저택 생활선
 - dramatic meaning:
-  - 서고 시험을 한 번 유예하는 대가로 생긴 새 통제선이다. 독서 시간은 남아 있지만, 실제론 몸과 시간을 점유당한 뒤에야 열리는 좁은 자유다.
+  - 서고 시험을 한 번 유예하는 대가로 생긴 새 통제선이다. 이 루틴은 이제 실제로 며칠째 반복 중이며, 독서 시간은 몸과 시간을 점유당한 뒤에야 열리는 좁은 자유다.

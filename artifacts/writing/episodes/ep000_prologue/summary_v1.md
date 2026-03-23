@@ -2,7 +2,7 @@
 
 ## 에피소드 정보
 - episode_id: `ep000_prologue`
-- canon 기준: [`프롤로그_리라이트_v3.md`](/home/ljhljh/project_dream2/artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v3.md)
+- canon 기준: [`프롤로그_리라이트_v3.md`](/home/dlwhdgus/project_dream2/artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v3.md)
 - 제목: `심문`
 
 ## 한 줄 요약
@@ -37,7 +37,7 @@
 - 칼리온:
   - 키리온의 이질감을 감지하고, 질문만으로 검증을 시작한 상태로 남는다.
 - 셀리아:
-  - 걱정과 돌봄을 제공하는 인물로 처음 등장한다. 키리온 입장에선 아직 온전한 안식처는 아니지만, 칼리온과 대비되는 체온의 인물로 찍힌다.
+  - 걱정과 돌봄을 제공하는 인물로 처음 등장한다. 키리온 입장에선 아직 온전한 안식처는 아니지만, 칼리온의 질문을 끊어내는 완충 축으로 찍힌다.
 
 ## 다음 화 시작 조건
 - 키리온은 이미 칼리온의 시야 안에 들어왔다.

@@ -4,7 +4,7 @@
 - sync_category: conditional
 - last_synced_episode: ep003
 - sync_source: artifacts/writing/episodes/ep003/canon/3화_리라이트_v1.md
-- sync_source_sha256: 34694ae68adefab35bfa4d9f1fd668c07f37b68c6b6f554fc93b3caa8e64878b
+- sync_source_sha256: 340f47e4338f88d9ef3dc38d7a5276e77208fc29dd2ba8ccbd59825178c12e2c
 - sync_summary: artifacts/writing/episodes/ep003/summary_v1.md
 
 역할: 학술원 진입 전 저택 파트에서 반드시 심어야 할 감정/제도/관계/정보를 `soft checkpoint` 단위로 관리하는 pacing companion 문서.
@@ -22,8 +22,8 @@
   - `CP-B`는 저택 파트 후반의 감시 구조와 관계 재정렬
   - `CP-C`는 academy entry 직전 지급 완료와 무대 전환 준비
 - status after `ep003`:
-  - 서고 첫 선택 시험, 데리온의 현장 개입, `연무장 -> 치유 -> 취침 전 독서` 루틴 도입까지는 지급됐다.
-  - `CP-A`의 남은 과제는 이 유예가 생활 비용, 관계 재배치, 장기 압박으로 어떻게 굳는지 보여주는 것이다.
+  - 서고 첫 선택 시험, 데리온의 현장 개입, `연무장 -> 치유 -> 취침 전 독서` 루틴의 며칠짜리 반복과 생활 비용까지는 지급됐다.
+  - `CP-A`의 남은 과제는 이 루틴 사이의 드문 빈틈과 가족 재배치를 통해 정보 욕망, 권한 구조, 제도 압박을 어떻게 더 넓히는지 보여주는 것이다.
 
 ## Checkpoints
 

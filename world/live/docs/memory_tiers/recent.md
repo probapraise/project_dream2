@@ -4,7 +4,7 @@
 - sync_category: required
 - last_synced_episode: ep003
 - sync_source: artifacts/writing/episodes/ep003/canon/3화_리라이트_v1.md
-- sync_source_sha256: 6c65fe6820526e8595010d9a84748edcd285117a70725efe3c08e21d0f338ca7
+- sync_source_sha256: 340f47e4338f88d9ef3dc38d7a5276e77208fc29dd2ba8ccbd59825178c12e2c
 - sync_summary: artifacts/writing/episodes/ep003/summary_v1.md
 
 역할: 최근 raw canon window가 밀려나더라도 바로 다음 화를 쓸 때 필요한 미세 상태를 prompt-friendly하게 압축한 최근 기억 계층.
@@ -16,7 +16,7 @@
 
 ## Current handoff anchor
 - latest_canon_episode: `ep003`
-- immediate bridge: `ep003` ending -> `ep004` opening
+- immediate bridge: `ep003` ending coda -> `ep004` `데리온 부재일` opening
 - recent raw canon default window:
   - `ep003`
   - `ep002`
@@ -25,7 +25,9 @@
 ## Immediate carry
 - 키리온은 서고에서 `자색 입문서`를 첫 선택지로 집었지만, 데리온의 난입을 끌어들여 `독서 패턴 감시`를 정면으로 받지 않는 데 성공했다.
 - 데리온의 과민 반응은 단순 폭력성이 아니라 `보호 + 공포 + 통제`가 뒤섞인 축으로 드러났고, 이 반응이 당분간 낮 시간 전체를 점유하게 됐다.
+- 다만 드물게 데리온이 자리를 비우는 날이 있고, 그날마다 리리아와 집사실 앞이 다음 장면의 자연스러운 빈틈으로 떠오른다.
 - `연무장 -> 치유 -> 취침 전 독서` 루틴이 시작되며, 키리온의 독서는 `낮의 자유 탐독`이 아니라 `맞고 난 뒤 밤에 겨우 이어 붙이는 시간`으로 좁아졌다.
+- 화말 코다에서 이 루틴은 선언이 아니라 며칠짜리 반복으로 굳기 시작했다.
 - 서고 시험은 사라지지 않았다. 다만 이제는 `어떤 책을 고르는가`뿐 아니라 `가족 반응과 일상 루틴 속에서 어떻게 읽는가`까지 포함한 더 긴 관찰전이 되었다.
 
 ## Soft-state values to retain
@@ -45,5 +47,5 @@
 
 ## Next-scene pressure
 - 이제 핵심은 `서고 첫 선택` 자체보다, 그 선택을 비틀어 만든 루틴이 며칠과 몇 달을 지나며 어떤 몸 변화와 생활 압박을 낳는가다.
-- 다음 화는 `연무장 -> 치유 -> 취침 전 독서`가 일상으로 굳는 과정과, 그 사이에서 리리아가 어떻게 다시 `게시판/댓글 프로토타입` 쪽 욕망을 점화하는지가 중요하다.
+- 다음 화는 이미 반복 중인 루틴 자체보다, 그 드문 빈틈에서 리리아가 어떻게 다시 `게시판/댓글 프로토타입` 쪽 욕망을 점화하는지가 중요하다.
 - 가족 변수로 시험장을 흐렸다고 해서 안전해진 것은 아니다. 칼리온의 관찰선은 형태만 바뀐 채 계속 살아 있다.

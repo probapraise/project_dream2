@@ -1,13 +1,13 @@
 # revision_delta_v1
 
 - episode_id: `ep003`
-- previous_canon_before_user_revision: `canon/3화_리라이트_v1.md`
-- previous_canon_sha256: `889cbcc98fdd72722fec890e6a6bd4fed0c368adc2dd8cf3ad6c6e4673ce0a9f`
-- user_supplied_revision_source: `canon/3화 리라이트 v2.txt`
-- user_supplied_revision_sha256: `d683ae4cfb4c3f3b8c1667b46e9b82e029125049ec2dc152a929fb8829cfad2b`
-- current_canon_after_merge: `canon/3화_리라이트_v1.md`
-- current_canon_after_merge_sha256: `34694ae68adefab35bfa4d9f1fd668c07f37b68c6b6f554fc93b3caa8e64878b`
-- note: 사용자 수정본을 기존 정본 파일 경로에 병합한 뒤, 후속 다듬기에서 오프닝 추론과 화말 설명을 다시 한 차례 조정했다. canon 단일 파일 정책에 맞춰 source txt는 제거했다.
+- previous_canon_before_latest_patch: `canon/3화_리라이트_v1.md`
+- previous_canon_before_latest_patch_sha256: `34694ae68adefab35bfa4d9f1fd668c07f37b68c6b6f554fc93b3caa8e64878b`
+- latest_user_patch_source: `canon/3화_리라이트_v2.md`
+- latest_user_patch_source_sha256: `fbf5ae89e831081c4101fffd62875fce1dd71e07a326a5c15fbd01a34f983799`
+- current_canon: `canon/3화_리라이트_v1.md`
+- current_canon_sha256: `340f47e4338f88d9ef3dc38d7a5276e77208fc29dd2ba8ccbd59825178c12e2c`
+- note: 최신 사용자 패치는 서고 문턱, 연무장, 화말의 직접 해설을 몇 줄 덜어내는 성격이었고, canonical v1 경로에 병합했다. 이후 후속 코다 패치로 `어쨌든 이겼다.` 뒤에 며칠짜리 루틴 정착과 `데리온 부재일` 연결선을 추가했다. 이번 보강에서는 서고 난입부의 `논리보다 먼저 새는 몸`과 연무장 대련의 `틀린 자리를 다시 짓누르는 교정 순서` 인식을 한 줄씩 보강했다. canon 단일 파일 정책에 맞춰 업로드본 v2는 제거했다.
 
 ## Canonization outcome
 - 사용자 수정본을 새 정본으로 채택했다.
@@ -15,6 +15,17 @@
 - 관련 메타데이터는 `canon/README.md`, `summary_v1.md`, `world/live/docs/pre_academy_checkpoint_plan.md`까지 함께 갱신한다.
 
 ## Major deltas
+
+### 0. 최신 후속 패치의 성격
+- 직전 canon:
+  - 서고 문턱에서 `이 정도면 충분했다.` 같은 자기 해설이 한 줄 더 있었다.
+  - 대련 중간에 `귀족 자제들은 다 이 정도쯤 하나 보지`라는 메타 인식이 끼어 있었다.
+  - 화말에서 칼리온이 보려던 항목과 데리온 난입의 맥락을 몇 문장 더 직접 설명했다.
+- 최신 반영본:
+  - 위 세 구간의 직접 해설을 덜고, 행동과 감각 다음에 짧은 결론만 남겼다.
+  - 특히 화말은 `이건 생각도 못 했지?`와 `데리온이 서고에 난입하는 것까지는...` 정도만 남겨, 키리온의 착각과 독자의 판단 사이 여백을 늘렸다.
+  - 그 뒤 후속 코다에서 `문제는 그게 하루로 끝나지 않았다는 점이었다.`로 시작하는 짧은 반복 구간을 붙여, 이 유예가 실제 생활 루틴으로 굳는다는 비용과 `데리온 부재일` 패턴을 다음 화 연결선으로 남겼다.
+  - 최신 미세 보강에서는 서고 문턱에서 데리온의 손과 숨이 먼저 무너지는 비합리 신호를 강화했고, 연무장에서는 키리온이 `그냥 화풀이가 아니라 틀린 자리를 짓누르는 순서`를 한번 감지하도록 손봤다.
 
 ### 1. 서고 오프닝의 추론 방식
 - 이전 canon:
