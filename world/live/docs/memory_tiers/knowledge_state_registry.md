@@ -4,7 +4,7 @@
 - sync_category: required
 - last_synced_episode: ep003
 - sync_source: artifacts/writing/episodes/ep003/canon/3화_리라이트_v1.md
-- sync_source_sha256: 340f47e4338f88d9ef3dc38d7a5276e77208fc29dd2ba8ccbd59825178c12e2c
+- sync_source_sha256: 605720067f3c0df702d6055e4a0ec1017cd093c486664e8d93ef22cf5f33e646
 - sync_summary: artifacts/writing/episodes/ep003/summary_v1.md
 
 역할: 현재 서사에서 중요한 `사실` 단위로 누가 무엇을 알고, 의심하고, 오해하고, 아직 몰라야 하는지를 관리하는 prompt-facing 지식 상태 레지스트리.
@@ -119,3 +119,20 @@
   - 독자
 - release_rule:
   - pre-academy 구간에서는 `일단은 버틴다`까지만 주고, `그럼에도 내 아들이다` 확언은 더 뒤로 민다.
+
+### KS-007 집사실 앞 종이 게시판의 현재 한계
+- canonical statement: 집사실 앞 종이 게시판은 이제 `읽는 판`을 넘어 다른 하인들이 직접 고치고 보충하는 참여형 프로토타입이 됐지만, 서로 다른 최신 정보가 충돌할 때 `아닌데?`를 덧붙이거나 이유를 쌓아 둘 댓글/의견 레이어는 아직 없다.
+- known_by:
+  - 키리온
+  - 리리아
+- partially_known_by:
+  - 집사실 앞에 직접 손댄 하인/하녀들
+- misread_by:
+  - 일부 저택 실무선은 이를 `글씨가 엉킨 문제`나 `누가 더 최신 정보를 들었는가`의 문제로만 읽을 수 있다.
+  - 독자/모델이 이를 단순 `게시판 업그레이드 욕구`로만 평면화하면 안 된다.
+- must_not_flatten_yet:
+  - 이 결핍의 핵심은 기능 추가 자체보다, `사람들이 정보 밑에 또 말을 달고 싶어 한다`는 공동체 욕망이다.
+- latest_shift:
+  - `ep003` 코다에서 날짜 표기, 우선순위 분리, 사용자 직접 수정까지는 가능해졌고, 마지막에는 충돌하는 정보 밑에 `아닌데?`를 붙일 자리가 없다는 사실이 처음 장면화됐다.
+- next_volatility:
+  - 다음 화는 이 결핍을 키리온의 장기 커뮤니티 욕망과 직접 연결하는 감정 장면으로 밀어 올릴 수 있다.

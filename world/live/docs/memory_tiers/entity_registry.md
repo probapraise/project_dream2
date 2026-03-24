@@ -4,7 +4,7 @@
 - sync_category: required
 - last_synced_episode: ep003
 - sync_source: artifacts/writing/episodes/ep003/canon/3화_리라이트_v1.md
-- sync_source_sha256: 340f47e4338f88d9ef3dc38d7a5276e77208fc29dd2ba8ccbd59825178c12e2c
+- sync_source_sha256: 605720067f3c0df702d6055e4a0ec1017cd093c486664e8d93ef22cf5f33e646
 - sync_summary: artifacts/writing/episodes/ep003/summary_v1.md
 
 역할: 현재 서사에서 중요한 인물들의 `동적 상태값`을 모아 둔 prompt-facing 엔티티 레지스트리. 고정 설정 카드의 대체물이 아니라, 지금 이 시점의 태도/의심/압박/다음 행동만 추적한다.
@@ -19,10 +19,10 @@
 ### ENT-001 키리온 렌바렌
 - surface role: 회복 중인 8세 차남, 정리벽이 있는 아이
 - true state: 외래 기억 잔향을 바탕으로 `현재의 키리온` 행동 규칙을 보정하며 위장 중
-- current goal: 반복 중인 `연무장 -> 치유 -> 취침 전 독서` 루틴 속에서 감시를 버티며, 드문 데리온 부재일의 틈 안에서도 관찰/설계 씨앗을 유지하기
+- current goal: 반복 중인 `연무장 -> 치유 -> 취침 전 독서` 루틴 속에서 감시를 버티고, 데리온 부재일에 굴리기 시작한 집사실 앞 종이 게시판의 마지막 결핍을 다음 수로 연결하기
 - what he is hiding: 사고 구조의 출처, 과도한 분류 습관, 외래 기억식 문제 해결 방식
-- current pressure: 서고 시험을 한 번 비틀었지만, 그 대가로 몸과 시간을 점유하는 새 루틴에 묶인 상태
-- next likely move: 리리아와 함께 데리온 부재일의 집사실 앞 틈에서 작은 정보/게시판 프로토타입 욕망을 다시 점화한다
+- current pressure: 서고 시험을 한 번 비틀었지만, 그 대가로 몸과 시간을 점유하는 새 루틴에 묶였고, 집사실 앞 종이 게시판이 커질수록 감시와 노출 위험도 같이 오를 수 있다
+- next likely move: 리리아와 함께 이미 굴러가는 종이 게시판의 `아닌데?` 빈칸을 의식하며, `의견/댓글/정정 반박` 욕망을 더 분명한 말로 끌어올린다
 
 ### ENT-002 칼리온 렌바렌
 - surface role: 절제된 아버지, 허가와 보상을 줄 줄 아는 보호자
@@ -41,11 +41,11 @@
 
 ### ENT-004 리리아 렌바렌
 - surface role: 밝고 수다스럽고 사람 사이를 뛰어다니는 막내
-- current functional role: 키리온의 행동 모델 복원자 + 자연스러운 메신저 + 가족 변수이자 현장 실행 엔진
+- current functional role: 키리온의 행동 모델 복원자 + 자연스러운 메신저 + 가족 변수이자 집사실 앞 종이 게시판의 공동 운영 엔진
 - stance toward Kirion: 경계 없음, 애정 높음, 오빠와 같이 노는 것을 즐김
 - current strength: 사람에게 자연스럽게 말을 걸고 정보를 물어오며, 분위기를 망치지 않고 장면을 움직인다
 - risk if flattened: 편의용 전달 장치로만 쓰이면 캐릭터성이 죽는다
-- next likely move: 데리온이 없는 날의 집사실 앞에서 정보 전달과 놀이 감각을 다시 만들며, 다음 게시판 고도화 장면을 연다
+- next likely move: 데리온이 없는 날의 집사실 앞에서 사람을 더 붙이고 공기를 띄우며, `왜 한 줄 더 달 수 없는지`를 감정적으로 먼저 받아들이는 쪽으로 간다
 
 ### ENT-005 데리온 렌바렌
 - surface role: 강압적이고 훈련 집착이 강한 형
@@ -56,7 +56,7 @@
 
 ### ENT-006 렌바렌 저택 실무 인력 군집
 - surface role: 하인, 하녀, 집사실 실무자
-- current state: 반복 질문과 생활 정보 병목 속에서도 농담과 잡담이 살아 있는 군집
+- current state: 반복 질문과 생활 정보 병목 속에서도 농담과 잡담이 살아 있고, 최근에는 집사실 앞 종이 게시판에 직접 손대기 시작한 군집
 - story function: 장기 공론장 욕망의 원형을 보여주는 `생활형 사용자 집단`
 - current stance toward Kirion: 안내판 사건 이후 `이상하게 정리 잘하는 어린 도련님` 정도의 체감이 생기기 시작함
-- next likely move: 유용한 정리에는 빠르게 반응하지만, 권한과 관성은 여전히 집사실/상층 통제를 따른다
+- next likely move: 유용한 정리에는 빠르게 반응하고 직접 고치기도 하지만, 충돌하는 최신 정보가 생기면 결국 말싸움과 대면 확인으로 되돌아가며 새 구조를 요구하게 된다

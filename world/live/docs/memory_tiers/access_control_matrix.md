@@ -4,7 +4,7 @@
 - sync_category: required
 - last_synced_episode: ep003
 - sync_source: artifacts/writing/episodes/ep003/canon/3화_리라이트_v1.md
-- sync_source_sha256: 340f47e4338f88d9ef3dc38d7a5276e77208fc29dd2ba8ccbd59825178c12e2c
+- sync_source_sha256: 605720067f3c0df702d6055e4a0ec1017cd093c486664e8d93ef22cf5f33e646
 - sync_summary: artifacts/writing/episodes/ep003/summary_v1.md
 
 역할: 현재 서사에서 중요한 `접근 권한 / 금지 / 허가 / 통제` 상태를 resource 중심으로 추적하는 prompt-facing 접근 권한 매트릭스.
@@ -107,7 +107,7 @@
 - observed_by:
   - 거의 기록되지 않음
 - dramatic meaning:
-  - 공식 권한선은 집사실에 몰려 있지만, 실제 장면을 움직이는 빠른 전달은 비공식 인맥과 발품에서 나온다.
+  - 공식 권한선은 집사실에 몰려 있지만, 실제 장면을 움직이는 빠른 전달은 비공식 인맥과 발품에서 나온다. `ep003` 코다에서는 이 비공식 전달이 집사실 앞 종이 게시판이라는 임시 인터페이스로 일부 응결되기 시작했다.
 
 ### ACL-008 `연무장 -> 치유 -> 취침 전 독서` 루틴
 - holder:
@@ -127,3 +127,24 @@
   - 저택 생활선
 - dramatic meaning:
   - 서고 시험을 한 번 유예하는 대가로 생긴 새 통제선이다. 이 루틴은 이제 실제로 며칠째 반복 중이며, 독서 시간은 몸과 시간을 점유당한 뒤에야 열리는 좁은 자유다.
+
+### ACL-009 집사실 앞 종이 게시판 수정/보충 참여
+- holder:
+  - 키리온
+  - 리리아
+  - 일부 하인/하녀
+- status: `informal_participatory`
+- granted_by:
+  - 집사실 앞 생활 관성
+  - 리리아의 자연스러운 개입
+  - 키리온의 설계와 묵시적 허용
+- constrained_by:
+  - 공식 최신 정보 판정 권한은 여전히 집사실/상층에 있다
+  - `아닌데?`를 덧붙일 댓글/의견 레이어가 아직 없다
+  - 충돌이 생기면 결국 사람을 찾아가 말로 풀어야 한다
+- observed_by:
+  - 집사실 앞 실무선
+  - 키리온
+  - 리리아
+- dramatic meaning:
+  - 이 판은 더 이상 일방향 안내문이 아니라 사용자 직접 수정/보충이 가능한 참여형 프로토타입이 됐다. 하지만 정정 충돌을 수용할 구조가 없어, 다음 단계 욕망은 `읽는 판`의 확대가 아니라 `말을 붙일 자리`의 발명으로 이동한다.

@@ -2,7 +2,7 @@
 
 - episode_id: ep003
 - current_text_canon: 3화_리라이트_v1.md
-- current_text_canon_sha256: 340f47e4338f88d9ef3dc38d7a5276e77208fc29dd2ba8ccbd59825178c12e2c
+- current_text_canon_sha256: 605720067f3c0df702d6055e4a0ec1017cd093c486664e8d93ef22cf5f33e646
 - current_word_canon: none
 
 ## Policy
