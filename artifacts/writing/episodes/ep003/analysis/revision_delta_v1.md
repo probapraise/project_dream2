@@ -2,12 +2,12 @@
 
 - episode_id: `ep003`
 - previous_canon_before_latest_patch: `canon/3화_리라이트_v1.md`
-- previous_canon_before_latest_patch_sha256: `340f47e4338f88d9ef3dc38d7a5276e77208fc29dd2ba8ccbd59825178c12e2c`
+- previous_canon_before_latest_patch_sha256: `605720067f3c0df702d6055e4a0ec1017cd093c486664e8d93ef22cf5f33e646`
 - latest_user_patch_source: `working tree edits on canon/3화_리라이트_v1.md`
-- latest_user_patch_source_sha256: `605720067f3c0df702d6055e4a0ec1017cd093c486664e8d93ef22cf5f33e646`
+- latest_user_patch_source_sha256: `a132f2c3102c009d65daaba9e2f5ff37e73e092320fb389c1f6470bdab8b135a`
 - current_canon: `canon/3화_리라이트_v1.md`
-- current_canon_sha256: `605720067f3c0df702d6055e4a0ec1017cd093c486664e8d93ef22cf5f33e646`
-- note: 이번 정본 반영은 canonical `v1` 경로를 유지한 채 본문을 크게 덮어쓴 케이스다. 서고 문턱과 연무장 대사 결을 더 건조하게 눌렀고, 화말 코다는 `며칠짜리 루틴 정착` 수준을 넘어 `데리온 부재일 -> 집사실 앞 종이 게시판 반복 운영 -> 사용자 참여 증가 -> 댓글/의견 슬롯 부재 발견`까지 전진했다.
+- current_canon_sha256: `a132f2c3102c009d65daaba9e2f5ff37e73e092320fb389c1f6470bdab8b135a`
+- note: 이번 정본 반영은 직전 정본 위에 얹은 소규모 문장 다듬기다. 화말 코다의 구조와 기능은 유지한 채, 루틴의 신체 비용과 게시판 운영 장면의 어휘를 더 생활어 쪽으로 정리했다.
 
 ## Canonization outcome
 - 사용자 수정본을 현재 정본으로 채택했다.
@@ -44,6 +44,13 @@
 - 현재 canon:
   - 루틴 정착과 초기 게시판 반복 운영이 이미 `ep003` 안으로 당겨졌기 때문에,
   - `ep004`는 설명 재개보다 `왜 댓글/의견/정정 반박 슬롯이 필요한가`라는 욕망 장면을 바로 받는 편이 자연스러워졌다.
+
+### 5. 최신 패치에서 화말 어휘가 조금 더 자연스러워졌다
+- 직전 canon:
+  - 화말 코다의 구조는 정리됐지만, 일부 문장이 설명적이거나 문어적인 감촉을 조금 남기고 있었다.
+- 현재 canon:
+  - `생각해보니 정보에 날짜가 없었다`, `시키지 않았는데 알아서 움직였다`, `이런 일 자주 생기면` 같은 식으로 시점과 생활어 감촉을 더 자연스럽게 붙였다.
+  - 기능 설명은 유지하되, 독자가 문장을 읽을 때 걸리는 마찰을 조금 더 줄였다.
 
 ## Editorial note
 - 이번 기록의 핵심은 `무엇을 덜 설명했는가`보다 `무엇을 더 앞당겨 지급했는가`다.

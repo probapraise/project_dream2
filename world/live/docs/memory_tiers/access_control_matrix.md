@@ -4,7 +4,7 @@
 - sync_category: required
 - last_synced_episode: ep003
 - sync_source: artifacts/writing/episodes/ep003/canon/3화_리라이트_v1.md
-- sync_source_sha256: 605720067f3c0df702d6055e4a0ec1017cd093c486664e8d93ef22cf5f33e646
+- sync_source_sha256: a132f2c3102c009d65daaba9e2f5ff37e73e092320fb389c1f6470bdab8b135a
 - sync_summary: artifacts/writing/episodes/ep003/summary_v1.md
 
 역할: 현재 서사에서 중요한 `접근 권한 / 금지 / 허가 / 통제` 상태를 resource 중심으로 추적하는 prompt-facing 접근 권한 매트릭스.

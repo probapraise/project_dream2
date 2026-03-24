@@ -4,7 +4,7 @@
 - sync_category: required
 - last_synced_episode: ep003
 - sync_source: artifacts/writing/episodes/ep003/canon/3화_리라이트_v1.md
-- sync_source_sha256: 605720067f3c0df702d6055e4a0ec1017cd093c486664e8d93ef22cf5f33e646
+- sync_source_sha256: a132f2c3102c009d65daaba9e2f5ff37e73e092320fb389c1f6470bdab8b135a
 - sync_summary: artifacts/writing/episodes/ep003/summary_v1.md
 
 역할: 최근 raw canon window가 밀려나더라도 바로 다음 화를 쓸 때 필요한 미세 상태를 prompt-friendly하게 압축한 최근 기억 계층.
