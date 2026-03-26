@@ -1,8 +1,8 @@
 # canon
 
 - episode_id: ep004
-- current_text_canon: none
-- current_text_canon_sha256: none
+- current_text_canon: 4화_리라이트_v1.md
+- current_text_canon_sha256: 4b3b443b7e80f44e51636775e8322dbf82d028cdba23febecf38f58b53182a3e
 - current_word_canon: none
 
 ## Policy

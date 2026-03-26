@@ -2,10 +2,10 @@
 
 ## Sync metadata
 - sync_category: required
-- last_synced_episode: ep003
-- sync_source: artifacts/writing/episodes/ep003/canon/3화_리라이트_v1.md
-- sync_source_sha256: a132f2c3102c009d65daaba9e2f5ff37e73e092320fb389c1f6470bdab8b135a
-- sync_summary: artifacts/writing/episodes/ep003/summary_v1.md
+- last_synced_episode: ep004
+- sync_source: artifacts/writing/episodes/ep004/canon/4화_리라이트_v1.md
+- sync_source_sha256: 4b3b443b7e80f44e51636775e8322dbf82d028cdba23febecf38f58b53182a3e
+- sync_summary: artifacts/writing/episodes/ep004/summary_v1.md
 
 역할: 장기 연재에서 절대 잊으면 안 되는 불변값과 장기 서사 배치 약속을 prompt-friendly하게 압축한 장기 기억 계층.
 
@@ -33,7 +33,7 @@
 - 셀리아는 안전지대처럼 보이지만, 초반 긴장을 무너뜨리지 않는 `위험한 이완` 포지션을 유지해야 한다.
 
 ## Academy pacing invariants
-- 키리온은 현재 8세이며, 10세 `계승조회식`까지 2년 남았다.
+- 키리온은 현재 10세 직전이며, `계승조회식`은 더 이상 2년 뒤 일정이 아니라 바로 다음 판정선으로 올라와 있어야 한다.
 - 아르케이온 하급 과정 첫 진입은 잠정적으로 `ep010` 전후를 목표로 둔다.
 - 하급 과정은 `12~14세`, 상급 과정은 `15세 이후`다.
 - 하급 과정은 병목만 파악하는 구간이 아니라, 제한된 권한 아래 `조회/보충/질문/초기 검색` 같은 저단계 기능을 실제로 하나씩 축적하는 구간이다.

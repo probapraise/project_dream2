@@ -2,10 +2,10 @@
 
 ## Sync metadata
 - sync_category: required
-- last_synced_episode: ep003
-- sync_source: artifacts/writing/episodes/ep003/canon/3화_리라이트_v1.md
-- sync_source_sha256: a132f2c3102c009d65daaba9e2f5ff37e73e092320fb389c1f6470bdab8b135a
-- sync_summary: artifacts/writing/episodes/ep003/summary_v1.md
+- last_synced_episode: ep004
+- sync_source: artifacts/writing/episodes/ep004/canon/4화_리라이트_v1.md
+- sync_source_sha256: 4b3b443b7e80f44e51636775e8322dbf82d028cdba23febecf38f58b53182a3e
+- sync_summary: artifacts/writing/episodes/ep004/summary_v1.md
 
 역할: 회차별 줄거리 요약이 아니라, 캐논 이후 실제로 바뀐 상태만 남기는 로그.
 
@@ -85,3 +85,21 @@
   - 없음
 - carry_forward:
   - `ep004`는 이미 굴러가기 시작한 집사실 앞 종이 게시판과 `아닌데?`를 붙일 자리의 부재를 받아, `댓글/의견/정정 반박` 욕망 장면을 먼저 터뜨린 뒤 시간 압축과 외부 일정 압력으로 넘어갈 수 있어야 한다.
+
+## DELTA-EP004 `ep004`
+- canon_source: `artifacts/writing/episodes/ep004/canon/4화_리라이트_v1.md`
+- state_changes:
+  - 키리온은 집사실 앞 종이 게시판의 마지막 결핍을 `댓글`로 명명하고, 리리아와 함께 종이 시뮬레이션을 돌려 왜 `본문 밑에 다른 말을 다는 구조`가 필요한지 명확히 붙잡았다.
+  - 종이의 물리적 한계 때문에 댓글 구조는 당장 구현하지 못했고, 대신 게시판은 `수정 1회 제한 + 실명 정정` 규칙으로 임시 안정화됐다.
+  - 댓글판 욕망은 일회성 아이디어가 아니라, 여러 색 입문서를 뒤지며 `마법으로 풀어야 할 장기 목표`로 승격됐다.
+  - 2년 압축 구간 동안 `연무장 -> 치유 -> 독서` 루틴과 게시판 운영이 함께 누적됐고, 게시판은 실제 비용 절감과 동선 정리 효과를 낸 저택 실무 도구가 됐다.
+  - 칼리온은 게시판 성과를 수치 보고로 확인한 뒤 키리온에게 처음으로 `잘했다.`라고 말했고, 이후 식탁 질문과 책 선택 압박은 눈에 띄게 줄었다.
+  - 키리온은 저택 실무선에서 `말이 먹히는 아이`로 올라섰고, 리리아는 공동 운영자이자 `같이 만드는 판`을 재밌어하는 공동 창작자 위치로 선명해졌다.
+  - 계승조회식이 `2년 뒤 언젠가`가 아니라 바로 다음 공식 판정선으로 전면화됐고, 왕실 소집과 문장비전 판정 결과에 따라 키리온의 성과 가문이 바뀔 수 있다는 사실이 핵심 불안으로 올라왔다.
+  - 화말에서 키리온은 `과연 내가 내일도 렌바렌일까?`라는 질문에 닿으며, 저택 내부 생존전의 다음 국면이 가족 내부 보상에서 제도권 판정으로 넘어갔다.
+- activated_refs:
+  - 없음
+- closed_refs:
+  - 없음
+- carry_forward:
+  - `ep005`는 게시판 설계 설명을 반복하기보다, 계승조회식의 현장 긴장과 성 변경 가능성을 서사 전면에 올려야 한다. 댓글 구조와 마법 탐색은 즉시 지급이 아니라 장기 욕망으로 뒤에 남겨 둔다.
