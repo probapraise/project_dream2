@@ -3,6 +3,7 @@
 - episode_id: `<episode_id>`
 - style_constitution_version: `v1`
 - source_house_rules: `artifacts/writing/style/house_rules.md`
+- source_author_preferences: `artifacts/writing/style/author_preference_registry.md`
 - source_style_selection: `artifacts/writing/episodes/<episode_id>/style_selection_v1.md`
 - source_style_bible: `world/live/docs/style_bible.md`
 - optional_voice_refs:
@@ -10,7 +11,7 @@
 
 ## 역할
 - 이 문서는 이번 화 집필에서 실제로 모델에 주입하는 최상위 문체 규약이다.
-- `house_rules.md`와 `style_selection_vN.md`를 사람이 읽기 쉽게 재정리한 결과물이다.
+- `house_rules.md`, `author_preference_registry.md`, `style_selection_vN.md`를 사람이 읽기 쉽게 재정리한 결과물이다.
 - 다른 문서에 흩어진 문체 관련 메모보다 이 문서를 우선한다.
 
 ## 권한 규칙
@@ -27,6 +28,12 @@
 - F-07. 대사는 기본적으로 독립 호흡 블록으로 분리한다.
 - F-08. `!`, `?`는 반복하지 않는다. 감정 크기는 문장부호보다 호흡과 어휘로 만든다.
 - F-10. 괄호나 별표로 본문을 강조하지 않는다.
+
+## Preference-sensitive defaults
+- `author_preference_registry.md`에서 이번 화에 특히 중요한 항목만 2~5개로 압축한다.
+- `episode_selected_patterns`보다 넓고, `fixed rules`보다 약한 기본값만 적는다.
+
+-
 
 ## Episode-selected patterns
 
@@ -47,6 +54,6 @@
 
 ## One-screen injection summary
 - 외부 모델에 빠르게 붙일 수 있는 6~10줄 압축본을 적는다.
-- 이 블록은 `Fixed rules`와 `Episode-selected patterns`를 짧게 요약한 결과여야 한다.
+- 이 블록은 `Fixed rules`, `Preference-sensitive defaults`, `Episode-selected patterns`를 짧게 요약한 결과여야 한다.
 
 -

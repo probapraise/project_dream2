@@ -43,7 +43,7 @@ echo "sync targets"
 python3 "$audit_script" --print-targets
 echo
 echo "recommended order"
-echo "1. summary_v1.md, episode_scorecard_vN.md, revision_delta_vN.md, and style_pattern_library.md update"
+echo "1. summary_v1.md, assembly_notes_vN.md, episode_scorecard_vN.md, revision_delta_vN.md, author_preference_registry.md, and style_pattern_library.md update"
 echo "2. prompt-facing memory tiers update: recent, current_arc, entity_registry, knowledge_state_registry, access_control_matrix, long_term"
 echo "3. if pre-academy arc is still active, review pre_academy_checkpoint_plan.md"
 echo "4. if next episode exists, refresh its packet docs: style_selection, episode_style_constitution, setting_brief, long_range_summary, prompt_packet, prompt"

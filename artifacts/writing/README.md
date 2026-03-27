@@ -9,7 +9,7 @@
 ```text
 writing/
 ├── README.md                               ← 이 파일
-├── assembly_notes_template.md              ← 멀티 초고 조립 메모 템플릿
+├── assembly_notes_template.md              ← 초고→사용자 수정 감사 메모 템플릿
 ├── episode_scorecard_template.md           ← 회차 속도계 템플릿
 ├── episode_setting_brief_template.md       ← 이번 화 설정 정리 템플릿
 ├── episode_style_constitution_template.md  ← 이번 화 문체 헌법 템플릿
@@ -17,10 +17,11 @@ writing/
 ├── long_range_summary_template.md          ← 최근 3회차 이전 장기 맥락 요약 템플릿
 ├── prompt_packet_template.md               ← 주입 순서/우선순위 패킷 템플릿
 ├── prompt_template.md                      ← 이번 화 비트 프롬프트 템플릿
-├── revision_delta_template.md              ← 멀티 초고↔수정본 비교 템플릿
+├── revision_delta_template.md              ← 초고↔사용자 수정본 비교/취향 추출 템플릿
 ├── style/
 │   ├── style_constitution.md               ← 문체 운영 인덱스
 │   ├── house_rules.md                      ← 항상 읽는 고정 집필 규약
+│   ├── author_preference_registry.md       ← 작가 취향 레이어
 │   ├── style_pattern_library.md            ← diff 추출 패턴 라이브러리
 │   └── episode_style_selection_template.md ← Apply/Skip/Optional 선택 템플릿
 ├── episodes/
@@ -74,7 +75,7 @@ bash scripts/writing/new_episode_scaffold.sh ep002
    ↓
 1. 기획 대화 (오케스트레이터)
    ↓
-2. `house_rules` 확인 + `style_selection_vN.md` 작성
+2. `house_rules` + `author_preference_registry` 확인 + `style_selection_vN.md` 작성
    ↓
 3. `episode_style_constitution_vN.md` 컴파일
    ↓
@@ -84,17 +85,17 @@ bash scripts/writing/new_episode_scaffold.sh ep002
    ↓
 6. `prompt_vN.md` 작성 (이번 화 비트 지시서)
    ↓
-7. 외부 집필 모델/코덱스에 패킷 순서대로 전달 → `drafts/draft_<source>_vN.txt` 저장
+7. 코덱스 중심 초고 생성 + 필요 시 국소 보조 패치 생성 → `drafts/draft_<source>_vN.txt` 저장
    ↓
-8. 작가가 여러 초고를 조립 → `assembled/assembly_notes_vN.md` + `assembled/revision_assembled_vN.txt`
+8. 작가가 초고를 직접 수정하고 필요한 구간만 AI 보강 → `assembled/assembly_notes_vN.md` + 필요 시 `assembled/revision_assembled_vN.txt`
    ↓
 9. `analysis/episode_scorecard_vN.md` 1차 작성 (이번 화가 독자에게 실제로 준 변화/보상/훅 점검)
    ↓
 10. 정식 반영본 확정 → `canon/<canon_filename>`으로 이동/저장 + `canon/README.md` current 갱신
    ↓
-11. 멀티 초고↔조립본↔캐논 비교 분석 + `episode_scorecard_vN.md` 최종 갱신
+11. `draft_codex_vN.txt` ↔ 사용자 수정본/캐논 비교 분석 + `episode_scorecard_vN.md` 최종 갱신
    ↓
-12. diff 누적 → style/style_pattern_library.md 갱신
+12. diff 누적 → `style/author_preference_registry.md` + `style/style_pattern_library.md` 갱신
    ↓
 13. `bash scripts/writing/post_canon_sync.sh <episode_id>`로 live sync 대상 점검
    ↓
@@ -115,12 +116,12 @@ bash scripts/writing/new_episode_scaffold.sh ep002
 | 장기 맥락 요약 | markdown (.md) | `long_range_summary_v1.md` |
 | 주입 패킷 매니페스트 | markdown (.md) | `prompt_packet_v1.md` |
 | 이번 화 비트 프롬프트 | markdown (.md) | `prompt_v1.md`, `prompt_v2.md` |
-| 병렬 초고 | text / Word | `drafts/draft_codex_v1.txt`, `drafts/draft_external_a_v1.txt` |
-| 조립 메모 | markdown (.md) | `assembled/assembly_notes_v1.md` |
-| 조립 수정본 | text / Word | `assembled/revision_assembled_v1.txt` |
+| 기준 초고 / 보조 패치 | text / Word | `drafts/draft_codex_v1.txt`, `drafts/draft_patch_scene03_v1.txt` |
+| 사용자 수정 감사 메모 | markdown (.md) | `assembled/assembly_notes_v1.md` |
+| 작업 수정본 | text / Word | `assembled/revision_assembled_v1.txt` |
 | 정식 canon | text / Word | `canon/<current_text_canon>.txt`, `canon/<current_text_canon>.md` |
 | 회차 속도계 | markdown (.md) | `analysis/episode_scorecard_v1.md` |
-| 멀티 초고 비교 분석 | markdown (.md) | `analysis/revision_delta_v1.md` |
+| 초고↔수정본 비교 분석 | markdown (.md) | `analysis/revision_delta_v1.md` |
 
 ## 네이밍 규칙
 
@@ -131,9 +132,9 @@ bash scripts/writing/new_episode_scaffold.sh ep002
 - **장기 맥락 요약**: `long_range_summary_vN.md`
 - **주입 패킷 매니페스트**: `prompt_packet_vN.md`
 - **이번 화 비트 프롬프트**: `prompt_vN.md`
-- **병렬 초고**: `drafts/draft_<source>_vN.txt`
-- **조립 수정본**: `assembled/revision_assembled_vN.txt`
-- **조립 메모**: `assembled/assembly_notes_vN.md`
+- **기준 초고 / 보조 패치**: `drafts/draft_<source>_vN.txt`
+- **작업 수정본**: `assembled/revision_assembled_vN.txt`
+- **사용자 수정 감사 메모**: `assembled/assembly_notes_vN.md`
 - **회차 속도계**: `analysis/episode_scorecard_vN.md`
 - **비교 분석**: `analysis/revision_delta_vN.md`
 - **정식 canon**: `canon/revision_vN.txt` 또는 `canon/<제목>_vN.md`
@@ -141,8 +142,9 @@ bash scripts/writing/new_episode_scaffold.sh ep002
 
 ## Prompt Packet 운영 규칙
 
-- 실제 모델 주입 순서는 기본적으로 `episode_style_constitution -> setting_brief -> 최근 raw canon window -> memory_tiers(recent/current_arc/entity_registry/knowledge_state_registry/access_control_matrix/long_term) -> long_range_summary -> prompt_vN`이다.
+- 실제 모델 주입 순서는 기본적으로 `author_preference_registry -> episode_style_constitution -> setting_brief -> 최근 raw canon window -> memory_tiers(recent/current_arc/entity_registry/knowledge_state_registry/access_control_matrix/long_term) -> long_range_summary -> prompt_vN`이다.
 - `style_selection_vN.md`는 작성용 선택 문서이고, 실제 주입 문서는 `episode_style_constitution_vN.md`다.
+- `author_preference_registry.md`는 반복 검증된 작가 취향 레이어다. 회차 특수 문체가 필요하면 `episode_style_constitution_vN.md`가 override한다.
 - `prompt_vN.md`는 더 이상 단독 컨텍스트 문서가 아니다. 이번 화 비트와 목표만 담당한다.
 - `prompt_packet_vN.md` 상단의 `recent_canon_*_path/sha256`는 현재 canon window와 맞아야 한다.
 - `world/live/docs/memory_tiers/*.md`는 `story_arcs`, `foreshadow_registry`, `episode_deltas`, 캐릭터 카드에서 뽑은 global compiled memory다.
@@ -150,27 +152,28 @@ bash scripts/writing/new_episode_scaffold.sh ep002
 - `access_control_matrix.md`는 `누가 무엇에 접근 가능한가/막혀 있는가/허가가 곧 통제인가`를 resource 단위로 정리한 접근 권한표다.
 - `world/live/docs/pre_academy_checkpoint_plan.md`는 pre-academy 구간의 planning companion이다. 기본 packet 주입 문서는 아니지만, 회차 기획과 점검 때 함께 본다.
 - 사실 충돌 시 `raw canon > memory_tiers > long_range_summary > prompt_vN`을 따른다.
-- 문체 충돌 시 `episode_style_constitution_vN.md`가 우선한다.
+- 문체/취향 충돌 시 `episode_style_constitution_vN.md > author_preference_registry.md > prompt_vN`을 따른다.
 - 새 프롬프트를 만들 때는 기존 회차 `prompt_vN.md`를 복사하기보다 `prompt_packet_template.md`와 `prompt_template.md`를 출발점으로 사용한다.
 - 최근 3회차 raw canon은 기본값이다. continuity 체인이 길면 window를 늘릴 수 있다.
-- 토큰이 빠듯해도 최신 raw canon과 memory_tiers를 먼저 유지하고, episode-local `long_range_summary_vN.md`를 나중에 줄인다.
+- 토큰이 빠듯해도 `author_preference_registry.md`, 최신 raw canon, memory_tiers를 먼저 유지하고, episode-local `long_range_summary_vN.md`를 나중에 줄인다.
 - 과거 단일 `prompt_vN.md` 작업본은 히스토리로 취급한다.
 - `long_range_summary_vN.md`는 global memory tiers를 반복하는 문서가 아니라, 이번 화 한정의 보조 장기 맥락 메모로 쓴다.
 
 ## 문체 운영 규칙
 
 - `style/house_rules.md`는 항상 읽는 작성 소스다.
+- `style/author_preference_registry.md`는 작가의 반복 취향을 저장하는 전역 작성 소스다.
 - diff에서 뽑은 문체 규칙은 곧바로 전역 주입하지 않고 `style/style_pattern_library.md`에 후보로만 추가한다.
 - 집필 전에는 `episodes/<episode_id>/style_selection_vN.md`에서 이번 화 적용 패턴만 고른다.
 - 고른 결과는 `episodes/<episode_id>/episode_style_constitution_vN.md`로 컴파일해 실제 주입한다.
-- 조립본은 "초고 하나의 수정본"이 아니라 "여러 초고의 합성본"으로 취급한다.
-- `style_pattern_library.md` 반영 판단은 가능하면 단일 초고가 아니라 `analysis/revision_delta_vN.md`의 멀티 초고 비교 기록을 근거로 한다.
+- `assembled/assembly_notes_vN.md`는 여러 모델 조립 메모가 아니라 `사용자 수정 감사 메모`로 운용한다.
+- `analysis/revision_delta_vN.md`는 `초고 -> 사용자 수정본/캐논` 비교를 통해 `style_pattern_library.md` 후보와 `author_preference_registry.md` 후보를 함께 추출한다.
 
 ## Episode Scorecard 운영 규칙
 
 - `analysis/episode_scorecard_vN.md`는 이번 화의 사건을 다시 요약하는 문서가 아니라, 독자 체감 기준의 속도계다.
 - `narrative_state`, `story_arcs`, `foreshadow_registry`가 장기 상태를 추적한다면, scorecard는 "이번 화가 실제로 무엇을 지급했고 무엇을 다음 화로 넘겼는가"를 본다.
-- scorecard는 `assembled/revision_assembled_vN.txt` 단계에서 1차 작성하고, canon 확정 뒤 최종 갱신한다.
+- scorecard는 `assembled/revision_assembled_vN.txt` 또는 현재의 직접 사용자 수정 작업면 기준으로 1차 작성하고, canon 확정 뒤 최종 갱신한다.
 - 점수는 `1~5`를 쓰되, 반드시 한 줄 근거를 붙인다. 숫자만 적으면 금방 형식화된다.
 - `풀린 약속 / 새로 열린 약속`은 가능하면 `foreshadow_registry.md`의 ID와 연결한다.
 - 다음 화 기획 전에 직전 2~3화의 scorecard만 빠르게 다시 읽어도 저택 파트의 늘어짐이나 반복 리듬을 잡기 쉽다.

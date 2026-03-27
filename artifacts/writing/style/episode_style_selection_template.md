@@ -8,19 +8,21 @@
 - narrative_phase: ``
 - always_load:
   - `artifacts/writing/style/house_rules.md`
+  - `artifacts/writing/style/author_preference_registry.md`
   - `world/live/docs/style_bible.md`
   - `world/live/docs/voice_fingerprint_spec.md` 또는 해당 인물 카드
 
 ## 사용 순서
-1. `house_rules.md`를 먼저 읽는다.
+1. `house_rules.md`와 `author_preference_registry.md`를 먼저 읽는다.
 2. `style_pattern_library.md`에서 이번 화에 유효한 패턴만 고른다.
 3. 선택 결과를 이 문서에 `Apply / Skip / Optional`로 기록한다.
-4. `house_rules + Apply 패턴`을 합쳐 `episode_style_constitution_vN.md`를 작성한다.
+4. `house_rules + 작가 취향 기본값 + Apply 패턴`을 합쳐 `episode_style_constitution_vN.md`를 작성한다.
 5. 실제 모델 주입에는 `style_selection_vN.md`가 아니라 `episode_style_constitution_vN.md`를 사용한다.
 
 ## 선택 기준
 - 이번 화의 중심 갈등을 직접 강화하는가?
 - 현재 POV와 인물 조합에 실제로 맞는가?
+- `author_preference_registry.md`의 반복 신호와 충돌하지 않는가?
 - 이번 화에서만 의미 있는 패턴을 괜히 전역 규칙처럼 밀어 넣고 있지 않은가?
 - 빠지면 분명히 손해가 나는가, 아니면 그냥 있으면 그럴듯한 정도인가?
 
@@ -61,6 +63,7 @@
 
 ## 문체 헌법 컴파일 메모
 - `house_rules`의 고정 규약은 `episode_style_constitution_vN.md`에 기본값으로 포함한다.
+- `author_preference_registry.md`에서 이번 화에 특히 중요한 항목만 `Preference-sensitive defaults`로 옮긴다.
 - 여기에는 이번 화에서 선택한 패턴만 추가해 `어디에 어떻게 쓰는지`가 드러나게 적는다.
 - 실제 모델 주입은 `style_selection_vN.md`가 아니라 컴파일된 `episode_style_constitution_vN.md`를 기준으로 한다.
 
