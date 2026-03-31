@@ -2,10 +2,10 @@
 
 ## Sync metadata
 - sync_category: conditional
-- last_synced_episode: ep004
-- sync_source: artifacts/writing/episodes/ep004/canon/4화_리라이트_v1.md
-- sync_source_sha256: 4b3b443b7e80f44e51636775e8322dbf82d028cdba23febecf38f58b53182a3e
-- sync_summary: artifacts/writing/episodes/ep004/summary_v1.md
+- last_synced_episode: ep005
+- sync_source: artifacts/writing/episodes/ep005/canon/5화_리라이트_v1.md
+- sync_source_sha256: 3f290485186031271b7aeef509a19df278926fa0c30de40ebea5e9fdefc523ff
+- sync_summary: artifacts/writing/episodes/ep005/summary_v1.md
 
 역할: 학술원 진입 전 저택 파트에서 반드시 심어야 할 감정/제도/관계/정보를 `soft checkpoint` 단위로 관리하는 pacing companion 문서.
 
@@ -16,16 +16,16 @@
 
 ## Macro target
 - academy lower-course entry target window: `around ep010`
-- current frontier: `ep004`
+- current frontier: `ep005`
 - checkpoint logic:
   - `CP-A`는 저택 파트 중반의 압박/권한/가족 기능 고정
   - `CP-B`는 저택 파트 후반의 감시 구조와 관계 재정렬
   - `CP-C`는 academy entry 직전 지급 완료와 무대 전환 준비
-- status after `ep004`:
-  - `아닌데?`를 붙일 새 칸이 왜 필요한지에 대한 욕망 장면은 지급됐다.
-  - 게시판의 행정 효과, 칼리온의 첫 직접 인정, 독서 자유, 하인 태도 변화까지 첫 보상 패키지도 지급됐다.
-  - 외부 일정 압력은 `계승조회식`과 `그 결과에 따라 성이 바뀔 수도 있다`는 질문으로 전환됐다.
-  - 따라서 `CP-A`는 대부분 지급 완료로 보고, 이제 무게중심은 `CP-B`의 제도/가족/외부 판정 압력 쪽으로 넘어간다.
+- status after `ep005`:
+  - 계승조회식의 차가운 공기와 `직계/분기`, `계승/미계승`의 사회적 위계는 장면으로 지급됐다.
+  - 키리온은 `미계승`으로 렌바렌에 남았지만, 별도 검사 라인 미스터리라는 찜찜한 미해결 질문이 남았다.
+  - 세렌 첫 접속과 `아버지에게 칭찬받고 싶다 -> 게시판을 만들고 싶다`는 요청이 함께 열리며, 저택 안 정보 구조 욕망이 바깥 실무선과 인정 욕망으로 확장될 문턱에 섰다.
+  - 따라서 `CP-A`는 완료로 보고, 무게중심은 `CP-B`의 외부 실무 증명/보상 협상/관계 재배치 쪽으로 넘어간다.
 
 ## Checkpoints
 
@@ -54,7 +54,7 @@
 - can_slide_later:
   - 법령/기관의 공식 명칭
   - 가문 비밀의 전모
-- status after `ep004`: `대부분 지급 완료`
+- status after `ep005`: `완료`
 
 ### CP-B around `ep008`
 - pacing role: 저택 파트 후반의 `감시 구조 확장 + 관계 재배치 + academy 전환 압력` 정리 구간
@@ -78,9 +78,10 @@
 - can_slide_later:
   - 왕실/공작가의 조기 수련 특권 세부 운영
   - 칼리온의 최종 판정 공개
-- immediate next focus after `ep004`:
-  - 계승조회식 현장을 통해 `외부 제도`가 저택 내부 긴장과 같은 판 위에 있음을 보여줄 것
-  - 키리온이 `일단은 버티고 있다`는 감각을 유지한 채, 더 큰 시험장으로 이동했다는 인식을 붙일 것
+- immediate next focus after `ep005`:
+  - 세렌과 함께 외부 실무 병목을 실제로 손봐, `저택 안 성공`이 `외부 권력 공간에서도 먹힌다`는 첫 증명을 줄 것
+  - 세렌의 `아버지에게 칭찬받고 싶다`는 욕망이 `유용한 중심`이 되는 첫 고양감으로 번역되게 할 것
+  - 보상 협상과 칼리온의 심문성 제안은 이 외부 실전 증명 뒤에 붙이되, 가주 허락과 월권 문제를 먼저 통과시켜 과적 없이 다음 단계로 넘길 것
 
 ### CP-C around `ep010`
 - pacing role: 학술원 진입 직전 지급 완료와 무대 전환 정당화 구간

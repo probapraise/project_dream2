@@ -2,7 +2,7 @@
 
 - episode_id: ep001
 - current_text_canon: 1화_리라이트_v2.md
-- current_text_canon_sha256: c735a280646418f27377c4fee2ccb1f749b64f8dfb115e24757de0fd52c3251b
+- current_text_canon_sha256: 1fd1ad585fe82ca3240b2590ad8a2dfe0651d948976967bee92449d95dea6c95
 - current_word_canon: none
 
 ## Policy

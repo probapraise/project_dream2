@@ -2,7 +2,7 @@
 
 ## 에피소드 정보
 - episode_id: `ep000_prologue`
-- canon 기준: [`프롤로그_리라이트_v3.md`](/home/dlwhdgus/project_dream2/artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v3.md)
+- canon 기준: [`프롤로그_리라이트_v4.md`](/home/dlwhdgus/project_dream2/artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v4.md)
 - 제목: `심문`
 
 ## 한 줄 요약

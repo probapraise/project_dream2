@@ -2,7 +2,7 @@
 
 - episode_id: `ep000_prologue`
 - target_revision: `assembled/revision_assembled_v1.txt`
-- target_canon: `canon/프롤로그_리라이트_v3.md`
+- target_canon: `canon/프롤로그_리라이트_v4.md`
 - status: `final`
 
 ## Usage rule

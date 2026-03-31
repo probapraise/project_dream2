@@ -1,8 +1,8 @@
 # canon
 
 - episode_id: ep005
-- current_text_canon: none
-- current_text_canon_sha256: none
+- current_text_canon: 5화_리라이트_v1.md
+- current_text_canon_sha256: d21365cdd3a435619872316e13b9cd408c46bcb65f97490e71dfd074370d45e8
 - current_word_canon: none
 
 ## Policy

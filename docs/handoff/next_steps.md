@@ -159,7 +159,7 @@
 
 ### 6. 집필
 - 확정 원고:
-  - `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v3.md`
+  - `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v4.md`
   - `artifacts/writing/episodes/ep001/canon/1화_리라이트_v2.md`
   - `artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md`
 - 회차 요약:

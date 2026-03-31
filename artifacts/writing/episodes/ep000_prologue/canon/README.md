@@ -1,8 +1,8 @@
 # canon
 
 - episode_id: ep000_prologue
-- current_text_canon: 프롤로그_리라이트_v3.md
-- current_text_canon_sha256: 7bfb24d6125718677474b396a512fd3a0c71f92adf15fadba887901bb0ce8b81
+- current_text_canon: 프롤로그_리라이트_v4.md
+- current_text_canon_sha256: 8b56cbc5206c649663a729702abc7ba97b86fc06a73b60c6aab82dd5e5dd09c0
 - current_word_canon: none
 
 ## Policy

@@ -28,8 +28,16 @@ prompt_template="$repo_root/artifacts/writing/prompt_template.md"
 prompt_file="$episode_dir/prompt_v1.md"
 assembly_template="$repo_root/artifacts/writing/assembly_notes_template.md"
 assembly_file="$assembled_dir/assembly_notes_v1.md"
+logic_review_template="$repo_root/artifacts/writing/logic_review_template.md"
+logic_review_file="$analysis_dir/logic_review_v1.md"
+logic_patch_brief_template="$repo_root/artifacts/writing/logic_patch_brief_template.md"
+logic_patch_brief_file="$analysis_dir/logic_patch_brief_v1.md"
 revision_delta_template="$repo_root/artifacts/writing/revision_delta_template.md"
 revision_delta_file="$analysis_dir/revision_delta_v1.md"
+rewrite_meeting_template="$repo_root/artifacts/writing/rewrite_meeting_template.md"
+rewrite_meeting_file="$analysis_dir/rewrite_meeting_v1.md"
+redraft_brief_template="$repo_root/artifacts/writing/redraft_brief_template.md"
+redraft_brief_file="$analysis_dir/redraft_brief_v1.md"
 episode_scorecard_template="$repo_root/artifacts/writing/episode_scorecard_template.md"
 episode_scorecard_file="$analysis_dir/episode_scorecard_v1.md"
 
@@ -136,8 +144,24 @@ if [[ -f "$assembly_template" ]]; then
   sed "s/<episode_id>/$episode_id/g" "$assembly_template" > "$assembly_file"
 fi
 
+if [[ -f "$logic_review_template" ]]; then
+  sed "s/<episode_id>/$episode_id/g" "$logic_review_template" > "$logic_review_file"
+fi
+
+if [[ -f "$logic_patch_brief_template" ]]; then
+  sed "s/<episode_id>/$episode_id/g" "$logic_patch_brief_template" > "$logic_patch_brief_file"
+fi
+
 if [[ -f "$revision_delta_template" ]]; then
   sed "s/<episode_id>/$episode_id/g" "$revision_delta_template" > "$revision_delta_file"
+fi
+
+if [[ -f "$rewrite_meeting_template" ]]; then
+  sed "s/<episode_id>/$episode_id/g" "$rewrite_meeting_template" > "$rewrite_meeting_file"
+fi
+
+if [[ -f "$redraft_brief_template" ]]; then
+  sed "s/<episode_id>/$episode_id/g" "$redraft_brief_template" > "$redraft_brief_file"
 fi
 
 if [[ -f "$episode_scorecard_template" ]]; then
@@ -171,8 +195,20 @@ fi
 if [[ -f "$assembly_file" ]]; then
   echo "$assembly_file"
 fi
+if [[ -f "$logic_review_file" ]]; then
+  echo "$logic_review_file"
+fi
+if [[ -f "$logic_patch_brief_file" ]]; then
+  echo "$logic_patch_brief_file"
+fi
 if [[ -f "$revision_delta_file" ]]; then
   echo "$revision_delta_file"
+fi
+if [[ -f "$rewrite_meeting_file" ]]; then
+  echo "$rewrite_meeting_file"
+fi
+if [[ -f "$redraft_brief_file" ]]; then
+  echo "$redraft_brief_file"
 fi
 if [[ -f "$episode_scorecard_file" ]]; then
   echo "$episode_scorecard_file"

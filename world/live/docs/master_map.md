@@ -2,10 +2,10 @@
 
 ## Sync metadata
 - sync_category: manual
-- last_synced_episode: ep004
-- sync_source: artifacts/writing/episodes/ep004/canon/4화_리라이트_v1.md
-- sync_source_sha256: 4b3b443b7e80f44e51636775e8322dbf82d028cdba23febecf38f58b53182a3e
-- sync_summary: artifacts/writing/episodes/ep004/summary_v1.md
+- last_synced_episode: ep005
+- sync_source: artifacts/writing/episodes/ep005/canon/5화_리라이트_v1.md
+- sync_source_sha256: 3f290485186031271b7aeef509a19df278926fa0c30de40ebea5e9fdefc523ff
+- sync_summary: artifacts/writing/episodes/ep005/summary_v1.md
 
 ## What is this
 - 이 파일은 오케스트레이터가 항상 로딩하는 유일한 문서다.
@@ -70,6 +70,7 @@
 - quarantine_index: quarantine/README.md
 
 ## Recent changes (selected)
+- 2026-03-31 WRITING-013: ep005 캐논(`5화_리라이트_v1.md`)을 실험본 `user_revision_v2` 기준으로 확정 및 live 서사 허브 재동기화 — `안정 공명 없음 / 미계승`, 별도 검사 라인 미해결, 라베르니온 별채의 계승/미계승 사회화, 세렌 첫 접속과 `아버지에게 칭찬받고 싶어서 게시판을 원한다`는 훅을 `narrative_state`, `episode_deltas`, `foreshadow_registry`, `memory_tiers`에 반영
 - 2026-03-26 WRITING-012: ep004 캐논(`4화_리라이트_v1.md`) 확정 및 live 서사 허브 동기화 — 댓글 구조 결핍의 명명, 첫 실질 보상, 계승조회식/성 변경 가능성 훅을 `narrative_state`, `story_arcs`, `memory_tiers`, `episode_deltas`에 반영
 - 2026-03-20 WORLDBUILD-035: `NC-0001`, `long_term`, handoff/log에 `10세/12세` 키리온의 집필용 외형 묘사 문장과 평균 체구-가벼운 실전형 인상을 정리한 연령별 외형 가이드를 추가
 - 2026-03-20 WORLDBUILD-034: `WB-0030`, `EX-0004`, `NC-0001`, `story_arcs`, `long_term`, handoff/log에 리리아가 `무흔술` 입력을 주는 쪽이 아니라 `키리온에게 호신술을 배우는 제자`이며, 키리온은 가르치는 과정에서 자기 체계를 더 설명 가능하게 정리한다는 축으로 교정

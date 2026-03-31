@@ -2,10 +2,10 @@
 
 ## Sync metadata
 - sync_category: required
-- last_synced_episode: ep004
-- sync_source: artifacts/writing/episodes/ep004/canon/4화_리라이트_v1.md
-- sync_source_sha256: 4b3b443b7e80f44e51636775e8322dbf82d028cdba23febecf38f58b53182a3e
-- sync_summary: artifacts/writing/episodes/ep004/summary_v1.md
+- last_synced_episode: ep005
+- sync_source: artifacts/writing/episodes/ep005/canon/5화_리라이트_v1.md
+- sync_source_sha256: 3f290485186031271b7aeef509a19df278926fa0c30de40ebea5e9fdefc523ff
+- sync_summary: artifacts/writing/episodes/ep005/summary_v1.md
 
 역할: 현재 서사에서 중요한 `접근 권한 / 금지 / 허가 / 통제` 상태를 resource 중심으로 추적하는 prompt-facing 접근 권한 매트릭스.
 
@@ -155,7 +155,7 @@
 ### ACL-010 계승조회식 참석
 - holder:
   - 키리온
-- status: `mandatory_summons`
+- status: `resolved_current_cycle`
 - granted_by:
   - 왕실 소집 규정
   - 서명귀족 혈통 판정 체계
@@ -167,4 +167,25 @@
 - trigger_condition:
   - 만 열 살 전후의 대상 아동으로 분류될 때
 - dramatic meaning:
-  - 선택권이 붙은 허가가 아니라 빠질 수 없는 공식 판정선이다. 이 접근은 `왕도에 갈 수 있는 기회`보다 `결과에 따라 성과 가문이 재배치될 수 있는 위험한 호출`로 읽어야 한다.
+  - 선택권이 붙은 허가가 아니라 빠질 수 없는 공식 판정선이다. `ep005`에서 키리온은 실제로 이 호출을 이행해 `미계승`으로 남았지만, 별도 검사 라인 배정과 그 기준의 불투명성까지 함께 확인했다.
+
+### ACL-011 저택 밖 게시판 구조 반출
+- holder:
+  - 키리온
+  - 리리아
+  - 세렌
+- status: `socially_blocked_but_imminent_experiment`
+- granted_by:
+  - 공식 허가 없음
+  - 리리아의 추진력
+  - 세렌의 요청과 아버지 칭찬 욕망
+- observed_by:
+  - 라베르니온 별채 실무선
+  - 귀족 손님 시선
+  - 키리온
+- constrained_by:
+  - 공작가 별채는 저택 내부보다 정치적 시선이 훨씬 촘촘하다
+  - 세렌의 요청만으로 충분하지 않고, 가주 또는 실무 책임선 허락 없이 설치하면 곧바로 월권으로 읽힐 수 있다
+  - 누가 중심에서 제안하고 누가 써도 되는지가 곧 권한 문제가 된다
+- dramatic meaning:
+  - 저택 안에서는 실험으로 버티던 구조가, 외부 귀족 공간에선 곧바로 `누가 허락하고 누가 책임지는가`의 문제로 바뀐다. 화말의 훅은 세렌의 인정 욕망과 이 금지선이 처음 맞부딪히는 순간이다.

@@ -1,6 +1,7 @@
 # assembly_notes_v1
 
 - episode_id: `<episode_id>`
+- upstream_raw_draft: `drafts/raw_codex_v1.txt`
 - base_draft: `drafts/draft_codex_v1.txt`
 - working_revision: `assembled/revision_assembled_v1.txt`
 - target_canon: `canon/<current_text_canon>`
@@ -10,8 +11,9 @@
 
 ## Role
 - 파일명은 유지하지만, 이 문서는 더 이상 `멀티 초고 조립 로그`가 아니다.
-- 기본 용도는 `코덱스 초고 -> 사용자 수정 -> 선택적 AI 보강 -> 작업 수정본/캐논` 흐름에서 사용자가 무엇을 어떻게 고쳤는지 기록하는 것이다.
+- 기본 용도는 `내부 검수 후 초고 -> 사용자 수정 -> 선택적 AI 보강 -> 작업 수정본/캐논` 흐름에서 사용자가 무엇을 어떻게 고쳤는지 기록하는 것이다.
 - 여러 보조 출력이 있더라도 중심 비교축은 항상 `base_draft`와 `latest user-shaped text`다.
+- `upstream_raw_draft`는 참고 경로다. 사용자 수정 감사의 직접 비교축은 여전히 `base_draft`다.
 
 ## Edit pass map
 

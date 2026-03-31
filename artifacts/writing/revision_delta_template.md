@@ -1,6 +1,7 @@
 # revision_delta_v1
 
 - episode_id: `<episode_id>`
+- upstream_raw_draft: `drafts/raw_codex_v1.txt`
 - base_draft: `drafts/draft_codex_v1.txt`
 - compared_revision: `assembled/revision_assembled_v1.txt` or `working tree edits on canon/<current_text_canon>`
 - target_canon: `canon/<current_text_canon>`
@@ -8,9 +9,10 @@
 - note: ``
 
 ## Comparison scope
-- 기준 비교축은 `코덱스 초고`와 `최신 사용자 형상 텍스트`다.
+- 기준 비교축은 `내부 검수 후 사용자용 초고`와 `최신 사용자 형상 텍스트`다.
 - 세계관 보정, 연결성 보정, 오탈자 수정 같은 `비취향 수정`과 반복 취향 신호를 분리해서 적는다.
 - 목적은 `무엇이 더 좋아졌나`를 넘어서 `사용자가 어떤 기본값을 반복적으로 거부/선호하나`를 추출하는 것이다.
+- 필요하면 `upstream_raw_draft`를 함께 보며 `내부 검수에서 이미 걸러진 것`과 `여전히 사용자 손에서 구조적으로 바뀐 것`을 구분한다.
 
 ## Structural delta map
 

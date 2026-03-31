@@ -11,12 +11,17 @@ episodes/
     │   ├── README.md
     │   └── <current_text_canon>.md
     ├── drafts/
+    │   ├── raw_codex_vN.txt
     │   ├── draft_codex_vN.txt
     │   └── draft_<optional_patch_source>_vN.txt
     ├── assembled/
     │   ├── assembly_notes_vN.md
     │   └── revision_assembled_vN.txt
     ├── analysis/
+    │   ├── logic_review_vN.md
+    │   ├── logic_patch_brief_vN.md
+    │   ├── rewrite_meeting_vN.md
+    │   ├── redraft_brief_vN.md
     │   ├── episode_scorecard_vN.md
     │   └── revision_delta_vN.md
     ├── style_selection_vN.md
@@ -35,7 +40,11 @@ episodes/
 - `canon/README.md`는 `current_text_canon`과 `current_text_canon_sha256`를 명시하는 지시 파일이며, `current_word_canon`은 단일 파일 원칙 때문에 항상 `none`으로 유지한다.
 - canon 사후 수정이 필요하면 새 canon 파일을 추가하지 말고 현재 canon 파일을 직접 수정한 뒤 `canon/README.md` 해시와 downstream 참조를 갱신한다.
 - 과거 canon snapshot, patch snapshot, Word 복제본은 `canon/` 안에 두지 않는다. 비교와 회고는 `git history`, `assembled/`, `analysis/`로 처리한다.
-- 기준 초고와 선택적 보조 패치는 `drafts/`, 사용자 수정 감사 메모/작업 수정본은 `assembled/`, 초고↔수정본 비교 분석은 `analysis/`에 둔다.
+- `drafts/raw_codex_vN.txt`는 내부 1차 생성물이다. 기본 handoff 대상이 아니다.
+- `drafts/draft_codex_vN.txt`는 `analysis/logic_review_vN.md`와 `analysis/logic_patch_brief_vN.md`를 거친 뒤 사용자에게 보여 주는 기준 초고다.
+- 선택적 보조 패치도 `drafts/`에 두고, 사용자 수정 감사 메모/작업 수정본은 `assembled/`, 초고↔수정본 비교 분석은 `analysis/`에 둔다.
+- `analysis/logic_review_vN.md`와 `analysis/logic_patch_brief_vN.md`는 모든 집필 사이클에서 기본 생성/사용하는 필수 문서다.
+- `analysis/rewrite_meeting_vN.md`와 `analysis/redraft_brief_vN.md`는 구조 재집필이 필요할 때만 사용하는 조건부 문서다.
 - `analysis/episode_scorecard_vN.md`는 회차 속도계다. 요약문이 아니라 감정/정보/위험/약속/훅 기준으로 독자 체감을 점검한다.
 - scorecard는 `assembled/revision_assembled_vN.txt` 또는 현재의 직접 사용자 수정 작업면 기준으로 1차 작성하고, canon 확정 뒤 최종 갱신한다.
 - `style_selection_vN.md`는 내부 선택 문서다. 실제 모델에는 `episode_style_constitution_vN.md`를 넣는다.
@@ -58,4 +67,4 @@ episodes/
 bash scripts/writing/new_episode_scaffold.sh ep002
 ```
 
-- 스캐폴드는 `canon/README.md`, `drafts/`, `assembled/`, `analysis/`, `style_selection_v1.md`, `episode_style_constitution_v1.md`, `setting_brief_v1.md`, `long_range_summary_v1.md`, `prompt_packet_v1.md`, `prompt_v1.md`, `analysis/episode_scorecard_v1.md`, `analysis/revision_delta_v1.md`를 함께 만든다.
+- 스캐폴드는 `canon/README.md`, `drafts/`, `assembled/`, `analysis/`, `style_selection_v1.md`, `episode_style_constitution_v1.md`, `setting_brief_v1.md`, `long_range_summary_v1.md`, `prompt_packet_v1.md`, `prompt_v1.md`, `analysis/logic_review_v1.md`, `analysis/logic_patch_brief_v1.md`, `analysis/rewrite_meeting_v1.md`, `analysis/redraft_brief_v1.md`, `analysis/episode_scorecard_v1.md`, `analysis/revision_delta_v1.md`를 함께 만든다.

@@ -7,9 +7,9 @@
 - recent_canon_1_path: `artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md`
 - recent_canon_1_sha256: `1d6d85e7574178720cec2be3ebbef994f8d0a33a8d0828b7ce5835fb3c7b757d`
 - recent_canon_2_path: `artifacts/writing/episodes/ep001/canon/1화_리라이트_v2.md`
-- recent_canon_2_sha256: `c735a280646418f27377c4fee2ccb1f749b64f8dfb115e24757de0fd52c3251b`
-- recent_canon_3_path: `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v3.md`
-- recent_canon_3_sha256: `7bfb24d6125718677474b396a512fd3a0c71f92adf15fadba887901bb0ce8b81`
+- recent_canon_2_sha256: `1fd1ad585fe82ca3240b2590ad8a2dfe0651d948976967bee92449d95dea6c95`
+- recent_canon_3_path: `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v4.md`
+- recent_canon_3_sha256: `8b56cbc5206c649663a729702abc7ba97b86fc06a73b60c6aab82dd5e5dd09c0`
 
 ## 역할
 - 이 문서는 이번 화 집필에 사용할 컨텍스트 패킷의 주입 순서와 우선순위를 명시한다.
@@ -41,7 +41,7 @@
 2. `setting_brief_v1.md`
 3. `artifacts/writing/episodes/ep002/canon/2화_리라이트_v1.md`
 4. `artifacts/writing/episodes/ep001/canon/1화_리라이트_v2.md`
-5. `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v3.md`
+5. `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v4.md`
 6. `world/live/docs/memory_tiers/recent.md`
 7. `world/live/docs/memory_tiers/current_arc.md`
 8. `world/live/docs/memory_tiers/entity_registry.md`

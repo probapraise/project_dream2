@@ -2,10 +2,10 @@
 
 ## Sync metadata
 - sync_category: required
-- last_synced_episode: ep004
-- sync_source: artifacts/writing/episodes/ep004/canon/4화_리라이트_v1.md
-- sync_source_sha256: 4b3b443b7e80f44e51636775e8322dbf82d028cdba23febecf38f58b53182a3e
-- sync_summary: artifacts/writing/episodes/ep004/summary_v1.md
+- last_synced_episode: ep005
+- sync_source: artifacts/writing/episodes/ep005/canon/5화_리라이트_v1.md
+- sync_source_sha256: 3f290485186031271b7aeef509a19df278926fa0c30de40ebea5e9fdefc523ff
+- sync_summary: artifacts/writing/episodes/ep005/summary_v1.md
 
 역할: 회차별 줄거리 요약이 아니라, 캐논 이후 실제로 바뀐 상태만 남기는 로그.
 
@@ -15,7 +15,7 @@
 - 각 엔트리는 `state_changes`, `activated_refs`, `closed_refs`, `carry_forward`만 남기고 줄거리 재현은 최소화한다.
 
 ## DELTA-EP000 `ep000_prologue`
-- canon_source: `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v3.md`
+- canon_source: `artifacts/writing/episodes/ep000_prologue/canon/프롤로그_리라이트_v4.md`
 - state_changes:
   - 주인공은 8세 `키리온 렌바렌`의 몸에서 깨어났고, 현재 상황을 생존 문제로 인식했다.
   - 칼리온 렌바렌은 질문 구조와 미세한 반응 관찰로 주인공의 정합성을 테스트하는 위협 축으로 설정됐다.
@@ -103,3 +103,21 @@
   - 없음
 - carry_forward:
   - `ep005`는 게시판 설계 설명을 반복하기보다, 계승조회식의 현장 긴장과 성 변경 가능성을 서사 전면에 올려야 한다. 댓글 구조와 마법 탐색은 즉시 지급이 아니라 장기 욕망으로 뒤에 남겨 둔다.
+
+## DELTA-EP005 `ep005`
+- canon_source: `artifacts/writing/episodes/ep005/canon/5화_리라이트_v1.md`
+- state_changes:
+  - 키리온은 왕실 계승조회식에서 `안정 공명 없음 / 미계승` 판정을 받아, 적어도 이번 공식 판정에서는 렌바렌에 남게 됐다.
+  - 그러나 키리온만 별도 검사 라인으로 불렸고, 그 이유는 설명되지 않아 `무사 통과`와는 다른 종류의 찜찜한 미해결 질문이 남았다.
+  - 대기실의 `직계 소수 / 분기 다수` 구도와 결과 이후의 반응 차이를 통해, 같은 귀족 안에서도 기대값과 체면이 어떻게 갈리는지 장면으로 확인됐다.
+  - 라베르니온 공작가 별채 연회에서는 그 구도가 `계승/미계승`의 즉시 사회화로 다시 번역됐고, 키리온은 결과가 곧바로 사람들의 자리와 시선 길이로 변하는 구조를 읽었다.
+  - 칼리온은 공식 행사장에서도 무반응을 유지했고, 데리온은 키리온의 `미계승` 직후 어깨가 아주 잠깐 내려가며 이번 판정이 그에게도 실제 위협이었음을 행동으로만 드러냈다.
+  - 리리아는 외부 귀족 공간에서도 사람 사이 장벽을 쉽게 깨는 실행력으로 세렌 라베르니온에게 먼저 다가갔고, 키리온-리리아-세렌의 첫 삼각 접촉이 성립했다.
+  - 세렌은 `공작가 차녀 + 오늘의 주인공`이라는 이유로 또래에게는 오히려 더 접근받지 못한 채 고립돼 있었고, 리리아 덕분에 처음으로 비격식 또래 접촉을 경험했다.
+  - 화말에서 세렌은 `칼리온이 칭찬한 게시판` 이야기에 반응해 `나도 아버지한테 칭찬받고 싶다`는 결핍을 드러내고, 자기 집에도 그걸 만들고 싶다고 요청한다.
+- activated_refs:
+  - `FS-008`
+- closed_refs:
+  - 없음
+- carry_forward:
+  - `ep006`는 계승조회식 결과 설명을 반복하기보다, 라베르니온 별채 같은 외부 실무선에서 게시판 구조가 실제로 먹히는지, 세렌의 `아버지 칭찬 욕망`이 어떤 실무 참여로 번역되는지, 그리고 그 일을 누가 허락할지를 전면에 올려야 한다.
